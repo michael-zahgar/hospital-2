@@ -1,0 +1,15 @@
+
+
+
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-family: "Amiri";
+    src: url(../fonts/Amiri/Amiri-Regular.ttf);
+    font-family: "Noto";
+    src: url(../fonts/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Regular.ttf);
+    font-family: "Alkalami";
+    src: url(../fonts/Alkalami/Alkalami-Regular.ttf);
+    font-family: "Almarai";
+    src: url(../fonts/Almarai/Almarai-Regular.ttf);
+}

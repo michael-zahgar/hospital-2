@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+   <!-- BootStrap -->
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="./css/all.min.css">
+
+   <!-- CDN Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Magnific Popup css file -->
+   <link rel="stylesheet" href="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js">
+
+    <!-- carosuel css file -->
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+
+    
+
+    <!-- Custome CSS -->
+   <link rel="stylesheet" href="./css/style.css">
+
+   <!-- responsive CSS -->
+   <link rel="stylesheet" href="./css/responsive.css">
+
+
+
+
+</head>
+<body class="booking-body"cz-shortcut-listen="true">
+    
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <form class="contact-form">
+                <h2 class="text-center mb-3">Booking</h2>
+                <input type="text" id="name" placeholder="Full Name || الاسم كامل" required>
+                <br>
+                <input type="email" id="email" placeholder="Email || البريد الالكتروني" required>
+                <br>
+                <input type="text" id="phone" placeholder="Phone Number || رقم الموبايل" required>
+                <br>
+                <input type="text" id="address" placeholder="Your Adress || العنوان" required>
+                <br>
+                
+                <div>
+                    <label for="select-option mb-3">Select a Branch || أختر فرع </label>
+                    <select id="branch" name="select-option">
+                      <option>Select a Branch || اختر فرع</option>
+                      <option value="thawra">Thawra Branch || فرع الثورة</option>
+                      <option value="hegaz">Hegaz Branch || فرع الحجاز</option>
+                      <option value="hurghada">Hurghada Branch || فرع الغرقة</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="select-option2 mb-3">Select a Service || اختر خدمة</label>
+                    <select id="service" name="select-option2">
+                        <option>Select a Service || اختر خدمة</option>
+                      <option value="clinics">clinics || العيادات الخارجية</option>
+                      <option value="investigations">Investigation || الفحوصات الطبية</option>
+                      <option value="operations">Operations || العمليات</option>
+                    </select>
+                </div>
+                
+                <textarea id="message" placeholder="Your Request / Notes || محتوي الطلب \ الملاحظات" cols="30" rows="10" required></textarea>
+                <br>
+                <div class="btns d-flex">
+                    <input type="submit" class="submit submit-btn p-3" value="Submit | ارسل طلب الحجز">
+                    <a class="go-back" href="./index.html">Go Home | الصفحة الرئيسية</a>
+                </div>
+
+                <p id="booking-message" class="booking-message"></p>
+                </form>
+        </div>
+    </div>
+   
+        
+</div>
+
+
+
+    
+
+
+    <script src="./js/jquery.3.6.2.js"></script>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <!-- Isotope js libary  ( for cards selection ) -->
+
+    <script src="./vendor/isotope/isotope.min.js"></script>
+
+    <!-- Magnific popup script file (for pictures) -->
+
+    <script src="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+
+    <!-- owl-carosuel js file -->
+
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    
+    <!-- Send Email JS Link -->
+
+    <!-- JS main Script -->
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
