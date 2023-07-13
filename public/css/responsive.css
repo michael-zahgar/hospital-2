@@ -15,6 +15,7 @@
     .parent-1 .container {
         max-width: 100%;
     }
+  
     .parent-2 .container .main-head .main-text{
         width: 90%;
     }
@@ -362,6 +363,9 @@
     .parent-6 h2{
         font-size: 30px;
     }
+    .faqs .accordion-button:not(.collapsed) i{
+        display: none;
+    }
     .our-services .container{
         max-width: 90% !important;
       }
@@ -473,6 +477,9 @@
     .container{
         max-width: 100% !important;
     }
+    .parent-2 .container{
+        left: 0;
+    }
     .parent-4 a:hover + .icon {
         left: 40vw;
     }
@@ -486,6 +493,12 @@
     }
     .testimonials .header-inner {
         font-size: 27px;
+    }
+    .our-services .container{
+        max-width: 100% !important;
+    }
+    .faqs .accordion-body{
+        padding: 0;
     }
     .caro-patient h3{
         font-size: 17px;
