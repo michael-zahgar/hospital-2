@@ -696,6 +696,7 @@ left: 15vw;
     color: white;
     margin-top: -100px;
     z-index: 11111 !important;
+    overflow: hidden;
 }
 .our-rate .container{
     background-color: var(--main-color);
