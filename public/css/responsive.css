@@ -464,6 +464,10 @@
     .parent-4 .experience-box .experience-inner h3{
         font-size: 20px;
     }
+    .parent-6 h2 span{
+        display: none;
+    }
+
     .doctors-3 h2{
         font-size: 20px;
        }
