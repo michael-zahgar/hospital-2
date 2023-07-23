@@ -2556,7 +2556,8 @@ transition: var(--transition);
 
    .card-doctor{
     position: relative; 
-    background: -webkit-linear-gradient(10deg, #dff4f1, #faeae1 100%);
+    /* background: -webkit-linear-gradient(10deg, #dff4f1, #faeae1 100%); */
+    background-image: linear-gradient(to left, #213262, #244c80, #24679e, #2284bb, #1fa2d7);
     max-width: 300px;
     height: auto;
     margin: 25px;
@@ -2587,10 +2588,10 @@ transition: var(--transition);
 
    .doctors-1 .card-body{
     background-color: transparent;
-    color: black;
+    color: white;
    }
    .doctors-1 .card-doctor .text-muted{
-    color: black !important;
+    color: white !important;
    }
    .doctors-1 .card-body .doctor-branch p{
     margin: 0;
