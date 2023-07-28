@@ -189,12 +189,21 @@ function sendSubForm() {
   });
 }
 
+
+function sendContactForm() {
+
+  const contactForm3 = document.querySelector(".contactForm");
+  if (!contactForm3) {
+    console.log("Error: subscribe form element not found");
+    return;
+  }
+}
+
 sendContactForm();
-// Social Share Buttons
 
 sendSubForm();
 
-
+sendContactForm();
 
 
 

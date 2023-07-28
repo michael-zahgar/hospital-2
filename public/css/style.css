@@ -2180,146 +2180,40 @@ flex-direction: column;
 
 
 /* Contact US Page */
-
-.contact-us-bg{
-    background: url("../images/billboard.png") no-repeat;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.356);
-    background-blend-mode:overlay;
-    background-attachment: fixed;
-    filter: blur(4px);
-    position: relative;
-}
-
-.contact-text-overlay{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2;
+.contactus-1 .contact-det i{
     color: white;
-}
-.contact-text-overlay span{
-    height: 8px;
-    width: 100%;
-    background-color: white;
-    margin-bottom: 2rem;
-    border-radius: 0 0 10px 10px;
-}
-.contact-text-overlay a{
-    font-size: 20px;
-    color: white;
-    display: inline-block;
-    background-color: var(--main-color);
-}
-
-/*  contact line 2 */
-
-.contact-us-2{
-    padding: 30px 20px;
-    position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: end;
-}
-.contact-us-2 h3{
-    margin-top: 30px;
-}
-.contact-us-2 p{
-    font-size: 30px;
-    position: relative;
-    padding: 0 15px;
-}
-.contact-us-2 .cont-p span{
- display: inline-block;
- height: 4px;
- width: 100px;
- background-color: white;
-}
-.contact-us-2 .cont-p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-us-3{
-    background-color: var(--main-color);
-    width: 100%;
-    height: 200px;
-    clip-path: polygon(0 0, 50% 70%, 100% 0);
-}
-.contact-us-3 h1{
-    font-size: 100px;
-    color: white;
-    padding-top: 30px;
-}
-
-.contact-form .booking-form{
-    height: auto;
-
-}
-.contact-form form{
-    background-color: var(--main-color);
-    color: white !important;
-}
-.contact-form .form-floating label{
-    font-weight: 700 !important;
-    color: #133860 !important;
-}
-.contact-form .form-floating>.form-control , .contact-form .form-floating>.form-select{
-    background-color: #13c5dd !important;
-}
-.contact-form .form-floating .form-select:optional{
-    color: white !important;
-    font-weight: 500;
-}
-.contact-form h3{
-color: white !important;
-}
-
-/* contact-line-3 */
-
-.branches-contact{
-   padding-top: 20px;
-}
-.branches-contact h1{
-    font-size: 25px;
-    font-weight: bolder !important;
-}
-.branches-contact iframe{
-    height: 500px !important;
-    filter: invert(100%);
-}
-
-/* Contact-line-4 */
-
-.contact-us-4{
-    color: white;
-    background-color: var(--main-color);
-}
-.contact-us-4 .contact-us-4-header h1{
-   font-weight: bold;
-}
-.contact-us-4 .col-md-4{
-    padding-bottom: 30px;
-}
-
-.contact-us-4 .contact-us-title{
-    color: var(--frost-blue-color);
-}
-
-.contact-us-4 .icon-parent{
- padding: 15px 0;
-   
-}
-.contact-us-4 .contact-us-icon{
-    font-size: 40px;
-    background-color: rgba(255,255,255,0.5);
-    padding: 30px 35px;
+    padding: 30px;
     border-radius: 50%;
+    background-color: var(--main-color);
+    font-size: 20px;
 }
+.contactus-1 .contactus-header h1{
+    font-size: 50px;
+}
+.contactus-1 .contactus-header h1 span{
+    color: var(--main-color);
+}
+.contactus-1 .contact-det{
+    margin-bottom: 2rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #8a8c93;
+}
+.contactus-1 .contact-det a , .contactus-1 .contact-det p{
+display: block;
+color: #8a8c93;
+margin-left:50px;
+font-size: 25px;
+font-weight: 500 !important;
+transition: var(--transition);
+}
+.contactus-1 .contact-det p{
+    font-size: 23px;
+}
+
+.contactus-1 .contact-det a:hover{
+    color: #000;
+}
+
 /* Contact US Page End */
 
 /* WRDC PAGE Start */
