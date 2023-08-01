@@ -176,6 +176,65 @@ app.post('/', (req, res)=>{
     })
     })
 
+// Contact Form 
+
+const contactSchema = Joi.object({
+  contactFullName: Joi.string().trim().required().messages({
+    'any.required': 'Please enter your name'
+  }),
+  contactEmail: Joi.string().trim().email({ minDomainSegments: 2 }).required().messages({
+    'any.required': 'Please enter a valid email address'
+  }),
+  contactPhone: Joi.string().trim().length(11).pattern(/^\d+$/).required().messages({
+    'any.required': 'Please enter a valid 11-digit phone number'
+  }),
+  contactSubject: Joi.string().trim(),
+  contactMessage: Joi.string().trim().required()
+});
+
+app.post('/contact', (req, res) => {
+  const { error, value } = contactSchema.validate(req.body);
+  console.log(req.body)
+  if (error) {
+    const errors = error.details.map(detail => detail.message);
+    return res.status(400).json({ errors });
+  }
+
+  // Extract the form data from the request body
+  const formData = value;
+
+  // Create a nodemailer transporter object with your email service credentials
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user:Email,
+      pass:password
+    }
+  });
+
+  // Set up the email message options
+  const mailOptions = {
+    from: formData.contactEmail,
+    to:Email,
+    subject: formData.contactSubject,
+    text: formData.contactMessage + '\n\n' + 'From: ' + formData.contactFullName + '\n' + 'Email: ' + formData.contactEmail + '\n' + 'Phone: ' + formData.contactPhone
+  };
+
+  // Send the email
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log(error);
+      res.status(500).send('Something went wrong. Please try again later.');
+    } else {
+      console.log('Email sent: ' + info.response);
+      res.send('OK');
+    }
+  });
+});
+
+
+
+
     app.listen(PORT , ()=>{
         console.log(`server Running on port ${PORT}`);
 })

@@ -1143,14 +1143,14 @@ font-size: 35px;
 }
 
 
-.service-inner a:before {
+.service-inner a:before{
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     /* border-radius: 50%; */
-    background: #353742;
+    background: #353742 !important;
     content: "";
     transform: scale(0.0);
     transform-origin: center;
@@ -1158,10 +1158,10 @@ font-size: 35px;
     transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.22);
     z-index: -1;
 }
-.service-inner a:hover{
+.service-inner a:hover {
     color: white;
 }
-.service-inner a:hover:before {
+.service-inner a:hover:before{
     transform: scale(1.0);
 }
 
@@ -2180,6 +2180,7 @@ flex-direction: column;
 
 
 /* Contact US Page */
+
 .contactus-1 .contact-det i{
     color: white;
     padding: 30px;
@@ -2202,18 +2203,39 @@ flex-direction: column;
 display: block;
 color: #8a8c93;
 margin-left:50px;
-font-size: 25px;
-font-weight: 500 !important;
+font-size: 20px;
+font-weight: 600 !important;
 transition: var(--transition);
 }
-.contactus-1 .contact-det p{
+/* .contactus-1 .contact-det p{
     font-size: 23px;
-}
+} */
 
 .contactus-1 .contact-det a:hover{
     color: #000;
 }
 
+.contactus-1 input , .contactus-1 textarea{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #f4f5f7;
+    color: #000000;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contactus-1 button{
+  background-color: #f4f5f7;
+    font-weight: 600;
+}
+
+.contactus-1 .contact-btn{
+    padding: 20px !important;
+    color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    color: gray;
+}
 /* Contact US Page End */
 
 /* WRDC PAGE Start */

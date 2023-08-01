@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });    
 
 
-function sendContactForm() {
+function sendBookingForm() {
   const contactForm = document.querySelector(".contact-form");
   if (!contactForm) {
     console.log("Error: contact form element not found");
@@ -194,12 +194,66 @@ function sendContactForm() {
 
   const contactForm3 = document.querySelector(".contactForm");
   if (!contactForm3) {
-    console.log("Error: subscribe form element not found");
+    console.log("Error: Contact form element not found");
     return;
   }
+
+  const contactFullName = document.getElementById('fullname-con');
+  const contactEmail = document.getElementById('email-con');
+  const contactPhone = document.getElementById('phone-con');
+  const contactSubject = document.getElementById('subject-con');
+  const contactMessage = document.getElementById('message-con');
+
+  contactForm3.addEventListener('submit' , (e) => {
+    e.preventDefault();
+    
+    if (!contactFullName.value.trim()) {
+      alert('Please enter your name');
+      return;
+    }
+    if (!contactEmail.value.trim() || !/\S+@\S+\.\S+/.test(contactEmail.value.trim())) {
+      alert('Please enter a valid email address');
+      return;
+    }
+    if (!contactPhone.value.trim() || !/^\d{11}$/.test(contactPhone.value.trim())) {
+      alert('Please enter a valid 11-digit phone number');
+      return;
+    }
+
+    let formData3 = {
+      contactFullName: contactFullName.value.trim(),
+      contactEmail: contactEmail.value.trim(),
+      contactPhone: contactPhone.value.trim(),
+      contactSubject: contactSubject.value.trim(),
+      contactMessage: contactMessage.value.trim()
+    };
+
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', '/contact');
+    xhr.setRequestHeader('Content-Type', 'application/json');
+
+    xhr.onload = function(){
+      if(xhr.responseText =='OK'){
+        alert('Your Message Send || تم ارسال رسالتك')
+        contactFullName.value = '';
+        contactEmail.value = '';
+        contactPhone.value = '';
+        contactSubject.value = '';
+        contactMessage.value = '';
+      }else{
+        alert('Something Went Wrong || حدث خطأ');
+      }
+    }
+    
+    
+    xhr.send(JSON.stringify(formData3));
+
+    console.log(formData3);
+
+  })
 }
 
-sendContactForm();
+sendBookingForm();
 
 sendSubForm();
 
