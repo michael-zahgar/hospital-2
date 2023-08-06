@@ -439,7 +439,10 @@
         text-align: center;    
        }
 
-       /* Contact US Page */
+       /* Career Page */
+       .careers-1 .nav{
+        margin-bottom: 30px;
+    }
 
 }
 
@@ -476,6 +479,9 @@
        }
     .parent-11 .social {
         flex-direction: column;
+    }
+    .career-header{
+        padding-top: 50px;
     }
 }
 

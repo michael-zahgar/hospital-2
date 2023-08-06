@@ -350,6 +350,17 @@ padding: 10px 20px;
 .hover-list a.active{
     border-left: 7px solid black;
 }
+
+.parent-1 .career-list .hover-list{
+    left: -110px;
+    width: 200px;
+    height: 155px;
+  }
+  .parent-1  .career-list:hover .hover-list{
+    left: -110px;
+    width: 200px;
+    height: 155px;
+  }
 /* ==== End Start NavBar ==== */
 
 
@@ -2652,3 +2663,65 @@ transition: var(--transition);
     border-color: #fff !important;
 }
 /* Our Clinics Page End */
+
+/* Careers Start */
+
+.career-header{
+    padding-top: 100px;
+}
+.career-header p{
+    color: #213262;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.careers-1 .nav button{
+    text-align: left;
+}
+.careers-1 .tab-content{
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.careers-1 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #213262;
+    color: white;
+}
+.careers-1 p{
+    font-weight: 500;
+}
+.careers-1 .nav .nav-link{
+    color: #000;
+    font-size: 19px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.careers-1 ul li{
+    list-style-type:disc;
+}
+.careers-1 ul li p{
+    font-size: 19px;
+}
+.careers-1 .job-term{
+    font-size: 20px;
+}
+.careers-1 .apply-sec{
+    margin: 30px 0;
+}
+.careers-1 .apply-sec a{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #213262;
+    border-radius: 5px;
+}
+.careers-1 .apply-sec a:hover{
+    background-color: #2132628f;
+}
+    .career-list .hover-list{
+        left: -110px;
+    }
+    .career-list:hover .hover-list{
+        left: -110px;
+        width: 200px;
+        height: 155px;
+    }
+/* Career End */
