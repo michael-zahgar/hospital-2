@@ -33,16 +33,43 @@
     <link rel="stylesheet" href="./css/responsive.css">
 
     <style>
-      .career-list .hover-list{
-        left: -110px;
+      .parent-4 .about-img .big-img{
+        height: 650px;
       }
-      .career-list:hover .hover-list{
-        left: -110px;
+      .parent-4 .about-img img{
+        object-fit: cover;
+      }
+      .parent-4 .min-img img{
+        width: 400px;
+      }
+      .parent-6{
+        background: #fff;
+      }
+      .parent-6 img {
         width: 200px;
-        height: 155px;
+        object-fit: contain;
+        aspect-ratio: 2/1;
+       }
+       .parent-6 h2{
+        color: #000;
+       }
+       .parent-6 h2 span{
+        background-color: #213262;
+       }
+       .home-g{
+        margin-bottom: 0;
+       }
+      @media screen and (max-width:768px) {
+        .parent-4 .about-img .big-img{
+          height: 500px;
+        }
+      }
+      @media screen and (max-width:533px) {
+        .parent-6 .insure-contain img{
+          width: 250px;
+        }
       }
     </style>
-
 </head>
 <body>
     
@@ -323,6 +350,7 @@
           </div>
     </section>
  
+ 
     <!-- END Home Page -->
 
 
@@ -335,7 +363,7 @@
           <div class="col-lg-6 col-sm-12 m-auto mt-0">
 
               <div class="about-img">
-                <img src="./images/home-about.jpg" alt="home-about-img">
+                <img class="big-img" src="./images/watany branches/thawra.png" alt="home-about-img">
                 <div class="experience-box text-center">
                   <div class="experience-inner">
                     <div class="exp-head">
@@ -350,7 +378,7 @@
                   </div>
                 </div>
                 <div class="min-img">
-                  <img src="./images/home-min-about.jpg" alt="home-min">
+                  <img src="./images/watany branches/hegaz-3.jpeg" alt="home-min">
                 </div>    
               </div>
   
@@ -1159,7 +1187,7 @@
 
 
 
-<!-- 
+
     <section class="parent-5">
       <div class="container-fluid">
         <div class="splide" id="splide-p5" role="group" aria-label="Splide Basic HTML Example">
@@ -1167,21 +1195,9 @@
             <ul class="splide__list">
               <li class="splide__slide">
                   <div class="bg-cut">
-                    <h1>Check Out Our New Branch</h1>
+                    <h1>Check Out Clients</h1>
                     <a href="#">Learn More</a>
                   </div>
-              </li>
-              <li class="splide__slide">
-                  <div class="bg-cut">
-                    <h1>Check Out Our New Branch</h1>
-                    <a href="#">Learn More</a>
-                  </div>
-              </li>
-              <li class="splide__slide">
-                    <div class="bg-cut">
-                      <h1>Check Out Our New Branch</h1>
-                      <a href="#">Learn More</a>
-                    </div>
               </li>
             </ul>
           </div>
@@ -1189,7 +1205,7 @@
       </div>
 
 
-    </section> -->
+    </section>
 
 
 
