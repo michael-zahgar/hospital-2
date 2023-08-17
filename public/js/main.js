@@ -640,7 +640,6 @@ document.addEventListener('DOMContentLoaded', function () {
           direction: 'ttb',
           height   : '20rem',
           autoplay: 'true',
-          type   : 'loop',
           perMove: 1,
            arrows:false,         
         }).mount();

@@ -300,7 +300,7 @@
 
 
 @media screen and (max-width:768px) {
-
+    
     .checkservice{  
          padding: 0;
     }
@@ -334,6 +334,9 @@
     .parent-4 .about-img .min-img img{
         width: 100%;
     }
+    .parent-4 .about-img .big-img{
+        height: 500px;
+      }
     .trans-title{
         font-size: 50px;
     }
@@ -473,7 +476,9 @@
     .parent-6 h2 span{
         display: none;
     }
-
+    .parent-6 .insure-contain img{
+        width: 250px;
+      }
     .doctors-3 h2{
         font-size: 20px;
        }

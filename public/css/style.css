@@ -475,6 +475,7 @@ padding: 10px 20px;
 .parent-4 .about-header{
     position: relative;
 }
+
 .parent-4 .container{
     max-width: 1200px;
 }
@@ -537,6 +538,15 @@ padding: 10px 20px;
     border-radius: 10px 0 0 10px;
 }
 
+.parent-4 .about-img .big-img{
+    height: 650px;
+  }
+  .parent-4 .about-img img{
+    object-fit: cover;
+  }
+  .parent-4 .min-img img{
+    width: 400px;
+  }
 
 .parent-4 .list-serv p {
     color: black;
@@ -546,7 +556,6 @@ padding: 10px 20px;
     position: relative;
     color: var(--main-color) !important;
     padding-right: 10px;
-
 }
 
 .parent-4 .link_wrapper{
@@ -1182,7 +1191,6 @@ font-size: 35px;
     animation-delay: 100ms;
     animation-name: fadeInUp;
     position: relative;
-    position: relative;
     display: block;
     margin-bottom: 30px;
 }
@@ -1209,7 +1217,7 @@ font-size: 35px;
     height: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: var(--main-color);
+    background: var(--main-color) !important;
     content: "";
     transform: scaleY(0.0);
     transform-origin: center;
@@ -1356,13 +1364,17 @@ padding: 40px;
 
 .parent-6{
     padding: 50px 0 !important;
-    background:#111821;
+    background: #fff;
     background-size: cover;
     background-position: center;
 }
-
+  .parent-6 img {
+    width: 200px;
+    object-fit: contain;
+    aspect-ratio: 2/1;
+   }
 .parent-6 h2{
-    color: #fff;
+    color: #000;
     font-size: 45px;
    }
    .parent-6 h2 span{
@@ -1370,7 +1382,7 @@ padding: 40px;
     width: 40px;
     height: 5px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #213262;
    }
    .parent-6 img{
     width: 150px;
@@ -1389,9 +1401,6 @@ padding: 40px;
    .parent-6 .splide__pagination__page.is-active{
     background-color: #fff;
    }
-
-
-
 
 .parent-7{
     text-align: left;
@@ -1598,6 +1607,95 @@ border-bottom: 1px solid var(--light-gray);
 }
 
 /* ===== End About US Page ===== */
+
+
+/* ===== Start About US-2 Page ===== */
+
+
+/* 
+
+.about-us-2{
+    background-color: rgba(128, 128, 128, 0.137);
+    color: white !important;
+}
+.rate{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+   
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.16),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                     inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                        0px 12px 10px -10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner div{
+    font-size: 30px;
+}
+.rate-head , #number , #number2 , #number3{
+    font-weight: 600;
+    color: #555 !important;
+    font-family: 'Playfair Display', serif;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2.5s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+svg .cir2{
+animation: anim2 2s linear forwards;
+}
+svg .cir3{
+animation: anim3 2s linear forwards;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 110;
+    }
+}
+
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 150;
+    }
+} */
+/* ===== End About US-2 Page ===== */
 
 
 /* ===== Start About US-3 Page ===== */
