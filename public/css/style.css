@@ -213,8 +213,11 @@ color: #fff;
 
 .parent-1{
     z-index: 99999;
-    /* background: #111821 !important; */
+    /* background: #1118219a !important; */
     padding: 20px 0;
+    position: absolute;
+    width: 100%;  
+
 }
 
 
@@ -363,6 +366,17 @@ padding: 10px 20px;
   }
 /* ==== End Start NavBar ==== */
 
+/* Home Video Start */
+.home-video{
+    position: relative;
+}
+.video-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.582);
+}
+/* Home Video End */
 
 
 
@@ -443,7 +457,7 @@ padding: 10px 20px;
 .nav-link:focus{
     color: red;
    }
-    .parent-1 , .top-header , .dropdown:hover > .dropdown-menu, .sub-drop:hover > .dropdown-menu  , 
+    .top-header , .dropdown:hover > .dropdown-menu, .sub-drop:hover > .dropdown-menu  , 
     .parent-1 .offcanvas.show , .parent-4 .wrapper a , .parent-10 .right-contact , .contact-home .container,
     .subscribe-parent
     {

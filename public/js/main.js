@@ -438,6 +438,25 @@ function searchProduct() {
 
 $(document).ready(function(){
 
+  
+let nav_offset_top = $('.header-area').height() + 150;
+
+function navbarFixed() {
+    if ($('.header-area').length) {
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            if (scroll >= nav_offset_top) {
+                $('.header-area .main-menu').addClass('navbar_fixed');
+            } else {
+                $('.header-area .main-menu').removeClass('navbar_fixed');
+            }
+        })
+    }
+}
+
+navbarFixed();
+
+
   $('.about-us-3 .owl-carousel').owlCarousel({
     autoplay: true,
     smartSpeed: 1000,
@@ -523,6 +542,8 @@ nav : true,
     }
   }
 });
+
+
 
 
 });

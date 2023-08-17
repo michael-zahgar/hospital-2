@@ -119,3 +119,20 @@ p.para2{
 .text-height{
     line-height: 1;
 }
+
+
+/* Nav Bar  Fixed */
+
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0; right: 0;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1sec ease;
+}
+
+.navbar_fixed .parent-1{
+    background-image: linear-gradient(to left, #213262, #244c80, #24679e, #2284bb, #1fa2d7) !important;
+}
