@@ -379,6 +379,7 @@ padding: 10px 20px;
 .home-video video{
     height: 100vh;
     object-fit: cover;
+    
 }
 /* Home Video End */
 
