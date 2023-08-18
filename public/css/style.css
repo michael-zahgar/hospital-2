@@ -179,7 +179,7 @@ border-radius: 20px;
 
 /* top-header */
 .top-header {
-    /* background: #111821 !important; */
+    overflow: hidden;
   
 }
 .top-header .container-fluid{
@@ -375,6 +375,10 @@ padding: 10px 20px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.582);
+}
+.home-video video{
+    height: 100vh;
+    object-fit: cover;
 }
 /* Home Video End */
 
