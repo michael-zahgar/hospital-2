@@ -12,4 +12,6 @@
     src: url(../fonts/Alkalami/Alkalami-Regular.ttf);
     font-family: "Almarai";
     src: url(../fonts/Almarai/Almarai-Regular.ttf);
+    font-family: 'Merriweather', serif;
+    src: url(../fonts/Merriweather/Merriweather-Bold.ttf);
 }
