@@ -746,6 +746,8 @@ left: 15vw;
 .our-rate .rate-content{
     display: flex;
     justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 .our-rate .rate-content h3{
     position: relative;
@@ -765,12 +767,9 @@ left: 15vw;
     font-weight: 600;
 }
 .our-rate .rate-icon {
-    margin-right: 10px;
     height: 100px;
     width: 100px;
-    display: flex;
-    justify-content: left;
-    align-items: end;
+    margin: auto;
 }
 .our-rate .rate-icon img{
     width: 80px;
