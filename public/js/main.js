@@ -630,13 +630,12 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#insurance', {
     perPage: 5,
+    gap : 0 ,
+    type   : 'loop',
     drag   : 'free',
-    direction: 'ltr',
-    perMove: 2,
-     gap:10,
-     arrows:false,
-     pagination:false,
-     autoplay:true,
+    focus  : 'center',
+    arrows: false,
+    pagination:false,
      breakpoints: {
       768: {
         perPage: 4,
@@ -650,9 +649,11 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 1,
         perMove: 1
       },
-    },
+    },autoScroll: {
+      speed: 2,
+    }
     
-  }).mount();
+  }).mount( window.splide.Extensions );
 });
 
 

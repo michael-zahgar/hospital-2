@@ -211,14 +211,15 @@ color: #fff;
 }
 
 /* ==== Start NavBar ==== */
-
+.nav-home{
+    position: absolute;
+    background-color: transparent !important;
+}
 .parent-1{
     z-index: 99999;
     /* background: #1118219a !important; */
     padding: 20px 0;
-    position: absolute;
     width: 100%;  
-
 }
 
 
@@ -231,7 +232,7 @@ color: #fff;
     font-weight: 600;
 }
 .parent-1 .navbar-nav .nav-link.active{
-    color: white;
+    color: wheat;
 }
 .parent-1 .navbar-nav .nav-link.active::before{
     content: '';
@@ -240,7 +241,7 @@ color: #fff;
     bottom: 5px;
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: wheat;
     border-radius: 4px;
     scale: 1 1;
     transform-origin: left;
@@ -251,6 +252,10 @@ color: #fff;
 
 .parent-1 .offcanvas.show{
     background-color: var(--main-color);
+}
+.offcanvas-header img{
+    width: 125px;
+    margin: auto;
 }
 .offcanvas-header i{
     font-size: 20px;
@@ -271,14 +276,14 @@ padding: 10px 20px;
     bottom: 5px;
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: wheat;
     border-radius: 4px;
     scale: 0 1;
     transform-origin: left;
     transition: scale 0.25s;
 }
 .links:hover , .navbar-brand:hover , .parent-1 .logo:hover{
-    color: white !important;
+    color: wheat !important;
 }
 .links:hover::before{
     scale: 1;
@@ -375,7 +380,7 @@ padding: 10px 20px;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.171);
 }
 .home-video video{
     height: 100vh;
@@ -464,13 +469,13 @@ padding: 10px 20px;
     color: red;
    }
     .top-header , .dropdown:hover > .dropdown-menu, .sub-drop:hover > .dropdown-menu  , 
-    .parent-1 .offcanvas.show , .parent-4 .wrapper a , .parent-10 .right-contact , .contact-home .container,
+    .main-nav , .parent-1 .offcanvas.show , .parent-4 .wrapper a , .parent-10 .right-contact , .contact-home .container,
     .subscribe-parent
     {
         background-image: linear-gradient(to left, #213262, #244c80, #24679e, #2284bb, #1fa2d7);
     }
     .parent-1 a{
-        color: var(--font-color) ;
+        color: white;
     }
     .parent-1 .main-font {
         color: white;
@@ -571,6 +576,7 @@ padding: 10px 20px;
 .parent-4 .list-serv p {
     color: black;
     font-weight: bold;
+    font-size: 25px;
 }
 .parent-4 .list-serv p i{
     position: relative;
@@ -995,7 +1001,7 @@ font-size: 35px;
     height: 15px;
 }
 .parent-5 .bg-cut{
-    background:rgba(0, 0, 0, 0.534) url("../images/watany branches/hegaz-3.jpeg") no-repeat;
+    background:rgba(0, 0, 0, 0.534) url("../images/Picture1.jpg") no-repeat;
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -1082,6 +1088,7 @@ font-size: 35px;
 }
 .service-home .container .home-service-head p{
     font-size: 25px;
+    color: gray;
 }
 
 .img-inner{
