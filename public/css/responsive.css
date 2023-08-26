@@ -466,7 +466,16 @@
         margin: 0;
       
     }
+    .service-home .home-service-head h1 , .parent-4 h2{
+        font-size: 30px !important;
+    }
+    .service-home .home-service-head h1 span , .parent-4 h2 span{
+        font-size: 40px !important;
+    }
     .parent-4 .experience-box .experience-inner h3{
+        font-size: 20px;
+    }
+    .parent-5 .bg-cut a{
         font-size: 20px;
     }
     .parent-6 h2 span{
@@ -475,6 +484,7 @@
     .parent-6 .insure-contain img{
         width: 250px;
       }
+      
     .doctors-3 h2{
         font-size: 20px;
        }

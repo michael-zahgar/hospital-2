@@ -1010,6 +1010,7 @@ font-size: 35px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 .parent-5 .bg-cut a{
     color: #fff;
