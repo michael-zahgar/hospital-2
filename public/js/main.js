@@ -646,8 +646,9 @@ document.addEventListener('DOMContentLoaded', function () {
         perMove: 2
       },
       536: {
-        perPage: 1,
-        perMove: 1
+        perPage: 2,
+        perMove: 1,
+        autoScroll:{speed: 3},
       },
     },autoScroll: {
       speed: 2,

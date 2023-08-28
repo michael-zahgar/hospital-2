@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <!-- BootStrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Splide Extension -->
+
+    <link rel="stylesheet" href="./css/splide/splide.min.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./css/all.min.css">
 
-    <!-- CDN Font Awesome -->
-    <link rel="stylesheet" href="./css/font-awesome-v4.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-
     <!-- Magnific Popup css file -->
-    <link rel="stylesheet" href="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js">
+    <!-- <link rel="stylesheet" href="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js"> -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup-master/dist/magnific-popup.css">
 
      <!-- carosuel css file -->
      <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
@@ -56,266 +57,621 @@
             background-color: #133860;
             border-radius: 5px 0 0 5px;
         }
+        .aboutus-header h4{
+          font-size: 30px;
+          color: #133860;
+        }
     </style>
 
 </head>
 <body>      
 
- 
-      <section class="fixed-social">
-        <a type="button" target=”_blank”  href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you" class="fa fa-whatsapp" 
-        style="font-size: 30px;"
-        data-bs-toggle="tooltip" data-bs-placement="right" title="Whats App">
-        </a>
-     </section>
+  <section class="fixed-social">
+    <a type="button" target=”_blank”  href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you" class="fa fa-brands fa-whatsapp" 
+    style="font-size: 30px;"
+    data-bs-toggle="tooltip" data-bs-placement="right" title="Whats App">
+    </a>
+</section>
 
+<section class="scroll-up">
+  <i class="fa-solid fa-arrow-up-long"></i>
+</section>
 
-    <section class="top-header white">
-        <div class="container-fluid border-bottom">
-            <div class="row">
-                <div class="col-6 t-head-left">
-                    <a href="#" class="fa fa-facebook white pl-1"></a>
-                    <a href="#" class="fa fa-twitter white pl-1"></a>
-                    <a href="#" class="fa fa-google white pl-1"></a>
-                    <a href="#" class="fa fa-youtube white pl-1"></a>
-                    <a href="#" class="fa fa-instagram white pr-1"></a>
-                   <div style="border-left: 1px solid white;" class="callus"> 
-                    <a href="#" class="white fa-solid fa-phone" style="padding-left: 10px;"> 16112</a>
-                    </div>
-                  
-                </div>
-                <div class="col-6">
-                    <div class="top-header-right">
-                          <a href="./aboutusV2Ar.html" style="color: #fff;">العربية</a>
-                    </div>
+<section class="top-header">
+  <div class="container-fluid border-bottom">
+      <div class="row">
+        <div class="col-12" style="display: flex; justify-content: space-between;">
+
+          <div class="t-head-left">
+            <a href="#" class="fa fa-brands fa-facebook"></a>
+            <a href="#" class="fa fa-brands fa-twitter"></a>
+            <a href="#" class="fa fa-brands fa-instagram"></a>
+            <a href="#" class="fa fa-brands fa-youtube"></a>
+            <a href="#" class="fa fa-brands fa-linkedin"></a>                  
+             <div style="border-left: 1px solid #b4b4b5" class="callus"> 
+              <i class="white fa-solid fa-phone" style="padding-left: 10px;"></i>
+              <a href="tel:16112">16112</a>
+              </div>
+            
+          </div>
+
+          <div class="">
+            <div class="top-header-right">
+                  <a href="#" class="main-font">العربية</a>
             </div>
+          </div>
         </div>
-    </section>
-    
+
+
+  </div>
+</section>
 
 
 
-    <nav class="parent-1 navbar  navbar-expand-lg sticky-top">
-        <div class="container">
-          <a href="./index.html" class="bold text-uppercase primary-co-2 logo text-center" style="font-size: 20px; letter-spacing: 1px;">Watany Eye <span>Hospitals</span></a>
-          <!-- <img src="./images/white Logo.png" alt=""> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <i class="fa-sharp fa-solid fa-bars primary-co-2"></i>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title primary-co-2" id="offcanvasNavbarLabel">Watany Eye Hospitals</h5>
-              <i type="button" class="fa-solid fa-xmark primary-co-2" data-bs-dismiss="offcanvas" aria-label="Close"></i>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link links" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link links " href="./about.html">About US</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link links" href="#">Doctors</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link links" href="./facilities.html">Facilities</a>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link links" href="./services.html">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link links" href="./wrdc.html">WRDC</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link links " href="./mediacenter.html">Media Center</a>
-                  </li>  
 
-                <li class="nav-item hover-li-main">
-                  <a class="nav-link links dropdown-toggle" href="#" role="button" >
-                    Why Watany
-                  </a>
-                  <ul class="hover-list">
-                    <li><a class="dropdown-item " href="#">Action</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
+ <nav class="parent-1 main-nav navbar  navbar-expand-lg sticky-top">
+  <div class="container">
+    <img src="./images/logo-trans2.png" alt="watany-eye-hospitals" style="width: 125px;">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <i class="fa-sharp fa-solid fa-bars main-font"></i>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title white" id="offcanvasNavbarLabel">Watany Eye Hospitals</h5>
+        <i type="button" class="fa-solid fa-xmark white" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link links" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link links active" href="#">About Us</a>
+          </li>
 
-                <li class="nav-item dropdown d-none hover-li-main-2">
-                  <a class="nav-link links dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Why Watany
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item links" href="#">Action</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                    <li><a class="dropdown-item links" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item links" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link links" href="./bookingform.html">Book Now</a>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link links" href="./contact-us.html">Contact US</a>
-                  </li>
+           <li class="nav-item">
+              <a class="nav-link links" href="./doctors.html">Doctors</a>
+            </li>
+
+
+            <li class="nav-item dropdown hover-li-main-2">
+              <a class="nav-link links dropdown-toggle" data-bs-auto-close="outside" 
+              href="#" role="button" 
+              data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+
+                  <li class="dropstart sub-drop">
+                  <a class="nav-link"  href="./clinics.html">Clinics</a>
+                  <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
+                  </li>      
+
+
+                  <li class="dropstart sub-drop">
+                      <a class="dropdown-item" data-bs-toggle="dropdown" href="./underConstruction.html">Investigations</a>
+                      <!-- <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Investigations</a> -->
+                      <!-- <ul class="dropdown-menu">
+                          <div class="drop-right">
+                              <li><a class="dropdown-item" href="#">Cataract</a></li>
+                              <li><a class="dropdown-item" href="#">Retina</a></li>
+                              <li><a class="dropdown-item" href="#">Cornea</a></li>
+                              <li><a class="dropdown-item" href="#">Intravitreal Injections</a></li>
+                              <li><a class="dropdown-item" href="#">Pediatric Eye Disase</a></li>
+                              <li><a class="dropdown-item" href="#">Neuro-Opthlmology</a></li>
+                              <li><a class="dropdown-item" href="#">Glaucoma</a></li>
+                              <li><a class="dropdown-item" href="#">Ocuplasty</a></li>
+                              <li><a class="dropdown-item" href="#">Uveitis</a></li>
+                              <li><a class="dropdown-item" href="#">Squints</a></li>
+                          </div>
+                      </ul> -->
+                  </li> 
+
+
+                <li><a class="dropdown-item" href="./underConstruction.html">Operations</a></li>
+                <li><a class="dropdown-item" href="./underConstruction.html">lenses</a></li>
+                <li><a class="dropdown-item" href="./underConstruction.html">Laboratory</a></li>
+                <li><a class="dropdown-item" href="./underConstruction.html">Optics</a></li>
+                
               </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+
+            </li>
+            
+            <!-- Drop-Down Pc Version -->
+            <li class="nav-item nav-dropdown hover-li-main">
+              <a class="nav-link links dropdown-toggle" data-bs-auto-close="outside" 
+              href="#" role="button" 
+              data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="hover-list">
+
+                  <li class="dropstart sub-drop">
+                  <a class="nav-link" href="./clinics.html">Clinics</a>
+                  </li>      
+
+
+                  <li class="dropstart sub-drop">
+                      <a class="nav-link"  href="./underConstruction.html">Investigations</a>
+                  </li> 
+
+
+                <li><a class="nav-link" href="./underConstruction.html">Operations</a></li>
+                <li><a class="nav-link" href="./underConstruction.html">lenses</a></li>
+                <li><a class="nav-link"  href="./underConstruction.html">Laboratory</a></li>
+                <li style="border-bottom: none;"><a class="nav-link"  href="./underConstruction.html">Optics</a></li>
+                
+              </ul>
+
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link links" href="./wrdc.html">WRDC</a>
+            </li>
+
+            <li class="nav-item nav-dropdown hover-li-main career-list">
+              <a class="nav-link links dropdown-toggle" data-bs-auto-close="outside" 
+              href="./careers.html" role="button" 
+              data-bs-toggle="dropdown" aria-expanded="false">
+                Careers
+              </a>
+              <ul class="hover-list">
+
+                  <li class="dropstart sub-drop">
+                  <a class="nav-link" href="./careers.html">Our Jobs</a>
+                  </li>      
+
+                  <li class="dropstart sub-drop">
+                  <a class="nav-link" href="./application.html">Doctors Form</a>
+                  </li>      
+
+
+                  <li class="dropstart sub-drop">
+                      <a class="nav-link"  href="./application2.html">Administration Form</a>
+                  </li> 
+                
+              </ul>
+
+            </li>
+
+            <li class="nav-item dropdown hover-li-main-2">
+              <a class="nav-link links dropdown-toggle" data-bs-auto-close="outside" 
+              href="#" role="button" 
+              data-bs-toggle="dropdown" aria-expanded="false">
+                Careers
+              </a>
+              <ul class="dropdown-menu">
+
+                  <li class="dropstart sub-drop">
+                  <a class="nav-link"  href="./careers.html">Our Jobs</a>
+                  <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
+                  </li>      
+                  <li class="dropstart sub-drop">
+                  <a class="nav-link"  href="./application.html">Doctors Form</a>
+                  <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
+                  </li>      
+
+
+                  <li class="dropstart sub-drop">
+                      <a class="dropdown-item" data-bs-toggle="dropdown" href="./application2.html">Administration Form</a>
+
+                  </li> 
+                
+              </ul>
+
+            </li>
+
+          <li class="nav-item">
+              <a class="nav-link links" href="./bookingform.html">Book Now</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link links" href="./contactus.html">Contact US</a>
+            </li>
 
 
 
-  
-
-
-    <div class="container" style="max-width: 70%;">
-        <div class="row">
-            <div class="col-4">
-              <div id="list-example " class="list-group">
-                <h1>Sticky Item</h1>
-              </div>
-            </div>
-            <div class="col-8">
-              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-                <h4 id="list-item-1">Item 1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium totam quidem nisi, doloremque beatae repellat optio quibusdam quis ea provident autem ipsa eaque maiores in mollitia amet itaque aliquid corrupti! Maxime deleniti incidunt expedita fuga, explicabo nulla aliquam earum repellat officia dolorem ullam, laborum consequuntur magni nobis, quos optio perferendis labore placeat. Tenetur corporis voluptas cumque repellendus doloribus, ab vel dolore nobis ducimus eum blanditiis! Pariatur nisi amet impedit hic et rerum dicta ad nobis assumenda, placeat harum exercitationem, non cumque recusandae aperiam ipsam, voluptates doloribus. Beatae expedita illo, porro, quibusdam dolore nemo consectetur architecto sunt fuga ex quidem pariatur ea, perspiciatis aliquam ipsam velit. Laudantium architecto esse ipsa nobis quos. Ipsum, minus, ducimus repellendus dignissimos exercitationem suscipit sequi, neque cum quisquam natus illum eius quaerat corporis voluptatibus enim explicabo? Modi minima esse quos, quidem tempore provident atque fugit eveniet suscipit dolore doloribus vitae ut harum quisquam delectus. Porro voluptas distinctio voluptatem minus accusamus veritatis alias maxime quas, cumque deleniti illo eius placeat qui earum illum laudantium vel dolore corporis architecto eligendi. Aliquid harum amet magnam impedit dolorem praesentium dignissimos quod, quisquam deserunt nulla, incidunt illum corporis voluptate molestias tempora numquam facilis? Magnam numquam eos nam, illum assumenda voluptas reiciendis nobis, in iusto, temporibus a provident voluptate veritatis sint eum accusamus facere. Architecto a ut minus voluptatem aut consequatur, voluptatum non in illum et repellendus sit illo. Id optio eum cumque, nostrum enim quod. Aut dolorum velit quae non, eius ratione, aliquid sit doloribus iusto voluptatibus repudiandae natus laborum excepturi alias error placeat. Magni quaerat mollitia facilis accusamus sequi odit iure velit natus dolores, unde fuga explicabo dolorum iste esse. Placeat enim, laudantium similique rem quod aperiam adipisci commodi, sequi modi, voluptatem aspernatur. Quis repudiandae necessitatibus libero porro quibusdam recusandae unde, magni molestiae alias temporibus. Saepe nulla alias eveniet aperiam?</p>
-                <h4 id="list-item-2">Item 2</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente tempore voluptatibus distinctio similique, rem recusandae. Sapiente ea ipsum non iusto eligendi laboriosam, earum laborum aliquam dolores hic eveniet amet ut praesentium rem necessitatibus pariatur fugiat, iste laudantium illo quidem? Fuga ut totam blanditiis? Reprehenderit iure tempore cumque quo incidunt magni molestias consectetur sunt assumenda consequatur voluptates itaque velit, unde quaerat consequuntur saepe blanditiis. Similique, a aliquam? Molestias voluptatibus voluptas ipsam rem mollitia dolorum neque voluptate optio nihil labore. Officia ipsum nobis impedit ex blanditiis mollitia dignissimos! Aut, quisquam, dolor totam praesentium commodi deserunt consequuntur doloribus, error ad assumenda nobis architecto laboriosam est quia tenetur at? Distinctio repellat omnis officiis voluptate vero ut non nihil quam mollitia ipsam qui vel nemo pariatur, molestias repellendus nostrum eum illo sequi optio cum. Impedit, numquam. Excepturi sequi rerum ad dolorum expedita, explicabo nesciunt est alias minima impedit. Sed, corrupti numquam repellat repellendus vitae beatae porro, ab nam debitis voluptas excepturi quos mollitia ad quis laboriosam quibusdam corporis. Sapiente beatae voluptates modi est laudantium expedita temporibus, accusamus voluptatum labore tenetur? Minima pariatur veritatis optio quibusdam, perspiciatis hic aliquid iste nemo officiis. Eos magnam itaque provident totam ex cupiditate et modi ea alias, at corporis sequi accusantium, explicabo eius ullam quasi. Ipsam doloremque porro, ea iusto quas ullam laudantium similique molestias harum error numquam aliquid officia illum totam, dolores sequi nisi, soluta laborum eum amet. Pariatur nam officia magni accusantium aperiam deserunt libero incidunt eum aut et quos a, molestiae natus hic vero, minus soluta nihil ad rem esse expedita temporibus tenetur tempora! Molestiae rem ab quam ad aperiam, doloribus sed porro atque fugit excepturi nesciunt ipsum pariatur? Corporis, veniam nostrum soluta qui, molestiae aliquam earum nihil error voluptatem fuga minima quasi voluptas atque, culpa enim quos nulla dolor sunt necessitatibus quod adipisci odio id quo.</p>
-                <h4 id="list-item-3">Item 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, sit doloremque enim nostrum id voluptatibus harum, totam in voluptate numquam qui ea? Consequuntur nulla asperiores quia quibusdam. Obcaecati praesentium neque officia, libero ut dolorem placeat tempora voluptatum. Sunt doloribus minus, ullam cum deleniti velit saepe expedita consequatur illo voluptates, error corporis? Maxime voluptatem similique provident tenetur vitae porro, officiis autem nisi aliquam? Accusamus eius rem voluptatibus dicta iste reiciendis similique eaque eos. Labore voluptas reprehenderit esse, dolores ab incidunt harum ullam voluptatum, corrupti architecto aliquam cumque! Incidunt deserunt quam dignissimos tenetur quidem, sint quasi pariatur mollitia commodi, obcaecati nulla quae blanditiis consequuntur, facilis magnam dolorum ex! Dolore explicabo, fuga voluptatibus aut eius laboriosam molestiae ducimus iure natus sapiente dolor ex molestias atque soluta? Possimus placeat facere eaque modi iusto voluptas assumenda aspernatur commodi repellat enim, reiciendis sed distinctio a itaque vero officia architecto quam magni laborum dolorum deleniti neque ipsam fugit! Esse earum et adipisci inventore distinctio nihil placeat, consequuntur optio aperiam ratione cumque ipsa, consequatur, officia nesciunt! Asperiores, quibusdam velit cumque libero soluta incidunt laboriosam distinctio aspernatur alias, expedita accusantium et eaque nemo corporis omnis odit voluptates commodi at iusto fugiat! Et saepe doloremque culpa ut temporibus magni reprehenderit quaerat, eligendi illo doloribus iure dicta accusamus perferendis a impedit facilis odio qui ea. Culpa, vel dignissimos in expedita doloremque illo sit, reiciendis officiis laboriosam eligendi debitis deleniti. Quisquam id expedita error similique ex beatae suscipit, nostrum eveniet et neque, cumque tenetur fuga necessitatibus inventore earum tempore. Amet voluptas obcaecati doloremque labore cum aliquid impedit ab, harum fugit dolorem. Laboriosam neque deleniti sit modi animi eius odio mollitia in, ea officia fuga ducimus adipisci ipsa? Dicta dolor quidem fuga in magnam? Obcaecati minima culpa illum corrupti ut mollitia earum quis aperiam fugit est. Mollitia saepe id officia earum. Debitis fuga beatae numquam nostrum neque ad tempore ratione totam iure, quae accusamus. Nihil natus vel fuga itaque harum? Amet hic placeat, vero qui asperiores modi! Error quisquam blanditiis quasi ipsa. Iusto ut veritatis eligendi? Placeat vitae repudiandae quis ipsa accusantium facere numquam commodi dolore voluptatem quas expedita maxime mollitia magni, modi laudantium. Dolorum autem deserunt nihil, excepturi quas ex, id eius ipsam veniam dolor animi molestiae ducimus debitis quos sunt neque non magni tenetur expedita. Repellat, similique excepturi. Deserunt quasi provident dicta totam commodi, assumenda hic consectetur praesentium quisquam. Commodi mollitia iste quo esse dolores, sapiente distinctio at aliquid. Tenetur saepe laudantium possimus ut vero earum praesentium quam eius nihil, harum dolores provident! Nisi, minus inventore. Aperiam architecto vero veritatis! Recusandae vel debitis exercitationem necessitatibus ducimus voluptatum ipsum sint nihil. Odio omnis, autem deserunt provident temporibus minus, voluptate laboriosam aperiam sapiente repellendus quos nisi modi voluptatibus, ex maxime. Laudantium tempore deleniti mollitia eligendi, distinctio nisi quidem consectetur, sunt dolorem temporibus perspiciatis quis earum non doloremque. Similique nihil suscipit illo cupiditate hic voluptatibus rerum aliquid, modi numquam itaque nam tempore, inventore quos consequuntur eligendi at ratione tempora corporis iste ex molestias voluptatem aperiam blanditiis expedita. Eveniet, quo dolorem impedit reprehenderit exercitationem adipisci.</p>
-                <h4 id="list-item-4">Item 4</h4>
-                <p>...</p>
-              </div>
-            </div>
-          </div>
+        </ul>
+      </div>
     </div>
-   
+  </div>
+</nav>
 
-    
 
-    <section class="doctors-2 text-center py-5">
-        <div class="container">
-            <h2>Book Your Appointment Now</h2>
-            <p>you are in good hands , Book Your Appointment</p>
-            <button class="btn doctor-booking"><a href="./bookingform.html">
-                Book Your Appointment <span>></span>
-            </a></button>
+      <section class="aboutus-content py-4">
+        <div class="container-fluid">
+            <div class="d-flex align-items-start">
+                <div class="row no-gutter g-0">
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="aboutus-header text-center pb-3">
+                            <h4 class="">About Us</h4>
+                        </div>
+                        <div class="nav flex-md-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                     
+
+                                <a class="nav-link active" id="v-pills-history-tab" data-bs-toggle="pill" data-bs-target="#v-pills-history" type="button" role="tab" aria-controls="v-pills-history" aria-selected="true">Watany's Histroy</a>
+                                <a class="nav-link" id="v-pills-vision-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vision" type="button" role="tab" aria-controls="v-pills-vision" aria-selected="false">Vision & Mission</a>
+                                <a class="nav-link" id="v-pills-board-tab" data-bs-toggle="pill" data-bs-target="#v-pills-board" type="button" role="tab" aria-controls="v-pills-board" aria-selected="false">Board OF Directors</a>      
+                                <a class="nav-link" id="v-pills-ceo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ceo" type="button" role="tab" aria-controls="v-pills-ceo" aria-selected="true">CEO</a>
+                    
+                                
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-8 col-sm-12">
+                        <div class="tab-content" id="v-pills-tabContent">
+
+                            <div class="tab-pane fade show active" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab" tabindex="0">
+                              <div class="heritage-histroy">
+                                  <div class="his-1">
+                                      <h5>2000 <span></span></h5>
+                                      <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                          facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                           providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                  </div>
+                  
+                                  <div class="his-2">
+                                      <h5>1955 <span></span></h5>
+                                      <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                          facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                           providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                  </div>
+                  
+                                  <div class="his-3">
+                                      <h5>1955 <span></span></h5>
+                                      <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                          facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                           providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                  </div>
+                              </div>
+          
+                            </div>
+          
+                            <div class="tab-pane fade" id="v-pills-vision" role="tabpanel" aria-labelledby="v-pills-vision-tab" tabindex="0">
+                                
+                                <div class="heritage-histroy">
+                                    <div class="his-1">
+                                        <h5>1955 <span></span></h5>
+                                        <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                            facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                             providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                    </div>
+                    
+                                    <div class="his-2">
+                                        <h5>1955 <span></span></h5>
+                                        <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                            facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                             providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                    </div>
+                    
+                                    <div class="his-3">
+                                        <h5>1955 <span></span></h5>
+                                        <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                            facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                             providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-board" role="tabpanel" aria-labelledby="v-pills-board-tab" tabindex="0">
+                                
+                                <div class="heritage-histroy">
+                                    <div class="his-1">
+                                        <h5>1955 <span></span></h5>
+                                        <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                            facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                             providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                    </div>
+                    
+                                    <div class="his-2">
+                                        <h5>1955 <span></span></h5>
+                                        <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                            facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                             providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                    </div>
+                    
+                                    <div class="his-3">
+                                        <h5>1955 <span></span></h5>
+                                        <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                            facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                             providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-ceo" role="tabpanel" aria-labelledby="v-pills-ceo-tab" tabindex="0">
+                                
+                              <div class="heritage-histroy">
+                                  <div class="his-1">
+                                      <h5>1955 <span></span></h5>
+                                      <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                          facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                           providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                  </div>
+                  
+                                  <div class="his-2">
+                                      <h5>1955 <span></span></h5>
+                                      <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                          facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                           providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                  </div>
+                  
+                                  <div class="his-3">
+                                      <h5>1955 <span></span></h5>
+                                      <p>Founded in 1955, Magrabi Hospitals & Centers has evolved from a simple eye hospital in Jeddah, the first private specialized 
+                                          facility in the Middle East and Africa, to become the largest eye care network in the world,
+                                           providing eye care to more than 1,000,000 patients and performing more than 100,000 sight-preserving surgeries annually.</p>
+                                  </div>
+                              </div>
+
+                          </div>
+
+                          </div>
+                    </div>
+
+                </div>
+
+             
+              </div>
+
         </div>
     </section>
 
+    <section class="parent-6 py-5 text-center">
+      <div class="container">
+          <h2><span></span> Watany Insurance Coverage <span></span></h2>
+  
+          <div class="row mt-5">
+          <div class="splide" id="insurance">
+              <div class="splide__track">
+                <ul class="splide__list insure-contain">
+  
+                  <li class="splide__slide">
+  
+                      <img src="./images/insurance/bupa.png" alt="">
+  
+                  </li>
+  
+                  <li class="splide__slide">
+  
+                      <img src="./images/insurance/nextCare1.png" alt="">
+  
+                  </li>
+  
+                    
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/DMS_Logo.png" alt="">
+  
+                  </li>
+  
+  
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/globmed-logo.jpg" alt="">
+  
+                  </li>
+  
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/logo_ar.png" alt="">
+  
+                  </li>
+  
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/seif health care.png" alt="">
+  
+                  </li>
+  
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/اكسا.jpg" alt="">
+  
+                  </li>
+  
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/المشرق.jpg" alt="">
+  
+                  </li>
+  
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/اهلي للخدمات.png" alt="">
+  
+                  </li>
+  
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/فاميلي كير اند كيور.png" alt="">
+  
+                  </li>
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/لايف هيلث كير.png" alt="">
+  
+                  </li>
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/مصر للتامين.jpg" alt="">
+  
+                  </li>
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/ميد رايت.png" alt="">
+  
+                  </li>
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/ميد مارك.jpg" alt="">
+  
+                  </li>
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/ميد نيت.png" alt="">
+  
+                  </li>
+                  <li class="splide__slide">
+  
+                    <img src="./images/insurance/يوني كير.jpg" alt="">
+  
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+      </div>
+      <!-- <div class="parent-7 py-5 trusted-partners">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="header-inner d-flex">
+                <h3 class="mb-4 text-uppercase">OUR Partners</h3>
+              </div>
+              <p>Some OF Our Best partners in Health Plan Service .</p>
+            </div>
+  
+            <div class="col-lg-9 col-md-8 col-sm-12 text-center">
+              <img src="./images/coverage/Petrobel2.png" alt="Belaim Petroleum">
+              <img src="./images/coverage/Petrobel2.png" alt="Belaim Petroleum">
+              <img src="./images/coverage/Petrobel2.png" alt="Belaim Petroleum">
+              <img src="./images/coverage/Petrobel2.png" alt="Belaim Petroleum">
+              <img src="./images/coverage/Petrobel2.png" alt="Belaim Petroleum">
+            </div>
+  
+          </div>
+        </div>
+      </div> -->
+  </section>
+
+
+    <section class="parent-10 subscribe-area p-0 text-center" style="background: #2b2d36 !important; position: relative;">
+      <div class="container">
+    
+                       
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <div class="contact-icons pt-4 hidden">
+                    <a href="#">
+                      <i class="fa fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-brands fa-whatsapp"></i>
+                    </a>
+                   </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+
+                  <div class="right-contact" style="background: #2b2d36 !important;">
+                      
+                          <div class="form-contact" >
+
+
+                              <div style="position: relative;">
+                                
+                                <form class="subscribe-form" method="post" action="/subscribe">
+                                  <div class="input-group mb-3">
+                                    <i class="fa-solid fa-envelope" style="margin-right: 10px; font-size: 30px; margin-top: 5px;"></i>
+                                    <input type="email" id="email2" name="email2" required class="form-control" placeholder="Subscribe For More News" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <button class="btn sub-btn" type="submit">Subscribe</button>
+                                  </div>
+                                  <h2 class="subscribe-message"></h2>
+                                  </form>
+                              </div>
+                            
+                          </div>
+                  </div>
+
+               </div>
+              </div>
+           
+          
+      </div>
+  </section>
 
 
     <!-- Start Footer Page -->
 
-   
-    <footer class="parent-11">
-        <div class="container">
-            <div class="row">
+  <footer class="parent-11" id="footer">
+
+    <div class="container footer-body">
+      <div class="row">
+
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="fot">
+                <h4 class="text-uppercase">About us</h4>
+                <p>In Watany Eye Hospitals We Providing The Best Medical Service in The Field</p>
+                <ul class="fot-links">
+                  <li class="mb-2"><a href="./aboutusV2.html" class="white">Watany's Histroy</a></li>
+                  <li class="mb-2"><a href="./aboutusV2.html" class="white">Vision & Mission</a></li>
+                  <li class="mb-2"><a href="./aboutusV2.html" class="white">Board of Directors</a></li>
+                  <li class="mb-2"><a href="./aboutusV2.html" class="white">Ceo</a></li>
+              </ul>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 col-sm-12 tag">
+            <div class="fot">
+                <h4 class="text-uppercase pb-3">Working Days</h4>
                 
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="fot">
-                        <h4 class="text-uppercase">About us</h4>
-                        <h4 class="text-uppercase logo">Watany Eyes</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit
-                            Debitis saepe incidunt fugiat optio corporis ea!
-                        </p>
-                        <span>Watany Branchs</span>
-                        <span>211 , El Hegaz St,Cairo Governorate</span>
-                        <span>Thawra street, Egyptian Army Bridge, El Nozha</span>
-                  </div>
-                </div>
+                <span>From Saturday to Thursday :</span>
+                <span>10:00 AM - 09:00 PM</span>
 
-
-                <div class="col-lg-3 col-md-6 col-sm-12 tag">
-                    <div class="fot">
-                        <h4 class="text-uppercase pb-3">Open Days</h4>
-                        <ul class="fot-links">
-                            <li class="d-flex  ">
-                                <span>Saturday</span>
-                                <span>10:00 AM- 10:00 PM</span>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <span>Sunday</span>
-                                <span>10:00 AM- 10:00 PM</span>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <span>Monday</span>
-                                <span>10:00 AM- 10:00 PM</span>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <span>Tuesday</span>
-                                <span>10:00 AM- 10:00 PM</span>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <span>Wednesday</span>
-                                <span>10:00 AM- 10:00 PM</span>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <span>Thursday</span>
-                                <span>10:00 AM- 10:00 PM</span>
-                            </li>
-                            <li class="d-flex justify-content-between">
-                                <span>Friday</span>
-                                <span>10:00 AM- 10:00 PM</span>
-                            </li>
-                            <li class="d-flex justify-content-between text-center">
-                                <span>Note: Thawra Branch in Friday 
-                                    from 10:00 AM - 5:00 PM
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12 quick">
-                    <div class="fot">
-                        <h4 class="text-uppercase pb-3">Quick Links</h4>
-                        <ul class="fot-links">
-                            <li class="mb-2"><a href="" class="white">Our Services</a></li>
-                            <li class="mb-2"><a href="" class="white">Our Plan</a></li>
-                            <li class="mb-2"><a href="" class="white">Privacy Policy</a></li>
-                            <li class="mb-2"><a href="" class="white">Appointment Schedule</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="fot">
-                        <h4 class="text-uppercase pb-3">MAKE AN APPOINTMENT</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, omnis.</p>
-                        <ul class="fot-links">
-                            <li class="mb-2">10:00 AM - 10:00 PM</li>
-                            <li class="mb-2">All Week</li>
-                            <li class="mb-2"><a href="" class="white"><i class="fa-sharp fa-solid fa-envelope pr-2"></i>watanyeye@gmail.com</a></li>
-                            <li class="mb-2"><a href="" class="white"><i class="fa-sharp fa-solid fa-phone pr-2"></i>16112</a></li>
-                            <li class="mb-2"><a href="" class="white"><i class="fa fa-whatsapp pr-2"></i>01211110722</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
+                <span style="display: block; margin-top: 20px;">Note : Thawra Branch in Friday :
+                </span>
+                <span>from 10:00 AM - 5:00 PM</span>
             </div>
         </div>
-        <div class="social text-center">
-            <ul class="d-flex justify-content-center">
-                <li class="m-3"><a href="" class="soc fa fa-facebook white d-flex"></a></li>
-                <li class="m-3"><a href="" class="soc fa fa-google white d-flex"></a></li>
-                <li class="m-3"><a href="" class="soc fa fa-whatsapp white d-flex"></a></li>
-            </ul>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 quick">
+            <div class="fot">
+                <h4 class="text-uppercase pb-3">Quick Links</h4>
+                <ul class="fot-links">
+                    <li class="mb-2"><a href="./bookingform.html" class="white">Book Now</a></li>
+                    <li class="mb-2"><a href="./contactus.html" class="white">Contact Us</a></li>
+                    <li class="mb-2"><a href="./doctors.html" class="white">Doctors</a></li>
+                    <li class="mb-2"><a href="./clinics.html" class="white">Clinics</a></li>
+                </ul>
+            </div>
         </div>
-    </footer>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="fot">
+                <h4 class="text-uppercase pb-3">MAKE AN APPOINTMENT</h4>
+                <p>You Can Contact Us Through This Links</p>
+                <ul class="fot-links">
+                    <li class="mb-2"><a href="" class="white"><i class="fa-sharp fa-solid fa-envelope" style="position: relative; margin-right: 4px;"></i>watanyeye@gmail.com</a></li>
+                    <li class="mb-2"><a href="" class="white"><i class="fa-sharp fa-solid fa-phone" style="position: relative; margin-right: 4px;"></i>16112</a></li>
+                    <li class="mb-2"><a href="" class="white"><i class="fa fa-brands fa-whatsapp" style="position: relative; margin-right: 4px;"></i>01211110722</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container social py-3 d-flex justify-content-between">
+      <p class="mb-0">Copyright © 2023 Watany Eye Hospitals. All Rights Reserved.</p>
+      <img src="./images/payments.png" style="width: 150px;" alt="payment">
+    </div>
+</footer>
 
 
     <!-- End Footer Page -->
@@ -325,9 +681,18 @@
 
 
 
+ 
     <script src="./js/jquery.3.6.2.js"></script>
 
     <script src="./js/bootstrap.bundle.js"></script>
+       
+      <!-- Splide Extension -->
+
+      <script src="./js/splide.min.js"></script>
+
+      <!-- Splide autoScroll Extension -->
+       
+      <script src="./js/splide-extension-auto-scroll.min.js"></script>
 
     <!-- Isotope js libary  ( for cards selection ) -->
 
