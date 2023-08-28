@@ -173,6 +173,9 @@
     html{
         overflow-x: hidden !important;
     }
+    .parent-1 .navbar-nav .nav-link.active::before{
+        background-color: transparent;
+    }
     .parent-1 a{
         color: white;
     }
