@@ -14,4 +14,6 @@
     src: url(../fonts/Almarai/Almarai-Regular.ttf);
     font-family: 'Merriweather', serif;
     src: url(../fonts/Merriweather/Merriweather-Bold.ttf);
+    font-family: 'AdobeClean' , serif;
+    src: url(../fonts/AdobeClean/AdobeClean-Regular.otf);
 }

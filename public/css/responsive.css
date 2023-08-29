@@ -485,7 +485,7 @@
         display: none;
     }
     .parent-6 .insure-contain img{
-        width: 250px;
+        width: 180px;
       }
       
     .doctors-3 h2{
@@ -493,6 +493,9 @@
        }
     .parent-11 .social {
         flex-direction: column;
+    }
+    .clinic-header h1{
+        font-size: 35px;
     }
     .career-header{
         padding-top: 50px;
