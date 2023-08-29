@@ -303,7 +303,9 @@
 
 
 @media screen and (max-width:768px) {
-    
+    .home-video video{
+        object-fit: fill;
+    }
     .checkservice{  
          padding: 0;
     }
