@@ -303,9 +303,12 @@
 
 
 @media screen and (max-width:768px) {
-    .home-video video{
-        object-fit: fill;
+    /* .home-video .mobile-vid{
+        display: inline-block;
     }
+    .home-video .pc-video{
+        display: none;
+    } */
     .checkservice{  
          padding: 0;
     }

@@ -382,10 +382,12 @@ padding: 10px 20px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.171);
 }
+.home-video .mobile-vid{
+    display: none;
+}
 .home-video video{
     height: 100vh;
     object-fit: cover;
-
 }
 /* Home Video End */
 
