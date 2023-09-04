@@ -439,7 +439,7 @@ function searchProduct() {
 $(document).ready(function(){
 
   
-let nav_offset_top = $('.header-area').height() + 150;
+let nav_offset_top = $('.header-area').height() + 5;
 
 function navbarFixed() {
     if ($('.header-area').length) {
@@ -658,15 +658,15 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-      document.addEventListener('DOMContentLoaded', function () {
-        new Splide('#splide-p5', {
-          direction: 'ttb',
-          height   : '20rem',
-          autoplay: 'true',
-          perMove: 1,
-           arrows:false,         
-        }).mount();
-      });
+      // document.addEventListener('DOMContentLoaded', function () {
+      //   new Splide('#splide-p5', {
+      //     direction: 'ttb',
+      //     height   : '20rem',
+      //     autoplay: 'true',
+      //     perMove: 1,
+      //      arrows:false,         
+      //   }).mount();
+      // });
 
       document.addEventListener('DOMContentLoaded', function () {
         new Splide('#home-service', {
@@ -709,7 +709,7 @@ document.addEventListener('DOMContentLoaded', function () {
               perPage: 2,
             },
             768: {
-              perPage: 1,
+              perPage: 2,
             },
           },
           autoScroll: {
@@ -717,6 +717,7 @@ document.addEventListener('DOMContentLoaded', function () {
           },     
         }).mount( window.splide.Extensions );
       });
+
       
       document.addEventListener('DOMContentLoaded', function () {
         new Splide( '#patient-splide', {
@@ -744,14 +745,16 @@ document.addEventListener('DOMContentLoaded', function () {
       document.addEventListener('DOMContentLoaded', function () {
         new Splide( '#testimonials', {
           direction: 'ltr',
-          perPage: 2,
+          perPage: 3,
           gap : 20 ,
           type   : 'loop',
           drag   : 'free',
           arrows: false,
-          perPage: 2,
           breakpoints:{
             1024:{
+              perPage: 2
+            },
+            768:{
               perPage: 1
             }
           }

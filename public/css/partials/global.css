@@ -130,10 +130,10 @@ p.para2{
     left: 0; right: 0;
     box-shadow: var(--box-shadow);
     z-index: 999;
-    transition: background 1sec ease;
     z-index: 111111;
 }
 
 .navbar_fixed .parent-1{
-    background-image: linear-gradient(to left, #213262, #244c80, #24679e, #2284bb, #1fa2d7) !important;
+    background: linear-gradient(to left, #213262, #244c80, #24679e, #2284bb, #1fa2d7) !important;
+    transition: all 1s ease-in-out !important;
 }

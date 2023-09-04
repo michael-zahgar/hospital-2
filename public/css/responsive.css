@@ -303,14 +303,17 @@
 
 
 @media screen and (max-width:768px) {
-    /* .home-video .mobile-vid{
+    .home-video .mobile-vid{
         display: inline-block;
     }
     .home-video .pc-video{
         display: none;
-    } */
+    }
     .checkservice{  
          padding: 0;
+    }
+    .modals-video{
+        top: 65%;
     }
     .parent-2 .container h1{
         width: 60%;
@@ -331,7 +334,9 @@
     .parent-2 .container img {
       height: auto;
     }
-
+    .h-gallery .splide__slide img{
+        height: 300px;
+    }
     .parent-4 .about-img .min-img{
         position: relative !important;
         border: none;
