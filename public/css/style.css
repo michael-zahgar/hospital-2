@@ -804,58 +804,9 @@ left: 15vw;
   .our-services .container{
     max-width: 70%;
   }
-  .our-services a{
-    color: black;
-    font-weight: 600;
-    transition: var(--transition);
+  .faqs .faqs-btn{
+    width: 120px !important;
   }
-  .our-services .faqs-btn:hover a{
-    color: red;
-  }
-
-/* faqs-btn style */
-.faqs-btn {
-    align-self: center;
-    background-color: #fff;
-    background-image: none;
-    background-position: 0 90%;
-    background-repeat: repeat no-repeat;
-    background-size: 4px 3px;
-    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    box-sizing: border-box;
-    color: #41403e;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Neucha, sans-serif;
-    font-size: 1rem;
-    line-height: 23px;
-    outline: none;
-    padding: .75rem;
-    text-decoration: none;
-    transition: all 235ms ease-in-out;
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .faqs-btn:hover {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-    transform: translate3d(0, 2px, 0);
-  }
-  
-  .faqs-btn:focus {
-    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-  }
-
-
-
   .our-services .info-header .inf-rotate{
     width: 15px;
     height: 15px;
@@ -1219,9 +1170,7 @@ left: 15vw;
     height: 250px;
     border-radius: 0 0 7px 7px;
 }
-.service-inner p{
-    font-size: 20px;
-}
+
 .service-inner .s-inner-num{
     position: absolute;
     bottom: -15px;
@@ -1232,7 +1181,7 @@ left: 15vw;
     font-weight: 900;
 }
 
-.service-inner a{
+.service-inner a , .faqs a{
     position: relative;
     display: block;
     width: 100px;
@@ -1248,7 +1197,7 @@ left: 15vw;
 }
 
 
-.service-inner a:before{
+.service-inner a:before , .faqs a:before{
     position: absolute;
     top: 0;
     left: 0;
@@ -1263,10 +1212,10 @@ left: 15vw;
     transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.22);
     z-index: -1;
 }
-.service-inner a:hover {
+.service-inner a:hover , .faqs a:hover{
     color: white;
 }
-.service-inner a:hover:before{
+.service-inner a:hover:before , .faqs a:hover:before{
     transform: scale(1.0);
 }
 
@@ -1396,7 +1345,7 @@ padding: 40px;
 }
 .contact-home button{
     background-color: var(--main-color);
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 10px 15px;
 }
 .contact-home button a{

@@ -32,6 +32,41 @@
     <!-- responsive CSS -->
     <link rel="stylesheet" href="./css/responsive.css">
 
+    <style>
+      /* .modal-bg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .8);
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(5px);
+        overflow-y: scroll;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        transition: opacity 0.4s ease-in-out;
+        z-index: 99999999;
+      }
+
+      .modal{
+        width: 90vw;
+        position: relative;
+        padding-top: 56.25%;
+      }
+      .modal iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        width: 100%;
+        height: 100%;
+      }
+      .modal-bg{
+        display: none;
+      } */
+
+    </style>
 
 </head>
 <body>
@@ -181,57 +216,6 @@
                       <a class="nav-link links" href="./wrdc.html">WRDC</a>
                     </li>
       
-                    <li class="nav-item dropdown hover-li-main-2">
-                      <a class="nav-link links dropdown-toggle" data-bs-auto-close="outside" 
-                      href="#" role="button" 
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                        Careers
-                      </a>
-                      <ul class="dropdown-menu">
-      
-                          <li class="dropstart sub-drop">
-                          <a class="nav-link"  href="./careers.html">Our Jobs</a>
-                          <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
-                          </li>      
-                          <li class="dropstart sub-drop">
-                          <a class="nav-link"  href="./application.html">Doctors Form</a>
-                          <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
-                          </li>      
-      
-      
-                          <li class="dropstart sub-drop">
-                              <a class="dropdown-item" data-bs-toggle="dropdown" href="./application2.html">Administration Form</a>
-    
-                          </li> 
-                        
-                      </ul>
-      
-                    </li>
-                    
-                    <li class="nav-item nav-dropdown hover-li-main career-list">
-                      <a class="nav-link links dropdown-toggle" data-bs-auto-close="outside" 
-                      href="./careers.html" role="button" 
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                        Careers
-                      </a>
-                      <ul class="hover-list">
-      
-                          <li class="dropstart sub-drop">
-                          <a class="nav-link" href="./careers.html">Our Jobs</a>
-                          </li>      
-      
-                          <li class="dropstart sub-drop">
-                          <a class="nav-link" href="./application.html">Doctors Form</a>
-                          </li>      
-      
-      
-                          <li class="dropstart sub-drop">
-                              <a class="nav-link"  href="./application2.html">Administration Form</a>
-                          </li> 
-                        
-                      </ul>
-      
-                    </li>
 
                   <li class="nav-item">
                       <a class="nav-link links" href="./bookingform.html">Book Now</a>
@@ -325,7 +309,7 @@
  <section class="home-video">
   <div class="video-overlay"></div>
   <video class="pc-video" muted loop autoplay plays-inline style="width: 100%;">
-    <source src="./images/Videos/Website Desktop Better Resolution.mp4" type="video/mp4">
+    <source src="./images/Videos/Website Desktop.mp4" type="video/mp4">
   </video>
   <video class="mobile-vid" muted loop autoplay plays-inline style="width: 100%;">
     <source src="./images/Videos/Website Mobile.mp4" type="video/mp4">
@@ -403,7 +387,7 @@
         <div class="video-inner">
           <div class="video-btn">
 
-            <a class="video-link" style="cursor: pointer;">
+            <a class="video-link yt-modal-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="cursor: pointer;">
               <i class="fa-solid fa-play" style="color: white;"></i>
             </a>
 
@@ -427,21 +411,27 @@
                    equipment and highly skilled medical professionals</p>
 
                    <div class="row">
+        
                     <div class="col-lg-6 col-md-12">
-                      <h4>Quality Staff</h4>
+                      <h4>Latest Medical Technology</h4>
+                      <p>At WEH, we provide cutting-edge technology to contain all the tools
+                        necessary to treat each patient, enabling top-notch medical services under
+                        one roof.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <h4>Wide Range of Subspecialities</h4>
+                      <p>The services at WEH extend across a diverse range of subspecialties, setting
+                        high standards of excellence in each subspeciality.</p>
+                    </div>
+               
+                    <div class="col-lg-6 col-md-12">
+                      <h4>Personalized Treatment Options</h4>
+                      <p>Optimized solutions tailored to meet your individual eye care needs and
+                        preferences</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <h4>Skilled Professionals</h4>
                       <p>Highly skilled and dedicated professionals delivering exceptional eye care services</p>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                      <h4>Quality Assistance</h4>
-                      <p>Exceptional quality assistance provided by our knowledgeable and experienced staff</p>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                      <h4>Affordable Price</h4>
-                      <p>Affordable prices without compromising on quality eye care services</p>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                      <h4>Optimized Solutions</h4>
-                      <p>Optimized solutions tailored to meet your individual eye care needs and preferences</p>
                     </div>
                    </div>
               </div>
@@ -453,13 +443,32 @@
       </div>
     </section>
 
-                         <!-- Modal -->
-  
-          <div class="modals-video">
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">X</button>
-              <video src="./images/Videos/boat-video.mp4" controls></video>
-          </div>
-        
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="Geeks3" width="100%" height="100%" 
+        src="https://www.youtube.com/embed/LAYSBeUjA2Q?si=7
+        VeysRAYJrocz2N9" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
 
 
     <section class="our-rate">
@@ -474,7 +483,7 @@
               </div>
               <div class="rate-body">
               <h3>+90</h3>
-              <p>Expert Doctors</p>
+              <p>Highly Skilled Professionals</p>
               </div>
             </div>
             
@@ -487,7 +496,7 @@
               </div>
               <div class="rate-body">
               <h3>+1m</h3>
-              <p>Happy Patient</p>
+              <p>Satisfied Patients</p>
               </div>
             </div>
             
@@ -500,7 +509,7 @@
               </div>
               <div class="rate-body">
               <h3>+3000</h3>
-              <p>Trianed Stuff</p>
+              <p>Trained Staff</p>
               </div>
             </div>
             
@@ -521,19 +530,18 @@
         </div>
       </div>
     </section>
- 
+
+
+
+
     
     <section class="service-home py-5">
       <div class="container">
 
         <div class="row home-service-head pt-5">
           <div class="col-md-6 col-sm-12 hidden">
-            <h1 class="bold text-uppercase" style="font-size: 38px;"><span style="font-size: 50px;">One Stop Shop</span> <br> All medical services provided To Our Clients</h1>
+            <h1 class="bold text-uppercase" style="font-size: 38px;"><span style="font-size: 50px;">One Stop Shop</span> <br> All eye care services provided to our patients under one roof.</h1>
           </div>
-         <div class="col-md-6 col-sm-12 d-flex h-s-p hidden">
-          <p>everything can be found on its website, including information about
-             doctors and nurses specialized in this field.</p>
-         </div>
         </div>
 
         <div class="splide pt-5" id="home-service" role="group" aria-label="Splide Basic HTML Example">
@@ -551,8 +559,8 @@
                     </div>
 
                     <div class="service-inner">
-                      <h3>Clinics</h3>
-                      <p>We proud to provide 12 specialized ophthalmic clinics</p>
+                      <h3>Outpatient Clinics</h3>
+                      <p>Fully equipped outpatient clinics, covering 19 different subspecialties</p>
                       <a href="#">
                         See More
                        <i class="fa-solid fa-angles-right"></i>
@@ -574,7 +582,7 @@
 
                   <div class="service-inner">
                     <h3>Investigations</h3>
-                    <p>Check Out our available Medical examinations</p>
+                    <p>Latest technologies and innovations in eye investigations</p>
                     <a href="#">
                       See More
                       <i class="fa-solid fa-angles-right"></i>
@@ -597,7 +605,8 @@
 
               <div class="service-inner">
                 <h3>Operations</h3>
-                <p>We Have three branches , all of which feature modern and advanced medical equipment</p>
+                <p>State-of-the-art operating theaters and excellent infection control measures,
+                  to provide the safest and most advanced surgical procedures for our patients.</p>
                 <a href="#">
                   See More
                   <i class="fa-solid fa-angles-right"></i>
@@ -618,8 +627,9 @@
             </div>
 
             <div class="service-inner">
-              <h3>Lenses</h3>
-              <p>We proud to provide 12 specialized ophthalmic clinics</p>
+              <h3>Contact Lens Service</h3>
+              <p>A wide variety of contact lenses is available to suit individual needs and
+                lifestyle.</p>
               <a href="#">
                 See More
                <i class="fa-solid fa-angles-right"></i>
@@ -641,7 +651,7 @@
 
           <div class="service-inner">
             <h3>Laboratory</h3>
-            <p>We Have three branches , all of which feature modern and advanced medical equipment</p>
+            <p>Professional laboratory diagnostic services for our patients.</p>
             <a href="#">
               See More
               <i class="fa-solid fa-angles-right"></i>
@@ -811,13 +821,11 @@
   <div class="service-head py-4" style="max-width: 80%; margin: auto;">
     <h1 style="margin-left: 0;">FAQs</h1>
 
-    <p class="w-60">The most common questions that patients look for on the Eye Hospital website are whether 
-      there is treatment for their condition, what procedures are needed for diagnosis and treatment,
-       what medications and surgeries are available, what symptoms should be paid attention to, and
-       how to care for the eye after treatment.
+    <p class="w-60">Our FAQs section includes a series of questions that are commonly asked by
+      patients, covering different eye diseases, symptoms, treatment options, and more.
     </p>
 
-    <button class="faqs-btn"><a href="./underConstruction.html">Learn More</a></button>
+    <a class="faqs-btn" href="./underConstruction.html">Learn More <i class="fa-solid fa-angles-right"></i></a>
   </div>
   
 </section>
@@ -919,7 +927,7 @@
       <div class="container">
         <div class="testi-header">
           <span class="trans-title">Testimonials</span>
-          <h2 class="header-inner"><span>What</span> Our Customers Are
+          <h2 class="header-inner"><span>What</span> Our Customers
             Say About Us</h2>
         </div>
 
@@ -1168,7 +1176,8 @@
                                   <h1 class="text-uppercase">
                                       Subscribe
                                   </h1>
-                                  <p>You Can Follow US For Latest News and Info</p>
+                                  <p>Subscribe to receive more information about Watany Eye Hospitals, our latest
+                                    announcements and more.</p>
                               </div>
 
                               <div style="position: relative;">
@@ -1176,8 +1185,8 @@
                                 <form class="subscribe-form" method="post" action="/subscribe">
                                   <div class="input-group mb-3">
                                     <i class="fa-solid fa-envelope" style="margin-right: 10px; font-size: 30px; margin-top: 5px;"></i>
-                                    <input type="email" id="email2" name="email2" required class="form-control" placeholder="Subscribe For More News" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    <button class="btn sub-btn" type="submit">Subscribe</button>
+                                    <input type="email" id="email2" name="email2" required class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <button class="btn sub-btn" type="submit">Subscribe Now</button>
                                   </div>
                                   <h2 class="subscribe-message"></h2>
                                   </form>
@@ -1206,13 +1215,13 @@
 <section class="contact-home text-center py-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-md-12 mb-md-4">
+      <div class="col-xl-6 col-md-12 mb-md-4">
 
         <div class="contact-social">
           <h1>Watany Social</h1>
           <p class="w-md-auto">
-            "Follow our latest medical news and updates on our social media pages,
-             as we always strive to provide high-quality health services to our patients."</p>
+            "Follow our latest medical updates, news and announcements on our social media
+            pages, as we always strive to provide high-quality health services to our patients."</p>
              <div class="contact-icons pt-4 hidden">
               <a href="#">
                 <i class="fa fa-brands fa-facebook-f"></i>
@@ -1233,11 +1242,11 @@
         </div>
 
       </div>
-      <div class="col-lg-6 col-md-12">
+      <div class="col-xl-6 col-md-12 mt-sm-4">
         <div class="contact-book">
           <h1>Book Your Appointment Now</h1>
-          <p>book your appointment at our hospital through our website,
-             where you can choose the appointment that suits you and confirm the booking easily and conveniently.</p>
+          <p>Schedule your appointment at our hospital through our website, where you can
+            book and confirm your booking easily and conveniently.</p>
           <button class="btn doctor-booking"><a href="./bookingform.html">
               Book Your Appointment <span>></span>
           </a></button>
@@ -1247,7 +1256,6 @@
 
   </div>
 </section>
-
 
 
 
@@ -1294,10 +1302,10 @@
                 <div class="fot">
                     <h4 class="text-uppercase pb-3">Quick Links</h4>
                     <ul class="fot-links">
-                        <li class="mb-2"><a href="./bookingform.html" class="white">Book Now</a></li>
-                        <li class="mb-2"><a href="./contactus.html" class="white">Contact Us</a></li>
-                        <li class="mb-2"><a href="./doctors.html" class="white">Doctors</a></li>
-                        <li class="mb-2"><a href="./clinics.html" class="white">Clinics</a></li>
+                      <li class="mb-2"><a href="./doctors.html" class="white">Find a doctor</a></li>
+                        <li class="mb-2"><a href="./underConstruction.html" class="white">Services</a></li>
+                        <li class="mb-2"><a href="./bookingform.html" class="white">Schedule an appointment</a></li>
+                        <li class="mb-2"><a href="./contactus.html" class="white">Branches</a></li>
                     </ul>
                 </div>
             </div>
@@ -1307,9 +1315,9 @@
                     <h4 class="text-uppercase pb-3">MAKE AN APPOINTMENT</h4>
                     <p>You Can Contact Us Through This Links</p>
                     <ul class="fot-links">
+                      <li class="mb-2"><a href="" class="white"><i class="fa-sharp fa-solid fa-phone" style="position: relative; margin-right: 4px;"></i>16112</a></li>
+                      <li class="mb-2"><a href="" class="white"><i class="fa fa-brands fa-whatsapp" style="position: relative; margin-right: 4px;"></i>01211110722</a></li>
                         <li class="mb-2"><a href="" class="white"><i class="fa-sharp fa-solid fa-envelope" style="position: relative; margin-right: 4px;"></i>watanyeye@gmail.com</a></li>
-                        <li class="mb-2"><a href="" class="white"><i class="fa-sharp fa-solid fa-phone" style="position: relative; margin-right: 4px;"></i>16112</a></li>
-                        <li class="mb-2"><a href="" class="white"><i class="fa fa-brands fa-whatsapp" style="position: relative; margin-right: 4px;"></i>01211110722</a></li>
                     </ul>
                 </div>
             </div>
@@ -1354,8 +1362,16 @@
     
 
     <script>
-
-
+      $(document).ready(function() {
+            var url = $("#Geeks3").attr('src');
+            $("#staticBackdrop").on('hide.bs.modal', function() {
+                $("#Geeks3").attr('src', '');
+            });
+            $("#staticBackdrop").on('show.bs.modal', function() {
+                $("#Geeks3").attr('src', url);
+            });
+        });
+      
     </script>
 </body>
 </html>
