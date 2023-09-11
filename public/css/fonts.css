@@ -1,0 +1,31 @@
+
+
+
+@font-face{
+    font-family: "Almarai";
+    src: url(../fonts/Almarai/Almarai-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Amiri";
+    src: url(../fonts/Amiri/Amiri-Regular.ttf);
+}
+@font-face {
+    font-family: "Noto";
+    src: url(../fonts/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Regular.ttf);
+}
+@font-face {
+    font-family: 'Merriweather', serif;
+    src: url(../fonts/Merriweather/Merriweather-Bold.ttf);
+}
+@font-face {
+    font-family: 'Adobe Clean';
+    src: url(../fonts/AdobeClean/AdobeClean-Regular.otf);
+}
+@font-face {
+    font-family: "Alkalami";
+    src: url(../fonts/Alkalami/Alkalami-Regular.ttf);
+}
