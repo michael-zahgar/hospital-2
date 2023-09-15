@@ -256,7 +256,9 @@ color: #fff;
 .parent-1 .logo span{
  display: block;
 }
-
+.parent-1 .navbar-nav .hover-list .nav-link.active::before{
+    background-color: transparent;
+}
 .parent-1 .offcanvas.show{
     background-color: var(--main-color);
 }
@@ -341,8 +343,8 @@ padding: 10px 20px;
     margin-bottom: 5px;
     transition: all 100ms ease-in-out;
     padding: 5px;
-
 }
+
 .hover-list a{
     position: relative;
     padding: 5px;
