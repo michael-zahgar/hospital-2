@@ -21,12 +21,6 @@ body,html{
     color: white !important;
 }
 
-.parent-1 .navbar-nav .nav-link, .navbar-brand {
-    color: white;
-}
-.parent-2 .container {
-    right: 10%;
-}
 .top-header .top-header-right{
 text-align: left !important;
 }
@@ -34,11 +28,9 @@ text-align: left !important;
 .top-header .callus{
     border-right: 1px solid #fff;
     border-left: none !important;
+    padding-right: 5px;
 }
-.top-header .callus a{
-    padding-right: 10px !important;
 
-}
 
 .t-head-left a:nth-child(5){
     padding-left: 5px !important;
@@ -49,62 +41,3 @@ text-align: left !important;
     margin-left: 10px !important; 
 }
 
-
-.doctors-2 button:hover a span{
-    transform: translateX(-5px);
-   }
-
-   .parent-4 .bg-panel{
-    right: -190px;
-    margin-right: 340px;
-   }
-
-   .parent-4 .years-exp {
-    background: url(../images/client-info-bg.png) no-repeat 92% 20px;
-    padding-right: 8rem !important;
-}
-   .parent-4 .call-area {
-    padding-right: 10rem;
-    }
-
-
-    .inf-rotate {
-        margin-right: 20px;
-    }
-
-    .serv-show {
-        border-right: 2px solid #b4b4b5;
-        border-left: none;
-    }
-    .our-services .info-header .inf-rotate, .faqs .inf-rotate {
-        margin: 22px 0px 0px 10px;
-        margin-right: -26px !important;
-    }
-
-
-    .faqs .accordion-item {
-        padding: 25px 0px!important;
-    }
-
-    .faqs .accordion-item .accordion-button {
-        padding: 20px 5px;
-    }
-
-    .accordion-header .accordion-button i {
-        margin: 5px -41px 18px 26px;
-    }
-    
-    .faqs .inf-rotate {
-        margin-right: -30px !important;
-    }
-    
-    .accordion-button:not(.collapsed)::after, .accordion-button::after {
-        margin: 0px 10px 0 0;
-    }
-
-    @media screen and (max-width: 768px){
-.parent-4 .bg-panel {
-    right: 0;
-    margin-right: 0;
-}
-}

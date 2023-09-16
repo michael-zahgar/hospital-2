@@ -1,30 +1,3 @@
-// Pop up video
-
-// function activateVideoButton() {
-//   const modals = document.querySelector(".modals-video");
-//   if (!modals) {
-//     console.log("Error: subscribe form element not found");
-//     return;
-//   }
-//   let btnVideo = document.querySelector('.video-btn');
-//   let clip = document.querySelector('.modals-video');
-//   let close = document.querySelector('.close');
-//   let video = document.querySelector('video')
-//   btnVideo.onclick = function() {
-//     btnVideo.classList.add('active');
-//     clip.classList.add('active')
-//     video.play();
-//     video.currentTime = 0 ;
-//   }
-//   close.onclick = function() {
-//     btnVideo.classList.remove('active');
-//     clip.classList.remove('active');
-//     video.pause();
-//   }
-// }
-
-// // Call the function to activate the video button
-// activateVideoButton();
 
 
 // On Scroll Animation
