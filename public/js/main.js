@@ -654,6 +654,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             768: {
               perPage: 1,
+      
             },
           },
                 

@@ -41,3 +41,19 @@ text-align: left !important;
     margin-left: 10px !important; 
 }
 
+.hover-list li:hover a{
+    border-left: none;
+    border-right:  7px solid black;
+}
+
+.modal-header .btn-close{
+    margin: 0;
+}
+
+.service-inner a, .faqs a{
+    width: 110px;
+}
+
+.testimonials .testi-header{
+    margin-bottom: 100px;
+}

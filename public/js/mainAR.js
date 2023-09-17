@@ -71,3 +71,29 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         } ).mount();
         });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+          new Splide('#home-gallery-ar', {
+            direction: 'rtl',
+            gap : 0 ,
+            type   : 'loop',
+            drag   : 'free',
+            focus  : 'center',
+            arrows: false,
+            perPage: 4,
+             arrows:false,
+             pagination:false,
+             breakpoints: {
+              1024: {
+                perPage: 2,
+              },
+              768: {
+                perPage: 2,
+              },
+            },
+            autoScroll: {
+              speed: 1,
+            },     
+          }).mount( window.splide.Extensions );
+        });
