@@ -65,3 +65,13 @@ text-align: left !important;
 .service-home .container .home-service-head h1 span{
     letter-spacing: 0;
 }
+.service-inner a, .faqs a{
+    text-align: right;
+    width: 105px !important;
+}
+.faqs .faqs-btn{
+    width: 105px !important;
+}
+.parent-10 .trans-title{
+    font-size: 70px;
+}
