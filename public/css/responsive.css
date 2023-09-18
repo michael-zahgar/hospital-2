@@ -193,14 +193,9 @@
     .parent-1 .logo span{
         display: inline-block;
        }
-
-       .parent-1 .container{
-        flex-direction: row-reverse;
-        }
-        
         .offcanvas-end {
-            left: 0;
-            transform: translateX(-100%);
+          
+            transform: translateX(100%);
         }
         
     .parent-2 .container .main-head{
@@ -396,6 +391,9 @@
     .about-us-3 .our-doc-head{
         width: 100%;
     }
+    .testimonials .testi-header{
+        margin-bottom: 100px;
+    }
     /* services page */
     .service-1 .container{
         max-width: 80%;
@@ -464,6 +462,9 @@
     .parent-4 .circle {
     margin:auto;
     }
+    .reasons .trans-title{
+        font-size: 40px;
+    }
     .parent-4 .container{
         max-width: 100%;
     }
@@ -497,7 +498,12 @@
     .parent-6 .insure-contain img{
         width: 160px;
       }
-      
+      .testimonials{
+        padding-top: 2rem;
+      }
+      .testimonials .testi-header{
+        margin-bottom: 60px;
+      }
     .doctors-3 h2{
         font-size: 20px;
        }

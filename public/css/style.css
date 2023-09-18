@@ -1425,6 +1425,11 @@ padding: 40px;
     text-align: center;
    
 }
+.parent-10 .trans-title{
+font-size: 70px;
+margin-bottom: 25px;
+opacity: 1;
+}
 .parent-10 .right-contact{
     color: #fff;
 }

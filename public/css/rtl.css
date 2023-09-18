@@ -20,6 +20,10 @@ body,html{
 .fa-xmark{
     color: white !important;
 }
+.offcanvas-end{
+    left: 0 !important;
+    right: auto;
+}
 
 .top-header .top-header-right{
 text-align: left !important;
@@ -56,4 +60,8 @@ text-align: left !important;
 
 .testimonials .testi-header{
     margin-bottom: 100px;
+}
+
+.service-home .container .home-service-head h1 span{
+    letter-spacing: 0;
 }
