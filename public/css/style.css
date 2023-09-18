@@ -756,7 +756,7 @@ left: 15vw;
     position: relative;
     color: white;
     margin-top: -100px;
-    z-index: 11111 !important;
+    z-index: 2 !important;
     overflow: hidden;
 }
 .our-rate .container{
