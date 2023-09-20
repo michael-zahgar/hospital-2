@@ -112,7 +112,7 @@ button{
     color: #fff;
 }
 .fixed-social a{
-    color: rgb(46, 221, 46);
+    color: white;
 }
 
 .scroll-up a ,.fa-arrow-up-long:before, .fa-long-arrow-up:before{
@@ -125,7 +125,6 @@ button{
     align-items: center;
     flex-direction: column;
     z-index: 999999;
-    bottom: 20px;
     z-index: 999;
     background-color: var(--main-color);
 }
@@ -138,7 +137,7 @@ button{
     transition: var(--transition);
 right: -30px;
 border-radius: 20px;
-
+bottom: 20px;
 }
 .scroll-up.show{
     opacity: 1;
@@ -148,13 +147,24 @@ border-radius: 20px;
 /* Fixed Social  */
 
 .fixed-social{
-    left: 20px;
+    left: 10px;
+    top: 50%;
+    width: 50px;
+    height: 120px;
+    border-radius: 10px;
+}
+.fixed-social a{
+    font-size: 30px;
+}
+.fixed-social a:hover{
+    color: gray;
 }
 
 
 .fixed-social a , .scroll-up{
     padding: 5px 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
