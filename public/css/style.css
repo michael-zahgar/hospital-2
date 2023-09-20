@@ -216,6 +216,9 @@ color: #fff;
 }
 
 /* ==== Start NavBar ==== */
+.parent-1 .container{
+    max-width: 100%;
+}
 .nav-home{
     position: absolute;
     background-color: transparent !important;
