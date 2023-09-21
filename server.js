@@ -29,6 +29,8 @@ const nodemailer = require('nodemailer');
 const rateLimit = require('express-rate-limit');
 const Joi = require('joi');
 const crypto = require('crypto');
+const cors = require('cors')
+
 
 dotenv.config()
 const app = express();
@@ -56,7 +58,7 @@ const limiter = rateLimit({
 app.use(express.static('public'));
 app.use(express.json());
 app.use(limiter); // Apply rate limiter middleware to all routes
-
+app.use(cors())
 
 
 // Subscribe Form
@@ -133,7 +135,7 @@ const schema = Joi.object({
   });
 
 app.get('/' , (req, res) =>{
-    res.sendFile(__dirname + './public/index.html');
+    res.sendFile(__dirname + './public/bookingform.html');
 });
 
 app.post('/', (req, res)=>{
