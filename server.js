@@ -35,7 +35,7 @@ const cors = require('cors')
 dotenv.config()
 const app = express();
 
-console.log(process.env.PORT);
+// console.log(process.env.PORT);
 
 const password = process.env.PASSWORD;
 const Email = process.env.EMAIL;
@@ -238,5 +238,5 @@ app.post('/contact', (req, res) => {
 
 
     app.listen(PORT , ()=>{
-        console.log(`server Running on port ${PORT}`);
+        // console.log(`server Running on port ${PORT}`);
 })
