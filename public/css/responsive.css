@@ -8,7 +8,7 @@
         font-size: 60px;
     }
 }
-/* da ma3nah an responsive da hayfdl shagal men 1024 le7d ta7t 5als  */
+/* da ma3nah an responsive da hayfdl shagal men 1252px  le7d ta7t 5als  */
 
 
 @media screen and (max-width:1252px){
@@ -46,6 +46,9 @@
      }
      .doctor-1 img{
         width: 300px;
+     }
+     .section p{
+        font-size: 17px; 
      }
 }
 @media screen and (max-width:1199px){
@@ -166,6 +169,10 @@
       .our-other-services-body .card h5{
         font-size: 20px;
     }
+    /* about-us */
+    .section p{
+        top: 24%;
+     }
     
 }
 
@@ -247,19 +254,30 @@
     }
     /* About Page  */
 
-    .about-us-1 .about-left-head h1{
-        font-size: 40px;
+    .section p{
+        position: relative;
+        width: 100%;
     }
-    .about-us-1 img{
-        height: 500px;
+    .section img , .section img.thawra-img{
+        left: 0 !important;
     }
-
-    .about-us-2 .doc-search-body{
-        width: 80%;
+    .line{
+        left: 0;
     }
-
-    .about-us-2 .doc-search-body h1{
-        font-size: 40px;
+    .aboutus-content .content{
+        width: 100%;
+    }
+    .section .bead{
+        left: 0;
+    }
+    .content h5{
+        text-align: left;
+    }
+    .aboutus-content .heritage-histroy div{
+        margin-bottom: 20px;
+    }
+    .sub-sec{
+        margin-top: 0 !important;
     }
 
     /* services page */

@@ -147,14 +147,14 @@ bottom: 20px;
 /* Fixed Social  */
 
 .fixed-social{
-    left: 10px;
+    left: 0px;
     top: 50%;
-    width: 50px;
+    width: 40px;
     height: 120px;
-    border-radius: 10px;
+    border-radius:0 10px 10px 0;
 }
 .fixed-social a{
-    font-size: 30px;
+    font-size: 25px;
 }
 .fixed-social a:hover{
     color: gray;
@@ -349,7 +349,7 @@ padding: 10px 20px;
     transform: translateY(30px);
     transition: all 150ms ease-in-out;
     width: 270px;
-    height: 310px;
+    height: 360px;
 }
 .hover-list li{
     border-bottom: 1px solid rgba(128, 128, 128, 0.253);
@@ -1196,7 +1196,7 @@ left: 15vw;
     font-weight: 900;
 }
 
-.service-inner a , .faqs a{
+.service-inner a , .faqs a {
     position: relative;
     display: block;
     width: 100px;
@@ -1227,7 +1227,7 @@ left: 15vw;
     transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.22);
     z-index: -1;
 }
-.service-inner a:hover , .faqs a:hover{
+.service-inner a:hover , .faqs a:hover {
     color: white;
 }
 .service-inner a:hover:before , .faqs a:hover:before{
@@ -1598,207 +1598,180 @@ border-bottom: 1px solid var(--light-gray);
 /* ===== Start About US Page ===== */
 
 
-.about-us-1{
-    padding-top: 4rem;
-}
-.about-us-1 img{
-   height: 550px;
-   object-fit: cover;
-}
-.about-us-1 .about-left-head h1{
-    font-size: 30px;
-    font-weight: bold;
-}
-.about-us-1 .about-left-head h4{
-   font-size: 20px;
-   border-bottom: 5px solid var(--light-gray);
-}
-
-.about-us-1 .about-left{
-    padding: 0 40px;
-}
-.about-us-1 .about-left-bottom p{
-    line-height: 30px !important;
-    color: gray;
-}
-
-/* ===== End About US Page ===== */
-
-
-/* ===== Start About US-2 Page ===== */
-
-
-/* 
-
-.about-us-2{
-    background-color: rgba(128, 128, 128, 0.137);
-    color: white !important;
-}
-.rate{
-    position: relative;
-    width: 160px;
-    height: 160px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.outer{
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-   
-    padding: 20px;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.16),
-                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-}
-.inner{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-                     inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-                        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-                        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-                        0px 12px 10px -10px rgba(0,0,0,0.05);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.inner div{
-    font-size: 30px;
-}
-.rate-head , #number , #number2 , #number3{
-    font-weight: 600;
-    color: #555 !important;
-    font-family: 'Playfair Display', serif;
-}
-
-circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: anim 2.5s linear forwards;
-}
-svg{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-svg .cir2{
-animation: anim2 2s linear forwards;
-}
-svg .cir3{
-animation: anim3 2s linear forwards;
-}
-
-@keyframes anim{
-    100%{
-        stroke-dashoffset: 0;
+.aboutus-content{
+    overflow: hidden;
+  }
+  .aboutus-content .tab-content{
+    margin-top: 50px;
+  }
+    .aboutus-content .heritage-histroy div{
+      margin-bottom: 50px;
     }
-}
-@keyframes anim2{
-    100%{
-        stroke-dashoffset: 110;
+    .aboutus-content h5 span{
+        height: 3px;
+        width: 30px;
+        background-color: #fff;
+        display: inline-block;
+        margin-bottom: 5px;
     }
-}
 
-@keyframes anim3{
-    100%{
-        stroke-dashoffset: 150;
+    .aboutus-content .nav a{
+        color: #133860;
+        font-weight: 500;
+        padding: 10px;
     }
-} */
-/* ===== End About US-2 Page ===== */
-
-
-/* ===== Start About US-3 Page ===== */
-
-.about-us-3 .our-doc-head{
-    width: 50%;
-    margin: auto;
-
-}
-.about-us-3 .our-doc-head h1{
-    line-height: 60px;
-}
-
-.about-us-3 .owl-carousel .owl-item{
-    display: flex;
-    justify-content: center;
-}
-
-.about-us-3 .owl-carousel .row{
-    --bs-gutter-x:0 !important;
-}
-.about-us-3 .owl-carousel .doc-social a{
-   padding: 0;
-  
-}
-.about-us-3 .owl-carousel .row{
-    background-color: #eff5f9;
-    border-radius: 10px;
-}
-.about-us-3 .owl-carousel .row img{
-    border-radius: 10px 0 0 10px;
-}
-.about-us-3 .owl-carousel .doc-social .soc{
-    border: none !important;
-    transition: var(--transition);
-}
-.about-us-3 .owl-carousel .doc-social .soc:hover{
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    color: black;
-}
-
-.owl-carousel .owl-dots .owl-dot.active span{
-    background-color: #13c5dd;
-}
-.owl-carousel .owl-dots .owl-dot span{
-   margin-top: 20px;
-   padding: 8px;
-}
-.about-us-info{
-    background-color: transparent;
-    position: relative;
-  
-}
-.about-us-info::before{
-    content: '';
-    background-color: rgba(128, 128, 128, 0.26);
-    position: absolute;
-    width: 900px;
-    height: 400px;
-    right: 170px;
-    top: 50px;
-    z-index: -1;
-    border-radius: 20px;
-}
-
-.about-us-info img{
-    border-radius: 20px;
-}
-.about-us-info .value-body{
-    display: flex;
-    justify-content: center;
+    .aboutus-content .nav a.active{
+        background-color: #133860;
+        border-radius: 5px 5px 0 0;
+    }
+    .aboutus-content p{
+      font-size: 20px;
+    }
+    .aboutus-header h4{
+      font-size: 30px;
+      color: #133860;
+    }
+    .aboutus-content .nav{
+      justify-content: center;
+      align-items: center;
+    }
+    .aboutus-content .timeline{
+      position: relative;
+      min-height: 150px;
+    }
+    .line{
+      position: absolute;
+      z-index: 2;
+      left: calc(50% - 1px);
+      width: 2px;
+      top: -50px;
+      bottom: -50px;
+      background-color: #133860;
+      display: none;
+    }
+    .line::before,
+    .line::after{
+      position: absolute;
+      display: block;
+      content: '';
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      background-color: #133860;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .line::after{
+      bottom: 0;
+    }
+    .section{
+      display: flex;
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: 600ms ease;
+      position: relative;
+      z-index: 1;
+      margin: 50px 0;
+      padding: 1rem;
+      border-radius: 1rem;
+      align-items: center;
+      min-height: 300px;
+    }
+    .section:nth-child(odd){
+      flex-direction: row-reverse;
+      transform: translateX(100%);
+    }
+    .section .bead{
+      position: absolute;
+      display: block;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      background-color: #133860;
+      left: 50%;
+      top: 3%;
+      transform: translateX(-50%);
+    }
+    .content{
+      width: calc(50% - 2rem);
+    }
+    .content h5{
+     padding-bottom: 20px;
+     text-align: end;
+     color: #133860;
+     font-weight: 600;
+    }
+    .content .thawra-header{
+     text-align: start;
+    }
  
-    flex-direction: column;
-}
-.value-p{
-border-left: 5px solid var(--main-color);
-padding-left: 20px;
-border-radius: 5px 0 0 5px;
-color: gray;
-}
+    .show-me:nth-child(n){
+      transform: none;
+      opacity: 1;
+    }
 
+    /* changing position of items */
+    .aboutus-content img{
+    height: 70%;
+    position: relative;
+  }
+    .section img{
+      left: 115%;   
+    }
+    .section p{
+      position: absolute;
+      top: 30%;
+      width: 46%;
+    }
+    .section img.thawra-img{
+      left: -115% !important;
+    }
+    /* See more hurg btn */
 
-/* ===== End About US-3 Page ===== */
+    .hurg-seemore{
+        display: block;
+        margin-top: 20px !important;
+        font-size: 15px;
+        padding: 10px;
+        background-color: var(--main-color);
+        width: 102px;
+        color: white;
+        transition: var(--transition);
+        font-weight: 400;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .hurg-seemore i{
+        position: relative;     
+    }
+    .hurg-seemore:hover{
+        color: var(--frost-blue-color);
+    }
+    .hurg-seemore:hover i{
+        padding-left: 5px;
+    }
 
+    /* ourmission & Vision tap */
 
-
-
+    .our-mission img{
+        width: 100px;
+        object-fit:contain;
+    }
+    .mis{
+        margin-bottom: 30px;
+    }
+    .mis p{
+        color: gray;
+    }
+    .mis .om-head{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .mis .om-head h2{
+        color: var(--main-color);
+        font-weight: 600;
+    }
+/* ===== End About US Page ===== */
 
 
 /* ===== Start Price 1 Page ===== */
