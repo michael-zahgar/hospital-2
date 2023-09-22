@@ -268,7 +268,7 @@
         width: 100%;
     }
     .section .bead{
-        left: 0;
+        left: 1px;
     }
     .content h5{
         text-align: left;
