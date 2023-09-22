@@ -1610,13 +1610,7 @@ border-bottom: 1px solid var(--light-gray);
     .aboutus-content .heritage-histroy div{
       margin-bottom: 50px;
     }
-    .aboutus-content h5 span{
-        height: 3px;
-        width: 30px;
-        background-color: #fff;
-        display: inline-block;
-        margin-bottom: 5px;
-    }
+
 
     .aboutus-content .nav a{
         color: #133860;
@@ -1695,18 +1689,13 @@ border-bottom: 1px solid var(--light-gray);
       border-radius: 50%;
       background-color: #133860;
       left: 50%;
-      top: 3%;
+      top: 4%;
       transform: translateX(-50%);
     }
     .content{
       width: calc(50% - 2rem);
     }
-    .content h5{
-     padding-bottom: 20px;
-     text-align: end;
-     color: #133860;
-     font-weight: 600;
-    }
+
     .content .thawra-header{
      text-align: start;
     }
@@ -1715,7 +1704,13 @@ border-bottom: 1px solid var(--light-gray);
       transform: none;
       opacity: 1;
     }
-
+    /* left branchs spans style */
+    .content h5{
+        padding-bottom: 20px;
+        text-align: end;
+        color: #133860;
+        font-weight: 600;
+       }
     /* changing position of items */
     .aboutus-content img{
     height: 70%;
