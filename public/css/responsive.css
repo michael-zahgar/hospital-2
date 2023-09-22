@@ -49,6 +49,7 @@
      }
      .section p{
         font-size: 17px; 
+        margin-top: 10px;
      }
 }
 @media screen and (max-width:1199px){
@@ -269,6 +270,7 @@
     }
     .section .bead{
         left: 1px;
+        top: 1%;
     }
     .content h5{
         text-align: left;
@@ -279,7 +281,9 @@
     .sub-sec{
         margin-top: 0 !important;
     }
-
+    .section {
+        padding: 0 1rem;
+    }
     /* services page */
 
     .service-2 .contact{
