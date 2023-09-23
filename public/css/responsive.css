@@ -538,6 +538,10 @@
     .career-header{
         padding-top: 50px;
     }
+    /* about us */
+    .aboutus-header h4{
+        margin-right: 0;
+    }
 }
 
 

@@ -238,7 +238,7 @@ color: #fff;
 .parent-1{
     z-index: 99999;
     /* background: #1118219a !important; */
-    padding: 0 0 10px 0;
+    padding: 10px 0 10px 0;
     width: 100%;
 }
 
@@ -351,6 +351,11 @@ padding: 10px 20px;
     width: 270px;
     height: 360px;
 }
+/* WRDS LIST Start */
+.hover-list.wrdc-list{
+height: 110px;
+}
+/* WRDS LIST Emd */
 .hover-list li{
     border-bottom: 1px solid rgba(128, 128, 128, 0.253);
     margin-bottom: 5px;
@@ -1603,6 +1608,7 @@ border-bottom: 1px solid var(--light-gray);
   }
   .aboutus-header h4{
     font-size: 40px !important;
+    margin-right: 50px;
   }
   .aboutus-content .tab-content{
     margin-top: 50px;
@@ -2741,12 +2747,5 @@ transition: var(--transition);
 .careers-1 .apply-sec a:hover{
     background-color: #2132628f;
 }
-    .career-list .hover-list{
-        left: -110px;
-    }
-    .career-list:hover .hover-list{
-        left: -110px;
-        width: 200px;
-        height: 155px;
-    }
+
 /* Career End */
