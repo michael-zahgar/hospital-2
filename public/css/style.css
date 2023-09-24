@@ -354,7 +354,7 @@ padding: 10px 20px;
 /* WRDS LIST Start */
 .hover-list.wrdc-list{
 height: 110px;
-width: 200px;
+width: 220px;
 }
 /* WRDS LIST Emd */
 .hover-list li{
@@ -507,8 +507,8 @@ width: 200px;
     .parent-1 a{
         color: white;
     }
-    .parent-1 .main-font {
-        color: white;
+    .top-header .main-font {
+        color: white !important;
     }
     .hover-li-main-2 .dropdown-menu a{
         color: #fff;
