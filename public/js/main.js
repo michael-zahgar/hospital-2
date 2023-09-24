@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded' , function(){
   })
 })
 
+// document.addEventListener('contextmenu' , function(e){
+// e.preventDefault();
+// }, false);
+
+document.addEventListener('keydown', function(e){
+if(e.ctrlKey || e.keyCode== 123){
+  e.stopPropagation();
+  e.preventDefault();
+}
+})
 
 // On Scroll Animation
 
@@ -24,219 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
   hiddenElements.forEach((el) => observer.observe(el));
 });    
 
-
-function sendBookingForm() {
-  const contactForm = document.querySelector(".contact-form");
-  if (!contactForm) {
-    console.log("Error: contact form element not found");
-    return;
-  }
-  let name = document.getElementById('name');
-  let email = document.getElementById('email');
-  let phone = document.getElementById('phone');
-  let address = document.getElementById('address');
-  let message = document.getElementById('message');
-  let branch = document.getElementById('branch');
-  let service = document.getElementById('service');
-  let subMesg = document.getElementById('booking-message');
-
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Validate the form inputs
-    if (!name.value.trim()) {
-      alert('Please enter your name');
-      return;
-    }
-    if (!email.value.trim() || !/\S+@\S+\.\S+/.test(email.value.trim())) {
-      alert('Please enter a valid email address');
-      return;
-    }
-    if (!phone.value.trim() || !/^\d{11}$/.test(phone.value.trim())) {
-      alert('Please enter a valid 11-digit phone number');
-      return;
-    }
-    if (!address.value.trim()) {
-      alert('Please enter your address');
-      return;
-    }
-    if (!message.value.trim()){
-      alert('Please enter your message');
-      return;
-    }
-    if (!branch.value.trim()) {
-      alert('Please select a branch');
-      return;
-    }
-    if (!service.value.trim()) {
-      alert('Please select a service');
-      return;
-    }
-
-    let formData = {
-      name: name.value.trim(),
-      email: email.value.trim(),
-      phone: phone.value.trim(),
-      address: address.value.trim(),
-      message: message.value.trim(),
-      branch: branch.value.trim(),
-      service: service.value.trim(),
-    };
-
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/');
-    xhr.setRequestHeader('Content-Type', 'application/json');
-
-    xhr.onload = function(){
-      console.log(xhr.responseText);
-      if(xhr.responseText =='OK'){
-        subMesg.textContent = `Thank you for booking through our website. 
-        We will contact you within 48 hours to confirm your booking and arrange all the details.
-        \n
-        شكرًا لحجزكم عبر موقعنا. سنتواصل معكم خلال 48 ساعة لتأكيد الحجز وترتيب كافة التفاصيل.
-        `
-        subMesg.style.display = "block";
-        subMesg.style.padding = "20px" ;
-        name.value = '';
-        email.value = '';
-        phone.value = '';
-        address.value = '';
-        message.value = '';
-        branch.value = '';
-        service.value = '';
-      }else{
-        alert('Something Went Wrong');
-      }
-    }
-    
-    xhr.send(JSON.stringify(formData));
-
-    console.log(formData);
-  });
-}
-
-
-function sendSubForm() {
-
-  const contactForm2 = document.querySelector(".subscribe-form");
-  if (!contactForm2) {
-    console.log("Error: subscribe form element not found");
-    return;
-  }
-  let email2 = document.getElementById('email2');
-  const subscribeMessage = document.querySelector('.subscribe-message');
-  const inputgroup = document.querySelector('.input-group');
-
-  contactForm2.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Validate the form inputs
-    if (!email2.value.trim() || !/\S+@\S+\.\S+/.test(email2.value.trim())) {
-      subscribeMessage.textContent = 'Please enter a valid email address';
-      subscribeMessage.style.display = 'block';
-      subscribeMessage.style.color = 'red';
-      inputgroup.style.zIndex = "-1";
-      return;
-    }
-    let formData2 = {
-      email2: email2.value.trim()
-    };
-
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/subscribe');
-    xhr.setRequestHeader('Content-Type', 'application/json');
-
-    xhr.onload = function(){
-      console.log(xhr.responseText);
-      if(xhr.responseText =='OK'){
-        subscribeMessage.textContent = 'Thanks for subscribing!';
-        subscribeMessage.style.color = 'white';
-        subscribeMessage.style.display = 'block';
-        inputgroup.style.zIndex = "-1";
-        email2.value = '';
-      }else{
-        subscribeMessage.textContent = 'Something went wrong. Please try again later.';
-        subscribeMessage.style.color = 'red';
-        subscribeMessage.style.display = 'block';
-        inputgroup.style.zIndex = "-1";
-      }
-    }
-    
-    xhr.send(JSON.stringify(formData2));
-
-    console.log(formData2);
-  });
-}
-
-
-function sendContactForm() {
-
-  const contactForm3 = document.querySelector(".contactForm");
-  if (!contactForm3) {
-    console.log("Error: Contact form element not found");
-    return;
-  }
-
-  const contactFullName = document.getElementById('fullname-con');
-  const contactEmail = document.getElementById('email-con');
-  const contactPhone = document.getElementById('phone-con');
-  const contactSubject = document.getElementById('subject-con');
-  const contactMessage = document.getElementById('message-con');
-
-  contactForm3.addEventListener('submit' , (e) => {
-    e.preventDefault();
-    
-    if (!contactFullName.value.trim()) {
-      alert('Please enter your name');
-      return;
-    }
-    if (!contactEmail.value.trim() || !/\S+@\S+\.\S+/.test(contactEmail.value.trim())) {
-      alert('Please enter a valid email address');
-      return;
-    }
-    if (!contactPhone.value.trim() || !/^\d{11}$/.test(contactPhone.value.trim())) {
-      alert('Please enter a valid 11-digit phone number');
-      return;
-    }
-
-    let formData3 = {
-      contactFullName: contactFullName.value.trim(),
-      contactEmail: contactEmail.value.trim(),
-      contactPhone: contactPhone.value.trim(),
-      contactSubject: contactSubject.value.trim(),
-      contactMessage: contactMessage.value.trim()
-    };
-
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/contact');
-    xhr.setRequestHeader('Content-Type', 'application/json');
-
-    xhr.onload = function(){
-      if(xhr.responseText =='OK'){
-        alert('Your Message Send || تم ارسال رسالتك')
-        contactFullName.value = '';
-        contactEmail.value = '';
-        contactPhone.value = '';
-        contactSubject.value = '';
-        contactMessage.value = '';
-      }else{
-        alert('Something Went Wrong || حدث خطأ');
-      }
-    }
-    
-    
-    xhr.send(JSON.stringify(formData3));
-
-    console.log(formData3);
-
-  })
-}
-
-sendBookingForm();
-
-sendSubForm();
-
-sendContactForm();
 
 
 

@@ -56,29 +56,39 @@ const limiter = rateLimit({
 
 
 app.use(express.static('public'));
+app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 app.use(limiter); // Apply rate limiter middleware to all routes
 app.use(cors())
 
+app.get('/' , (req, res) =>{
+    res.sendFile(__dirname + './public/en/index.html');
+});
 
 // Subscribe Form
-const schema2 = Joi.object({
-  email2: Joi.string().email().required().messages({
-    'string.empty': 'Please enter your email address',
-    'string.email': 'Please enter a valid email address'
-  })
-});
 
 // Route for subscribing
 app.post('/subscribe', (req, res) => {
- 
+  let email2 = req.body.email2;
+  console.log(email2);
   // Validate the request body using theJoi schema
+  const schema2 = Joi.object({
+    email2: Joi.string().email().required().messages({
+      'string.empty': 'Please enter your email address || برجاء ادخال الايميل الخاص بك',
+      'string.email': 'Please enter a valid email address || يرجى إدخال  البريد إلكتروني صحيح'
+    })
+  });
+
+
+
   const { error, value } = schema2.validate(req.body);
 
-  if (error) {
-    console.log(error.details[0].message);
-    return res.status(400).send('Bad Request');
+  if(error){
+    const errorDetails = error.details.map(d => d.message).join('<br>');
+    res.send(`<h2>Validation Error : </h2> ${errorDetails}`)
+    return;
   }
+  res.send("<h2>Form Submitted Successfuly</h2>")
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -107,8 +117,22 @@ app.post('/subscribe', (req, res) => {
 
 });
 
+
 // Booking Form
 
+app.post('/submitForm', (req, res)=>{
+
+  let name = req.body.name;
+  let email = req.body.email;
+  let phone = req.body.phone;
+  let address = req.body.address;
+  let message = req.body.message;
+  let branch = req.body.branch;
+  let service = req.body.service;
+
+console.log(name , email , phone , address , message , branch , service)
+
+  
 const schema = Joi.object({
     name: Joi.string().required().messages({
       'string.empty': 'Please enter your name'
@@ -134,22 +158,24 @@ const schema = Joi.object({
     })
   });
 
-app.get('/' , (req, res) =>{
-    res.sendFile(__dirname + './public/bookingform.html');
-});
-
-app.post('/', (req, res)=>{
-  console.log(req.body.email);
-    console.log(req.body);
 
       // Validate the request body using the Joi schema
   const { error, value } = schema.validate(req.body);
 
-  if (error) {
-    console.log(error.details[0].message);
-    return res.status(400).send('Bad Request');
+  if(error){
+    const errorDetails = error.details.map(d => d.message).join('<br>');
+    res.send(`<h2>Validation Error : </h2> ${errorDetails}`)
+    return;
   }
+  res.send("<h2>Form Submitted Successfuly</h2>");
 
+  name = '';
+  email = '';
+  phone = '';
+  address = '';
+  message = '';
+  branch = '';
+  service = '';
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -174,6 +200,8 @@ app.post('/', (req, res)=>{
         }else{
             console.log('Email sent' + info.response);
             res.status(200).send('OK');
+  
+
         }
     })
     })

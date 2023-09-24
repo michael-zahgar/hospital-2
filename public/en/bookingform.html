@@ -41,20 +41,20 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <form class="contact-form">
+            <form class="contact-form" method="post" action="/submitForm">
                 <h2 class="text-center mb-3">Booking</h2>
-                <input type="text" id="name" placeholder="Full Name || الاسم كامل" required>
+                <input type="text" id="name" name="name" placeholder="Full Name || الاسم كامل" required>
                 <br>
-                <input type="email" id="email" placeholder="Email || البريد الالكتروني" required>
+                <input type="email" id="email" name="email" placeholder="Email || البريد الالكتروني" required>
                 <br>
-                <input type="text" id="phone" placeholder="Phone Number || رقم الموبايل" required>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number || رقم الموبايل" required>
                 <br>
-                <input type="text" id="address" placeholder="Your Adress || العنوان" required>
+                <input type="text" id="address" name="address" placeholder="Your Adress || العنوان" required>
                 <br>
                 
                 <div>
                     <label for="select-option mb-3">Select a Branch || أختر فرع </label>
-                    <select id="branch" name="select-option">
+                    <select id="branch" name="branch">
                       <option>Select a Branch || اختر فرع</option>
                       <option value="thawra">Thawra Branch || فرع الثورة</option>
                       <option value="hegaz">Hegaz Branch || فرع الحجاز</option>
@@ -64,15 +64,15 @@
                 
                 <div>
                     <label for="select-option2 mb-3">Select a Service || اختر خدمة</label>
-                    <select id="service" name="select-option2">
+                    <select id="service" name="service">
                         <option>Select a Service || اختر خدمة</option>
-                      <option value="clinics">clinics || العيادات الخارجية</option>
-                      <option value="investigations">Investigation || الفحوصات الطبية</option>
-                      <option value="operations">Operations || العمليات</option>
+                      <option value="clinics" >clinics || العيادات الخارجية</option>
+                      <option value="investigations" >Investigation || الفحوصات الطبية</option>
+                      <option value="operations" >Operations || العمليات</option>
                     </select>
                 </div>
                 
-                <textarea id="message" placeholder="Your Request / Notes || محتوي الطلب \ الملاحظات" cols="30" rows="10" required></textarea>
+                <textarea id="message" name="message" placeholder="Your Request / Notes || محتوي الطلب \ الملاحظات" cols="30" rows="10" required></textarea>
                 <br>
                 <div class="btns d-flex">
                     <input type="submit" class="submit submit-btn p-3" value="Submit | ارسل طلب الحجز">
