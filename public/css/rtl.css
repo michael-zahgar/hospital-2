@@ -61,6 +61,11 @@ text-align: left !important;
 .modal-header .btn-close{
     margin: 0;
 }
+.hover-list.wrdc-list{
+
+width: 270px;
+}
+
 
 .service-inner a, .faqs a{
     width: 110px;
