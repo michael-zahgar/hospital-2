@@ -16,8 +16,14 @@ body,html{
     filter: blur(0);
     transform: translate(0);
 }
+/* Nav Bar */
 .navbar-toggler i{
     color: #fff !important;
+}
+.fixed-social{
+    right: auto;
+    left: 0px !important;
+    border-radius: 0 10px 10px 0;
 }
 .fa-xmark{
     color: white !important;
