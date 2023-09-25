@@ -35,6 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });    
 
 
+// let form = getElementById('sub-form')
+// form.addEventListener('submit', (e) => {
+// e.preventDefault();
+// })
+
 
 
 // Scroll up button 

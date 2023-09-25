@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>من نحن</title>
+    <title>من نحن || مستشفيات الوطني للعيون</title>
 
     <!-- BootStrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -67,7 +67,7 @@
         <div class="container-fluid border-bottom">
             <div class="row">
                 <div class="col-12" style="display: flex; justify-content: space-between;">
-    
+
                     <div class="t-head-left">
                         <a target="_blank" href="https://www.facebook.com/watanyeyehospitals?mibextid=nW3QTL"
                             class="fa fa-brands fa-facebook"></a>
@@ -80,17 +80,17 @@
                             <i class="white fa-solid fa-phone-flip" style="padding-left: 5px;"></i>
                             <a href="tel:16112">١٦١١٢</a>
                         </div>
-    
+
                     </div>
-    
+
                     <div class="">
                         <div class="top-header-right">
                             <a href="../en/aboutusV2.html" class="main-font">English</a>
                         </div>
                     </div>
                 </div>
-    
-    
+
+
             </div>
     </section>
 
@@ -116,7 +116,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link links" href="../doctors.html">اطبائنا</a>
+                    <a class="nav-link links" href="../en/doctors.html">أطبائنا</a>
                 </li>
 
 
@@ -128,7 +128,7 @@
                     <ul class="dropdown-menu">
 
                         <li class="dropstart sub-drop">
-                            <a class="dropdown-item" href="../clinics.html">عيادتنا</a>
+                            <a class="dropdown-item" href="./clincsAr.html">عيادتنا</a>
                             <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
                         </li>
 
@@ -158,7 +158,7 @@
                     <ul class="hover-list">
 
                         <li class="dropstart sub-drop">
-                            <a class="nav-link" href="../clinics.html">عيادتنا</a>
+                            <a class="nav-link" href="./clincsAr.html">عيادتنا</a>
                         </li>
 
 
@@ -210,8 +210,8 @@
                              <a class="dropdown-item" href="./wrdc.html">عن المركز الوطني للابحاث و التنمية</a>
                                             <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
                           </li>
-                                        
-                                        
+
+
                           <li class="dropstart sub-drop">
                             <a class="nav-link" href="https://alwatany-conferences.com/">مؤتمر وطني الثانوي لطب العيون</a>
                           </li>
@@ -240,7 +240,7 @@
 
 
 
-   
+
 
 <section class="aboutus-content py-4">
     <div class="container">
@@ -319,7 +319,7 @@
                                             alt="Hurghada-branch">
                                         <p>لم تتجاهل مستشفيات ومراكز وطني للعيون الغردقة مدينة السحر والجمال.
                                             <br>
-                                            تقع مدينة الغردقة على الساحل الجنوبي الغربي للبحر الأحمر 
+                                            تقع مدينة الغردقة على الساحل الجنوبي الغربي للبحر الأحمر
                                             وواحدة من أشهر الوجهات السياحية في مصر ، وقد اكتسبت شهرة كوجهة
                                             للسياحة الطبية بسبب تكلفتها المنخفضة ،
                                              وطاقمها الطبي ذو المهارات العالية والخبرة الذين يتحدثون عدة لغات ، والجو الرائع.
@@ -360,7 +360,7 @@
                                         <img src="../images/icons/vision.png" alt="our-value">
                                         <h2>رؤية وطني</h2>
                                     </div>
-                                    <p>نهدف إلى أن نكون أحد رواد البحث العلمي وتوفير أطباء 
+                                    <p>نهدف إلى أن نكون أحد رواد البحث العلمي وتوفير أطباء
                                         عيون شباب موهوبين يحترمون أخلاقيات المهنة لخدمة بلدنا وأي شخص محتاج.</p>
                                 </div>
 
@@ -408,7 +408,7 @@
                             </div>
                             <div class="dr-body">
 
-                                <p>&#x2022; الدكتور رياض فكري ، دكتوراه في الطب ، كان رئيس مجلس الإدارة 
+                                <p>&#x2022; الدكتور رياض فكري ، دكتوراه في الطب ، كان رئيس مجلس الإدارة
                                     والمدير الطبي لمستشفى وطني للعيون في شرق القاهرة ، مصر.
                                 </p>
                                 <p>
@@ -575,62 +575,10 @@
     <script src="../js/main.js"></script>
     <!-- JS AR main Script -->
     <script src="../js/mainAR.js"></script>
-  
+
 <script>
 
-    "use strict";
-
-    function qs(selector, all = false) {
-        return all ? document.querySelectorAll(selector) : document.querySelector(selector);
-    }
-
-    const sections = qs('.section', true);
-    const timeline = qs('.timeline');
-    const line = qs('.line');
-    line.style.bottom = `calc(100% - 20px)`;
-    let prevScrollY = window.scrollY;
-    let up, down;
-    let full = false;
-    let set = 0;
-    const targetY = window.innerHeight * .8;
-
-    function scrollHandler(e) {
-        const {
-            scrollY
-        } = window;
-        up = scrollY < prevScrollY;
-        down = !up;
-        const timelineRect = timeline.getBoundingClientRect();
-        const lineRect = line.getBoundingClientRect(); // const lineHeight = lineRect.bottom - lineRect.top;
-
-        const dist = targetY - timelineRect.top;
-        console.log(dist);
-
-        if (down && !full) {
-            set = Math.max(set, dist);
-            line.style.bottom = `calc(100% - ${set}px)`;
-        }
-
-        if (dist > timeline.offsetHeight + 50 && !full) {
-            full = true;
-            line.style.bottom = `-50px`;
-        }
-
-        sections.forEach(item => {
-            // console.log(item);
-            const rect = item.getBoundingClientRect(); //     console.log(rect);
-
-            if (rect.top + item.offsetHeight / 5 < targetY) {
-                item.classList.add('show-me');
-            }
-        }); // console.log(up, down);
-
-        prevScrollY = window.scrollY;
-    }
-
-    scrollHandler();
-    line.style.display = 'block';
-    window.addEventListener('scroll', scrollHandler);
+    var _0x57aa = ["\x75\x73\x65\x20\x73\x74\x72\x69\x63\x74", "\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C", "\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72", "\x2E\x73\x65\x63\x74\x69\x6F\x6E", "\x2E\x74\x69\x6D\x65\x6C\x69\x6E\x65", "\x2E\x6C\x69\x6E\x65", "\x62\x6F\x74\x74\x6F\x6D", "\x73\x74\x79\x6C\x65", "\x73\x63\x72\x6F\x6C\x6C\x59", "\x69\x6E\x6E\x65\x72\x48\x65\x69\x67\x68\x74", "\x67\x65\x74\x42\x6F\x75\x6E\x64\x69\x6E\x67\x43\x6C\x69\x65\x6E\x74\x52\x65\x63\x74", "\x74\x6F\x70", "\x6C\x6F\x67", "\x6D\x61\x78", "\x70\x78\x29", "\x6F\x66\x66\x73\x65\x74\x48\x65\x69\x67\x68\x74", "\x73\x68\x6F\x77\x2D\x6D\x65", "\x61\x64\x64", "\x63\x6C\x61\x73\x73\x4C\x69\x73\x74", "\x66\x6F\x72\x45\x61\x63\x68", "\x64\x69\x73\x70\x6C\x61\x79", "\x62\x6C\x6F\x63\x6B", "\x73\x63\x72\x6F\x6C\x6C", "\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72"]; _0x57aa[0]; function qs(_0x5234x2, _0x5234x3 = false) { return _0x5234x3 ? document[_0x57aa[1]](_0x5234x2) : document[_0x57aa[2]](_0x5234x2) } const sections = qs(_0x57aa[3], true); const timeline = qs(_0x57aa[4]); const line = qs(_0x57aa[5]); line[_0x57aa[7]][_0x57aa[6]] = "\x63\x61\x6C\x63\x28\x31\x30\x30\x25\x20\x2D\x20\x32\x30\x70\x78\x29"; let prevScrollY = window[_0x57aa[8]]; let up, down; let full = false; let set = 0; const targetY = window[_0x57aa[9]] * 0.8; function scrollHandler(_0x5234xe) { const { scrollY } = window; up = scrollY < prevScrollY; down = !up; const _0x5234xf = timeline[_0x57aa[10]](); const _0x5234x10 = line[_0x57aa[10]](); const _0x5234x11 = targetY - _0x5234xf[_0x57aa[11]]; console[_0x57aa[12]](_0x5234x11); if (down && !full) { set = Math[_0x57aa[13]](set, _0x5234x11); line[_0x57aa[7]][_0x57aa[6]] = ("\x63\x61\x6C\x63\x28\x31\x30\x30\x25\x20\x2D\x20" + set + _0x57aa[14]) }; if (_0x5234x11 > timeline[_0x57aa[15]] + 50 && !full) { full = true; line[_0x57aa[7]][_0x57aa[6]] = "\x2D\x35\x30\x70\x78" }; sections[_0x57aa[19]]((_0x5234x12) => { const _0x5234x13 = _0x5234x12[_0x57aa[10]](); if (_0x5234x13[_0x57aa[11]] + _0x5234x12[_0x57aa[15]] / 5 < targetY) { _0x5234x12[_0x57aa[18]][_0x57aa[17]](_0x57aa[16]) } }); prevScrollY = window[_0x57aa[8]] } scrollHandler(); line[_0x57aa[7]][_0x57aa[20]] = _0x57aa[21]; window[_0x57aa[23]](_0x57aa[22], scrollHandler)
 </script>
 
 </body>

@@ -50,13 +50,23 @@ text-align: left !important;
 
 .sub-drop .dropdown-toggle::before {
     transform: rotate(180deg);
-    margin-left: 10px !important; 
+    margin-left: 10px !important;
 }
 
 .hover-list li:hover a{
     border-left: none;
     border-right:  7px solid black;
 }
+.dropdown-item.active, .dropdown-item:active{
+border-right: 7px solid black;
+border-left: none;
+}
+.hover-list a.active{
+    border-left: none;
+    border-right: 7px solid black;
+}
+
+
 
 .modal-header .btn-close{
     margin: 0;
@@ -95,4 +105,20 @@ width: 270px;
 }
 .section img.thawra-img{
     right: -115%;
+}
+
+/* Clinics */
+
+.breadcrumb-item+.breadcrumb-item::before{
+    content: none;
+}
+.breadcrumb-item+.breadcrumb-item{
+    padding: 0 .5rem 0 0;
+}
+
+/* Cornea Page */
+
+.clinic-service .accordion-button::after{
+    margin-right: auto;
+    margin-left: 0;
 }

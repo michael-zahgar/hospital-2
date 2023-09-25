@@ -29,7 +29,7 @@ const nodemailer = require('nodemailer');
 const rateLimit = require('express-rate-limit');
 const Joi = require('joi');
 const crypto = require('crypto');
-const cors = require('cors')
+const cors = require('cors');
 
 
 dotenv.config()
@@ -50,7 +50,7 @@ PORT = process.env.PORT;
 
 const limiter = rateLimit({
     windowMs: 15 *60 * 1000, // 15 minutes
-    max: 5, // limit each IP to 5 requests per windowMs
+    max: 10, // limit each IP to 5 requests per windowMs
     message: 'You Have Sent Many Requests, please try again later'
   });
 
@@ -61,8 +61,10 @@ app.use(express.json());
 app.use(limiter); // Apply rate limiter middleware to all routes
 app.use(cors())
 
-app.get('/' , (req, res) =>{
-    res.sendFile(__dirname + './public/en/index.html');
+ app.get('/' , (req, res) =>{
+   
+
+   res.sendFile('./en/index.html');
 });
 
 // Subscribe Form
@@ -88,7 +90,15 @@ app.post('/subscribe', (req, res) => {
     res.send(`<h2>Validation Error : </h2> ${errorDetails}`)
     return;
   }
-  res.send("<h2>Form Submitted Successfuly</h2>")
+  
+  //     res.send(`
+  // <div style="text-align:center;">
+  //   <h2 style="padding-top:4rem">Form Submitted Successfuly</h2>
+  //   <a href="./en/index.html" style="text-decoration:none; margin-top:1rem;">
+  // Back To Home Page || الرجوع للصفحة الرئيسية</a>
+  // </div>
+  // `)
+   res.redirect('./en/index.html')
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -138,23 +148,23 @@ const schema = Joi.object({
       'string.empty': 'Please enter your name'
     }),
     email: Joi.string().email().required().messages({
-      'string.empty': 'Please enter your email address',
-      'string.email': 'Please enter a valid email address'
+      'string.empty': 'Please enter your email address || الرجاء إدخال عنوان البريد الإلكتروني الخاص بك',
+      'string.email': 'Please enter a valid email address || يرجى إدخال البريد إلكتروني صحيح'
     }),
     phone: Joi.string().pattern(/^\d{11}$/).messages({
-      'string.pattern.base': 'Please enter a valid 11-digit phone number'
+      'string.pattern.base': 'Please enter a valid 11-digit phone number || يرجى إدخال رقم هاتف صحيح مكون من 11 رقما'
     }),
     address: Joi.string().required().messages({
-      'string.empty': 'Please enter your address'
+      'string.empty': 'Please enter your address || الرجاء إدخال عنوانك'
     }),
     message: Joi.string().required().messages({
-      'string.empty': 'Please enter your message'
+      'string.empty': 'Please enter your message || الرجاء إدخال رسالتك'
     }),
     branch: Joi.string().valid('thawra', 'hegaz', 'hurghada').required().messages({
-      'any.only': 'Please select a valid branch'
+      'any.only': 'Please select a valid branch || يرجى اختيار فرع '
     }),
     service: Joi.string().valid('clinics', 'investigations', 'operations').required().messages({
-      'any.only': 'Please select a valid service'
+      'any.only': 'Please select a valid service || يرجى اختيار خدمة'
     })
   });
 
@@ -167,8 +177,15 @@ const schema = Joi.object({
     res.send(`<h2>Validation Error : </h2> ${errorDetails}`)
     return;
   }
-  res.send("<h2>Form Submitted Successfuly</h2>");
-
+  
+  // res.send(`
+  // <div class="container" style="text-align: center; padding-top:4rem ">
+  //   <h2>Form Submitted Successfuly || تم ارسال الطلب بنجاح</h2>
+  // <a href="./en/index.html" style="text-decoration:none; margin-top:1rem;">
+  // Back To Home Page || الرجوع للصفحة الرئيسية</a>
+  // </div>
+  // `);
+  res.redirect('./en/index.html')
   name = '';
   email = '';
   phone = '';
@@ -176,6 +193,8 @@ const schema = Joi.object({
   message = '';
   branch = '';
   service = '';
+
+
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -208,31 +227,48 @@ const schema = Joi.object({
 
 // Contact Form 
 
+app.post('/contact', (req, res) => {
+
+  let contactName = req.body.contactName;
+  let contactEmail = req.body.contactEmail;
+  let contactPhone = req.body.contactPhone;
+  let contactSubject = req.body.contactSubject;
+  let contactMessage = req.body.contactMessage;
+
+  console.log(contactName ,contactEmail ,  contactPhone ,contactSubject ,  contactMessage)
+  
 const contactSchema = Joi.object({
-  contactFullName: Joi.string().trim().required().messages({
-    'any.required': 'Please enter your name'
+  contactName: Joi.string().trim().required().messages({
+    'any.required': 'Please enter your name || برجاء ادخال الاسم'
   }),
   contactEmail: Joi.string().trim().email({ minDomainSegments: 2 }).required().messages({
-    'any.required': 'Please enter a valid email address'
+    'any.required': 'Please enter a valid email address || برجاء ادخال البريد الالكتروني صحيح'
   }),
   contactPhone: Joi.string().trim().length(11).pattern(/^\d+$/).required().messages({
-    'any.required': 'Please enter a valid 11-digit phone number'
+    'any.required': 'Please enter a valid 11-digit phone number || يرجى إدخال رقم هاتف صحيح مكون من ١١ رقما'
   }),
-  contactSubject: Joi.string().trim(),
-  contactMessage: Joi.string().trim().required()
+  contactSubject: Joi.string().trim().required(),
+
+  contactMessage: Joi.string().trim().required(),
 });
 
-app.post('/contact', (req, res) => {
   const { error, value } = contactSchema.validate(req.body);
-  console.log(req.body)
-  if (error) {
-    const errors = error.details.map(detail => detail.message);
-    return res.status(400).json({ errors });
+  if(error){
+    const errorDetails = error.details.map(d => d.message).join('<br>');
+    res.send(`<h2>Validation Error : </h2> ${errorDetails}`)
+    return;
   }
-
   // Extract the form data from the request body
   const formData = value;
+  //   res.send(`
+  // <div class="container" style="text-align: center; padding-top:4rem ">
+  //   <h2>Form Submitted Successfuly || تم ارسال الطلب بنجاح</h2>
+  // <a href="./en/index.html" style="text-decoration:none; margin-top:1rem;">
+  // Back To Home Page || الرجوع للصفحة الرئيسية</a>
+  // </div>
+  // `);
 
+    res.redirect('./en/index.html')
   // Create a nodemailer transporter object with your email service credentials
   const transporter = nodemailer.createTransport({
     service: 'gmail',

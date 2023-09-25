@@ -1,6 +1,13 @@
+@media screen and (max-width: 1024px) {
+    .all-clinics p{
+    margin-bottom: 10px !important;
+}
+}
+
+
 @media screen and (max-width : 991px) {
     .offcanvas-end {
-        transform: translateX(-100%); 
+        transform: translateX(-100%);
     }
 
     /* About US */
