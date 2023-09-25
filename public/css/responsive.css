@@ -322,8 +322,8 @@
 
      /* cataract clinic */
      .clinic-service .other-clinics{
-           height: 550px;
-    overflow-y: scroll;
+           /* height: 550px;
+    overflow-y: scroll; */
     margin-top: 2rem;
      }
 
@@ -554,6 +554,13 @@
     .aboutus-header h4{
         margin-right: 0;
     }
+    /* cataract page */
+    .accordion-button::after  {
+    display: none;
+}
+.accordion-button:not(.collapsed)::after{
+    display: none;
+}
 }
 
 
