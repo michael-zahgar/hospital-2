@@ -2723,6 +2723,9 @@ transition: var(--transition);
     padding: 10px;
     font-weight: 500;
 }
+.clinic-service .accordion{
+    margin: 30px 0;
+}
 .clinic-service .other-clinics a.active{
     background-color: white;
     border-radius: 5px;
