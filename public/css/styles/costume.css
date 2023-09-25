@@ -507,7 +507,7 @@ width: 200px;
     .parent-1 a{
         color: white;
     }
-    .top-header .main-font {
+    .top-header .main-font , .parent-1 .navbar-toggler .main-font{
         color: white !important;
     }
     .hover-li-main-2 .dropdown-menu a{
