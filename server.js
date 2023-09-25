@@ -6,7 +6,7 @@
 // However, there are still a few things you can do to make the code even more secure:
 
 // 1 - Use a secure email provider: While using Gmail is convenient,
-//  it is not the most secure email provider. Consider using a more secure email provider that offers 
+//  it is not the most secure email provider. Consider using a more secure email provider that offers
 //  end-to-end encryption or other security features.
 
 // 2- Add rate limiting: You may want to consider adding rate limiting
@@ -14,7 +14,7 @@
 //   This can help protect against Denial of Service (DoS) attacks.
 
 // Add input validation: While you are already using express.json()
-//  to parse the JSON body of the HTTP request, it is a good practice to 
+//  to parse the JSON body of the HTTP request, it is a good practice to
 //  also validate the user input to ensure that it is safe and does not contain any malicious content.
 //   You can use a validation library like Joi to validate the user input before sending the email.
 
@@ -62,9 +62,7 @@ app.use(limiter); // Apply rate limiter middleware to all routes
 app.use(cors())
 
  app.get('/' , (req, res) =>{
-   
-
-   res.sendFile('./en/index.html');
+   res.sendFile(__dirname + './en/index.html');
 });
 
 // Subscribe Form
@@ -90,7 +88,7 @@ app.post('/subscribe', (req, res) => {
     res.send(`<h2>Validation Error : </h2> ${errorDetails}`)
     return;
   }
-  
+
   //     res.send(`
   // <div style="text-align:center;">
   //   <h2 style="padding-top:4rem">Form Submitted Successfuly</h2>
@@ -142,7 +140,7 @@ app.post('/submitForm', (req, res)=>{
 
 console.log(name , email , phone , address , message , branch , service)
 
-  
+
 const schema = Joi.object({
     name: Joi.string().required().messages({
       'string.empty': 'Please enter your name'
@@ -177,7 +175,7 @@ const schema = Joi.object({
     res.send(`<h2>Validation Error : </h2> ${errorDetails}`)
     return;
   }
-  
+
   // res.send(`
   // <div class="container" style="text-align: center; padding-top:4rem ">
   //   <h2>Form Submitted Successfuly || تم ارسال الطلب بنجاح</h2>
@@ -219,13 +217,13 @@ const schema = Joi.object({
         }else{
             console.log('Email sent' + info.response);
             res.status(200).send('OK');
-  
+
 
         }
     })
     })
 
-// Contact Form 
+// Contact Form
 
 app.post('/contact', (req, res) => {
 
@@ -236,7 +234,7 @@ app.post('/contact', (req, res) => {
   let contactMessage = req.body.contactMessage;
 
   console.log(contactName ,contactEmail ,  contactPhone ,contactSubject ,  contactMessage)
-  
+
 const contactSchema = Joi.object({
   contactName: Joi.string().trim().required().messages({
     'any.required': 'Please enter your name || برجاء ادخال الاسم'
