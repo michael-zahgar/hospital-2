@@ -2730,7 +2730,11 @@ transition: var(--transition);
     background-color: white;
     border-radius: 5px;
 }
-.clinic-service .other-clinics a:hover{
+.clinic-service .c-s-body h1{
+    color: var(--main-color);
+    font-weight: 600;
+}
+.clinic-service .other-clinics a:hover , .clinic-service .other-clinics a.active{
     color: var(--frost-blue-color);
 }
 .clinic-service .other-clinics{

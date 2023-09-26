@@ -1,0 +1,619 @@
+
+@media screen and (max-width:1350px){
+    .parent-4 .experience-box {
+        top: 0;
+        left: -30px;
+    }
+    .reasons .trans-title {
+        font-size: 60px;
+    }
+    /* Clinics page */
+    .service-inner{
+        padding: 20px;
+    }
+}
+/* da ma3nah an responsive da hayfdl shagal men 1252px  le7d ta7t 5als  */
+
+
+@media screen and (max-width:1252px){
+    .parent-1 .container {
+        max-width: 100%;
+    }
+
+    .parent-2 .container .main-head .main-text{
+        width: 90%;
+    }
+    .parent-2 .container .main-head .main-text h1{
+        font-size: 30px;
+    }
+    .parent-2 .container .main-head .main-text p{
+        padding: 10px 0 !important;
+    }
+    .parent-4 .row{
+        --bs-gutter-x: 1.5rem;
+    }
+    .parent-4 .experience-box{
+        top: 0;
+        left: 5px;
+    }
+     .about-us-1 .container{
+        max-width: 100%;
+     }
+     .serv-body .serv-p{
+        line-height: 23px;
+     }
+     .service-1 .container{
+        max-width: 90% !important;
+     }
+     .services-main .check-services .doc-service .card-body{
+        padding: 0;
+     }
+     .doctor-1 img{
+        width: 300px;
+     }
+     .section p{
+        font-size: 17px;
+        margin-top: 10px;
+     }
+}
+@media screen and (max-width:1199px){
+    .parent-4 .row{
+        --bs-gutter-x: 0;
+    }
+    .parent-4 .container{
+        max-width: 80%;
+    }
+    .parent-4 .about-img .min-img{
+        bottom: -30px;
+    }
+    .parent-4 .about-img .min-img img{
+        width: 200px;
+    }
+    .parent-4 .about-img{
+        margin-bottom: 5rem;
+    }
+    .our-rate .container{
+        max-width: 90%;
+    }
+    .our-rate .rate-content{
+        margin-bottom: 15px;
+    }
+}
+/* da ma3nah an responsive da hayfdl shagal men 1024 le7d fooo2 5als  */
+
+@media screen and (min-width:1024px){
+    .dropdown .dropdown-menu {
+        display: none ;
+    }
+    .dropdown:hover > .dropdown-menu , .sub-drop:hover > .dropdown-menu{
+        display: block;
+    }
+
+    .sub-drop:hover > .dropdown-menu{
+        position: absolute;
+        top: 0;
+        right: 100%;
+    }
+
+}
+/* da ma3nah an responsive da hayfdl shagal men 1024 le7d ta7t 5als  */
+@media screen and (max-width:1024px) {
+    .parent-1 a{
+        font-size: 15px;
+    }
+
+    .hidden{
+        transition: all ease-in-out .3s;
+    }
+
+    .checkservice{
+        background-color: var(--main-color);
+    }
+    .checkservice .services{
+        color: white;
+        justify-content: center !important;
+    }
+    .checkservice .serv-body p{
+        color: white;
+    }
+    .checkservice .services i{
+        color: white !important;
+        border-color: #13c5dd white #13c5dd  #13c5dd ;
+    }
+    .checkservice .serv-body p{
+        color: white;
+    }
+    /* .parent-4 video {
+        width: -webkit-fill-available;
+    } */
+    .parent-4 .about-img .min-img img{
+        width: 250px;
+    }
+
+    .parent-6 .insure-contain img{
+        width: 100%;
+    }
+
+    .doctors-3{
+        height: auto;
+    }
+    .main-doc{
+        margin-bottom: 30px;
+    }
+    .parent-9 .latest-post-card .post-body,.post-foot{
+        padding: 0;
+    }
+    .parent-9 .latest-post-card .post-title{
+        padding: 10px 0;
+        font-size: 19px;
+    }
+    .about-us-3 .carousel{
+        max-width: 100% !important;
+    }
+    .about-us-3 .our-doc-head{
+        width: 70%;
+    }
+    .about-us-info::before{
+        width: 500px;
+        height: 300px;
+
+        right: 110px;
+        top: 70px;
+    }
+    /* Services page */
+    .service-1 .container{
+        max-width: 90%;
+    }
+    .service-3 .container{
+        width: 80%;
+      }
+      .form-parent .form-floating{
+        margin-bottom: 5px !important;
+      }
+
+      .our-other-services-body .card h5{
+        font-size: 20px;
+    }
+    /* about-us */
+    .section p{
+        top: 24%;
+     }
+     /* Clinics Page */
+     .service-inner{
+        padding:10px;
+     }
+}
+
+@media screen and (max-width:991px){
+    html{
+        overflow-x: hidden !important;
+    }
+    .parent-1 .navbar-nav .nav-link.active::before{
+        background-color: transparent;
+    }
+    .parent-1 a{
+        color: white;
+    }
+    .hover-li-main{
+        display: none;
+    }
+
+    .hover-li-main-2{
+        display: inline-block !important;
+    }
+    .parent-1 .dropdown-item::before{
+        transform: rotate(-90deg);
+        padding-right: 5px;
+    }
+    .parent-1 .logo span{
+        display: inline-block;
+       }
+        .offcanvas-end {
+
+            transform: translateX(100%);
+        }
+
+    .parent-2 .container .main-head{
+        text-align: center;
+    }
+    .parent-2 .container .main-img{
+        justify-content: center;
+    }
+    .parent-2 .container .main-head .main-text{
+        width: 100%;
+    }
+    .parent-2 .container .main-buttons{
+     justify-content: center;
+    }
+
+
+    .parent-3{
+        background-image: linear-gradient(to left, #213262, #244c80, #24679e, #2283bb, #1fa3d7) !important;
+        margin-top: 0 !important;
+    }
+    .reasons .reason-video{
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+    .modals-video video{
+        max-width: 60%;
+    }
+    .testimonials .testi-header {
+        margin-bottom: 100px;
+    }
+    .testimonials .header-inner {
+        font-size: 40px;
+        font-weight: bolder;
+        margin-top: -26px;
+    }
+    .testimonials .testi-title{
+        font-size: 70px;
+    }
+
+    .parent-10 .loc{
+        margin-bottom: 4rem;
+    }
+    .parent-11 .col-lg-3{
+        padding-bottom: 15px;
+    }
+    .parent-11 .tag-head{
+        padding-bottom: 1rem !important;
+    }
+    /* About Page  */
+
+    .section p{
+        position: relative;
+        width: 100%;
+    }
+    .section img , .section img.thawra-img{
+        left: 0 !important;
+    }
+    .line{
+        left: 0;
+    }
+    .aboutus-content .content{
+        width: 100%;
+    }
+    .section .bead{
+        left: 1px;
+        top: 1%;
+    }
+    .content h5{
+        text-align: left;
+    }
+    .aboutus-content .heritage-histroy div{
+        margin-bottom: 20px;
+    }
+    .sub-sec{
+        margin-top: 0 !important;
+    }
+    .section {
+        padding: 0 1rem;
+    }
+    /* services page */
+
+    .service-2 .contact{
+        border: none;
+
+    }
+    .service-2 .contact-hotline{
+        border-bottom: 1px solid white;
+        margin-bottom: 10px;
+    }
+
+    .serv-p{
+        padding-top: 10px;
+    }
+    .c-s-1 .ch-ser-title a{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .services-main .check-services .doc-service{
+        width: 400px ;
+        margin: auto;
+    }
+    .services-main .check-services .doc-service .card-body{
+        padding: 10px;
+     }
+     .doctor-1 img{
+        margin-top: 35px;
+     }
+
+     /* cataract clinic */
+     .clinic-service .other-clinics{
+           /* height: 550px;
+    overflow-y: scroll; */
+    margin-top: 2rem;
+     }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .home-video .mobile-vid{
+        display: inline-block;
+    }
+    .home-video .pc-video{
+        display: none;
+    }
+    .checkservice{
+         padding: 0;
+    }
+    .modals-video{
+        top: 65%;
+    }
+    .parent-2 .container h1{
+        width: 60%;
+    }
+    .checkservice .serv-2{
+        border-top: 2px dashed;
+        border-left: none;
+    }
+    .checkservice .serv-3{
+        border-top: 2px dashed;
+    }
+    .checkservice a:hover{
+        background-color: #13c5dd;
+    }
+    .lesson-text{
+        width: 70%;
+    }
+    .parent-2 .container img {
+      height: auto;
+    }
+    .h-gallery .splide__slide img{
+        height: 300px;
+    }
+    .parent-4 .about-img .min-img{
+        position: relative !important;
+        border: none;
+        right: 0;
+        bottom: 0;
+        margin-top: 20px;
+    }
+    .parent-4 .about-img .min-img img{
+        width: 100%;
+    }
+    .parent-4 .about-img .big-img{
+        height: 500px;
+      }
+    .trans-title{
+        font-size: 50px;
+    }
+    .our-rate .rate-content{
+       justify-content: center;
+    }
+
+    .testimonials .testi-title{
+        font-size: 40px;
+    }
+    .contact-home p {
+        width: auto;
+    }
+    .inf-rotate{
+        left: 26%;
+    }
+    .parent-5 p{
+        font-size: 17px;
+    }
+    .parent-5 h1{
+        font-size: 35px;
+    }
+    .parent-6 h2{
+        font-size: 30px;
+    }
+    .faqs .accordion-button:not(.collapsed) i{
+        display: none;
+    }
+    .our-services .container{
+        max-width: 90% !important;
+      }
+
+      .parent-10 .loc-header {
+        font-size: 27px;
+    }
+    /* about page */
+    .about-us-2{
+        margin-bottom: 0 !important;
+    }
+    .about-us-2 .doc-search-body{
+        width: 90%;
+    }
+
+    .about-us-3 .our-doc-head{
+        width: 100%;
+    }
+    .testimonials .testi-header{
+        margin-bottom: 100px;
+    }
+    /* services page */
+    .service-1 .container{
+        max-width: 80%;
+    }
+    .service-1 .service1-head{
+        width: 70%;
+    }
+    .service-1 .service-card{
+        margin-right: 0;
+    }
+    .service-3 .container{
+        width: 100%;
+      }
+
+      /* WRDC Page */
+      .wrdc-1 .wrdc-images .wrdc-r2 img{
+        margin: auto;
+    }
+      .wrdc-1 .wrdc-header-img img{
+        width: 300px !important;
+      }
+
+      /* Doctors Profile */
+      .doctor-1 h1 {
+        font-size: 50px;
+    }
+      .doctor-1 h4 {
+        font-size: 35px;
+      }
+      .doctor-2 .doc-cv{
+        border: none;
+      }
+
+      .doctor-2 .hospitals{
+        padding-top: 2rem;
+      }
+
+      /* Facilities */
+
+      .fac-1 h3{
+        padding-top: 10px;
+      }
+      .fac-1 .pricing1-header h1{
+        font-size: 32px;
+      }
+      .doctors-3 h2{
+        font-size: 30px;
+       }
+
+       /* About-US */
+       .aboutus-content .nav{
+        justify-content: center;
+        text-align: center;
+       }
+
+       /* Career Page */
+       .careers-1 .nav{
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+@media screen and (max-width:533px) {
+    .parent-4 .circle {
+    margin:auto;
+    }
+    .reasons .trans-title{
+        font-size: 40px;
+    }
+    .parent-4 .container{
+        max-width: 100%;
+    }
+    .parent-4 .experience-box{
+        width: 150px;
+        height: 150px;
+    }
+    .parent-4 .experience-box .experience-inner{
+        width: 100px;
+        height: 100px;
+    }
+    .parent-4 .experience-box .experience-inner h2{
+        margin: 0;
+
+    }
+    .service-home .home-service-head h1 , .parent-4 h2{
+        font-size: 30px !important;
+    }
+    .service-home .home-service-head h1 span , .parent-4 h2 span{
+        font-size: 40px !important;
+    }
+    .parent-4 .experience-box .experience-inner h3{
+        font-size: 20px;
+    }
+    .parent-5 .bg-cut a{
+        font-size: 20px;
+    }
+    .parent-6 h2 span{
+        display: none;
+    }
+    .parent-6 .insure-contain img{
+        width: 160px;
+      }
+      .testimonials{
+        padding-top: 2rem;
+      }
+      .testimonials .testi-header{
+        margin-bottom: 60px;
+      }
+    .doctors-3 h2{
+        font-size: 20px;
+       }
+    .parent-11 .social {
+        flex-direction: column;
+    }
+    .clinic-header h1{
+        font-size: 35px;
+    }
+    .career-header{
+        padding-top: 50px;
+    }
+    /* about us */
+    .aboutus-header h4{
+        margin-right: 0;
+    }
+    /* cataract page */
+    .accordion-button::after  {
+    display: none;
+}
+.accordion-button:not(.collapsed)::after{
+    display: none;
+}
+}
+
+
+@media screen and (max-width:480px){
+    .container{
+        max-width: 100% !important;
+    }
+    .parent-2 .container{
+        left: 0;
+    }
+    .parent-4 a:hover + .icon {
+        left: 40vw;
+    }
+    .reasons .shape-2{
+        left: 0;
+    }
+
+    .trans-title{
+        font-size: 35px;
+        opacity: 0.5;
+    }
+    .testimonials .header-inner {
+        font-size: 27px;
+    }
+    .our-services .container{
+        max-width: 100% !important;
+    }
+    .faqs .accordion-body{
+        padding: 0;
+    }
+    .caro-patient h3{
+        font-size: 17px;
+        font-weight: bolder;
+        padding-bottom: 10px;
+      }
+      .caro-patient p{
+        display: none;
+      }
+      .caro-patient .button{
+          padding: 10px 12px;
+          font-size: 15px;
+      }
+
+      .form-parent button
+      {
+        font-size: 15px;
+        padding: 10px;
+      }
+      .services-main .check-services .doc-service{
+        width: auto ;
+    }
+
+    .doctors-3 h2{
+        font-size: 20px;
+       }
+}

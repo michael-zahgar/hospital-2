@@ -1,0 +1,27 @@
+@media screen and (max-width: 1024px) {
+    .all-clinics p{
+    margin-bottom: 10px !important;
+}
+}
+
+
+@media screen and (max-width : 991px) {
+    .offcanvas-end {
+        transform: translateX(-100%);
+    }
+
+    /* About US */
+
+    .section img, .section img.thawra-img{
+        right: 0;
+    }
+    .line{
+        right: 0;
+    }
+    .section .bead{
+        right: -15px;
+    }
+    .aboutus-content .content h5{
+        text-align: right;
+    }
+}
