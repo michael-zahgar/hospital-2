@@ -1,8 +1,7 @@
 @import url("./fonts.css");
-
-body,html{
+*{
     direction: rtl;
-    font-family: "Almarai" !important;
+    font-family: "Almarai" ;
 }
 
 .hidden{
