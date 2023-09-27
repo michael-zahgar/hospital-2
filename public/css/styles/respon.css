@@ -216,7 +216,9 @@
 
             transform: translateX(100%);
         }
-
+        .reasons .trans-title{
+            margin-top: 20px;
+        }
     .parent-2 .container .main-head{
         text-align: center;
     }
