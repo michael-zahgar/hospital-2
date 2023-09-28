@@ -492,7 +492,11 @@
        /* Career Page */
        .careers-1 .nav{
         margin-bottom: 30px;
-    }
+        }
+          /* inside Clinics and clinics */
+      .page-header{
+            padding-top: 50px;
+        }
 
 }
 
@@ -502,6 +506,7 @@
     .parent-4 .circle {
     margin:auto;
     }
+
     .reasons .trans-title{
         font-size: 40px;
     }
@@ -621,5 +626,13 @@
 
     .doctors-3 h2{
         font-size: 20px;
+       }
+
+       /* Clinics page */
+       .page-header a, .page-header li{
+        font-size: 20px;
+       }
+       .clinic-header h1{
+        font-size: 30px;
        }
 }
