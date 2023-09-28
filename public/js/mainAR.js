@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 1,
       },
     },
-          
+
   }).mount();
 });
 
 
 
-      // Home Insurance 
+      // Home Insurance
 
       document.addEventListener('DOMContentLoaded', function () {
         new Splide('#insurance-ar', {
@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', function () {
           },autoScroll: {
             speed: 2,
           }
-          
+
         }).mount( window.splide.Extensions );
       });
-      
+
       document.addEventListener('DOMContentLoaded', function () {
         new Splide( '#testimonials-ar', {
           direction: 'rtl',
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         document.addEventListener('DOMContentLoaded', function () {
-          new Splide('#home-gallery-ar', {
+          new Splide('#home-galleryAr', {
             direction: 'rtl',
             gap : 0 ,
             type   : 'loop',
@@ -94,6 +94,6 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             autoScroll: {
               speed: 1,
-            },     
+            },
           }).mount( window.splide.Extensions );
         });

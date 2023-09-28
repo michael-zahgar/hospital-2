@@ -50,8 +50,8 @@ PORT = process.env.PORT;
 
 const limiter = rateLimit({
     windowMs: 15 *60 * 1000, // 15 minutes
-    max: 10, // limit each IP to 5 requests per windowMs
-    message: 'You Have Sent Many Requests, please try again later'
+    max: 5, // limit each IP to 5 requests per windowMs
+    message: 'You Have Sent Many Requests, please try again later ||  برجاء المحاولة في وقت لاحق'
   });
 
 
@@ -89,14 +89,12 @@ app.post('/subscribe', (req, res) => {
     return;
   }
 
-  //     res.send(`
-  // <div style="text-align:center;">
-  //   <h2 style="padding-top:4rem">Form Submitted Successfuly</h2>
-  //   <a href="./en/index.html" style="text-decoration:none; margin-top:1rem;">
-  // Back To Home Page || الرجوع للصفحة الرئيسية</a>
-  // </div>
-  // `)
-   res.redirect('./en/index.html')
+res.send(`
+  <script>
+    alert('Form submitted successfully || تم إرسال الطلب بنجاح');
+     window.location.href = document.referrer;
+  </script>
+`);
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -176,23 +174,12 @@ const schema = Joi.object({
     return;
   }
 
-  // res.send(`
-  // <div class="container" style="text-align: center; padding-top:4rem ">
-  //   <h2>Form Submitted Successfuly || تم ارسال الطلب بنجاح</h2>
-  // <a href="./en/index.html" style="text-decoration:none; margin-top:1rem;">
-  // Back To Home Page || الرجوع للصفحة الرئيسية</a>
-  // </div>
-  // `);
-  res.redirect('./en/index.html')
-  name = '';
-  email = '';
-  phone = '';
-  address = '';
-  message = '';
-  branch = '';
-  service = '';
-
-
+res.send(`
+  <script>
+    alert('Form submitted successfully || تم إرسال الطلب بنجاح');
+     window.location.href = document.referrer;
+  </script>
+`);
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -258,15 +245,14 @@ const contactSchema = Joi.object({
   }
   // Extract the form data from the request body
   const formData = value;
-  //   res.send(`
-  // <div class="container" style="text-align: center; padding-top:4rem ">
-  //   <h2>Form Submitted Successfuly || تم ارسال الطلب بنجاح</h2>
-  // <a href="./en/index.html" style="text-decoration:none; margin-top:1rem;">
-  // Back To Home Page || الرجوع للصفحة الرئيسية</a>
-  // </div>
-  // `);
 
-    res.redirect('./en/index.html')
+res.send(`
+  <script>
+    alert('Form submitted successfully || تم إرسال الطلب بنجاح');
+     window.location.href = document.referrer;
+  </script>
+`);
+
   // Create a nodemailer transporter object with your email service credentials
   const transporter = nodemailer.createTransport({
     service: 'gmail',
