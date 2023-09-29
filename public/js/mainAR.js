@@ -97,3 +97,27 @@ document.addEventListener('DOMContentLoaded', function () {
             },
           }).mount( window.splide.Extensions );
         });
+
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#lens-galleryAr', {
+          direction: 'rtl',
+          gap : 0 ,
+          type   : 'loop',
+          drag   : 'free',
+          focus  : 'center',
+          arrows: false,
+          perPage: 3,
+           arrows:false,
+           pagination:false,
+           breakpoints: {
+            768: {
+              perPage: 2,
+            }
+          },
+          autoScroll: {
+            speed: 2,
+          },
+        }).mount( window.splide.Extensions );
+      });

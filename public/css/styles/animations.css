@@ -1,0 +1,19 @@
+@keyframes RightToLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-75%);
+    }
+}
+
+@keyframes LeftToRight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(75%);
+    }
+}

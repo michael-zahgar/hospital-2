@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const hiddenElements = document.querySelectorAll('.hidden');
   hiddenElements.forEach((el) => observer.observe(el));
-});    
+});
 
 
 // let form = getElementById('sub-form')
@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Scroll up button 
+// Scroll up button
 function addScrollUpFunctionality() {
   const span = document.querySelector(".scroll-up");
 
   window.onscroll = function () {
     this.scrollY >= 1000 ? span.classList.add("show") : span.classList.remove("show");
   };
-  
+
   span.onclick = function() {
     window.scrollTo({top: 0, behavior: "smooth"});
   }
@@ -219,7 +219,7 @@ function searchProduct() {
 
 $(document).ready(function(){
 
-  
+
 let nav_offset_top = $('.header-area').height() + 5;
 
 function navbarFixed() {
@@ -296,7 +296,7 @@ $(".caro-patient .owl-carousel").owlCarousel({
   responsive: {
     0:{
       items:3
-    }, 
+    },
     992:{
       items:5
     }
@@ -317,7 +317,7 @@ nav : true,
   responsive: {
     0:{
       items:1
-    }, 
+    },
     992:{
       items:2
     }
@@ -402,11 +402,11 @@ document.addEventListener('DOMContentLoaded', function () {
         perMove: 2
       },
     },
-    
+
   }).mount();
 });
 
-      // Home Insurance 
+      // Home Insurance
 
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#insurance', {
@@ -434,7 +434,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },autoScroll: {
       speed: 2,
     }
-    
+
   }).mount( window.splide.Extensions );
 });
 
@@ -445,7 +445,7 @@ document.addEventListener('DOMContentLoaded', function () {
       //     height   : '20rem',
       //     autoplay: 'true',
       //     perMove: 1,
-      //      arrows:false,         
+      //      arrows:false,
       //   }).mount();
       // });
 
@@ -462,10 +462,10 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             768: {
               perPage: 1,
-      
+
             },
           },
-                
+
         }).mount();
       });
 
@@ -474,7 +474,7 @@ document.addEventListener('DOMContentLoaded', function () {
         type: 'image',
         gallery:{enabled:true}
       });
-      
+
       document.addEventListener('DOMContentLoaded', function () {
         new Splide('#home-gallery', {
           direction: 'ltr',
@@ -496,11 +496,34 @@ document.addEventListener('DOMContentLoaded', function () {
           },
           autoScroll: {
             speed: 1,
-          },     
+          },
         }).mount( window.splide.Extensions );
       });
 
-      
+      // Lens Gallery
+
+            document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#lens-gallery', {
+          direction: 'ltr',
+          gap : 0 ,
+          type   : 'loop',
+          drag   : 'free',
+          focus  : 'center',
+          arrows: false,
+          perPage: 3,
+           arrows:false,
+           pagination:false,
+           breakpoints: {
+            768: {
+              perPage: 2,
+            }
+          },
+          autoScroll: {
+            speed: 2,
+          },
+        }).mount( window.splide.Extensions );
+      });
+
       document.addEventListener('DOMContentLoaded', function () {
         new Splide( '#patient-splide', {
           direction: 'ltr',
@@ -520,9 +543,9 @@ document.addEventListener('DOMContentLoaded', function () {
           },
         } ).mount( window.splide.Extensions );
         });
-      
- 
-    
+
+
+
 
       document.addEventListener('DOMContentLoaded', function () {
         new Splide( '#testimonials', {

@@ -4,6 +4,8 @@
 
 @import url("../partials/global.css");
 
+@import url("./animations.css");
+
 * {
     list-style-type: none;
     padding: 0;
@@ -3039,6 +3041,10 @@ button {
     margin: 4rem 0;
 }
 
+.clinic-service a {
+    color: inherit;
+}
+
 .clinic-service .container {
     max-width: 80%;
 }
@@ -3071,13 +3077,34 @@ button {
     border-radius: 5px;
 }
 
-.clinic-service .c-s-body h1 {
+.clinic-service .c-s-body h1, .clinic-service h1 {
     color: var(--main-color);
     font-weight: 600;
 }
 
-.clinic-service .other-clinics a:hover, .clinic-service .other-clinics a.active {
+/* .clinic-service .c-s-body h4 {
     color: var(--frost-blue-color);
+} */
+
+.clinic-service .c-s-body .lenses-type ul {
+    padding: 0;
+}
+
+.clinic-service p, .clinic-service span {
+    color: gray;
+}
+
+.clinic-service .c-s-body .lenses-type span, .clinic-service .right-clinic span {
+    font-size: 18px;
+}
+
+.clinic-service .right-clinic a:hover, .clinic-service .other-clinics a.active {
+    color: var(--frost-blue-color);
+}
+
+.clinic-service .lens-contact span, .clinic-service .lens-contact a {
+    color: black;
+    width: fit-content;
 }
 
 .clinic-service .other-clinics {
@@ -3097,6 +3124,36 @@ button {
 
 .accordion-button:not(.collapsed)::after {
     color: white;
+}
+
+/* lens-service */
+
+.lens-service .c-s-header img {
+    height: 500px;
+}
+
+.clinic-service .lens-companies h2 {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.clinic-service .lens-companies .splide {
+    margin: 20px 0;
+}
+
+.clinic-service .lens-companies img {
+    width: 200px;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+    object-position: center;
+}
+
+.rightToLeft {
+    animation: RightToLeft 10s infinite linear;
+}
+
+.lens-service .c-s-body {
+    overflow: hidden;
 }
 
 /* Careers Start */
