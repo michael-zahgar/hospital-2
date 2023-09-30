@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../css/all.min.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="./css/all.min.css">
+        <!-- CDN Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- CDN Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Magnific Popup css file -->
+        <link rel="stylesheet"
+            href="../vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js">
 
-    <!-- Magnific Popup css file -->
-    <link rel="stylesheet" href="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js">
+        <!-- carosuel css file -->
+        <link rel="stylesheet"
+            href="../vendor/owl-carousel/css/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="../vendor/owl-carousel/css/owl.theme.default.min.css">
 
-     <!-- carosuel css file -->
-     <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
-     <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+        <!-- Custome CSS -->
+        <link rel="stylesheet" href="../css/style.css">
 
-     <!-- Custome CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+        <!-- responsive CSS -->
+        <link rel="stylesheet" href="../css/responsive.css">
 
-    <!-- responsive CSS -->
-    <link rel="stylesheet" href="./css/responsive.css">
-    
-    <style>
+        <style>
         body {
             padding: 0;
             margin: 0;
@@ -36,21 +39,21 @@
             color: white;
             height: 100vh;
         }
-        
+
         .background {
             position: fixed;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
-            background: url("./images/construction.jpg") #08093cb3;
+            background: url("../images/construction.jpg") #08093cb3;
             background-size: cover;
             background-repeat: no-repeat;
             background-blend-mode: darken;
             filter: blur(10px);
             z-index: -1;
         }
-        
+
         .container {
             width: 600px;
             margin: auto;
@@ -68,14 +71,14 @@
             margin: 10px;
             margin-bottom: 40px;
         }
-        
+
         hr {
             width: 100px;
             color: white;
             border-radius: 5px;
             margin: 0 15px
         }
-        
+
         h1 {
             font-size: 60px;
             text-align: center;
@@ -93,16 +96,16 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-        
+
         a {
             color: white;
         }
-        
+
         i {
             font-size: 35px;
             margin: 10px;
         }
-        
+
         .progress-wrapper {
             width: 100%;
             background: #2f2b2bc7;
@@ -110,7 +113,7 @@
             margin-bottom: 20px;
             border-radius: 5px;
         }
-        
+
         .progress {
             width: 0%;
             height: 20px;
@@ -120,7 +123,7 @@
             justify-content: flex-end;
             /* transition: all 0.003 ease-in; */
         }
-        
+
         .progress span {
             color: black;
             position: relative;
@@ -128,7 +131,7 @@
             margin-right: 10px;
         }
         @media screen and (max-width:640px) {
-           
+
            .container{
                width: 90%;
            }
@@ -150,54 +153,51 @@
            }
        }
     </style>
-</head>
-<body>
-    
-    <div class="background"></div>
-    <div class="container">
-        <div class="top">
-            <hr>
-            <img src="images/logo-trans2.png" alt="watany-logo">
-            <hr>
+    </head>
+    <body>
+
+        <div class="background"></div>
+        <div class="container">
+            <div class="top">
+                <hr>
+                <img src="../images/logo-trans2.png" alt="watany-logo">
+                <hr>
+            </div>
+            <h1>UNDER CONSTRUCTION</h1>
+            <h3>PROGRESS</h3>
+            <div class="progress-wrapper">
+                <div class="progress"><span>0%</span></div>
+            </div>
+            <div class="social-icons">
+                <a href="#your-fb-page"><i class="fab fa-facebook"></i></a>
+                <a href="#your-twitter-profile"><i class="fab fa-twitter"></i></a>
+                <a href="#your-instagram-page"><i class="fab fa-instagram"></i></a>
+                <a href="#your-youtube-page"><i class="fab fa-youtube"></i></a>
+
+            </div>
         </div>
-        <h1>UNDER CONSTRUCTION</h1>
-        <h3>PROGRESS</h3>
-        <div class="progress-wrapper">
-            <div class="progress"><span>0%</span></div>
-        </div>
-        <div class="social-icons">
-            <a href="#your-fb-page"><i class="fab fa-facebook"></i></a>
-            <a href="#your-twitter-profile"><i class="fab fa-twitter"></i></a>
-            <a href="#your-instagram-page"><i class="fab fa-instagram"></i></a>
-            <a href="#your-youtube-page"><i class="fab fa-youtube"></i></a>
 
-        </div>
-    </div>
+        <script src="./js/jquery.3.6.2.js"></script>
 
+        <script src="./js/bootstrap.bundle.js"></script>
 
+        <!-- Isotope js libary  ( for cards selection ) -->
 
+        <script src="./vendor/isotope/isotope.min.js"></script>
 
-    
-    <script src="./js/jquery.3.6.2.js"></script>
+        <!-- Magnific popup script file (for pictures) -->
 
-    <script src="./js/bootstrap.bundle.js"></script>
+        <script
+            src="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
 
-    <!-- Isotope js libary  ( for cards selection ) -->
+        <!-- owl-carosuel js file -->
 
-    <script src="./vendor/isotope/isotope.min.js"></script>
+        <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
 
-    <!-- Magnific popup script file (for pictures) -->
+        <!-- JS main Script -->
+        <script src="./js/main.js"></script>
 
-    <script src="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
-
-    <!-- owl-carosuel js file -->
-
-    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
-
-    <!-- JS main Script -->
-    <script src="./js/main.js"></script>
-
-    <script>
+        <script>
         const progress = document.querySelector('.progress')
         const percentage = document.querySelector('.progress span')
 
@@ -218,5 +218,5 @@
 
         setInterval(progressLoad,50)
     </script>
-</body>
+    </body>
 </html>
