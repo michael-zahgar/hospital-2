@@ -419,6 +419,17 @@
     .clinic-service .lens-companies img {
         width: 200px;
     }
+
+    /* contact page */
+
+    .contactus-1 .contact-det {
+        text-align: center;
+    }
+
+    .contactus-1 .contact-det a, .contactus-1 .contact-det p {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
 
 
@@ -712,6 +723,13 @@
     .accordion-button:not(.collapsed)::after {
         display: none;
     }
+
+    /* contact page */
+    .contact-branches .trans-title {
+        font-size: 45px;
+    }
+
+
 }
 
 

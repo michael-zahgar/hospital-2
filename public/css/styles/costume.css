@@ -2533,6 +2533,13 @@ button {
     transition: var(--transition);
 }
 
+
+.contactus-1 .contact-det a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
 /* .contactus-1 .contact-det p{
     font-size: 23px;
 } */
