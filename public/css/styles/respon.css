@@ -729,7 +729,10 @@
         font-size: 45px;
     }
 
-
+    /* Contact lenses */
+    .clinic-service .lens-companies img {
+        width: 145px;
+    }
 }
 
 
