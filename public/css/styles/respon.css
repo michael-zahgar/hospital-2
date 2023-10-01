@@ -631,9 +631,19 @@
         margin-bottom: 30px;
     }
 
+    /* all clinics */
+
     /* inside Clinics and clinics */
     .page-header {
         padding-top: 50px;
+    }
+
+    .clinic-service {
+        margin-top: 6rem;
+    }
+
+    .clinic-service .container {
+        max-width: 100%;
     }
 
     /* Investigations */
@@ -743,6 +753,11 @@
     /* Contact lenses */
     .clinic-service .lens-companies img {
         width: 145px;
+    }
+
+    /* all clinics */
+    .all-clinics .container {
+        max-width: 100%;
     }
 
     /* investigations */
