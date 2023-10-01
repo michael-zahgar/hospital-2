@@ -3236,6 +3236,10 @@ button {
     margin-top: 3rem;
 }
 
+.mokhtabar-test ul li p {
+    color: black;
+}
+
 .mokhtabar-contact h3 a {
     color: gray;
     transition: var(--transition);
