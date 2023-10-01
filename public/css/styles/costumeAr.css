@@ -141,3 +141,8 @@
 .LeftToRight {
     animation: LeftToRight 10s infinite linear;
 }
+
+/* Lab page */
+.lab-data .lab-img {
+    width: 270px;
+}

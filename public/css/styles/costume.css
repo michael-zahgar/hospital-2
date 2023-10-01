@@ -2977,7 +2977,7 @@ button {
 
 /* Our Clinics Page start */
 
-.clinic-header {
+.clinic-header .doctors-bg {
     background: url(../../images/clinics/clinic-bg.jpg) no-repeat;
     background-position: center;
     height: 350px;
@@ -3137,6 +3137,7 @@ button {
 
 .lens-service .c-s-header img {
     height: 500px;
+    object-fit: cover;
 }
 
 .clinic-service .lens-companies h2 {
@@ -3161,6 +3162,138 @@ button {
 
 .lens-service .c-s-body {
     overflow: hidden;
+}
+
+/* Lab Page */
+
+.lab-header .doctors-bg {
+    background: url("../../images/lab/mokhtabar.jpg");
+    background-color: rgba(255, 255, 255, 0.356);
+    background-blend-mode: overlay;
+}
+
+.lab-data .container {
+    max-width: 70%;
+}
+
+.lab-data {
+    padding: 2rem 0;
+}
+
+.lab-data p {
+    color: gray;
+}
+
+.lab-data .lab-img {
+    width: 350px;
+    margin: auto;
+}
+
+.lab-data .lab-img img {
+    background-color: #0000006c;
+    border-radius: 10px;
+}
+
+.lab-data .lab-body {
+    padding-top: 2rem;
+}
+
+.lab-data p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.mokhtabar-header {
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: italic;
+
+}
+
+
+.mokhtabar-header span {
+    font-size: 50px;
+}
+
+.mokhtabar-header h1 {
+    width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 50px;
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0;
+    /* Adjust as needed */
+    animation:
+        typing 4.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+
+.mokhtabar-test {
+    margin-top: 3rem;
+}
+
+.mokhtabar-contact h3 a {
+    color: gray;
+    transition: var(--transition);
+}
+
+.mokhtabar-contact h3 a:hover {
+    color: var(--frost-blue-color);
+}
+
+/* Investigation page */
+.inves-serv .c-s-body h1 {
+    font-size: 60px;
+}
+
+.inves-serv .invst-span {
+    font-size: 40px;
+    font-weight: 600;
+    background-color: transparent;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-image: linear-gradient(to left, #213262, #244c80, #24679e, #2284bb, #1fa2d7);
+    padding-bottom: 30px;
+}
+
+.gradient-border {
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #213262, #1fa2d7) 1;
+}
+
+.our-inves {
+    border-radius: 5px !important;
+}
+
+.our-inves .inves-img {
+    width: 150px;
+    margin: auto;
+    margin-top: -70px;
+    background: white;
+}
+
+.our-inves .inves-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.our-inves .inves-body ul {
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+.our-inves .inves-body ul li span {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.inves-serv .inves-card {
+    margin-bottom: 5rem;
 }
 
 /* Careers Start */

@@ -430,6 +430,12 @@
         margin-left: 0;
         margin-top: 10px;
     }
+
+    /* Lab Page */
+    .lab-data .container {
+        max-width: 100%;
+    }
+
 }
 
 
@@ -630,6 +636,11 @@
         padding-top: 50px;
     }
 
+    /* Investigations */
+
+    .inves-serv .container {
+        max-width: 100%;
+    }
 }
 
 
@@ -733,6 +744,16 @@
     .clinic-service .lens-companies img {
         width: 145px;
     }
+
+    /* investigations */
+
+    .inves-serv .c-s-body h1 {
+        font-size: 40px;
+    }
+
+    .inves-serv .invst-span {
+        font-size: 30px;
+    }
 }
 
 
@@ -805,5 +826,19 @@
 
     .clinic-header h1 {
         font-size: 30px;
+    }
+
+    /* lab page */
+    .mokhtabar-header h1 {
+        font-size: 35px;
+    }
+
+    .mokhtabar-contact h3 a {
+        display: block;
+        margin: 0;
+    }
+
+    .mokhtabar-contact h3 {
+        margin-bottom: 20px;
     }
 }
