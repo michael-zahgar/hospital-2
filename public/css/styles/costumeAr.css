@@ -84,6 +84,12 @@
     width: 270px;
 }
 
+/* Home Page */
+.service-inner .s-inner-num {
+    right: auto;
+    left: 0;
+}
+
 
 .service-inner a, .faqs a {
     width: 110px;
@@ -145,4 +151,18 @@
 /* Lab page */
 .lab-data .lab-img {
     width: 270px;
+}
+
+/* Investigation page */
+
+.our-inves .inves-body {
+    padding: 20px;
+}
+
+.our-inves .inves-img img {
+    transform: scaleX(1);
+}
+
+.clinic-header .doctors-bg {
+    transform: scaleX(-1);
 }

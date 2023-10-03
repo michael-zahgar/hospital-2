@@ -89,7 +89,7 @@ p.para2 {
 }
 
 .primary-co-2 {
-    color: var(--frost-blue-color);
+    color: var(--frost-blue-color) !important;
 }
 
 .soc {

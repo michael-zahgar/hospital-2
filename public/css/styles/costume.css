@@ -896,7 +896,6 @@ button {
 .our-rate .rate-content p {
     display: block;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     color: #fff;
     font-weight: 600;
 }
@@ -1332,7 +1331,7 @@ button {
 .service-inner .s-inner-num {
     position: absolute;
     bottom: -15px;
-    right: -20px;
+    right: -15px;
     color: #b4b4b549;
     font-size: 120px;
     line-height: 100px;
@@ -3190,7 +3189,6 @@ button {
 }
 
 .lab-data .lab-img img {
-    background-color: #0000006c;
     border-radius: 10px;
 }
 
@@ -3204,12 +3202,10 @@ button {
 }
 
 .mokhtabar-header {
-    text-align: center;
     margin: 3rem 0 1rem 0;
     font-weight: 600;
     font-size: 40px;
-    font-style: italic;
-
+    text-align: center;
 }
 
 
@@ -3227,7 +3223,7 @@ button {
     letter-spacing: 0;
     /* Adjust as needed */
     animation:
-        typing 4.5s steps(30, end),
+        typing 4.5s steps(30, start),
         blink-caret .5s step-end infinite;
 }
 
@@ -3249,6 +3245,14 @@ button {
     color: var(--frost-blue-color);
 }
 
+.mokhtabar-contact .lab-web {
+    width: fit-content;
+}
+
+.mokhtabar-contact .lab-web:hover a, .mokhtabar-contact a:hover {
+    color: var(--frost-blue-color) !important;
+}
+
 /* Investigation page */
 .inves-serv .c-s-body h1 {
     font-size: 60px;
@@ -3264,27 +3268,58 @@ button {
     padding-bottom: 30px;
 }
 
-.gradient-border {
+/* .gradient-border {
     border-width: 4px;
     border-style: solid;
     border-image: linear-gradient(to bottom, #213262, #1fa2d7) 1;
-}
+} */
 
 .our-inves {
-    border-radius: 5px !important;
+    --border-width: 3px;
+    border: 0;
+    background: var(--gradiantTop);
+    position: relative;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.our-inves::before {
+    content: '';
+    display: block;
+    width: calc(100% - calc(var(--border-width) * 2));
+    height: calc(100% - calc(var(--border-width) * 2));
+    background-color: white;
+    position: absolute;
+    top: var(--border-width);
+    left: var(--border-width);
+    border-radius: calc(20px - var(--border-width));
+    z-index: -1;
+}
+
+.our-inves .inves-img img {
+    transform: scaleX(-1);
 }
 
 .our-inves .inves-img {
-    width: 150px;
-    margin: auto;
-    margin-top: -70px;
+    width: 130px;
     background: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -22%;
 }
 
 .our-inves .inves-name {
     font-size: 20px;
     font-weight: 700;
+    padding-top: 15vh;
 }
+
+.our-inves .inves-body {
+    padding: 10px;
+}
+
+.our-inves .inves-body li span {}
 
 .our-inves .inves-body ul {
     margin-top: 20px;
