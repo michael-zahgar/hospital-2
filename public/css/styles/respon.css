@@ -230,6 +230,11 @@
     .clinic-service .lens-companies img {
         width: 150px;
     }
+
+    /* Investigation */
+    .our-inves .inves-name {
+        padding-top: 7rem;
+    }
 }
 
 @media screen and (max-width:991px) {

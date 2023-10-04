@@ -105,15 +105,15 @@ button {
 
 /* Animaion cards */
 
-.col-md-4:nth-child(2) {
+.col-lg-6:nth-child(2) {
     transition-delay: 200ms;
 }
 
-.col-md-4:nth-child(3) {
+.col-lg-6:nth-child(3) {
     transition-delay: 400ms;
 }
 
-.col-md-4:nth-child(4) {
+.col-lg-6:nth-child(4) {
     transition-delay: 600ms;
 }
 
@@ -3306,20 +3306,19 @@ button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -22%;
+    top: -20%;
 }
 
 .our-inves .inves-name {
     font-size: 20px;
     font-weight: 700;
-    padding-top: 15vh;
+    padding: 15vh 30px 0;
 }
 
 .our-inves .inves-body {
     padding: 10px;
 }
 
-.our-inves .inves-body li span {}
 
 .our-inves .inves-body ul {
     margin-top: 20px;
@@ -3332,7 +3331,7 @@ button {
 }
 
 .inves-serv .inves-card {
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
 }
 
 /* Careers Start */
