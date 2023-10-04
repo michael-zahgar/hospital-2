@@ -1,28 +1,3 @@
-// The updated code you provided is more secure than the previous version.
-//  It uses environment variables to store sensitive information like the email address and password,
-//   which is a good practice. It also validates the user input and uses HTTPS to encrypt the communication between
-//    the client and the server, which are important security measures.
-
-// However, there are still a few things you can do to make the code even more secure:
-
-// 1 - Use a secure email provider: While using Gmail is convenient,
-//  it is not the most secure email provider. Consider using a more secure email provider that offers
-//  end-to-end encryption or other security features.
-
-// 2- Add rate limiting: You may want to consider adding rate limiting
-//  to your server to prevent attackers from sending a large number of emails in a short period of time.
-//   This can help protect against Denial of Service (DoS) attacks.
-
-// Add input validation: While you are already using express.json()
-//  to parse the JSON body of the HTTP request, it is a good practice to
-//  also validate the user input to ensure that it is safe and does not contain any malicious content.
-//   You can use a validation library like Joi to validate the user input before sending the email.
-
-// Use a session key for each communication: While you are already
-//  using a unique session key for each communication, it is important
-//   to ensure that the session key is generated using a secure random number generator.
-
-
 const dotenv = require("dotenv");
 const express = require('express');
 const nodemailer = require('nodemailer');
