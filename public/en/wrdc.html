@@ -30,12 +30,20 @@
   <body>
 
     <section class="fixed-social">
-      <a type="button" target=”_blank”
-        href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you"
-        class="fa fa-brands fa-whatsapp"
-        style="font-size: 30px;"
-        data-bs-toggle="tooltip" data-bs-placement="right" title="Whats App">
-      </a>
+      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+        data-bs-trigger="hover focus"
+        data-bs-content="Whats App">
+        <a class="btn"
+          href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you"
+          class="fa fa-brands fa-whatsapp" type="button" disabled><i
+            class="fa fa-brands fa-whatsapp"></i></a>
+      </span>
+      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+        data-bs-trigger="hover focus"
+        data-bs-content="Book Now">
+        <a class="btn" type="button" disabled><i
+            class="fa-regular fa-calendar-plus"></i></a>
+      </span>
     </section>
 
     <section class="scroll-up">
@@ -49,10 +57,18 @@
             style="display: flex; justify-content: space-between;">
 
             <div class="t-head-left">
-              <a href="#" class="fa fa-brands fa-facebook"></a>
-              <a href="#" class="fa fa-brands fa-twitter"></a>
-              <a href="#" class="fa fa-brands fa-instagram"></a>
-              <a href="#" class="fa fa-brands fa-youtube"></a>
+              <a href="https://www.facebook.com/watanyeyehospitals">
+                <i class="fa fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/WatanyEyeHosps">
+                <i class="fa fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/watanyeyehospitals/">
+                <i class="fa fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/@watanyeyehospitals">
+                <i class="fa fa-brands fa-youtube"></i>
+              </a>
               <a href="#" class="fa fa-brands fa-linkedin"></a>
               <div style="border-left: 1px solid #b4b4b5" class="callus">
                 <i class="white fa-solid fa-phone" style="padding-left: 10px;"></i>
@@ -63,7 +79,7 @@
 
             <div class>
               <div class="top-header-right">
-                <a href="#" class="main-font">العربية</a>
+                <a href="../ar/wrdcAr.html" class="main-font">العربية</a>
               </div>
             </div>
           </div>
@@ -73,7 +89,8 @@
 
       <nav class="parent-1 main-nav navbar  navbar-expand-lg sticky-top">
         <div class="container">
-          <img src="./images/logo-trans2.png" alt="watany-eye-hospitals"
+
+          <img src="../images/logo-trans2.png" alt="watany-eye-hospitals"
             style="width: 125px;">
           <button class="navbar-toggler" type="button"
             data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -83,8 +100,7 @@
           <div class="offcanvas offcanvas-end" tabindex="-1"
             id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title white" id="offcanvasNavbarLabel">Watany
-                Eye Hospitals</h5>
+              <img src="../images/logo-trans2.png" alt="watany-eye-hospitals">
               <i type="button" class="fa-solid fa-xmark white"
                 data-bs-dismiss="offcanvas" aria-label="Close"></i>
             </div>
@@ -95,7 +111,7 @@
                     href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link links " href="./aboutusV2.html">About Us</a>
+                  <a class="nav-link links" href="./aboutusV2.html">About Us</a>
                 </li>
 
                 <li class="nav-item">
@@ -104,8 +120,7 @@
 
                 <li class="nav-item dropdown hover-li-main-2">
                   <a class="nav-link links dropdown-toggle"
-                    data-bs-auto-close="outside"
-                    href="#" role="button"
+                    data-bs-auto-close="outside" href="#" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                   </a>
@@ -113,33 +128,20 @@
 
                     <li class="dropstart sub-drop">
                       <a class="nav-link" href="./clinics.html">Clinics</a>
-                      <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
+                      <!-- <a class="active" data-bs-toggle="dropdown" href="../clinics.html">Clinics</a> -->
                     </li>
 
                     <li class="dropstart sub-drop">
-                      <a class="dropdown-item" href="./investigations.html">Investigations</a>
-                      <!-- <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Investigations</a> -->
-                      <!-- <ul class="dropdown-menu">
-                              <div class="drop-right">
-                                  <li><a class="dropdown-item" href="#">Cataract</a></li>
-                                  <li><a class="dropdown-item" href="#">Retina</a></li>
-                                  <li><a class="dropdown-item" href="#">Cornea</a></li>
-                                  <li><a class="dropdown-item" href="#">Intravitreal Injections</a></li>
-                                  <li><a class="dropdown-item" href="#">Pediatric Eye Disase</a></li>
-                                  <li><a class="dropdown-item" href="#">Neuro-Opthlmology</a></li>
-                                  <li><a class="dropdown-item" href="#">Glaucoma</a></li>
-                                  <li><a class="dropdown-item" href="#">Ocuplasty</a></li>
-                                  <li><a class="dropdown-item" href="#">Uveitis</a></li>
-                                  <li><a class="dropdown-item" href="#">Squints</a></li>
-                              </div>
-                          </ul> -->
+                      <a class="dropdown-item"
+                        href="./investigations.html">Investigations</a>
                     </li>
 
                     <li><a class="dropdown-item" href="./underConstruction.html">Operations</a></li>
-                    <li><a class="dropdown-item" href="./contactLens.html">lenses</a></li>
+                    <li><a class="dropdown-item"
+                        href="./contactLens.html">Lenses</a></li>
                     <li><a class="dropdown-item" href="./laboratory.html">Laboratory</a></li>
                     <li><a class="dropdown-item" href="./underConstruction.html">Optics</a></li>
-
+                    <li><a class="dropdown-item" href="./underConstruction.html">Pharmacy</a></li>
                   </ul>
 
                 </li>
@@ -147,8 +149,7 @@
                 <!-- Drop-Down Pc Version -->
                 <li class="nav-item nav-dropdown hover-li-main">
                   <a class="nav-link links dropdown-toggle"
-                    data-bs-auto-close="outside"
-                    href="#" role="button"
+                    data-bs-auto-close="outside" href="#" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                   </a>
@@ -165,22 +166,62 @@
                     <li><a class="nav-link" href="./underConstruction.html">Operations</a></li>
                     <li><a class="nav-link" href="./contactLens.html">lenses</a></li>
                     <li><a class="nav-link" href="./laboratory.html">Laboratory</a></li>
+                    <li><a class="nav-link" href="./underConstruction.html">Optics</a></li>
                     <li style="border-bottom: none;"><a class="nav-link"
-                        href="./underConstruction.html">Optics</a></li>
+                        href="./underConstruction.html">Pharmacy</a></li>
+
+                  </ul>
+
+                </li>
+
+                <li class="nav-item nav-dropdown hover-li-main">
+                  <a class="nav-link links dropdown-toggle"
+                    data-bs-auto-close="outside" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    WRDC
+                  </a>
+                  <ul class="hover-list wrdc-list">
+
+                    <li>
+                      <a class="nav-link active" href="./wrdc.html">About WRDS</a>
+                    </li>
+                    <li style="border-bottom: none;">
+                      <a class="nav-link"
+                        href="https://alwatany-conferences.com/">WOS</a>
+                    </li>
+
+                  </ul>
+
+                </li>
+
+                <!-- Drop-Down Mobile Version -->
+                <li class="nav-item dropdown hover-li-main-2">
+                  <a class="nav-link links dropdown-toggle"
+                    data-bs-auto-close="outside" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    WRDC
+                  </a>
+                  <ul class="dropdown-menu">
+
+                    <li class="dropstart sub-drop">
+                      <a class="dropdown-item" href="#">About WRDC</a>
+                    </li>
+
+                    <li class="dropstart sub-drop">
+                      <a class="dropdown-item" data-bs-toggle="dropdown"
+                        href="https://alwatany-conferences.com/">WOS</a>
+
+                    </li>
 
                   </ul>
 
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link links active" href="./wrdc.html">WRDC</a>
-                </li>
-
-                <li class="nav-item">
                   <a class="nav-link links" href="./bookingform.html">Book Now</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link links" href="./contactus.html">Contact US</a>
+                  <a class="nav-link links" href="./contactus.html">Contact Us</a>
                 </li>
 
               </ul>

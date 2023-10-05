@@ -125,6 +125,14 @@
     right: -115%;
 }
 
+.hurg-seemore {
+    width: 120px;
+}
+
+.hurg-seemore:hover i {
+    padding-right: 5px;
+}
+
 /* Clinics */
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -165,4 +173,18 @@
 
 .clinic-header .doctors-bg {
     transform: scaleX(-1);
+}
+
+/* Medical tour */
+
+.medical-contact .reason-b-h span {
+    font-size: 60px;
+}
+
+.medical-services .med-serHead img, .medical-contact img {
+    transform: scaleX(-1);
+}
+
+.medical-services .col-lg-3:hover img, .medical-contact .col-lg-3 a:hover img {
+    transform: scaleX(1);
 }

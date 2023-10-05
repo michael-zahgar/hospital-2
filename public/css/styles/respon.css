@@ -17,6 +17,15 @@
         margin: 0;
         padding-top: 30px;
     }
+
+    /* Medical tour */
+    .medical-tour .medical-text p {
+        margin-bottom: 10px;
+    }
+
+    .medical-text h3 {
+        margin: 10px 0 0 0;
+    }
 }
 
 /* da ma3nah an responsive da hayfdl shagal men 1252px  le7d ta7t 5als  */
@@ -72,6 +81,8 @@
         font-size: 17px;
         margin-top: 10px;
     }
+
+
 }
 
 @media screen and (max-width:1199px) {
@@ -276,6 +287,14 @@
         margin-top: 20px;
     }
 
+    .reasons .reason-video {
+        clip-path: none;
+    }
+
+    .service-inner p {
+        font-size: 16px;
+    }
+
     .parent-2 .container .main-head {
         text-align: center;
     }
@@ -444,6 +463,12 @@
     .mokhtabar-test {
         flex-direction: column-reverse;
     }
+
+    /* Medical-Tourism */
+    .medical-tour .medical-header {
+        margin-top: 40px;
+    }
+
 }
 
 
@@ -658,6 +683,12 @@
 
     .inves-serv .container {
         max-width: 100%;
+    }
+
+    /* Medical tourism */
+
+    .medical-services .med-serbody {
+        margin-bottom: 40px;
     }
 }
 

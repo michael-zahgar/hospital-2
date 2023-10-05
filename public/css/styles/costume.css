@@ -14,6 +14,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth !important;
     font-family: "Roboto";
+    font-family: "Poppins";
 }
 
 a:hover {
@@ -1328,6 +1329,11 @@ button {
     border-radius: 0 0 7px 7px;
 }
 
+.service-inner p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .service-inner .s-inner-num {
     position: absolute;
     bottom: -15px;
@@ -1341,7 +1347,7 @@ button {
 .service-inner a, .faqs a {
     position: relative;
     display: block;
-    width: 100px;
+    width: 105px;
     background: #f4f5f7;
     color: #353742;
     font-size: 14px;
@@ -1947,7 +1953,7 @@ button {
     font-size: 15px;
     padding: 10px;
     background-color: var(--main-color);
-    width: 110px;
+    width: 113px;
     color: white;
     transition: var(--transition);
     font-weight: 400;
@@ -3333,6 +3339,128 @@ button {
 .inves-serv .inves-card {
     margin-bottom: 7rem;
 }
+
+/* Medical Tourism */
+
+.medical-tour {
+    position: relative;
+    padding: 5rem 0;
+}
+
+.medical-tour .medical-header .reason-b-h span, .medical-services .reason-b-h span, .medical-contact .reason-b-h span {
+    font-size: 40px;
+    font-weight: 600;
+    opacity: 1;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.medical-tour .medical-header p {
+    font-size: 20px;
+}
+
+.medical-tour .medical-text p {
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.medical-tour .medical-text img {
+    width: 20px;
+}
+
+.medical-tour .right-medical {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.medical-tour .tour-bg {
+    background: url("../../images/hurgada/hurg1.jpg") no-repeat;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    opacity: .2;
+    filter: blur(8px);
+}
+
+.medical-tour .left-medical img {
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* section 2 */
+.medical-services {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.medical-services .med-serHead {
+    width: 100px;
+    margin: auto;
+}
+
+.medical-services .med-serbody {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.medical-services .med-serbody span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.medical-services .med-serHead img {
+    transition: var(--transition);
+}
+
+.medical-services .col-lg-3:hover img {
+    transform: scaleX(-1);
+}
+
+.medical-services .col-lg-3:hover span {
+    color: var(--frost-blue-color);
+}
+
+/* section-3 */
+.medical-contact .reason-b-h span {
+    font-size: 50px;
+}
+
+.medical-contact img {
+    width: 80px;
+    position: relative;
+    margin-bottom: 20px;
+    transition: all ease-in .2s;
+
+}
+
+.medical-contact h2 {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.medical-contact a {
+    color: black;
+}
+
+.medical-contact a:hover {
+    color: var(--frost-blue-color);
+}
+
+.medical-contact .col-lg-3 a:hover img {
+    transform: scaleX(-1);
+}
+
+.medical-contact h1 {
+    font-size: 50px;
+}
+
 
 /* Careers Start */
 
