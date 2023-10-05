@@ -3352,7 +3352,8 @@ button {
     font-weight: 600;
     opacity: 1;
     line-height: 1;
-    margin-bottom: 10px;
+    padding-bottom: 15px;
+
 }
 
 .medical-tour .medical-header p {
