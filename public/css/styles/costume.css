@@ -1068,7 +1068,6 @@ button {
     display: inline-block;
     font-size: 80px;
     line-height: 80px;
-    font-family: 'Jost', sans-serif;
     font-weight: 800;
     background-image: linear-gradient(to left, #213262, #244c80, #24679e, #2284bb, #1fa2d7);
     color: transparent !important;
