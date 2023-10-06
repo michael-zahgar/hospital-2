@@ -1109,9 +1109,9 @@ button {
     display: block;
     font-size: 25px;
     line-height: 30px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin-bottom: 2px;
+    font-weight: bold;
 }
 
 .testimonials .splide span {
@@ -2506,6 +2506,61 @@ button {
 
 /* Contact US Page */
 
+.contactus-1 .contact-det .contact-bg {
+    background-color: var(--main-color);
+    height: 120px;
+    clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+    z-index: -2;
+    transition: var(--transition);
+}
+
+.contactus-1 .contact-det a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.contactus-1 .contact-det:hover .contact-bg {
+    background-color: var(--frost-blue-color);
+}
+
+.contactus-1 .contact-det:hover .contact-icon {
+    border-color: var(--frost-blue-color);
+}
+
+
+.contactus-1 .contact-det {
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contactus-1 .contact-det .contact-icon img {
+    width: 50px;
+}
+
+.contactus-1 .contact-text {
+    padding: 30px;
+}
+
+.contactus-1 .contact-det .icon-thumb {
+    margin-top: -50px;
+    position: relative;
+}
+
+.contactus-1 .contact-det .contact-icon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #213262;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+    transition: var(--transition);
+}
+
 .contactus-1 .contact-det i {
     color: white;
     padding: 30px;
@@ -2524,32 +2579,22 @@ button {
 
 .contactus-1 .contact-det {
     margin-bottom: 2rem;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #8a8c93;
 }
 
-.contactus-1 .contact-det a, .contactus-1 .contact-det p {
+.contactus-1 .contact-det a, .contactus-1 .contact-det span {
     display: block;
     color: #8a8c93;
-    margin-left: 50px;
-    font-size: 20px;
-    font-weight: 600 !important;
     transition: var(--transition);
 }
 
 
-.contactus-1 .contact-det a {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-}
 
 /* .contactus-1 .contact-det p{
     font-size: 23px;
 } */
 
 .contactus-1 .contact-det a:hover {
-    color: #000;
+    color: var(--main-color);
 }
 
 .contactus-1 input, .contactus-1 textarea {
@@ -2980,6 +3025,14 @@ button {
 
 
 /* Our Clinics Page start */
+.contact-header .doctors-bg {
+    background: url(../../images/reasons.png) no-repeat !important;
+    width: 100%;
+    background-size: cover !important;
+    background-position: left !important;
+    background-color: rgba(0, 0, 0, 0.116) !important;
+    background-blend-mode: overlay !important;
+}
 
 .clinic-header .doctors-bg {
     background: url(../../images/clinics/clinic-bg.jpg) no-repeat;

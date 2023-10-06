@@ -690,6 +690,12 @@
     .medical-services .med-serbody {
         margin-bottom: 40px;
     }
+
+    /* Contact us page */
+
+    .contactus-1 {
+        padding-top: 6rem !important;
+    }
 }
 
 
