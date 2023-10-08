@@ -246,6 +246,11 @@
     .our-inves .inves-name {
         padding-top: 7rem;
     }
+
+    /* Opertaion surgery pages */
+    .surgery .c-s-header {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -695,6 +700,11 @@
 
     .contactus-1 {
         padding-top: 6rem !important;
+    }
+
+    /* Operations Surgery pages */
+    .all-operations .operations-img img {
+        width: 100%;
     }
 }
 

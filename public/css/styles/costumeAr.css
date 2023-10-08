@@ -18,6 +18,12 @@
     transform: translate(0);
 }
 
+/* mains head */
+.trans-title {
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
 /* Nav Bar */
 .navbar-toggler i {
     color: #fff !important;
@@ -188,3 +194,5 @@
 .medical-services .col-lg-3:hover img, .medical-contact .col-lg-3 a:hover img {
     transform: scaleX(1);
 }
+
+/* Contact us */

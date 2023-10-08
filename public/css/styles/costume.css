@@ -3026,12 +3026,13 @@ button {
 
 /* Our Clinics Page start */
 .contact-header .doctors-bg {
-    background: url(../../images/reasons.png) no-repeat !important;
+    background: url(../../images/doctors-bg.jpg) no-repeat !important;
     width: 100%;
     background-size: cover !important;
     background-position: left !important;
-    background-color: rgba(0, 0, 0, 0.116) !important;
-    background-blend-mode: overlay !important;
+    /* background-color: rgba(0, 0, 0, 0.116) !important;
+    background-blend-mode: overlay !important; */
+    /* filter: blur(5px); */
 }
 
 .clinic-header .doctors-bg {
@@ -3514,6 +3515,96 @@ button {
     font-size: 50px;
 }
 
+/* Operations */
+.all-operations .operations-img {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.all-operations .operations-img img {
+    height: 100%;
+    background-size: cover;
+    transition: var(--transition);
+    width: 380px;
+}
+
+.all-operations .operations-img .shape {
+    background: url(../../images/shapes.png) no-repeat;
+    position: absolute;
+    right: -33px;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.all-operations .operations-text, .all-operations .service-inner {
+    height: 100%;
+}
+
+.all-operations .service-inner {
+    box-shadow: none;
+    padding: 14px;
+}
+
+.all-operations .service-inner p {
+    margin-top: 20px;
+}
+
+.all-operations .service-inner a {
+    width: 120px;
+}
+
+.all-operations .operations-card {
+    box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.06);
+    margin-bottom: 40px;
+}
+
+.all-operations .operations-card:hover img {
+    transform: scale(1.5);
+    filter: blur(5px);
+}
+
+/* ----------------- Surgery ------------- */
+
+.surgery .c-s-header {
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.surgery .more-text .hidden-text {
+    overflow: hidden;
+    height: 0px;
+    transition: var(--transition);
+}
+
+.surgery .more-text.showContect .hidden-text {
+    height: auto;
+}
+
+.surgery .readmore-btn {
+    background-color: var(--main-color);
+    color: white;
+    transition: var(--transition);
+    padding: 10px 20px;
+    position: relative;
+    margin: 8px 0;
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+}
+
+.surgery .more-text.showContect a, .readmore-btn {
+    background-color: black;
+}
+
+.surgery .sur-types span {
+    font-size: 18px !important;
+}
 
 /* Careers Start */
 
