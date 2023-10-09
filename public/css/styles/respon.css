@@ -843,6 +843,12 @@
     .inves-serv .invst-span {
         font-size: 30px;
     }
+
+    /* Doctors */
+
+    .doctor-content .head-dep {
+        font-size: 24px;
+    }
 }
 
 
