@@ -251,6 +251,25 @@
     .surgery .c-s-header {
         width: 100%;
     }
+
+    /* Doctors page */
+    .doctors-nav .container {
+        max-width: 100%;
+    }
+
+    .doctors-nav .nav {
+        display: none;
+    }
+
+    .doctors-nav .canvas-doctors {
+        display: block;
+        margin: auto;
+        background-color: #1fa2d7;
+    }
+
+    .doctors-nav {
+        padding-top: 3rem;
+    }
 }
 
 @media screen and (max-width:991px) {

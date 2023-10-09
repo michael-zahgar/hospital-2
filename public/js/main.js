@@ -62,138 +62,8 @@ window.onload = function() {
 
 
 
-function getPageList(totalPages , page , maxLength){
-  function range(start , end){
-      return Array.from(Array(end - start + 1), (_,i) => i + start);
-  }
-
-  var sideWidth = maxLength < 9 ? 1 : 2;
-  var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
-  var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
-
-  if(totalPages <= maxLength){
-      return range(1 , totalPages);
-  }
-
-  if(page <= maxlength - sideWidth - 1 - rightWidth){
-      return range(1 , maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1 , totalPages));
-  }
-
-  if(page >= totalPages - sideWidth - 1 - rightWidth){
-      return range(1, sideWidth).concat(0, range(totalPages - sideWidth - 1 - rightWidth - leftWidth , totalPages));
-  }
-
-  return range(1 , sideWidth).concat(0 , range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1 , totalPages))
-}
-
-$(function(){
-  var numberOfItems = $(".doctor-content .card-doctor").length;
-  var limitPerPage = 12; //How Many Card Items visible per a page
-  var totalPages = Math.ceil(numberOfItems / limitPerPage);
-  var paginationSize = 3; //How many page elements visible in pagination
-  var currentPage;
-
-  function showPage(whichPage){
-      if(whichPage < 1 || whichPage > totalPages) return false;
-
-      currentPage = whichPage;
-
-      $(".doctor-content .card-doctor").hide().slice((currentPage -1) * limitPerPage , currentPage * limitPerPage).show();
-
-      $(".pagination li").slice(1 , -1).remove();
-
-      getPageList(totalPages , currentPage , paginationSize).forEach(item => {
-          $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
-              .toggleClass("active" , item === currentPage).append($("<a>").addClass("page-link")
-                  .attr({href: "javascript:void(0)"}).text(item ||  "...")).insertBefore(".next-page")
-      });
-
-      $(".previous-page").toggleClass("disable", currentPage === 1);
-      $(".next-page").toggleClass("disable", currentPage === totalPages);
-      return true;
-  }
-
-  $(".pagination").append(
-      $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link")
-          .attr({href : "javascript:void(0)"}).text("Prev")),
-      $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link")
-          .attr({href : "javascript:void(0)"}).text("Next"))
-  );
-
-  $(".doctor-content").show();
-  showPage(1);
-
-  $(document).on("click" , ".pagination li.current-page:not(.active)", function(){
-      return showPage(+$(this).text());
-  });
-
-  $(".next-page").on("click", function(){
-      return showPage(currentPage + 1);
-  });
-
-  $(".previous-page").on("click", function(){
-      return showPage(currentPage - 1);
-  });
-});
-
-// let thisPage = 1;
-// let limit = 8;
-// let list = document.querySelectorAll('.doctor-content .card-doctor');
-
-// function loadItem(){
-//     let beginGet = limit * (thisPage - 1);
-//     let endGet = limit * thisPage - 1;
-//     list.forEach((item, key)=>{
-//         if(key >= beginGet && key <= endGet){
-//             item.style.display = 'block';
-//         }else{
-//             item.style.display = 'none';
-//         }
-//     })
-//     listPage();
-// }
-// loadItem();
-// function listPage(){
-//     let count = Math.ceil(list.length / limit);
-//     document.querySelector('.listPage').innerHTML = '';
-
-//     if(thisPage != 1){
-//         let prev = document.createElement('li');
-//         prev.innerText = 'PREV';
-//         prev.setAttribute('onclick', "changePage(" + (thisPage - 1) + ")");
-//         document.querySelector('.listPage').appendChild(prev);
-//     }
-
-//     for(i = 1; i <= count; i++){
-//         let newPage = document.createElement('li');
-//         newPage.innerText = i;
-//         if(i == thisPage){
-//             newPage.classList.add('active');
-//         }
-//         newPage.setAttribute('onclick', "changePage(" + i + ")");
-//         document.querySelector('.listPage').appendChild(newPage);
-//     }
-
-//     if(thisPage != count){
-//         let next = document.createElement('li');
-//         next.innerText = 'NEXT';
-//         next.setAttribute('onclick', "changePage(" + (thisPage + 1) + ")");
-//         document.querySelector('.listPage').appendChild(next);
-//     }
-// }
-// function changePage(i){
-//     thisPage = i;
-//     loadItem();
-// }
-
-
-
-
-
-// Search Filter
 
 function searchProduct() {
-  // input filter lowercase
   const input = document.getElementById('filter').value.toLowerCase();
 
   const cardcontainer = document.getElementById('doctor-content');
@@ -202,18 +72,46 @@ function searchProduct() {
   const cards = cardcontainer.getElementsByClassName('card-doctor');
   console.log(cards);
 
-  for(let i=0 ; i < cards.length ; i++){
-    let title = cards[i].querySelector(".card-body h3.card-title");
-    console.log(title);
+  const departmentTitles = document.getElementsByClassName('head-dep');
+  for (let i = 0; i < cards.length; i++) {
+    let cardText = cards[i].innerText.toLowerCase();
 
-    if(title.innerText.toLowerCase().indexOf(input) > -1){
+    if (cardText.indexOf(input) > -1) {
       cards[i].style.display = 'block';
-    }else{
+    } else {
       cards[i].style.display = 'none';
     }
   }
-}
 
+  if (input && departmentTitles.length > 0) {
+    for (let i = 0; i < departmentTitles.length; i++) {
+      departmentTitles[i].style.display = 'none';
+    }
+  } else {
+    for (let i = 0; i < departmentTitles.length; i++) {
+      departmentTitles[i].style.display = 'block';
+    }
+  }
+}
+// function searchProduct() {
+//   const input = document.getElementById('filter').value.toLowerCase();
+
+//   const cardcontainer = document.getElementById('doctor-content');
+//   console.log(cardcontainer);
+
+//   const cards = cardcontainer.getElementsByClassName('card-doctor');
+//   console.log(cards);
+
+//   for(let i = 0; i < cards.length; i++) {
+//     let cardText = cards[i].innerText.toLowerCase();
+
+//     if(cardText.indexOf(input) > -1) {
+//       cards[i].style.display = 'block';
+//     } else {
+//       cards[i].style.display = 'none';
+//     }
+//   }
+// }
 
 
 

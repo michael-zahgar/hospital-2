@@ -140,8 +140,7 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 999999;
-    z-index: 999;
+    z-index: 1025;
     background-color: var(--main-color);
 }
 
@@ -2642,145 +2641,6 @@ button {
 /* WRDC PAGE End */
 
 
-/* doctor-1 Page Start */
-.doctor-1 h1 {
-    font-size: 60px;
-}
-
-.doctor-1 {
-    background: #133860;
-    color: white !important;
-}
-
-.doctor-1, .doctor-1 .short-dir a {
-    color: white;
-    transition: var(--transition);
-}
-
-.doctor-1 h4 {
-    font-size: 40px;
-}
-
-.doctor-1 img {
-    border-radius: 50%;
-    background: var(--light-gray);
-    object-position: top;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-
-.doctor-1 .short-dir {
-    font-size: 15px;
-    display: flex;
-}
-
-.doctor-1 .short-dir a:hover {
-    color: var(--frost-blue-color);
-}
-
-.doctor-1 .doc-name {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.doctor-2 {
-    background-color: #135E60;
-    color: white;
-}
-
-.doctor-2 .doc-cv {
-    border-right: 1px solid var(--light-gray);
-}
-
-.doctor-2 h1 {
-    font-weight: 400;
-    color: var(--frost-blue-color);
-}
-
-.doctor-2 span {
-    display: inline-block;
-    padding: 0 5px 0 10px;
-}
-
-.doctor-2 .doc-videos .video-details {
-    position: relative !important;
-}
-
-.doctor-2 .doc-videos .play-video {
-    position: absolute;
-    left: 40%;
-    top: 40%;
-    height: 40px;
-    width: 40px;
-    background: var(--frost-blue-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-
-.doctor-2 .doc-videos .play-video i {
-    font-size: 19px;
-    color: var(--main-color) !important;
-}
-
-.doctor-2 .doc-videos .video-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #13c6dd27;
-}
-
-.doctor-2 .doc-videos h5 {
-    font-size: 20px;
-}
-
-.doctor-2 .doc-videos .splide__pagination {
-    bottom: -18px;
-}
-
-.doctor-2 .splide__pagination__page {
-    height: 5px;
-    width: 18px;
-    border-radius: 10px;
-    margin-right: 5px;
-}
-
-.doctor-2 .splide__pagination__page.is-active {
-    background-color: var(--frost-blue-color);
-}
-
-.doctor-2 iframe {
-    height: 300px;
-}
-
-.doctor-2 .modal .doctors-social-icons a {
-    font-size: 20px;
-    margin-right: 10px !important;
-    color: var(--main-color);
-}
-
-.doctor-2 .modal .doctors-social-icons a:hover {
-    color: var(--frost-blue-color);
-}
-
-.doctor-2 .hospitals a {
-    color: var(--frost-blue-color);
-}
-
-.doctor-2 .hospitals img {
-    border-radius: 20px;
-}
-
-.doctor-2 .hospitals .row:hover {
-    background-color: var(--main-color);
-}
-
-
-/* doctors Page End */
-
 .form-body {
     height: 100vh;
     background: url("../../images/billboard.png") no-repeat;
@@ -2869,7 +2729,7 @@ button {
 
 .doctor-content {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-wrap: wrap;
     margin: 30px;
@@ -2877,7 +2737,8 @@ button {
 
 
 .doctors-1 .card-doctor h3 {
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .doctors-1 input:focus-visible {
@@ -2887,7 +2748,7 @@ button {
 
 .card-doctor {
     position: relative;
-    /* background: -webkit-linear-gradient(10deg, #dff4f1, #faeae1 100%); */
+    background: -webkit-linear-gradient(10deg, #dff4f1, #faeae1 100%);
     background-image: linear-gradient(to left, #213262, #244c80, #24679e, #2284bb, #1fa2d7);
     max-width: 300px;
     height: auto;
@@ -2898,13 +2759,21 @@ button {
     overflow: hidden;
 }
 
+.doctor-content .head-dep {
+    width: 100%;
+    color: var(--main-color);
+    margin: 30px 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+
 .doctor-img {
     overflow: hidden;
     position: relative;
     display: block;
     background-color: white;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 0%);
-    background-color: black;
+    background-color: #e1e1e3;
 }
 
 .doctor-img img {
@@ -2914,8 +2783,7 @@ button {
 }
 
 .card-doctor:hover .doctor-img img {
-    opacity: 0.7;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .doctors-1 .card-body {
@@ -2958,67 +2826,52 @@ button {
     color: white;
 }
 
-.doctor-spec .nav-link {
-    color: #133860;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    border: 1px solid var(--main-color);
-}
 
-.doctor-spec .nav-link span {
-    background-color: var(--main-color) !important;
-}
-
-.doctor-spec .nav-link.active {
+.doctors-nav {
+    top: 6.5vh;
+    padding: 30px 0;
+    padding-top: 3rem;
     background-color: var(--main-color);
+}
+
+.doctors-nav .dropdown-menu {
+    background-color: var(--main-color) !important;
+    background-image: none !important;
+}
+
+.doctors-nav .canvas-doctors {
+    display: none;
+}
+
+.doctors-nav ul li a {
     color: white;
 }
 
-.doctor-spec .nav-link.active span {
-    background-color: #fff !important;
-    color: #133860;
+.doctors-nav ul li a:hover {
+    color: gray;
 }
 
-.doctors-2 {
-    color: #fff;
+.doctors-nav .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: transparent;
 }
 
-.doctors-2 button {
-    background-color: #fff;
+.doctors-nav .offcanvas-body {
+    background-color: var(--main-color);
+    padding: 1rem 0;
 }
 
-.doctors-2 button a {
-    color: #000 !important;
-    font-weight: 600;
+.doctors-nav .offcanvas.show {
+    top: 8%;
+    max-width: 260px;
 }
 
-.doctors-2 button a span {
-    font-weight: bolder;
-    display: inline-block;
-    transition: var(--transition);
+.doctors-nav .offcanvas.show ul {
+    padding: 0;
 }
 
-.doctors-2 button:hover a {
-    color: #ff0d00 !important;
-}
-
-.doctors-2 button:hover a span, .parent-5 button:hover a span {
-    transform: translateX(5px) !important;
-}
-
-.doctors-3 {
-    height: 400px;
-    background: none;
-
-}
-
-.doctors-3 h2 {
-    color: var(--main-color) !important;
-}
-
-.doctors-3 h2 span {
-    background-color: var(--main-color) !important;
+.doctors-nav .offcanvas.show .offcanvas-header {
+    background-color: var(--frost-blue-color);
+    color: white;
 }
 
 /* Our Doctors Page ENd */
