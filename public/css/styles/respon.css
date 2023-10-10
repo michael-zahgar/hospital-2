@@ -267,9 +267,6 @@
         background-color: #1fa2d7;
     }
 
-    .doctors-nav {
-        padding-top: 3rem;
-    }
 }
 
 @media screen and (max-width:991px) {
@@ -493,6 +490,11 @@
         margin-top: 40px;
     }
 
+    /* Doctors Page */
+
+    .doctor-content {
+        justify-content: center;
+    }
 }
 
 

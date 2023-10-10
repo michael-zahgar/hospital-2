@@ -195,4 +195,19 @@
     transform: scaleX(1);
 }
 
-/* Contact us */
+/* Doctors page */
+
+.doctor-header .doctors-bg {
+    transform: scaleX(-1);
+}
+
+.doctors-nav .offcanvas-start {
+    left: auto;
+    right: 0;
+    width: auto;
+    transform: translateX(100%);
+}
+
+.doctors-nav .offcanvas-start.show {
+    transform: translateX(0%);
+}
