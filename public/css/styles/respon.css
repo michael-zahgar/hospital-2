@@ -118,20 +118,23 @@
 /* da ma3nah an responsive da hayfdl shagal men 1024 le7d fooo2 5als  */
 
 @media screen and (min-width:1024px) {
-    .dropdown .dropdown-menu {
+    .parent-1 .dropdown .dropdown-menu {
         display: none;
     }
 
-    .dropdown:hover>.dropdown-menu, .sub-drop:hover>.dropdown-menu {
+    .parent-1 .dropdown:hover>.dropdown-menu, .sub-drop:hover>.dropdown-menu {
         display: block;
     }
 
-    .sub-drop:hover>.dropdown-menu {
+    .parent-1 .sub-drop:hover>.dropdown-menu {
         position: absolute;
         top: 0;
         right: 100%;
     }
 
+    .doctors-nav .offcanvas.show {
+        top: 13%;
+    }
 }
 
 /* da ma3nah an responsive da hayfdl shagal men 1024 le7d ta7t 5als  */

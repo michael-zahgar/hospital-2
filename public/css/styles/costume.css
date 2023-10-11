@@ -2839,10 +2839,6 @@ button {
     background-image: none !important;
 }
 
-.doctors-nav .canvas-doctors {
-    display: none;
-}
-
 .doctors-nav ul li a {
     color: white;
 }
@@ -2872,6 +2868,18 @@ button {
 .doctors-nav .offcanvas.show .offcanvas-header {
     background-color: var(--frost-blue-color);
     color: white;
+}
+
+.canvas-doctors {
+    background-color: var(--frost-blue-color);
+    transition: var(--transition);
+    border-radius: 20px;
+}
+
+.canvas-doctors:hover {
+    color: var(--main-color);
+    background-color: var(--frost-blue-color);
+    border-radius: 0;
 }
 
 /* Our Doctors Page ENd */
