@@ -398,6 +398,33 @@ document.addEventListener('DOMContentLoaded', function () {
         }).mount( window.splide.Extensions );
       });
 
+      // WRDC-gallery
+
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#WRDC-gallery', {
+          direction: 'ltr',
+          gap : 10 ,
+          type   : 'loop',
+          drag   : 'free',
+          focus  : 'center',
+          arrows: false,
+          perPage: 4,
+           arrows:false,
+           pagination:false,
+           breakpoints: {
+            1024: {
+              perPage: 2,
+            },
+            768: {
+              perPage: 1,
+            },
+          },
+          autoScroll: {
+            speed: 1,
+          },
+        }).mount( window.splide.Extensions );
+      });
+
       // Lens Gallery
 
             document.addEventListener('DOMContentLoaded', function () {

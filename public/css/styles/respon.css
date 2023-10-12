@@ -642,14 +642,6 @@
         width: 100%;
     }
 
-    /* WRDC Page */
-    .wrdc-1 .wrdc-images .wrdc-r2 img {
-        margin: auto;
-    }
-
-    .wrdc-1 .wrdc-header-img img {
-        width: 300px !important;
-    }
 
     /* Doctors Profile */
     .doctor-1 h1 {
@@ -729,6 +721,16 @@
     /* Operations Surgery pages */
     .all-operations .operations-img img {
         width: 100%;
+    }
+
+    /* WRDC */
+
+    .wrdc-body h1 {
+        font-size: 35px;
+    }
+
+    .about-wrdc .wrdc-header {
+        width: auto;
     }
 }
 
@@ -853,6 +855,12 @@
 
     .doctor-content .head-dep {
         font-size: 24px;
+    }
+
+    /* WRDC */
+    .WRDC-gallery .home-g img {
+        height: 280px;
+        object-fit: cover;
     }
 }
 

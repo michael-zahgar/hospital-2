@@ -1726,6 +1726,7 @@ button {
 
 .parent-11 .fot {
     margin-bottom: 40px;
+    overflow-x: hidden;
 }
 
 .parent-11 a {
@@ -2017,7 +2018,7 @@ button {
 }
 
 .aboutus-content .dr-header h3 {
-    color: var(--frost-blue-color);
+
     margin: 10px;
 }
 
@@ -2030,9 +2031,10 @@ button {
     display: block;
     margin: 20px 0 30px 0 !important;
     font-weight: 600;
-    color: gray;
+    color: var(--frost-blue-color);
     font-size: 20px;
 }
+
 
 /* ===== End About US Page ===== */
 
@@ -2621,22 +2623,6 @@ button {
 
 /* Contact US Page End */
 
-/* WRDC PAGE Start */
-
-.wrdc-1 .wrdc-header-img img, .wrdc-1 .wrdc-images .wrdc-r2 img {
-    width: 500px;
-}
-
-.wrdc-1 p {
-    font-size: 20px;
-}
-
-.wrdc-1 .wrdc-images img {
-    height: 400px;
-    object-fit: cover;
-    object-position: bottom;
-    padding-bottom: 20px;
-}
 
 /* WRDC PAGE End */
 
@@ -3532,3 +3518,22 @@ button {
 }
 
 /* Career End */
+
+/* WRDC Page */
+
+.about-wrdc .wrdc-header {
+    width: 700px;
+    margin: auto;
+}
+
+.wrdc-body h1 {
+    font-size: 50px;
+}
+
+.wrdc-body p {
+    color: gray;
+}
+
+.WRDC-gallery .home-g img {
+    border-radius: 10px 10px 0 0;
+}
