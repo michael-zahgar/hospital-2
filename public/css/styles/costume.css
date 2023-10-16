@@ -1551,7 +1551,7 @@ button {
 }
 
 .parent-6 h2 {
-    color: #000;
+    color: var(--main-color);
     font-size: 45px;
 }
 
@@ -3536,4 +3536,10 @@ button {
 
 .WRDC-gallery .home-g img {
     border-radius: 10px 10px 0 0;
+}
+
+.wrdc-doctor img {
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
 }
