@@ -267,7 +267,7 @@ button {
 .parent-1 {
     z-index: 99999;
     /* background: #1118219a !important; */
-    padding: 10px 0 10px 0;
+    padding: 0px 0 10px 0;
     width: 100%;
 }
 
@@ -2081,11 +2081,8 @@ button {
 
 
 /* ===== Start Form Page ===== */
-.booking-body {
-    background-color: var(--font-color);
-}
 
-.booking-body .container {
+.booking-body.container {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
@@ -2095,7 +2092,7 @@ button {
 .contact-form {
     background: #fff;
     padding: 50px;
-    border-radius: 50px;
+    overflow: hidden;
 }
 
 .contact-form input, .contact-form textarea, .contact-form label, .contact-form select, .contact-form a {
@@ -2138,11 +2135,12 @@ button {
     color: #fff !important;
     border: none;
     margin-left: 10px;
-    padding: 0;
+    padding: 10px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .booking-message {
     color: black !important;
@@ -2589,7 +2587,11 @@ button {
     transition: var(--transition);
 }
 
-
+.contact-branches .opening-days h3 {
+    font-weight: 600;
+    margin: 10px 0;
+    color: var(--main-color);
+}
 
 /* .contactus-1 .contact-det p{
     font-size: 23px;
@@ -3567,7 +3569,7 @@ button {
 }
 
 .wrdc-body h1 {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .wrdc-body p {

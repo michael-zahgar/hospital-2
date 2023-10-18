@@ -800,6 +800,18 @@
         font-size: 20px;
     }
 
+    .subscribe-form input {
+        font-size: 15px;
+    }
+
+    .contact-home h1 {
+        font-size: 25px;
+    }
+
+    .contact-social {
+        margin-bottom: 20px;
+    }
+
     .parent-11 .social {
         flex-direction: column;
     }
@@ -861,6 +873,19 @@
     .WRDC-gallery .home-g img {
         height: 280px;
         object-fit: cover;
+    }
+
+    /* Booking Form */
+    .contact-form .btns {
+        flex-wrap: wrap;
+    }
+
+    .contact-form .go-back {
+        margin: 0;
+    }
+
+    .contact-form {
+        padding: 0;
     }
 }
 
