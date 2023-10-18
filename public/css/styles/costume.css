@@ -573,6 +573,7 @@ button {
 
 .top-header .main-font, .parent-1 .navbar-toggler .main-font {
     color: white !important;
+    font-weight: bold;
 }
 
 .hover-li-main-2 .dropdown-menu a {
@@ -2946,6 +2947,41 @@ button {
     border-color: #fff !important;
 }
 
+.other-services {
+    background-color: #f4f5f7;
+    padding: 25px 0;
+}
+
+.other-services ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.other-services ul li {
+    margin-right: 15px;
+}
+
+.other-services ul li a {
+    display: block;
+    width: max-content;
+    color: var(--main-color);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.other-services ul li a:hover {
+    color: var(--frost-blue-color);
+}
+
+.other-services ul li a.active {
+    background-color: white;
+    color: var(--frost-blue-color);
+}
+
 /* Our Clinics Page End */
 
 /* Cornea Clinic Page */
@@ -3078,7 +3114,7 @@ button {
 }
 
 .lab-data .container {
-    max-width: 70%;
+    max-width: 80%;
 }
 
 .lab-data {
@@ -3133,6 +3169,10 @@ button {
         blink-caret .5s step-end infinite;
 }
 
+.mokhtabar-body img {
+    height: 100%;
+    object-fit: cover;
+}
 
 .mokhtabar-test {
     margin-top: 3rem;
