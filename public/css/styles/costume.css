@@ -2713,7 +2713,7 @@ button {
 }
 
 .doctors-1 .container {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 
@@ -3582,7 +3582,10 @@ button {
 }
 
 .wrdc-doctor img {
-    width: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     text-align: center;
+    object-fit: cover;
+    object-position: top;
 }
