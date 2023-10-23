@@ -233,6 +233,7 @@
     /* about-us */
     .section p {
         top: 24%;
+        line-height: 1.2;
     }
 
     /* Clinics Page */
