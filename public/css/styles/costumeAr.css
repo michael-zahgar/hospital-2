@@ -218,3 +218,7 @@
 }
 
 /* Pharmacy */
+
+.pharmacy-header .doctors-bg {
+    transform: scaleX(-1);
+}

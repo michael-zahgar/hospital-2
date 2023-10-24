@@ -3617,3 +3617,13 @@ button {
     border-radius: 10px 10px 0 0;
     margin-bottom: 20px;
 }
+
+/* Optics */
+
+.optics-header .doctors-bg {
+    background: url(../../images/optics/optics-bg.jpg) no-repeat;
+    background-color: rgba(255, 255, 255, 0.151);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+}
