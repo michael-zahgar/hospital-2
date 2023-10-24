@@ -3589,3 +3589,31 @@ button {
     object-fit: cover;
     object-position: top;
 }
+
+/* Pharmacy page */
+.pharmacy-header .doctors-bg {
+    background: url(../../images/pharmacy/PharmacyBG.jpg) no-repeat;
+    width: 100%;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+.pharmacy-headContent img {
+    width: 350px;
+}
+
+.pharmacy-content .contact-icon i {
+    color: var(--main-color);
+    padding: 0;
+    border-radius: 0;
+    background-color: white;
+    font-size: 50px;
+}
+
+.pharmacy-content .pharmacy-images img {
+    max-width: 320px;
+    aspect-ratio: 3/3;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
