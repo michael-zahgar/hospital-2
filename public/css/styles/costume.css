@@ -3610,13 +3610,6 @@ button {
     font-size: 50px;
 }
 
-.pharmacy-content .pharmacy-images img {
-    max-width: 320px;
-    aspect-ratio: 3/3;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
-}
 
 /* Optics */
 
