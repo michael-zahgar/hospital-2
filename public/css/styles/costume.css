@@ -2547,6 +2547,10 @@ button {
     padding: 30px;
 }
 
+.contactus-1 .contact-text h4 {
+    color: var(--main-color);
+}
+
 .contactus-1 .contact-det .icon-thumb {
     margin-top: -50px;
     position: relative;
@@ -3610,7 +3614,7 @@ button {
     width: 350px;
 }
 
-.pharmacy-content .contact-icon i {
+.pharmacy-content .contact-icon i, .contactus-1 .contact-info i {
     color: var(--main-color);
     padding: 0;
     border-radius: 0;
