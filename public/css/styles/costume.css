@@ -3065,7 +3065,7 @@ button {
     color: var(--frost-blue-color);
 }
 
-.clinic-service .lens-contact span, .clinic-service .lens-contact a {
+.clinic-service .lens-contact span {
     color: black;
     width: fit-content;
 }
