@@ -3132,6 +3132,7 @@ button {
     max-width: 80%;
 }
 
+
 .lab-data {
     padding: 2rem 0;
 }
@@ -3300,6 +3301,22 @@ button {
 .medical-tour {
     position: relative;
     padding: 5rem 0;
+}
+
+.medical-tour .left-medical .video-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    z-index: 99;
+    padding: 20px 25px;
+    border-radius: 50%;
+}
+
+.medical-tour .left-medical .video-link i {
+    font-size: 20px;
 }
 
 .medical-tour .medical-header .reason-b-h span, .medical-services .reason-b-h span, .medical-contact .reason-b-h span {
