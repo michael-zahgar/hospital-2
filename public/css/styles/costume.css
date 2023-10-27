@@ -2082,6 +2082,10 @@ button {
 
 
 /* ===== Start Form Page ===== */
+.book-header .doctors-bg {
+    background: url(../../images/book-now.jpg) no-repeat !important;
+    background-size: cover !important;
+}
 
 .booking-body.container {
     padding: 2rem 0;
@@ -2543,6 +2547,10 @@ button {
     padding: 30px;
 }
 
+.contactus-1 .contact-text h4 {
+    color: var(--main-color);
+}
+
 .contactus-1 .contact-det .icon-thumb {
     margin-top: -50px;
     position: relative;
@@ -2678,6 +2686,10 @@ button {
 
 .doctor-header .doctors-bg {
     background: url("../../images/doctors-bg.jpg") no-repeat;
+}
+
+.doctor-header-2 .doctors-bg {
+    background: url(../../images/doctors-bg-2.png);
 }
 
 .page-header .doctors-bg {
@@ -3053,7 +3065,7 @@ button {
     color: var(--frost-blue-color);
 }
 
-.clinic-service .lens-contact span, .clinic-service .lens-contact a {
+.clinic-service .lens-contact span {
     color: black;
     width: fit-content;
 }
@@ -3119,6 +3131,7 @@ button {
 .lab-data .container {
     max-width: 80%;
 }
+
 
 .lab-data {
     padding: 2rem 0;
@@ -3288,6 +3301,22 @@ button {
 .medical-tour {
     position: relative;
     padding: 5rem 0;
+}
+
+.medical-tour .left-medical .video-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    z-index: 99;
+    padding: 20px 25px;
+    border-radius: 50%;
+}
+
+.medical-tour .left-medical .video-link i {
+    font-size: 20px;
 }
 
 .medical-tour .medical-header .reason-b-h span, .medical-services .reason-b-h span, .medical-contact .reason-b-h span {
@@ -3602,7 +3631,7 @@ button {
     width: 350px;
 }
 
-.pharmacy-content .contact-icon i {
+.pharmacy-content .contact-icon i, .contactus-1 .contact-info i {
     color: var(--main-color);
     padding: 0;
     border-radius: 0;
@@ -3610,13 +3639,6 @@ button {
     font-size: 50px;
 }
 
-.pharmacy-content .pharmacy-images img {
-    max-width: 320px;
-    aspect-ratio: 3/3;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 20px;
-}
 
 /* Optics */
 
