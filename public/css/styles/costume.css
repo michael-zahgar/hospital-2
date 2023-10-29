@@ -3313,7 +3313,33 @@ button {
     z-index: 99;
     padding: 20px 25px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.medical-tour .left-medical .video-link i {
+    animation: scale1 1.5s infinite ease-in-out;
+}
+
+@keyframes scale1 {
+    0% {
+        transform: scale(1);
+        color: white;
+    }
+
+    66.66% {
+        transform: scale(1.2);
+        color: red;
+    }
+
+    100% {
+        transform: scale(1);
+        color: white;
+    }
+
+}
+
 
 .medical-tour .left-medical .video-link i {
     font-size: 20px;
@@ -3432,6 +3458,19 @@ button {
 
 .medical-contact h1 {
     font-size: 50px;
+}
+
+.medical-tour .medicalForm .medicSubmit {
+    background-color: var(--main-color);
+    padding: 10px 22px;
+    width: fit-content;
+    color: white;
+    transition: var(--transition);
+}
+
+.medical-tour .medicalForm .medicSubmit:hover {
+    color: var(--frost-blue-color);
+    border-radius: 10px;
 }
 
 /* Operations */
