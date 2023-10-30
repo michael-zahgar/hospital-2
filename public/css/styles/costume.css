@@ -3473,6 +3473,33 @@ button {
     border-radius: 10px;
 }
 
+/* Medical Gal */
+.medicalTour-gal {
+    position: relative;
+}
+
+.medicalTour-gal .splide img {
+    aspect-ratio: 3/3;
+    object-fit: cover;
+}
+
+.medicalTour-gal .splide__arrow--prev, .medicalTour-gal .splide__arrow--next {
+    font-size: 25px;
+    background: transparent;
+}
+
+.medicalTour-gal .splide__arrow--prev {
+    left: -50%;
+    top: 100%;
+
+}
+
+.medicalTour-gal .splide__arrow--next {
+    right: 135%;
+    top: 100%;
+
+}
+
 /* Operations */
 .all-operations .operations-img {
     position: relative;

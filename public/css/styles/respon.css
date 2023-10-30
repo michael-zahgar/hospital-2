@@ -494,11 +494,20 @@
         margin-top: 40px;
     }
 
+    .medicalTour-gal .splide__arrow--prev {
+        left: -100%;
+    }
+
+    .medicalTour-gal .splide__arrow--next {
+        right: 175%;
+    }
+
     /* Doctors Page */
 
     .doctor-content {
         justify-content: center;
     }
+
 }
 
 
@@ -732,6 +741,19 @@
 
     .about-wrdc .wrdc-header {
         width: auto;
+    }
+
+    /* Medical Tour */
+    .medicalTour-gal .splide__arrow--prev, .medicalTour-gal .splide__arrow--next {
+        top: 110%;
+    }
+
+    .medicalTour-gal .splide__arrow--prev {
+        left: 0%;
+    }
+
+    .medicalTour-gal .splide__arrow--next {
+        right: 80%;
     }
 }
 

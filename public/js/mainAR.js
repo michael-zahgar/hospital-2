@@ -149,3 +149,25 @@ document.addEventListener('DOMContentLoaded', function () {
           },
         }).mount( window.splide.Extensions );
       });
+
+
+           document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#medical-gal-ar', {
+          direction:'rtl',
+          perPage: 3,
+          gap: 30,
+          perMove: 1,
+           arrows:true,
+           pagination:false,
+           breakpoints: {
+            1024: {
+              perPage: 1,
+            },
+            768: {
+              perPage: 1,
+
+            },
+          },
+
+        }).mount();
+      });

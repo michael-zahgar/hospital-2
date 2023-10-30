@@ -28,5 +28,24 @@
         text-align: right;
     }
 
+    /* Medical Tour */
+    .medicalTour-gal .splide__arrow--next {
+        right: -80%;
+    }
 
+    .medicalTour-gal .splide__arrow--prev {
+        right: -90%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .medicalTour-gal .splide__arrow--next {
+        right: 6%;
+    }
+
+    .medicalTour-gal .splide__arrow--prev {
+        right: 0;
+        left: auto;
+    }
 }

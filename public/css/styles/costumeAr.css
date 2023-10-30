@@ -200,6 +200,17 @@
     transform: scaleX(1);
 }
 
+.medicalTour-gal .splide__arrow--prev {
+    right: -50%;
+}
+
+.medicalTour-gal .splide__arrow--next {
+    left: 136%;
+    right: auto;
+}
+
+
+
 /* Doctors page */
 
 .doctor-header .doctors-bg {
