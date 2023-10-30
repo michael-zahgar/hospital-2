@@ -30,18 +30,18 @@
 
     /* Medical Tour */
     .medicalTour-gal .splide__arrow--next {
-        right: -80%;
+        right: -65%;
     }
 
     .medicalTour-gal .splide__arrow--prev {
-        right: -90%;
+        right: -76%;
     }
 }
 
 
 @media screen and (max-width:768px) {
     .medicalTour-gal .splide__arrow--next {
-        right: 6%;
+        right: 12%;
     }
 
     .medicalTour-gal .splide__arrow--prev {
