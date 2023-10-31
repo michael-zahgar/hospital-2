@@ -916,6 +916,11 @@
     .wrdc-body h1 {
         font-size: 25px;
     }
+
+    /* Footer */
+    .footer-by {
+        padding-top: 20px;
+    }
 }
 
 
