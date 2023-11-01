@@ -755,6 +755,14 @@
     .medicalTour-gal .splide__arrow--next {
         right: 80%;
     }
+
+    .medical-head .medical-head-text {
+        flex-direction: column-reverse;
+    }
+
+    .medical-head .medical-head-text img {
+        width: 150px;
+    }
 }
 
 

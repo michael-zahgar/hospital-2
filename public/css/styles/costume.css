@@ -3303,6 +3303,19 @@ button {
 
 /* Medical Tourism */
 
+
+.medical-head .medical-head-text img {
+    width: 100px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.medical-head .medical-head-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .medical-tour {
     position: relative;
     padding: 5rem 0;
