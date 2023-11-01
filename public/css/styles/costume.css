@@ -3327,24 +3327,19 @@ button {
     animation: scale1 1.5s infinite ease-in-out;
 }
 
-@keyframes scale1 {
-    0% {
-        transform: scale(1);
-        color: white;
-    }
 
-    66.66% {
-        transform: scale(1.2);
-        color: red;
-    }
 
-    100% {
-        transform: scale(1);
-        color: white;
-    }
-
+.medicalTour-services .mts {
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+    color: gray;
+    transition: var(--transition);
 }
 
+.medicalTour-services .mts:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
 
 .medical-tour .left-medical .video-link i {
     font-size: 20px;
@@ -3357,6 +3352,18 @@ button {
     line-height: 1;
     padding-bottom: 15px;
 
+}
+
+.medical-tour .medical-header {
+    position: relative;
+}
+
+.medical-tour .medical-header i {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    font-size: 30px;
+    color: rgba(128, 128, 128, 0.295);
 }
 
 .medical-tour .medical-header p {
@@ -3401,7 +3408,7 @@ button {
 /* section 2 */
 .medical-services {
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .medical-services .med-serHead {
@@ -3503,6 +3510,55 @@ button {
     right: 135%;
     top: 100%;
 
+}
+
+.medical-reason-body .reasons-details {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.reasons-details-text {
+    border: 1px solid rgba(128, 128, 128, 0.226);
+    padding: 10px;
+    transition: var(--transition);
+}
+
+.medical-reason-body .reasons-details h1 {
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 50%;
+    width: fit-content;
+    margin: auto;
+    margin-top: -35px;
+    margin-bottom: 20px;
+}
+
+.medical-reason-body .reasons-details span {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.medical-reason-body .reasons-details .reasons-details-text:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.medical-reason-body .reasons-details:hover h1 {
+    color: var(--frost-blue-color) !important;
+}
+
+.reasons-details-body {
+    margin-top: 4rem;
+}
+
+
+
+.medical-reason-body .reasons-details-body {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Operations */
