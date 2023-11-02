@@ -3485,18 +3485,39 @@ button {
     font-size: 50px;
 }
 
-.medical-tour .medicalForm .medicSubmit {
-    background-color: var(--main-color);
+.medical-tour .medicalForm .medicSubmit,
+.medical-tour .medicalForm .medicUpload {
     padding: 10px 22px;
     width: fit-content;
     color: white;
     transition: var(--transition);
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.medical-tour .medicalForm .medicSubmit {
+    background-color: var(--main-color);
+}
+
+.medical-tour .medicalForm .medicUpload {
+    background-color: rgb(27, 185, 27) !important;
+    width: fit-content;
 }
 
 .medical-tour .medicalForm .medicSubmit:hover {
     color: var(--frost-blue-color);
     border-radius: 10px;
 }
+
+.medical-tour .medicalForm .medicSubmit-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
 
 /* Medical Gal */
 .medicalTour-gal {
