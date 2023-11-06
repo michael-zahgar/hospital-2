@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="auto">
   <head>
     <!--
 ========================================================================================
@@ -12,20 +12,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Doctors | Watany Eye Hospitals</title>
+    <link rel="icon" href="../images/watany-logo.jpg" style="width: 200px;"
+      type="image/png">
+    <!-- BootStrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Splide Extension -->
+
+    <link rel="stylesheet" href="../css/splide/splide.min.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../css/all.min.css">
 
-    <!-- CDN Font Awesome -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- Magnific Popup css file -->
+    <!-- <link rel="stylesheet" href="../vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js"> -->
     <link rel="stylesheet"
-      href="../vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js">
+      href="../vendor/Magnific-Popup-master/dist/magnific-popup.css">
 
     <!-- carosuel css file -->
     <link rel="stylesheet"
@@ -40,207 +43,2108 @@
     <link rel="stylesheet" href="../css/responsive.css">
 
     <style>
-        body {
-            padding: 0;
-            margin: 0;
-            font-family: Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        </style>
 
-        .background {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: url("../images/construction.png") #08093cb3;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-blend-mode: darken;
-            filter: blur(10px);
-            z-index: -1;
-        }
-
-        .container {
-            width: 600px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .top img{
-            width: 200px;
-            }
-        .top {
-            display: flex;
-            align-items: center;
-            font-weight: 900;
-            margin: 10px;
-            margin-bottom: 40px;
-        }
-
-        hr {
-            width: 100px;
-            color: white;
-            border-radius: 5px;
-            margin: 0 15px
-        }
-
-        h1 {
-            font-size: 60px;
-            text-align: center;
-            font-weight: 500;
-            letter-spacing: 2px;
-        }
-        h3{
-            margin: 20px 0 15px 0;
-            font-weight: 400;
-        }
-
-        .social-icons {
-            margin: 20px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        a {
-            color: white;
-        }
-
-        i {
-            font-size: 35px;
-            margin: 10px;
-        }
-
-        .progress-wrapper {
-            width: 100%;
-            background: #2f2b2bc7;
-            display: flex;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-
-        .progress {
-            width: 0%;
-            height: 20px;
-            background: white;
-            border-radius: 10px;
-            display: flex;
-            justify-content: flex-end;
-            /* transition: all 0.003 ease-in; */
-        }
-
-        .progress span {
-            color: black;
-            position: relative;
-            font-weight: 800;
-            margin-right: 10px;
-        }
-        @media screen and (max-width:640px) {
-
-           .container{
-               width: 90%;
-           }
-           .top img{
-            width: 150px;
-           }
-           h1 {
-           font-size: 50px;
-           }
-
-           i {
-           font-size: 25px;
-           margin: 10px;
-       }
-       }
-       @media screen and (max-width:533px) {
-           h1 {
-           font-size: 30px;
-           }
-       }
-    </style>
   </head>
   <body>
 
-    <div class="background"></div>
-    <div class="container">
-      <div class="top">
-        <hr>
-        <img src="../images/logo-trans2.png" alt="watany-logo">
-        <hr>
-      </div>
-      <h1>UNDER CONSTRUCTION</h1>
-      <h3>PROGRESS</h3>
-      <div class="progress-wrapper">
-        <div class="progress"><span>0%</span></div>
-      </div>
-      <div class="social-icons">
-        <a target="_blank"
-          href="https://www.facebook.com/watanyeyehospitals?mibextid=nW3QTL"><i
-            class="fab fa-facebook"></i></a>
-        <a target="_blank"
-          href="https://twitter.com/Watany_Eye?t=m3pjRLN5Zh5FaWIeiUvx0w&s=08"><i
-            class="fab fa-twitter"></i></a>
-        <a target="_blank"
-          href="https://instagram.com/watanyeyehospitals?igshid=NjIwNzIyMDk2Mg=="><i
-            class="fab fa-instagram"></i></a>
-        <a target="_blank"
-          href="https://www.youtube.com/@watanyeyehospitals"><i
-            class="fab fa-youtube"></i></a>
-        <a target="_blank"
+    <section class="fixed-social">
+      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+        data-bs-trigger="hover focus" data-bs-content="Whats App">
+        <a class="btn"
           href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you"
-          target="_blank">
-          <i class="fab  fa-whatsapp"></i>
-        </a>
-      </div>
-    </div>
+          class="fa fa-brands fa-whatsapp" type="button" disabled><i
+            class="fa fa-brands fa-whatsapp"></i></a>
+      </span>
+      <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+        data-bs-trigger="hover focus" data-bs-content="Book Now">
+        <a class="btn" type="button" disabled><i
+            class="fa-regular fa-calendar-plus"></i></a>
+      </span>
+    </section>
 
-    <script src="./js/jquery.3.6.2.js"></script>
+    <section class="scroll-up">
+      <i class="fa-solid fa-arrow-up-long"></i>
+    </section>
 
-    <script src="./js/bootstrap.bundle.js"></script>
+    <section class="top-header">
+      <div class="container-fluid border-bottom">
+        <div class="row">
+          <div class="col-12"
+            style="display: flex; justify-content: space-between;">
 
-    <!-- Isotope js libary  ( for cards selection ) -->
+            <div class="t-head-left">
+              <a href="#" class="fa fa-brands fa-facebook"></a>
+              <a href="#" class="fa fa-brands fa-twitter"></a>
+              <a href="#" class="fa fa-brands fa-instagram"></a>
+              <a href="#" class="fa fa-brands fa-youtube"></a>
+              <a href="#" class="fa fa-brands fa-linkedin"></a>
+              <div style="border-left: 1px solid #b4b4b5" class="callus">
+                <i class="white fa-solid fa-phone" style="padding-left: 10px;"></i>
+                <a href="tel:16112">16112</a>
+              </div>
 
-    <script src="./vendor/isotope/isotope.min.js"></script>
+            </div>
 
-    <!-- Magnific popup script file (for pictures) -->
+            <div class>
+              <div class="top-header-right">
+                <a href="../ar/doctorsAr.html" class="main-font">العربية</a>
+              </div>
+            </div>
+          </div>
 
-    <script
-      src="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+        </div>
+      </section>
 
-    <!-- owl-carosuel js file -->
+      <nav class="parent-1 main-nav navbar  navbar-expand-lg sticky-top">
 
-    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+        <div class="container">
+          <img src="../images/logo-trans2.png" alt="watany-eye-hospitals"
+            style="width: 125px;">
+          <button class="navbar-toggler" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <i class="fa-sharp fa-solid fa-bars main-font"></i>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1"
+            id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="../images/logo-trans2.png"
+                alt="watany-eye-hospitals">
+              <i type="button" class="fa-solid fa-xmark white"
+                data-bs-dismiss="offcanvas" aria-label="Close"></i>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link links" aria-current="page"
+                    href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link links " href="./aboutusV2.html">About
+                    Us</a>
+                </li>
 
-    <!-- JS main Script -->
-    <script src="./js/main.js"></script>
+                <li class="nav-item">
+                  <a class="nav-link links active" href="#">Doctors</a>
+                </li>
 
-    <script>
-        const progress = document.querySelector('.progress')
-        const percentage = document.querySelector('.progress span')
+                <!-- Drop-Down Mobile Version -->
+                <li class="nav-item dropdown hover-li-main-2">
+                  <a class="nav-link links dropdown-toggle"
+                    data-bs-auto-close="outside"
+                    href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
 
-        let per = 0;
-        function progressLoad(){
-            if(per>=80){
-                progress.style.width = `80%`;
-                percentage.innerHTML = "80%"
+                    <li class="dropstart sub-drop">
+                      <a class="dropdown-item" href="./clinics.html">Clinics</a>
+                      <!-- <a class="active" data-bs-toggle="dropdown" href="../clinics.html">Clinics</a> -->
+                    </li>
 
-            }else{
-                progress.style.width = `${per}%`;
-                percentage.innerHTML = `${per}%`;
+                    <li class="dropstart sub-drop">
+                      <a class="dropdown-item"
+                        href="./investigations.html">Investigations</a>
 
-            }
-            per++
+                    </li>
 
-        }
+                    <li><a class="dropdown-item"
+                        href="./operations.html">Operations</a></li>
+                    <li><a class="dropdown-item"
+                        href="./contactLens.html">Contact Lens</a></li>
+                    <li><a class="dropdown-item"
+                        href="./laboratory.html">Laboratory</a></li>
+                    <li><a class="dropdown-item"
+                        href="./optics.html">Optics</a></li>
+                    <li><a class="dropdown-item"
+                        href="./pharmacy.html">Pharmacy</a></li>
+                    <li><a class="dropdown-item"
+                        href="./medicalTourism.html">Medical Tourism</a></li>
 
-        setInterval(progressLoad,50)
-    </script>
-  </body>
-</html>
+                  </ul>
+
+                </li>
+
+                <!-- Drop-Down Pc Version -->
+                <li class="nav-item nav-dropdown hover-li-main">
+                  <a class="nav-link links dropdown-toggle"
+                    data-bs-auto-close="outside"
+                    href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="hover-list">
+
+                    <li class="dropstart sub-drop">
+                      <a class="nav-link" href="./clinics.html">Clinics</a>
+                    </li>
+
+                    <li class="dropstart sub-drop">
+                      <a class="nav-link" href="./investigations.html">Investigations</a>
+                    </li>
+
+                    <li><a class="nav-link" href="./operations.html">Operations</a></li>
+                    <li><a class="nav-link" href="./contactLens.html">Contact
+                        Lens</a></li>
+                    <li><a class="nav-link" href="./laboratory.html">Laboratory</a></li>
+                    <li><a class="nav-link" href="./optics.html">Optics</a></li>
+                    <li><a class="nav-link"
+                        href="./pharmacy.html">Pharmacy</a></li>
+                    <li style="border-bottom: none;"><a class="nav-link"
+                        href="./medicalTourism.html">Medical Tourism</a></li>
+
+                  </ul>
+
+                </li>
+
+                <li class="nav-item nav-dropdown hover-li-main">
+                  <a class="nav-link links dropdown-toggle"
+                    data-bs-auto-close="outside"
+                    href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    WRDC
+                  </a>
+                  <ul class="hover-list wrdc-list">
+
+                    <li>
+                      <a class="nav-link" href="./wrdc.html">About WRDS</a>
+                    </li>
+                    <li style="border-bottom: none;">
+                      <a class="nav-link"
+                        href="https://alwatany-conferences.com/">WOS</a>
+                    </li>
+
+                  </ul>
+
+                </li>
+
+                <!-- Drop-Down Mobile Version -->
+                <li class="nav-item dropdown hover-li-main-2">
+                  <a class="nav-link links dropdown-toggle"
+                    data-bs-auto-close="outside" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    WRDC
+                  </a>
+                  <ul class="dropdown-menu">
+
+                    <li class="dropstart sub-drop">
+                      <a class="dropdown-item" href="./wrdc.html">About
+                        WRDC</a>
+                      <!-- <a class="active" data-bs-toggle="dropdown" href="../clinics.html">Clinics</a> -->
+                    </li>
+
+                    <li class="dropstart sub-drop">
+                      <a class="dropdown-item" data-bs-toggle="dropdown"
+                        href="https://alwatany-conferences.com/">WOS</a>
+
+                    </li>
+
+                  </ul>
+
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link links" href="./bookingform.html">Book
+                    Now</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link links" href="./contactus.html">Contact
+                    Us</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="page-header doctor-header doctor-header-2">
+        <div class="doctors-bg"></div>
+        <div class="container">
+          <h1 class="text-uppercase">OUR DOCTORS</h1>
+          <nav
+            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Doctors</li>
+            </ol>
+          </nav>
+        </div>
+
+      </section>
+
+      <section class="doctors-1">
+        <div class="container">
+          <div class="doctor-search mb-5">
+            <input type="text" placeholder="Search For A Doctor"
+              style="    width: 100%;
+                padding: 20px;
+                border-color: #213262;
+                border-top: none;
+                "
+              id="filter"
+              onkeyup="searchProduct()">
+          </div>
+
+        </div>
+
+        <nav id="navbar-example2"
+          class="navbar doctors-nav bg-body-tertiary px-3 mb-3 sticky-top">
+          <div class="container-fluid">
+
+            <!-- Off canvas -->
+            <button class="btn btn-primary canvas-doctors m-auto"
+              type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling">Click to see all subspecialties</button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true"
+              data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel">
+
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">All
+                  specialties</h5>
+                <button type="button" class="btn-close"
+                  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+              <div class="offcanvas-body">
+
+                <ul class="nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">Founders
+                      &
+                      Board</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Vitreo-Retinal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading3">Oculopasty
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading4">Cornea &
+                      External
+                      Eye
+                      Diseases</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading5">Pediatric &
+                      Squint</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading6">Glaucoma</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading7">Neuro-ophthalmology</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading8">Uveitis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading9">Low Vision
+                      Aids</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading10">Ocular
+                      Surface
+                      Diseases
+                      Diseases</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading11">Ophthalmogenetic</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading12">Neonatal
+                      Retina</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading13">Medical
+                      Retina</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading14">General
+                      Ophthalmology</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading15">Anaesthesia</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="#" role="button" aria-expanded="false">Investigation
+                      Department</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#scrollspyHeading16">Ultrasound</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading17">Biometry
+                          & Pachymetry</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading18">EOG,
+                          VEP, ERG</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading19">Field
+                          of vision (Perimetry)</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading20">Retinal
+                          Imaging</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading21">Specular
+                          Microscopy</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading22">Internal
+                      Medicine
+                      Department</a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+        </nav>
+
+        <div class="container">
+
+          <div
+            class="doctor-content scrollspy-example bg-body-tertiary p-3 rounded-2"
+            id="doctor-content" data-bs-spy="scroll"
+            data-bs-target="#navbar-example2"
+            data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+            tabindex="0">
+
+            <!-- =============Founders & Board Members============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading1">Founders & Board
+              Members</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0009_فتحي-فوزي.png"
+                  alt="Fathy Fawzy">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Fathy Fawzy</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0018_عبدالله-حسونة.png"
+                  alt="Abdallah Hassoun">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Abdallah Hassouna</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0034_رامي-رياض.png"
+                  alt="Ramy Riad">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ramy Riad</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0004_نادر.png" alt="Nader Fathy">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Nader Fathy</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Rami Hassouna">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Rami Hassouna</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Vitreo-Retinal Surgery Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading2">Vitreo-Retinal
+              Surgery Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0022_امبابي.png"
+                  alt="Sherif Embabi">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Sherif Embabi</h3>
+                <p class="card-text"><small class="text-muted">Vitreoretinal
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0016_مغازي.png"
+                  alt="Mohamed Moghazy">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Mohamed Moghazy</h3>
+                <p class="card-text"><small class="text-muted">Vitreoretinal
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0012_ماجد-ميخائيل.png"
+                  alt="Maged Mikhael">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Maged Mikhael</h3>
+                <p class="card-text"><small class="text-muted">Vitreoretinal
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Oculoplastic Surgery Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading3">Oculoplastic Surgery
+              Department</h4>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0015_محمد-عبدالحافظ.png"
+                  alt="Mohammad AbdulHafez">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Mohammad AbdulHafez</h3>
+                <p class="card-text"><small class="text-muted">Oculopastic
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0029_حاتم-ايمن.png"
+                  alt="Hatem Ayman">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Hatem Ayman</h3>
+                <p class="card-text"><small class="text-muted">Oculopastic
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0033_رامز-شكري.png"
+                  alt="Ramez Shoukry">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ramez Shoukry</h3>
+                <p class="card-text"><small class="text-muted">Oculopastic
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Cornea & External Eye Diseases Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading4">Cornea & External Eye
+              Diseases Department</h4>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0020_شريف-حسني.png"
+                  alt="Sherif Hosni">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Sherif Hosni</h3>
+                <p class="card-text"><small class="text-muted">Cornea & External
+                    Eye Diseases Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0027_تامر-الرجال.png"
+                  alt="Tamer El Raggal">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Tamer El Raggal</h3>
+                <p class="card-text"><small class="text-muted">Cornea & External
+                    Eye Diseases Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Pediatric & Squint Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading5">Pediatric & Squint
+              Department</h4>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png" alt="Hazem Nooh">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Hazem Nooh</h3>
+                <p class="card-text"><small class="text-muted">Squint and
+                    Pediatric Eye Diseases Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0001_ياسر-امام.png"
+                  alt="Yasser Emam">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Yasser Emam</h3>
+                <p class="card-text"><small class="text-muted">Squint and
+                    Pediatric Eye Diseases Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0003_هبة-فؤاد.png"
+                  alt="Heba Fouad">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Heba Fouad</h3>
+                <p class="card-text"><small class="text-muted">Squint and
+                    Pediatric Eye Diseases Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Glaucoma Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading6">Glaucoma Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0000_ياسمين-سيد.png"
+                  alt="Yasmine El Sayed">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Yasmine El Sayed</h3>
+                <p class="card-text"><small class="text-muted">Glaucoma
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png" alt="Omar Magdy">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Omar Magdy</h3>
+                <p class="card-text"><small class="text-muted">Glaucoma
+                    Specialist</small></p>
+              </div>
+            </div>
+
+            <!-- =============Neuro-ophthalmology Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading7">Neuro-ophthalmology
+              Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png" alt="Ahmad Nassef">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ahmad Nassef</h3>
+                <p class="card-text"><small class="text-muted">Neuro-ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Uveitis Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading8">Uveitis Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Terese Kamal">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Terese Kamal</h3>
+                <p class="card-text"><small class="text-muted">Uveitis
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0032_دينا-بدار.png"
+                  alt="Dina Baddar">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Dina Baddar</h3>
+                <p class="card-text"><small class="text-muted">Uveitis
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Low Vision Aids Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading9">Low Vision Aids
+              Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png" alt="Ashraf Karam">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ashraf Karam</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Ocular Surface Diseases Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading10">Ocular Surface Diseases
+              Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0008_فارس.png" alt="Faris Ishaac">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Faris Ishaac</h3>
+                <p class="card-text"><small class="text-muted">Ocular Surface
+                    Diseases Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Ophthalmogenetic Diseases Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading11">Ophthalmogenetic
+              Diseases Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Caroline Atef">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Caroline Atef</h3>
+                <p class="card-text"><small class="text-muted">Ophthalmogenetic
+                    Diseases Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Neonatal Retinal Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading12">Neonatal Retina
+              Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0005_مريم-الفقي.png"
+                  alt="Mariam Al-Feky">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Mariam Al-Feky</h3>
+                <p class="card-text"><small class="text-muted">Neonatal Retina
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Medical Retina Department Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading13">Medical Retina
+              Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0044_-رانيا استاور.png"
+                  alt="Rania Estawro">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Rania Estawro</h3>
+                <p class="card-text"><small class="text-muted">Medical Retina
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============General Ophthalmology Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading14">General Ophthalmology
+              Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0040_احمد-اسامة-هاشم.png"
+                  alt="Ahmed Osama">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ahmed Osama</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0043_احمد-عساف.png"
+                  alt="Ahmed Assaf">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ahmed Assaf</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0039_احمد-كامل.png"
+                  alt="Ahmed Kamel">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ahmed Kamel</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0037_اسامة-جمال.png"
+                  alt="Osama Gamal">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Osama Gamal</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0038_اسامة-اسحق.png"
+                  alt="Osama Ishak">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Osama Ishak</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0036_اسحق-ادوارد.png"
+                  alt="Ishak Edward">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ishak Edward</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0041_اشرف-ارميا.png"
+                  alt="Ashraf Armia">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ashraf Armia</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0035_اشرف-رياض.png"
+                  alt="Ashraf Riad">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ashraf Riad</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Amira Mourice">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Amira Mourice</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0025_ايمن-عبدالملاك.png"
+                  alt="Ayman Abdel Malak">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ayman Abdel Malak</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Ihab Rizkallah">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ihab Rizkallah</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0026_باسم-فايز.png"
+                  alt="Bassem Fayez">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Bassem Fayez</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Bassem Wagih">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Bassem Wagih</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png" alt="George Adel">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. George Adel</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0028_جوزيف-حليم.png"
+                  alt="Joseph Halim">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Joseph Halim</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png" alt="John Kedis">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. John Kedis</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png" alt="Hassan Deraz">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Hassan Deraz</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Khaled Abuzeid">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Khaled Abuzeid</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0024_رفيق-صبري.png"
+                  alt="Rafik Sabry">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Rafik Sabry</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png" alt="Sherif Elias">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Sherif Elias</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0021_شريف-بدار.png"
+                  alt="Sherif Baddar">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Sherif Baddar</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Shereen Shafik">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Shereen Shafik</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Rasheed Ellakkany">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Rasheed Ellakkany</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Talaat Sawires">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Talaat Sawires</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png" alt="Alaa Fayed">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Alaa Fayed</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/د. الدمرداش.png"
+                  alt="Aldemerdash Omar">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Aldemerdash Omar (HUG)</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Emad Fawzy</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0017_عوامري.png"
+                  alt="Amr El Awamry">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Amr El Awamry</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Fady Tharwat</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png" alt="Fady Wahid">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Fady Wahid</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0007_فادي-يحي.png"
+                  alt="Fady Yehia">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Fady Yehia</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0010_فكري-زاهر.png"
+                  alt="Fikry Zaher">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Fikry Zaher</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Karim Magdi</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Maged Samuael</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Maged Adly</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0011_ماجد-ماهر.png"
+                  alt="Maged Maher">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Maged Maher</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Mark Ananian</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0013_مايكل-سامي.png"
+                  alt="Michael Sami">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Michael Sami</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Mohamed Ellakkani">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Mohamed Ellakkani</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0014_مجدي-عيسى.png"
+                  alt="Magdi Essa">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Magdi Essa</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Moshir Samuel</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Mamdouh Bebawy</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Nagwa Soliman</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Hani Nasr</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0030_يسري-يوسف.png"
+                  alt="Youssry Youssef">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Youssry Youssef</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Yomna Magdy</h3>
+                <p class="card-text"><small class="text-muted">General
+                    Ophthalmology
+                    Consultant</small></p>
+              </div>
+            </div>
+
+            <!-- =============Anaesthesia Department============= -->
+
+            <h4 class="head-dep" id="scrollspyHeading15">Anaesthesia Department</h4>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Osama Ramzy</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Tamer Youseef</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Gehan Fouad</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Raouf Ramzy</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Sameh Boshra</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Saad Ibrahim</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Sherif Samir</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Adel Kamal</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Fady Adeeb</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Karem youseef</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Mohamed Awad</h3>
+                <p class="card-text"><small class="text-muted">Anesthesiologist</small></p>
+              </div>
+            </div>
+            <!-- =============Investigation Department============= -->
+
+            <!-- ======Ultrasound========= -->
+
+            <h4 class="head-dep">Investigation
+              Department</h4>
+            <h3 class="head-dep primary-co-2 mt-1" id="scrollspyHeading16">Ultrasound</h3>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Asmaa Mohamed</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Ultrasound</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Amany Aly</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Ultrasound</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Dalia Ahmed</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Ultrasound</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Rasha Abbas</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Ultrasound</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Mona El Sheikh</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Ultrasound</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Naila Siam</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Ultrasound</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Nermeen Ragab</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Ultrasound</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Hams Samy</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Ultrasound</small></p>
+              </div>
+            </div>
+
+            <!-- =======Biometry & Pachymetry======== -->
+
+            <h3 class="head-dep primary-co-2 mt-3" id="scrollspyHeading17">Biometry
+              & Pachymetry</h3>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ayat El Alfy</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Biometry & Pachymetry</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ayat Khaled</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Biometry & Pachymetry</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Ayat Abdel Fattah</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Biometry & Pachymetry</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Reham Fathy</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Biometry & Pachymetry</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Sally Saad</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Biometry & Pachymetry</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Sherry Moheb</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Biometry & Pachymetry</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Fady Emad</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Biometry & Pachymetry</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Lydia Maher</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Biometry & Pachymetry</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Marian Sobhy</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Biometry & Pachymetry</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Nevin Fathy</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Biometry & Pachymetry</small></p>
+              </div>
+            </div>
+
+            <!-- =======EOG, VEP, ERG======== -->
+
+            <h3 class="head-dep primary-co-2 mt-3" id="scrollspyHeading18">Electrophysiology</h3>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Randa Hesham</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - EOG, VEP, ERG</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Azza Shehab</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - EOG, VEP, ERG</small></p>
+              </div>
+            </div>
+
+            <!-- =======Field of vision (Perimetry)======== -->
+
+            <h3 class="head-dep primary-co-2 mt-3" id="scrollspyHeading19">Field
+              of vision (Perimetry)</h3>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Sohir Matta</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Field of vision</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Shereen Samir</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Field of vision</small></p>
+              </div>
+            </div>
+
+            <!-- =======Retinal Imaging======== -->
+
+            <h3 class="head-dep primary-co-2 mt-3" id="scrollspyHeading20">Retinal
+              Imaging</h3>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Reem Mohsen Mohamed</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Retinal Imaging</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Shaimaa Ibrahim</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Retinal Imaging</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Mira Adel</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Retinal Imaging</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Nouran ElBeltagi</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Retinal Imaging</small></p>
+              </div>
+            </div>
+            <!-- =======Specular Microscopy======== -->
+
+            <h3 class="head-dep primary-co-2 mt-3" id="scrollspyHeading21">Specular
+              Microscopy</h3>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/DR_0023_ريمون-عاطف.png"
+                  alt="Remon Atef George">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Remon Atef George</h3>
+                <p class="card-text"><small class="text-muted">Investigation
+                    Department - Specular Microscopy</small></p>
+              </div>
+            </div>
+            <!-- =======Internal Medicine Department======== -->
+
+            <h2 class="head-dep mt-3" id="scrollspyHeading22">Internal Medicine
+              Department</h2>
+
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Tary Magdy</h3>
+                <p class="card-text"><small class="text-muted">Internal Medicine
+                    Specialist</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Dalia Ahmed</h3>
+                <p class="card-text"><small class="text-muted">Internal Medicine
+                    Specialist</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Saher Ibrahim</h3>
+                <p class="card-text"><small class="text-muted">Internal Medicine
+                    Specialist</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/female-profile.jpg"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Salwa Shokry</h3>
+                <p class="card-text"><small class="text-muted">Internal Medicine
+                    Specialist</small></p>
+              </div>
+            </div>
+            <div class="card-doctor">
+              <div class="doctor-img">
+                <img src="../images/doctors/male-profile.png"
+                  alt="Watany Doctors">
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Dr. Waheed El Masry</h3>
+                <p class="card-text"><small class="text-muted">Internal Medicine
+                    Specialist</small></p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Start loction Page -->
+
+      <section class="parent-10 subscribe-area p-0 text-center"
+        style="background: #2b2d36 !important; position: relative;">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="contact-icons pt-4 hidden">
+                <a target="_blank"
+                  href="https://www.facebook.com/watanyeyehospitals">
+                  <i class="fa fa-brands fa-facebook-f"></i>
+                </a>
+                <a target="_blank"
+                  href="https://twitter.com/Watany_Eye">
+                  <i class="fa fa-brands fa-twitter"></i>
+                </a>
+                <a target="_blank"
+                  href="https://www.instagram.com/watanyeyehospitals/">
+                  <i class="fa fa-brands fa-instagram"></i>
+                </a>
+                <a target="_blank"
+                  href="https://www.youtube.com/@watanyeyehospitals">
+                  <i class="fa fa-brands fa-youtube"></i>
+                </a>
+                <a target="_blank" href="https://wa.link/jp221p">
+                  <i class="fa fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+
+              <div class="right-contact"
+                style="background: #2b2d36 !important;">
+
+                <div class="form-contact">
+
+                  <div style="position: relative;">
+
+                    <form class="subscribe-form"
+                      method="post" action="/subscribe">
+                      <div class="input-group mb-3">
+                        <i class="fa-solid fa-envelope"
+                          style="margin-right: 10px; font-size: 30px; margin-top: 5px;"></i>
+                        <input type="email" id="email2"
+                          name="email2" required
+                          class="form-control"
+                          placeholder="Subscribe For More News"
+                          aria-label="Recipient's username"
+                          aria-describedby="button-addon2">
+                        <button class="btn sub-btn"
+                          type="submit">Subscribe</button>
+                      </div>
+                      <h2 class="subscribe-message"></h2>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- End loction  Page -->
+
+      <!-- Start Footer Page  -->
+
+      <footer class="parent-11" id="footer">
+
+        <div class="container footer-body">
+          <div class="row">
+
+            <div class="col-md-4 col-sm-12 tag">
+              <div class="fot">
+                <h4 class="text-uppercase pb-3">Working Days</h4>
+
+                <span>From Saturday to Thursday:</span>
+                <span>09:00 AM - 10:00 PM</span>
+
+                <span style="display: block; margin-top: 5px;">Note:</span>
+                <span>Thawra Branch on Fridays:</span>
+
+                <span>from 09:00 AM - 5:00 PM</span>
+                <span style="display: block; margin-top: 5px;">Hegaz Branch on
+                  Fridays:
+                </span>
+                <span>from 09:00 AM - 10:00 PM</span>
+                <span style="display: block; margin-top: 5px;">Hurghada Branch
+                  on Fridays:
+                </span>
+                <span>from 1:00 PM - 8:00 PM</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 quick">
+              <div class="fot">
+                <h4 class="text-uppercase pb-3">Quick Links</h4>
+                <ul class="fot-links">
+                  <li class="mb-2"><a href="./aboutusV2.html" class="white">About
+                      us</a></li>
+                  <li class="mb-2"><a href="./doctors.html" class="white">Find
+                      a doctor</a></li>
+                  <li class="mb-2"><a href="./clinics.html"
+                      class="white">Clinics</a></li>
+                  <li class="mb-2"><a href="./contactus.html" class="white">Branches</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <div class="fot">
+                <h4 class="text-uppercase pb-3">Contact Us</h4>
+                <ul class="fot-links">
+                  <li class="mb-2"><a href="tel:16112" class="white"><i
+                        class="fa-sharp fa-solid fa-phone"
+                        style="position: relative; margin-right: 4px;"></i>16112</a></li>
+                  <li class="mb-2"><a target=”_blank”
+                      href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you"
+                      class="white"><i class="fa fa-brands fa-whatsapp"
+                        style="position: relative; margin-right: 4px;"></i>WhatsApp</a></li>
+                  <li class="mb-2"><a target="_blank"
+                      href=mailto:“contactus@watanyeyehospitals.com”
+                      class="white"><i class="fa-sharp fa-solid fa-envelope"
+                        style="position: relative; margin-right: 4px;"></i>contactus@watanyeyehospitals.com</a></li>
+                  <li class="mb-2"><a target="_blank" href="./bookingform.html"><i
+                        class="fa-regular fa-calendar-plus"
+                        style="position: relative; margin-right: 4px;"></i>
+                      Schedule an appointment</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container social py-3 d-flex justify-content-between">
+          <p class="mb-0">Copyright © 2023 Watany Eye Hospitals. All Rights
+            Reserved.</p>
+          <span class="footer-by bold">Created by <a
+              style="font-weight: 500; font-style: italic;"
+              href="https://www.linkedin.com/in/michael-magdy-zahgar-b9302521a/">Michael
+              Magdy Z</a></span>
+        </div>
+      </footer>
+
+      <!-- End Footer Page -->
+
+      <!-- End Footer Page -->
+
+      <script src="../js/jquery.3.6.2.js"></script>
+
+      <script src="../js/bootstrap.bundle.js"></script>
+
+      <!-- Splide Extension -->
+
+      <script src="../js/splide.min.js"></script>
+
+      <!-- Splide autoScroll Extension -->
+
+      <script src="../js/splide-extension-auto-scroll.min.js"></script>
+
+      <!-- Isotope js libary  ( for cards selection ) -->
+
+      <script src="../vendor/isotope/isotope.min.js"></script>
+
+      <!-- Magnific popup script file (for pictures) -->
+
+      <script
+        src="../vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+
+      <!-- owl-carosuel js file -->
+
+      <script src="../vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+      <!-- JS main Script -->
+      <script src="../js/main.js"></script>
+
+    </body>
+  </html>
