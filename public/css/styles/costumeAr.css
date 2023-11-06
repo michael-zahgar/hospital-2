@@ -213,9 +213,10 @@
 
 /* Doctors page */
 
-.doctor-header .doctors-bg {
-    transform: scaleX(-1);
+.page-header {
+    background-position: right !important;
 }
+
 
 .doctors-nav .offcanvas-start {
     left: auto;

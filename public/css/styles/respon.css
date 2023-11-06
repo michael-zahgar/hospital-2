@@ -698,10 +698,6 @@
     /* all clinics */
 
     /* inside Clinics and clinics */
-    .page-header {
-        padding-top: 50px;
-    }
-
     .clinic-service {
         margin-top: 6rem;
     }
@@ -928,6 +924,11 @@
     /* Footer */
     .footer-by {
         padding-top: 20px;
+    }
+
+    /* Medical Tour */
+    .medicalTour-gal .splide__arrow--next {
+        right: 70%;
     }
 }
 

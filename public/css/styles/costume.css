@@ -2685,19 +2685,24 @@ button {
 /* Our Doctors Page */
 
 .page-header {
-    position: relative;
-    padding: 150px 0px 128px 0px;
+    background: url(../../images/clinics/clinic-bg.jpg) no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
 }
 
-.doctor-header .doctors-bg {
+.doctor-header {
     background: url("../../images/doctors-bg.jpg") no-repeat;
 }
 
-.doctor-header-2 .doctors-bg {
+.doctor-header-2 {
     background: url(../../images/doctors-bg-2.png);
 }
 
-.page-header .doctors-bg {
+/* .page-header .doctors-bg {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -2706,7 +2711,7 @@ button {
     background-size: cover;
     background-position: center;
     z-index: -1;
-}
+} */
 
 .page-header h1 {
     color: var(--main-color);
@@ -2893,20 +2898,19 @@ button {
 
 
 /* Our Clinics Page start */
-.contact-header .doctors-bg {
+.contact-header {
     background: url(../../images/doctors-bg.jpg) no-repeat !important;
     width: 100%;
-    background-size: cover !important;
+
     background-position: left !important;
     /* background-color: rgba(0, 0, 0, 0.116) !important;
     background-blend-mode: overlay !important; */
     /* filter: blur(5px); */
 }
 
-.clinic-header .doctors-bg {
+.clinic-header {
     background: url(../../images/clinics/clinic-bg.jpg) no-repeat;
-    background-position: center;
-    height: 350px;
+
 }
 
 .all-clinics .img-inner .serv-icon {
@@ -3127,7 +3131,7 @@ button {
 
 /* Lab Page */
 
-.lab-header .doctors-bg {
+.lab-header {
     background: url("../../images/lab/mokhtabar.jpg");
     background-color: rgba(255, 255, 255, 0.356);
     background-blend-mode: overlay;
@@ -3303,9 +3307,14 @@ button {
 
 /* Medical Tourism */
 
+.medicalTour-Header {
+    background: url(../../images/medical-tourism.jpg) no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
 
 .medical-head .medical-head-text img {
-    width: 100px;
+    width: 160px;
     aspect-ratio: 3/2;
     object-fit: contain;
 }
@@ -3781,11 +3790,9 @@ button {
 }
 
 /* Pharmacy page */
-.pharmacy-header .doctors-bg {
+.pharmacy-header {
     background: url(../../images/pharmacy/PharmacyBG.jpg) no-repeat;
     width: 100%;
-    background-size: cover;
-    filter: blur(5px);
 }
 
 .pharmacy-headContent img {
@@ -3803,10 +3810,8 @@ button {
 
 /* Optics */
 
-.optics-header .doctors-bg {
+.optics-header {
     background: url(../../images/optics/optics-bg.jpg) no-repeat;
     background-color: rgba(255, 255, 255, 0.151);
     background-blend-mode: overlay;
-    background-position: center;
-    background-size: cover;
 }
