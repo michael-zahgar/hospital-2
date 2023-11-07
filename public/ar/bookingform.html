@@ -13,7 +13,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>تواصل معنا | مستشفيات الوطني للعيون</title>
+        <title>أحجز الان || مستشفيات الوطني للعيون</title>
         <link rel="icon" href="../images/watany-logo.jpg" style="width: 200px;"
             type="image/png">
         <!-- BootStrap -->
@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="../css/all.min.css">
 
         <!-- Magnific Popup css file -->
-        <!-- <link rel="stylesheet" href="../vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js"> -->
+        <!-- <link rel="stylesheet" href="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js"> -->
         <link rel="stylesheet"
             href="../vendor/Magnific-Popup-master/dist/magnific-popup.css">
 
@@ -61,7 +61,7 @@
         <section class="fixed-social">
             <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
                 data-bs-trigger="hover focus"
-                data-bs-content="Whats App">
+                data-bs-content="واتساب">
                 <a class="btn"
                     href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you"
                     class="fa fa-brands fa-whatsapp" type="button" disabled><i
@@ -69,12 +69,11 @@
             </span>
             <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
                 data-bs-trigger="hover focus"
-                data-bs-content="Book Now">
-                <a class="btn" type="button" disabled><i
+                data-bs-content="احجز الان">
+                <a href="#" class="btn" type="button" disabled><i
                         class="fa-regular fa-calendar-plus"></i></a>
             </span>
         </section>
-
         <section class="scroll-up">
             <i class="fa-solid fa-arrow-up-long"></i>
         </section>
@@ -114,8 +113,7 @@
 
                         <div class>
                             <div class="top-header-right">
-                                <a href="../en/contactus.html"
-                                    class="main-font">English</a>
+                                <a href="../en/aboutusV2.html" class="main-font">English</a>
                             </div>
                         </div>
                     </div>
@@ -189,7 +187,7 @@
                                                 href="./contactLensAr.html">العدسات
                                                 اللاصقة</a></li>
                                         <li><a class="dropdown-item"
-                                                href="./laboratoryAr.html">المعمل</a></li>
+                                                href="./laboratoryAr.htmll">المعمل</a></li>
                                         <li><a class="dropdown-item"
                                                 href="./النظارات.html">النظارات</a></li>
                                         <li><a class="dropdown-item"
@@ -297,13 +295,13 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link links"
-                                        href="./bookingform.html">أحجز
+                                    <a class="nav-link links active"
+                                        href="#">أحجز
                                         الان</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link links active"
-                                        href="#">تواصل
+                                    <a class="nav-link links"
+                                        href="./contactusAr.html">تواصل
                                         معنا</a>
                                 </li>
 
@@ -313,293 +311,92 @@
                 </div>
             </nav>
 
-            <section class="page-header doctor-header">
+            <section class="page-header doctor-header book-header">
                 <div class="doctors-bg"></div>
                 <div class="container">
-                    <h1 class="text-uppercase">تواصل معنا</h1>
+                    <h2 class="bold main-font text-uppercase">احجز الان</h2>
                     <nav
                         style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                         aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a
-                                    href="./index.html">الصفحة الرئيسية</a></li>
+                            <li class="breadcrumb-item"><a href="./index.html">الصفحة
+                                    الرئيسية</a></li>
                             <li class="breadcrumb-item active"
-                                aria-current="page">> توصل معنا</li>
+                                aria-current="page">> احجز الان</li>
                         </ol>
                     </nav>
                 </div>
 
             </section>
 
-            <section class="contactus-1 py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <div class="contact-det">
-                                        <div class="contact-bg"></div>
-                                        <div class="icon-thumb">
-                                            <div class="contact-icon">
-                                                <img
-                                                    src="../images/icons/phone.png"
-                                                    alt="phone">
-                                            </div>
+            <div class="booking-body container">
+                <div class="row">
+                    <div class="col-12">
+                        <form class="contact-form" method="post"
+                            action="/submitForm">
+                            <h2 class="text-center mb-3 bold">Booking || أحجز
+                                الأن</h2>
+                            <input type="text" id="name" name="name"
+                                placeholder="Full Name || الاسم كامل" required>
+                            <br>
+                            <input type="email" id="email" name="email"
+                                placeholder="Email || البريد الالكتروني"
+                                required>
+                            <br>
+                            <input type="text" id="phone" name="phone"
+                                placeholder="Phone Number || رقم الموبايل"
+                                required>
+                            <br>
+                            <input type="text" id="address" name="address"
+                                placeholder="Your Adress || العنوان" required>
+                            <br>
 
-                                        </div>
-                                        <div class="contact-text">
-                                            <h4 class="bold">إتصل بنا</h4>
-                                            <div class="mb-4">
-                                                <span
-                                                    style="font-weight: 600; color: black;">من
-                                                    خلال الخط الساخن:</span>
-                                                <a href="tel:16112"
-                                                    style="font-size: 20px;">١٦١١٢</a>
-                                            </div>
-                                            <div class="contact-info mb-4">
-                                                <span
-                                                    style="font-weight: 600; color: black;">او
-                                                    خدمة الواتساب:</span>
-                                                <a target="_blank"
-                                                    href="https://wa.link/jp221p"
-                                                    style="font-size: 20px;"><i
-                                                        class="fa fa-brands fa-whatsapp"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-sm-12">
-                                    <div class="contact-det">
-                                        <div class="contact-bg"></div>
-                                        <div class="icon-thumb">
-                                            <div class="contact-icon">
-                                                <img
-                                                    src="../images/icons/locations.png"
-                                                    alt="phone">
-                                            </div>
-
-                                        </div>
-                                        <div class="contact-text"
-                                            style="text-align: right;">
-                                            <h4 class="bold text-center">مواقعنا</h4>
-                                            <span>- فرع الثورة: نهاية شارع
-                                                الثورة , امام كوبري الجيش ,
-                                                النزهة</span>
-                                            <span>- فرع الحجاز: ٢١١ شارع
-                                                الحجاز , المطار , النزهة ,
-                                                محافظة القاهرة</span>
-                                            <span>- فرع الغردقة : بجوار
-                                                النساجون الشرقيون المطار
-                                                شارع, الغردقة 1, محافظة
-                                                البحر الأحمر</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-7 col-sm-12 m-auto">
-                                    <div class="contact-det">
-                                        <div class="contact-bg"></div>
-                                        <div class="icon-thumb">
-                                            <div class="contact-icon">
-                                                <img
-                                                    src="../images/icons/contact-email.png"
-                                                    alt="phone">
-                                            </div>
-
-                                        </div>
-                                        <div class="contact-text"
-                                            style="text-align: right;">
-                                            <h4 class="bold text-center">البريد
-                                                الالكتروني</h4>
-                                            <div class="email-info mb-4">
-                                                <span
-                                                    style="font-weight: 600; color: black;">To
-                                                    للتواصل مع علاقات المرضي
-                                                    للمقترحات والشكاوى:</span>
-                                                <a target="_blank"
-                                                    href=mailto:“contactus@watanyeyehospitals.com”>contactus@watanyeyehospitals.com</a>
-                                            </div>
-
-                                            <div class="email-info mb-4">
-                                                <span
-                                                    style="font-weight: 600; color: black;">للتواصل
-                                                    مع إدارة الموارد البشرية ...
-                                                    للانضمام لفريق عمل الوطنى:</span>
-                                                <a target="_blank"
-                                                    href=mailto:“careers@watanyeyehospitals.com”>careers@watanyeyehospitals.com</a>
-                                            </div>
-
-                                            <div class="email-info mb-4">
-                                                <span
-                                                    style="font-weight: 600; color: black;">للتواصل
-                                                    مع إدارة تعاقدات الشركات
-                                                    وشركاء تأمين الوطنى:</span>
-                                                <a target="_blank"
-                                                    href=mailto:“corporate@watanyeyehospitals.com”>corporate@watanyeyehospitals.com</a>
-                                            </div>
-
-                                            <div class="email-info mb-4">
-                                                <span
-                                                    style="font-weight: 600; color: black;">للتواصل
-                                                    مع إدارة العلاقات الدولية
-                                                    (السياحة العلاجية):</span>
-                                                <a target="_blank"
-                                                    href=mailto:“internationalpatient@watanyeyehospitals.com”>internationalpatient@watanyeyehospitals.com</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div>
+                                <label for="select-option mb-3">Select a Branch
+                                    || أختر فرع </label>
+                                <select id="branch" name="branch">
+                                    <option>Select a Branch || اختر فرع</option>
+                                    <option value="thawra">Thawra Branch || فرع
+                                        الثورة</option>
+                                    <option value="hegaz">Hegaz Branch || فرع
+                                        الحجاز</option>
+                                    <option value="hurghada">Hurghada Branch ||
+                                        فرع الغرقة</option>
+                                </select>
                             </div>
 
-                        </div>
+                            <div>
+                                <label for="select-option2 mb-3">Select a
+                                    Service || اختر خدمة</label>
+                                <select id="service" name="service">
+                                    <option>Select a Service || اختر خدمة</option>
+                                    <option value="clinics">clinics || العيادات
+                                        الخارجية</option>
+                                    <option value="investigations">Investigation
+                                        || الفحوصات الطبية</option>
+                                    <option value="operations">Operations ||
+                                        العمليات</option>
+                                </select>
+                            </div>
 
-                        <div class="col-sm-12">
-
-                            <form class="contactForm" method="post"
-                                action="/contact">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <input type="text"
-                                            class="fullname-con"
-                                            id="fullname-con"
-                                            name="contactName"
-                                            placeholder="الاسم كامل">
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-12">
-                                        <input type="text" class="email-con"
-                                            id="email-con"
-                                            name="contactEmail"
-                                            placeholder="البريد الإلكتروني">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <input type="text" class="phone-con"
-                                            id="phone-con"
-                                            name="contactPhone"
-                                            placeholder="الهاتف">
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-12">
-                                        <input type="text"
-                                            class="subject-con"
-                                            id="subject-con"
-                                            name="contactSubject"
-                                            placeholder="الموضوع">
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-12">
-                                        <textarea id="message"
-                                            name="contactMessage"
-                                            placeholder="محتوي الطلب \ الملاحظات"
-                                            cols="30" rows="10"></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <button type="submit"
-                                            class="contact-btn">ارسل رسالة</button>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div>
+                            <textarea id="message" name="message"
+                                placeholder="Your Request / Notes || محتوي الطلب \ الملاحظات"
+                                cols="30" rows="10" required></textarea>
+                            <br>
+                            <div class="btns d-flex">
+                                <input type="submit"
+                                    class="submit submit-btn p-3"
+                                    value="Submit | ارسل طلب الحجز">
+                                <!-- <a class="go-back" href="./index.html">Go Home |
+                                    الصفحة الرئيسية</a> -->
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </section>
 
-            <section class="parent-10 contact-branches py-5 text-center"
-                style="position: relative;">
-                <div class="container-fluid">
-                    <div class="testi-header">
-                        <span class="trans-title">الفروع</span>
-                    </div>
-
-                    <div class="row pb-5">
-                        <div class="col-lg-4 col-md-6 col-sm-12 loc">
-                            <h1 class="text-uppercase">
-                                فرع الثورة
-                            </h1>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13810.08314972512!2d31.3748485!3d30.0792679!3m2!1i1024!2i
-                    768!4f13.1!3m3!1m2!1s0x14583df57af52afd%3A0x914489ea2a85a4c6!2sWatany%20Eye%20Hospitals%20-
-                    %20Thawra%20Branch!5e0!3m2!1sen!2seg!4v1693819357291!5m2!1sen!2seg"
-                                width="100%" height="500px"
-                                style="border:0;" allowfullscreen
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <div class="opening-days">
-                                <h3>أيام العمل</h1>
-                                <ul style="text-align: right;">
-                                    <li><span>السبت: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الأحد: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الإثنين: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الثلاثاء: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الأربعاء: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الخميس: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الجمعة: ١٠ صباحا الي ٥ مساءً</span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 loc">
-                            <h1 class="text-uppercase">
-                                فرع الحجاز
-                            </h1>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.2831267340953!2d31.34930291511678!3d30.114710881856876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815ebc2d8a4d3%3A0xcec21a683b1cacc8!2sAl%20Watany%20Eye%20Hospital%20-%20Hegaz%20Branch!5e0!3m2!1sen!2seg!4v1672959979327!5m2!1sen!2seg"
-                                width="100%" height="500px"
-                                style="border:0;" allowfullscreen
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <div class="opening-days">
-                                <h3>أيام العمل</h1>
-                                <ul style="text-align: right;">
-                                    <li><span>السبت: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الأحد: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الإثنين: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الثلاثاء: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الأربعاء: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الخميس: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الجمعة: ١٠ صباحا الي ٩ مساءً</span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-sm-12 loc">
-                            <h1 class="text-uppercase">
-                                فرع الغردقة
-                            </h1>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14192.290201249116!2d33.8199496!3d27.2168719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14528724fb0dc8bf%3A0x5e22d7a58f0c8b57!2zV2F0YW55IEV5ZSBDZW50cmUgSHVyZ2hhZGEt2YXYsdmD2LIg2KfZhNmI2LfZhtmKINmE2YTYudmK2YjZhiDYqNin2YTYutix2K_Zgtip!5e0!3m2!1sen!2seg!4v1693819094087!5m2!1sen!2seg"
-                                width="100%" height="500px"
-                                style="border:0;" allowfullscreen
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <div class="opening-days">
-                                <h3>أيام العمل</h1>
-                                <ul style="text-align: right;">
-                                    <li><span>السبت: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الأحد: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الإثنين: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الثلاثاء: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الأربعاء: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الخميس: ١٠ صباحا الي ٩ مساءً</span></li>
-                                    <li><span>الجمعة: ١٠ صباحا الي ٩ مساءً</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+            </div>
 
             <!-- Start Footer Page -->
-
             <footer class="parent-11" id="footer">
 
                 <div class="container footer-body">
@@ -633,12 +430,10 @@
                             <div class="fot">
                                 <h4 class="text-uppercase pb-3">روابط سريعة</h4>
                                 <ul class="fot-links">
-                                    <li class="mb-2"><a
-                                            href="./aboutUsAr.html"
+                                    <li class="mb-2"><a href="./aboutUsAr.html"
                                             class="white">من
                                             نحن</a></li>
-                                    <li class="mb-2"><a
-                                            href="./doctorsAr.html"
+                                    <li class="mb-2"><a href="./doctorsAr.html"
                                             class="white">أطبائنا</a></li>
                                     <li class="mb-2"><a
                                             href="./clinicsAr.html"
@@ -670,7 +465,7 @@
                                                 style="position: relative; margin-left: 10px;"></i>contactus@watanyeyehospitals.com</a>
                                     </li>
                                     <li class="mb-2"><a target="_blank"
-                                            href="./bookingform.html"><i
+                                            href="#"><i
                                                 class="fa-regular fa-calendar-plus"
                                                 style="position: relative; margin-left: 4px;"></i>
                                             تحديد
@@ -721,6 +516,8 @@
 
             <!-- JS main Script -->
             <script src="../js/main.js"></script>
+            <!-- JS AR main Script -->
+            <script src="../js/mainAR.js"></script>
 
         </body>
 
