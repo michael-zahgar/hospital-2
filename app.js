@@ -21,7 +21,7 @@ const sessionKeyLength = 32;
 console.log(password);
 console.log(Email);
 
-PORT = process.env.PORT;
+PORT = process.env.PORT || 5000;
 
 
 
