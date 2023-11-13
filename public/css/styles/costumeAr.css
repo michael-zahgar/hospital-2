@@ -234,3 +234,10 @@
 .pharmacy-header .doctors-bg {
     transform: scaleX(-1);
 }
+
+/* FAQS */
+
+.faqs-1 .accordion-button::after {
+    margin-left: 0;
+    margin-right: auto;
+}

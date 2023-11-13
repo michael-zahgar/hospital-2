@@ -911,148 +911,40 @@ button {
     width: 80px;
 }
 
-/* Services */
-.faqs {
-    margin-bottom: 20px;
-}
-
-.serv-show {
-    border-left: 2px solid #b4b4b5;
-}
-
-.our-services .container {
-    max-width: 70%;
-}
-
+/* FAQS */
 .faqs .faqs-btn {
     width: 120px !important;
 }
 
-.our-services .info-header .inf-rotate {
-    width: 15px;
-    height: 15px;
-    margin: 15px 5px 0 0;
-    background: #fff !important;
+.faqs-1 {
+    padding: 4rem 0;
 }
 
-.our-services h1 {
-    color: #213262;
-    transition-delay: 200ms;
-    margin-bottom: 0;
-    margin: 10px 0;
-    margin-left: 10px;
+.faqs-1 .accordion-button:not(.collapsed) {
+    background-color: var(--main-color);
+    color: white;
 }
 
-.our-services p {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 23px;
-}
-
-.our-services .our-info {
-    margin-bottom: 3rem;
-}
-
-.our-services .info-header {
-    display: flex;
-}
-
-.our-services .info-header .inf-rotate, .faqs .inf-rotate {
-    width: 25px;
-    height: 25px;
-    margin: 17px 8px 0px 0;
-    /* animation: none; */
-    margin-left: -26px;
-    /* transform: rotate(134deg) !important; */
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.our-services .info-header .inf-rotate i, .faqs .inf-rotate i {
-    transform: rotate(-132deg) !important;
-    color: var(--main-color);
-}
-
-.our-services .info-body {
-    max-width: 85%;
-    margin: auto;
-    padding: 20px 0px;
-}
-
-/* FAQS Section */
-
-.faqs .accordion-item {
-    border: none;
-    padding: 28px !important;
-    background-color: transparent;
-}
-
-.faqs .accordion-item .accordion-button {
-    background: transparent;
-    padding: 20px 10px;
-}
-
-.faqs .inf-rotate {
-    width: 35px;
-    height: 35px;
-    margin-left: -59px;
-}
-
-.faqs .accordion-body {
-    padding: 50px 10px !important;
-}
-
-.faqs .accordion p {
+.faqs-1 p {
     color: gray;
 }
 
-.accordion-button {
-    font-size: 20px;
+.faqs-1 .trans-title {
+    font-size: 30px;
+    opacity: 1;
 }
 
-.accordion-button:not(.collapsed) {
-    color: #213262;
+.faqs-1 .accordion-item {
+    margin-bottom: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.24);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.10);
 }
 
-.accordion-header .accordion-button i {
-    display: none;
-    margin: 0 30px 18px -43px;
-    color: var(--main-color);
-    font-size: 25px;
+.faqs-1 .accor-btn1 {
+    padding: 25px 20px;
 }
-
-.accordion-button:not(.collapsed) i {
-    display: inline-block;
-}
-
-.accordion-button:not(.collapsed)::after, .accordion-button::after {
-    font-size: 25px;
-    background: none;
-    color: #213262;
-}
-
-.accordion-button:not(.collapsed)::after {
-    content: "\00D7";
-}
-
-.accordion-button::after {
-    content: "\002B";
-}
-
-.accordion-button:not(.collapsed)::after {
-    transform: none;
-}
-
-
-
-
-
-
-
-
-
 
 /* testimonials */
 .testimonials {
@@ -1359,7 +1251,7 @@ button {
 }
 
 
-.service-inner a:before, .faqs a:before {
+.service-inner a:before, .faqs a::before {
     position: absolute;
     top: 0;
     left: 0;
