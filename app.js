@@ -21,7 +21,7 @@ const sessionKeyLength = 32;
 console.log(password);
 console.log(Email);
 
-PORT = process.env.PORT;
+PORT = process.env.PORT || 5000;
 
 
 
@@ -159,7 +159,7 @@ res.send(`
 `);
 
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'outlook',
         auth: {
             user:EmailBooking,
             pass:passwordBooking
