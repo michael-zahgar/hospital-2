@@ -12,10 +12,9 @@ const app = express();
 
 // console.log(process.env.PORT);
 
-const password = process.env.PASSWORD;
-const Email = process.env.EMAIL;
-const passwordBooking = process.env.PASSWORD2;
-const EmailBooking = process.env.Email2;
+const password = process.env.PASSWORDServ;
+const Email = process.env.EmailServ;
+const outlookBook = process.env.OutLookBook;
 const sessionKeyLength = 32;
 
 console.log(password);
@@ -159,16 +158,16 @@ res.send(`
 `);
 
     const transporter = nodemailer.createTransport({
-        service: 'outlook',
+        service: 'gmail',
         auth: {
-            user:EmailBooking,
-            pass:passwordBooking
+            user:Email,
+            pass:password
         }
     })
 
     const mailOptions = {
         from: req.body.email,
-        to:EmailBooking,
+        to:outlookBook,
         subject: `Message From ${req.body.email}`,
         text: `Name: ${req.body.name}\nEmail: ${req.body.email}\nPhone: ${req.body.phone}
         \nBranch: ${req.body.branch}\nService: ${req.body.service}\n\nMessage: ${req.body.message}`,

@@ -241,3 +241,7 @@
     margin-left: 0;
     margin-right: auto;
 }
+
+.faqs-1 .accordion-button {
+    text-align: right;
+}
