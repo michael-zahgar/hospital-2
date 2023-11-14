@@ -159,7 +159,7 @@ res.send(`
 `);
 
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'outlook',
         auth: {
             user:EmailBooking,
             pass:passwordBooking
