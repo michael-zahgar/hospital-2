@@ -2591,7 +2591,17 @@ button {
 }
 
 .doctor-header-2 {
-    background: url(../../images/doctors-bg-2.png);
+    background: url(../../images/doctors-banner.jpg);
+    background-color: rgba(255, 255, 255, 0.342);
+    background-blend-mode: overlay;
+}
+
+.opertaions-header {
+    background: url(../../images/operations.jpg);
+}
+
+.opertaions-header .breadcrumb-item.active {
+    color: white;
 }
 
 /* .page-header .doctors-bg {
