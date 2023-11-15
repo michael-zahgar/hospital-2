@@ -245,3 +245,8 @@
 .faqs-1 .accordion-button {
     text-align: right;
 }
+
+
+.opertaions-header .doctors-bg {
+    transform: scaleX(1);
+}

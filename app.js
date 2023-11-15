@@ -67,7 +67,7 @@ app.post('/subscribe', (req, res) => {
 
 res.send(`
   <script>
-    alert('Form submitted successfully || تم إرسال الطلب بنجاح');
+    alert('Thank you for subscribing! || شكرا لك على الاشتراك! ');
      window.location.href = document.referrer;
   </script>
 `);
@@ -152,7 +152,7 @@ const schema = Joi.object({
 
 res.send(`
   <script>
-    alert('Form submitted successfully || تم إرسال الطلب بنجاح');
+    alert('Thank you for contacting Watany Eye Hospitals We have received your booking request and will contact you as soon as possible to confirm your booking || شكرا لتواصلكم مع مستشفيات الوطني للعيون لقد تلقينا طلب الحجز الخاص بكم وسوف نتواصل معكم لتأكيد الحجز في أسرع وقت ممكن ');
      window.location.href = document.referrer;
   </script>
 `);
@@ -224,7 +224,7 @@ const contactSchema = Joi.object({
 
 res.send(`
   <script>
-    alert('Form submitted successfully || تم إرسال الطلب بنجاح');
+    alert('Thank you for contacting us here at Watany Eye Hospitals. We will be in touch soon. We look forward to serving you. || شكرا لتواصلكم معنا في مستشفيات الوطني للعيون، سوف نعاود الاتصال بكم في أسرع وقت ممكن');
      window.location.href = document.referrer;
   </script>
 `);
