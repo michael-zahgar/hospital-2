@@ -188,6 +188,10 @@
 
 /* Medical tour */
 
+.medicalTour-Header .doctors-bg {
+    transform: scaleX(1);
+}
+
 .medical-contact .reason-b-h span {
     font-size: 60px;
 }

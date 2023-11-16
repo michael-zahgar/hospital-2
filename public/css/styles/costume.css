@@ -3213,11 +3213,22 @@ button {
 }
 
 /* Medical Tourism */
-
 .medicalTour-Header {
+    background: none;
+    position: relative;
+}
+
+.medicalTour-Header .doctors-bg {
     background: url(../../images/medical-tourism.jpg) no-repeat !important;
     background-position: center !important;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     background-size: cover !important;
+    z-index: -1;
+    transform: scaleX(-1);
 }
 
 .medical-head .medical-head-text img {
