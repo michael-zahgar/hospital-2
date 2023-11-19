@@ -38,7 +38,7 @@ app.use(limiter); // Apply rate limiter middleware to all routes
 app.use(cors())
 
  app.get('/' , (req, res) =>{
-   res.sendFile(__dirname + './en/index.html');
+   res.sendFile(__dirname + './index.html');
 });
 
 // Subscribe Form
