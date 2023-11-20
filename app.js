@@ -243,7 +243,7 @@ res.send(`
     from: formData.contactEmail,
     to:outlookBook,
     subject: formData.contactSubject,
-    text: formData.contactMessage + '\n\n' + 'From: ' + formData.contactFullName + '\n' + 'Email: ' + formData.contactEmail + '\n' + 'Phone: ' + formData.contactPhone
+    text: formData.contactMessage + '\n\n' + 'From: ' + formData.contactName + '\n' + 'Email: ' + formData.contactEmail + '\n' + 'Phone: ' + formData.contactPhone
   };
 
   // Send the email
