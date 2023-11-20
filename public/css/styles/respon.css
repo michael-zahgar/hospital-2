@@ -759,6 +759,14 @@
     .medical-head .medical-head-text img {
         width: 150px;
     }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    .page-header .breadcrumb-item.active, .page-header .breadcrumb-item a {
+        font-size: 20px;
+    }
 }
 
 
@@ -841,10 +849,6 @@
 
     .parent-11 .social {
         flex-direction: column;
-    }
-
-    .clinic-header h1 {
-        font-size: 35px;
     }
 
     .career-header {
@@ -998,10 +1002,6 @@
     /* Clinics page */
     .page-header a, .page-header li {
         font-size: 20px;
-    }
-
-    .clinic-header h1 {
-        font-size: 30px;
     }
 
     /* lab page */
