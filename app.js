@@ -3,12 +3,24 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const rateLimit = require('express-rate-limit');
 const Joi = require('joi');
-const crypto = require('crypto');
+// const crypto = require('crypto');
 const cors = require('cors');
+const {Storage} = require('@google-cloud/storage');
+
 
 
 dotenv.config()
 const app = express();
+
+let projectId = 'onyx-principle-406115'
+let keyFilename = 'mykey'
+
+const storage = new Storage({
+  projectId,
+  keyFilename
+})
+// const bucket = storage.bucket('')
+
 
 // console.log(process.env.PORT);
 
@@ -20,7 +32,7 @@ const sessionKeyLength = 32;
 console.log(password);
 console.log(Email);
 
-PORT = process.env.PORT || 5000;
+PORT = process.env.PORT || 8080;
 
 
 
@@ -38,7 +50,7 @@ app.use(limiter); // Apply rate limiter middleware to all routes
 app.use(cors())
 
  app.get('/' , (req, res) =>{
-   res.sendFile(__dirname + './index.html');
+   res.sendFile(__dirname + './public/index.html');
 });
 
 // Subscribe Form
@@ -262,5 +274,5 @@ res.send(`
 
 
     app.listen(PORT , ()=>{
-        // console.log(`server Running on port ${PORT}`);
+        console.log(`server Running on port ${PORT}`);
 })
