@@ -47,48 +47,6 @@ button {
     color: var(--main-color);
 }
 
-.modals-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-    transition: var(--transition);
-}
-
-.modals-video video {
-    max-width: 700px;
-    outline: none;
-    border: 10px dotted black;
-}
-
-.modals-video.active {
-    transition-delay: 0.5s;
-    transform: translate(-50%, -50%) scale(1);
-    background-color: rgba(128, 128, 128, 0.295);
-    transition: var(--transition);
-}
-
-.modals-video .close {
-    position: absolute;
-    top: 100px;
-    right: 30px;
-    font-weight: bolder;
-    font-size: 40px;
-    color: black !important;
-    background-color: transparent;
-}
-
-/* Model ENd */
-
-
-
-
 /* scroll animation */
 
 .hidden {
