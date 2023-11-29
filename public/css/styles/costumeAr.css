@@ -182,7 +182,7 @@
     transform: scaleX(1);
 }
 
-.clinic-header .doctors-bg {
+.clinic-header .doctors-bg, .optics-header .doctors-bg {
     transform: scaleX(-1);
 }
 
