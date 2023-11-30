@@ -5,20 +5,20 @@ const rateLimit = require('express-rate-limit');
 const Joi = require('joi');
 // const crypto = require('crypto');
 const cors = require('cors');
-const {Storage} = require('@google-cloud/storage');
+// const {Storage} = require('@google-cloud/storage');
 
 
 
 dotenv.config()
 const app = express();
 
-let projectId = 'onyx-principle-406115'
-let keyFilename = 'mykey'
+// let projectId = 'onyx-principle-406115'
+// let keyFilename = 'mykey'
 
-const storage = new Storage({
-  projectId,
-  keyFilename
-})
+// const storage = new Storage({
+//   projectId,
+//   keyFilename
+// })
 // const bucket = storage.bucket('')
 
 
@@ -37,20 +37,20 @@ PORT = process.env.PORT || 8080;
 
 
 const limiter = rateLimit({
-    windowMs: 15 *60 * 1000, // 15 minutes
-    max: 20, // limit each IP to 5 requests per windowMs
-    message: 'You Have Sent Many Requests, please try again later ||  برجاء المحاولة في وقت لاحق'
-  });
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 20, // limit each IP to 5 requests per windowMs
+  message: 'You Have Sent Many Requests, please try again later ||  برجاء المحاولة في وقت لاحق'
+});
 
 
 app.use(express.static('public'));
-app.use(express.urlencoded({extended:false}))
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json());
 app.use(limiter); // Apply rate limiter middleware to all routes
 app.use(cors())
 
- app.get('/' , (req, res) =>{
-   res.sendFile(__dirname + './public/index.html');
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + './public/index.html');
 });
 
 // Subscribe Form
@@ -71,13 +71,13 @@ app.post('/subscribe', (req, res) => {
 
   const { error, value } = schema2.validate(req.body);
 
-  if(error){
+  if (error) {
     const errorDetails = error.details.map(d => d.message).join('<br>');
     res.send(`<h2>Validation Error : </h2> ${errorDetails}`)
     return;
   }
 
-res.send(`
+  res.send(`
   <script>
     alert('Thank you for subscribing! || شكرا لك على الاشتراك! ');
      window.location.href = document.referrer;
@@ -114,7 +114,7 @@ res.send(`
 
 // Booking Form
 
-app.post('/submitForm', (req, res)=>{
+app.post('/submitForm', (req, res) => {
 
   let name = req.body.name;
   let email = req.body.email;
@@ -124,10 +124,10 @@ app.post('/submitForm', (req, res)=>{
   let branch = req.body.branch;
   let service = req.body.service;
 
-console.log(name , email , phone , address , message , branch , service)
+  console.log(name, email, phone, address, message, branch, service)
 
 
-const schema = Joi.object({
+  const schema = Joi.object({
     name: Joi.string().required().messages({
       'string.empty': 'Please enter your name'
     }),
@@ -153,50 +153,50 @@ const schema = Joi.object({
   });
 
 
-      // Validate the request body using the Joi schema
+  // Validate the request body using the Joi schema
   const { error, value } = schema.validate(req.body);
 
-  if(error){
+  if (error) {
     const errorDetails = error.details.map(d => d.message).join('<br>');
     res.send(`<h2>Validation Error : </h2> ${errorDetails}`)
     return;
   }
 
-res.send(`
+  res.send(`
   <script>
     alert('Thank you for contacting Watany Eye Hospitals We have received your booking request and will contact you as soon as possible to confirm your booking || شكرا لتواصلكم مع مستشفيات الوطني للعيون لقد تلقينا طلب الحجز الخاص بكم وسوف نتواصل معكم لتأكيد الحجز في أسرع وقت ممكن ');
      window.location.href = document.referrer;
   </script>
 `);
 
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user:Email,
-            pass:password
-        }
-    })
-
-    const mailOptions = {
-        from: req.body.email,
-        to:outlookBook,
-        subject: `Message From ${req.body.email}`,
-        text: `Name: ${req.body.name}\nEmail: ${req.body.email}\nPhone: ${req.body.phone}
-        \nBranch: ${req.body.branch}\nService: ${req.body.service}\n\nMessage: ${req.body.message}`,
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: Email,
+      pass: password
     }
+  })
 
-    transporter.sendMail(mailOptions, (error, info)=>{
-        if(error){
-            console.log(error);
-            res.status(500).send('Internal Server Error');
-        }else{
-            console.log('Email sent' + info.response);
-            res.status(200).send('OK');
+  const mailOptions = {
+    from: req.body.email,
+    to: outlookBook,
+    subject: `Message From ${req.body.email}`,
+    text: `Name: ${req.body.name}\nEmail: ${req.body.email}\nPhone: ${req.body.phone}
+        \nBranch: ${req.body.branch}\nService: ${req.body.service}\n\nMessage: ${req.body.message}`,
+  }
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log(error);
+      res.status(500).send('Internal Server Error');
+    } else {
+      console.log('Email sent' + info.response);
+      res.status(200).send('OK');
 
 
-        }
-    })
-    })
+    }
+  })
+})
 
 // Contact Form
 
@@ -208,25 +208,25 @@ app.post('/contact', (req, res) => {
   let contactSubject = req.body.contactSubject;
   let contactMessage = req.body.contactMessage;
 
-  console.log(contactName ,contactEmail ,  contactPhone ,contactSubject ,  contactMessage)
+  console.log(contactName, contactEmail, contactPhone, contactSubject, contactMessage)
 
-const contactSchema = Joi.object({
-  contactName: Joi.string().trim().required().messages({
-    'any.required': 'Please enter your name || برجاء ادخال الاسم'
-  }),
-  contactEmail: Joi.string().trim().email({ minDomainSegments: 2 }).required().messages({
-    'any.required': 'Please enter a valid email address || برجاء ادخال البريد الالكتروني صحيح'
-  }),
-  contactPhone: Joi.string().trim().length(11).pattern(/^\d+$/).required().messages({
-    'any.required': 'Please enter a valid 11-digit phone number || يرجى إدخال رقم هاتف صحيح مكون من ١١ رقما'
-  }),
-  contactSubject: Joi.string().trim().required(),
+  const contactSchema = Joi.object({
+    contactName: Joi.string().trim().required().messages({
+      'any.required': 'Please enter your name || برجاء ادخال الاسم'
+    }),
+    contactEmail: Joi.string().trim().email({ minDomainSegments: 2 }).required().messages({
+      'any.required': 'Please enter a valid email address || برجاء ادخال البريد الالكتروني صحيح'
+    }),
+    contactPhone: Joi.string().trim().length(11).pattern(/^\d+$/).required().messages({
+      'any.required': 'Please enter a valid 11-digit phone number || يرجى إدخال رقم هاتف صحيح مكون من ١١ رقما'
+    }),
+    contactSubject: Joi.string().trim().required(),
 
-  contactMessage: Joi.string().trim().required(),
-});
+    contactMessage: Joi.string().trim().required(),
+  });
 
   const { error, value } = contactSchema.validate(req.body);
-  if(error){
+  if (error) {
     const errorDetails = error.details.map(d => d.message).join('<br>');
     res.send(`<h2>Validation Error : </h2> ${errorDetails}`)
     return;
@@ -234,7 +234,7 @@ const contactSchema = Joi.object({
   // Extract the form data from the request body
   const formData = value;
 
-res.send(`
+  res.send(`
   <script>
     alert('Thank you for contacting us here at Watany Eye Hospitals. We will be in touch soon. We look forward to serving you. || شكرا لتواصلكم معنا في مستشفيات الوطني للعيون، سوف نعاود الاتصال بكم في أسرع وقت ممكن');
      window.location.href = document.referrer;
@@ -245,15 +245,15 @@ res.send(`
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user:Email,
-      pass:password
+      user: Email,
+      pass: password
     }
   });
 
   // Set up the email message options
   const mailOptions = {
     from: formData.contactEmail,
-    to:outlookBook,
+    to: outlookBook,
     subject: formData.contactSubject,
     text: formData.contactMessage + '\n\n' + 'From: ' + formData.contactName + '\n' + 'Email: ' + formData.contactEmail + '\n' + 'Phone: ' + formData.contactPhone
   };
@@ -273,6 +273,6 @@ res.send(`
 
 
 
-    app.listen(PORT , ()=>{
-        console.log(`server Running on port ${PORT}`);
+app.listen(PORT, () => {
+  console.log(`server Running on port ${PORT}`);
 })
