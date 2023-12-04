@@ -1,5 +1,5 @@
 // popover bootstrap on hover
-document.addEventListener('DOMContentLoaded' , function(){
+document.addEventListener('DOMContentLoaded', function () {
   var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
   var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
     return new bootstrap.Popover(popoverTriggerEl)
@@ -10,16 +10,16 @@ document.addEventListener('DOMContentLoaded' , function(){
 // e.preventDefault();
 // }, false);
 
-document.addEventListener('keydown', function(e){
-if(e.ctrlKey || e.keyCode== 123){
-  e.stopPropagation();
-  e.preventDefault();
-}
+document.addEventListener('keydown', function (e) {
+  if (e.ctrlKey || e.keyCode == 123) {
+    e.stopPropagation();
+    e.preventDefault();
+  }
 })
 
 // On Scroll Animation
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -50,11 +50,11 @@ function addScrollUpFunctionality() {
     this.scrollY >= 1000 ? span.classList.add("show") : span.classList.remove("show");
   };
 
-  span.onclick = function() {
-    window.scrollTo({top: 0, behavior: "smooth"});
+  span.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 }
-window.onload = function() {
+window.onload = function () {
   addScrollUpFunctionality();
 }
 
@@ -115,25 +115,25 @@ function searchProduct() {
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
 
-let nav_offset_top = $('.header-area').height() + 5;
+  let nav_offset_top = $('.header-area').height() + 5;
 
-function navbarFixed() {
+  function navbarFixed() {
     if ($('.header-area').length) {
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            if (scroll >= nav_offset_top) {
-                $('.header-area .main-menu').addClass('navbar_fixed');
-            } else {
-                $('.header-area .main-menu').removeClass('navbar_fixed');
-            }
-        })
+      $(window).scroll(function () {
+        let scroll = $(window).scrollTop();
+        if (scroll >= nav_offset_top) {
+          $('.header-area .main-menu').addClass('navbar_fixed');
+        } else {
+          $('.header-area .main-menu').removeClass('navbar_fixed');
+        }
+      })
     }
-}
+  }
 
-navbarFixed();
+  navbarFixed();
 
 
   $('.about-us-3 .owl-carousel').owlCarousel({
@@ -143,84 +143,84 @@ navbarFixed();
     dots: true,
     loop: true,
     responsive: {
-        0:{
-            items:1
-        },
-        992:{
-            items:2
-        }
+      0: {
+        items: 1
+      },
+      992: {
+        items: 2
+      }
     }
-});
+  });
 
-$('.service-3 .owl-carousel').owlCarousel({
-  autoplay: false,
-  smartSpeed: 1000,
-  dots: true,
-  loop: true,
-  items: 1,
-});
+  $('.service-3 .owl-carousel').owlCarousel({
+    autoplay: false,
+    smartSpeed: 1000,
+    dots: true,
+    loop: true,
+    items: 1,
+  });
 
-$('.pricing-1 .owl-carousel').owlCarousel({
+  $('.pricing-1 .owl-carousel').owlCarousel({
 
-  smartSpeed: 1000,
-  margin: 45,
-  dots: false,
-  nav : true,
-  navText : [
-    '<i class="fa-sharp fa-solid fa-arrow-left"></i>',
-    '<i class="fa-sharp fa-solid fa-arrow-right"></i>'
-],
-  responsive: {
-    0:{
-      items:1
-  },
-  992:{
-      items:2
-  },
-  1200:{
-      items:3
-  }
-  }
-});
-
-$(".caro-patient .owl-carousel").owlCarousel({
-  autoplay: true,
-  smartSpeed: 1000,
-  margin: 0,
-  dots: false,
-  loop: true,
-  nav : true,
-  navText : false,
-  responsive: {
-    0:{
-      items:3
-    },
-    992:{
-      items:5
+    smartSpeed: 1000,
+    margin: 45,
+    dots: false,
+    nav: true,
+    navText: [
+      '<i class="fa-sharp fa-solid fa-arrow-left"></i>',
+      '<i class="fa-sharp fa-solid fa-arrow-right"></i>'
+    ],
+    responsive: {
+      0: {
+        items: 1
+      },
+      992: {
+        items: 2
+      },
+      1200: {
+        items: 3
+      }
     }
-  }
-});
+  });
 
-
-$('.services-main .owl-carousel').owlCarousel({
-  autoplay: true,
-  smartSpeed: 1000,
-  loop: false,
-  navText : [
-    '<i class="fa-sharp fa-solid fa-arrow-left"></i>',
-    '<i class="fa-sharp fa-solid fa-arrow-right"></i>'
-],
-nav : true,
-  dots: false,
-  responsive: {
-    0:{
-      items:1
-    },
-    992:{
-      items:2
+  $(".caro-patient .owl-carousel").owlCarousel({
+    autoplay: true,
+    smartSpeed: 1000,
+    margin: 0,
+    dots: false,
+    loop: true,
+    nav: true,
+    navText: false,
+    responsive: {
+      0: {
+        items: 3
+      },
+      992: {
+        items: 5
+      }
     }
-  }
-});
+  });
+
+
+  $('.services-main .owl-carousel').owlCarousel({
+    autoplay: true,
+    smartSpeed: 1000,
+    loop: false,
+    navText: [
+      '<i class="fa-sharp fa-solid fa-arrow-left"></i>',
+      '<i class="fa-sharp fa-solid fa-arrow-right"></i>'
+    ],
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      992: {
+        items: 2
+      }
+    }
+  });
 
 
 
@@ -237,38 +237,38 @@ nav : true,
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#splide1', {
     perPage: 2,
-    drag   : 'free',
+    drag: 'free',
     perMove: 1,
-     gap:5,
-     arrows:false,
+    gap: 5,
+    arrows: false,
   }).mount();
 });
 
 
 document.addEventListener('DOMContentLoaded', function () {
-new Splide( '#splide2', {
-  direction: 'ttb',
-  height   : '12rem',
-  type   : 'loop',
-  drag   : 'free',
-  focus  : 'center',
-  arrows     : false,
-  perPage: 1,
-  autoScroll: {
-    speed: 1.5,
-  },
-} ).mount( window.splide.Extensions );
+  new Splide('#splide2', {
+    direction: 'ttb',
+    height: '12rem',
+    type: 'loop',
+    drag: 'free',
+    focus: 'center',
+    arrows: false,
+    perPage: 1,
+    autoScroll: {
+      speed: 1.5,
+    },
+  }).mount(window.splide.Extensions);
 });
 
 
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#splide3', {
     perPage: 3,
-    drag   : 'free',
+    drag: 'free',
     perMove: 3,
-     gap:10,
-     pagination: false,
-     breakpoints: {
+    gap: 10,
+    pagination: false,
+    breakpoints: {
       768: {
         perPage: 2,
         perMove: 2
@@ -285,12 +285,12 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#splide4', {
     perPage: 6,
-    drag   : 'free',
+    drag: 'free',
     direction: 'ltr' | 'rtl',
     perMove: 6,
-     gap:10,
-     arrows:false,
-     breakpoints: {
+    gap: 10,
+    arrows: false,
+    breakpoints: {
       768: {
         perPage: 4,
         perMove: 3
@@ -304,18 +304,18 @@ document.addEventListener('DOMContentLoaded', function () {
   }).mount();
 });
 
-      // Home Insurance
+// Home Insurance
 
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#insurance', {
     perPage: 5,
-    gap : 0 ,
-    type   : 'loop',
-    drag   : 'free',
-    focus  : 'center',
+    gap: 0,
+    type: 'loop',
+    drag: 'free',
+    focus: 'center',
     arrows: false,
-    pagination:false,
-     breakpoints: {
+    pagination: false,
+    breakpoints: {
       768: {
         perPage: 4,
         perMove: 3
@@ -327,188 +327,188 @@ document.addEventListener('DOMContentLoaded', function () {
       536: {
         perPage: 2,
         perMove: 1,
-        autoScroll:{speed: 3},
+        autoScroll: { speed: 3 },
       },
-    },autoScroll: {
+    }, autoScroll: {
       speed: 2,
     }
 
-  }).mount( window.splide.Extensions );
+  }).mount(window.splide.Extensions);
 });
 
 
-      document.addEventListener('DOMContentLoaded', function () {
-        new Splide('#medical-gal', {
-          perPage: 3,
-          gap: 30,
-          perMove: 1,
-           arrows:true,
-           pagination:false,
-           breakpoints: {
-            1024: {
-              perPage: 1,
-            },
-            768: {
-              perPage: 1,
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#medical-gal', {
+    perPage: 3,
+    gap: 30,
+    perMove: 1,
+    arrows: true,
+    pagination: false,
+    breakpoints: {
+      1024: {
+        perPage: 1,
+      },
+      768: {
+        perPage: 1,
 
-            },
-          },
+      },
+    },
 
-        }).mount();
-      });
-      // document.addEventListener('DOMContentLoaded', function () {
-      //   new Splide('#splide-p5', {
-      //     direction: 'ttb',
-      //     height   : '20rem',
-      //     autoplay: 'true',
-      //     perMove: 1,
-      //      arrows:false,
-      //   }).mount();
-      // });
+  }).mount();
+});
+// document.addEventListener('DOMContentLoaded', function () {
+//   new Splide('#splide-p5', {
+//     direction: 'ttb',
+//     height   : '20rem',
+//     autoplay: 'true',
+//     perMove: 1,
+//      arrows:false,
+//   }).mount();
+// });
 
-      document.addEventListener('DOMContentLoaded', function () {
-        new Splide('#home-service', {
-          perPage: 3,
-          gap: 30,
-          perMove: 1,
-           arrows:true,
-           pagination:false,
-           breakpoints: {
-            1024: {
-              perPage: 2,
-            },
-            768: {
-              perPage: 1,
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#home-service', {
+    perPage: 3,
+    gap: 30,
+    perMove: 1,
+    arrows: true,
+    pagination: false,
+    breakpoints: {
+      1024: {
+        perPage: 2,
+      },
+      768: {
+        perPage: 1,
 
-            },
-          },
+      },
+    },
 
-        }).mount();
-      });
-
-
-      $('.h-gallery .splide .view-img').magnificPopup({
-        type: 'image',
-        gallery:{enabled:true}
-      });
-
-      document.addEventListener('DOMContentLoaded', function () {
-        new Splide('#home-gallery', {
-          direction: 'ltr',
-          gap : 0 ,
-          type   : 'loop',
-          drag   : 'free',
-          focus  : 'center',
-          arrows: false,
-          perPage: 4,
-           arrows:false,
-           pagination:false,
-           breakpoints: {
-            1024: {
-              perPage: 2,
-            },
-            768: {
-              perPage: 2,
-            },
-          },
-          autoScroll: {
-            speed: 1,
-          },
-        }).mount( window.splide.Extensions );
-      });
-
-      // WRDC-gallery
-
-    document.addEventListener('DOMContentLoaded', function () {
-        new Splide('#WRDC-gallery', {
-          direction: 'ltr',
-          gap : 10 ,
-          type   : 'loop',
-          drag   : 'free',
-          focus  : 'center',
-          arrows: false,
-          perPage: 4,
-           arrows:false,
-           pagination:false,
-           breakpoints: {
-            1024: {
-              perPage: 2,
-            },
-            768: {
-              perPage: 1,
-            },
-          },
-          autoScroll: {
-            speed: 1,
-          },
-        }).mount( window.splide.Extensions );
-      });
-
-      // Lens Gallery
-
-            document.addEventListener('DOMContentLoaded', function () {
-        new Splide('#lens-gallery', {
-          direction: 'ltr',
-          gap : 0 ,
-          type   : 'loop',
-          drag   : 'free',
-          focus  : 'center',
-          arrows: false,
-          perPage: 3,
-           arrows:false,
-           pagination:false,
-           breakpoints: {
-            768: {
-              perPage: 2,
-            }
-          },
-          autoScroll: {
-            speed: 2,
-          },
-        }).mount( window.splide.Extensions );
-      });
-
-      document.addEventListener('DOMContentLoaded', function () {
-        new Splide( '#patient-splide', {
-          direction: 'ltr',
-          gap : 0 ,
-          type   : 'loop',
-          drag   : 'free',
-          focus  : 'center',
-          arrows: false,
-          perPage: 2,
-          breakpoints:{
-            768:{
-              perPage: 1
-            }
-          },
-          autoScroll: {
-            speed: 1,
-          },
-        } ).mount( window.splide.Extensions );
-        });
+  }).mount();
+});
 
 
+$('.h-gallery .splide .view-img').magnificPopup({
+  type: 'image',
+  gallery: { enabled: true }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#home-gallery', {
+    direction: 'ltr',
+    gap: 0,
+    type: 'loop',
+    drag: 'free',
+    focus: 'center',
+    arrows: false,
+    perPage: 4,
+    arrows: false,
+    pagination: false,
+    breakpoints: {
+      1024: {
+        perPage: 2,
+      },
+      768: {
+        perPage: 2,
+      },
+    },
+    autoScroll: {
+      speed: 1,
+    },
+  }).mount(window.splide.Extensions);
+});
+
+// WRDC-gallery
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#WRDC-gallery', {
+    direction: 'ltr',
+    gap: 10,
+    type: 'loop',
+    drag: 'free',
+    focus: 'center',
+    arrows: false,
+    perPage: 4,
+    arrows: false,
+    pagination: false,
+    breakpoints: {
+      1024: {
+        perPage: 2,
+      },
+      768: {
+        perPage: 1,
+      },
+    },
+    autoScroll: {
+      speed: 1,
+    },
+  }).mount(window.splide.Extensions);
+});
+
+// Lens Gallery
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#lens-gallery', {
+    direction: 'ltr',
+    gap: 0,
+    type: 'loop',
+    drag: 'free',
+    focus: 'center',
+    arrows: false,
+    perPage: 3,
+    arrows: false,
+    pagination: false,
+    breakpoints: {
+      768: {
+        perPage: 2,
+      }
+    },
+    autoScroll: {
+      speed: 2,
+    },
+  }).mount(window.splide.Extensions);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#patient-splide', {
+    direction: 'ltr',
+    gap: 0,
+    type: 'loop',
+    drag: 'free',
+    focus: 'center',
+    arrows: false,
+    perPage: 2,
+    breakpoints: {
+      768: {
+        perPage: 1
+      }
+    },
+    autoScroll: {
+      speed: 1,
+    },
+  }).mount(window.splide.Extensions);
+});
 
 
-      document.addEventListener('DOMContentLoaded', function () {
-        new Splide( '#testimonials', {
-          direction: 'ltr',
-          perPage: 3,
-          gap : 20 ,
-          type   : 'loop',
-          drag   : 'free',
-          arrows: false,
-          breakpoints:{
-            1024:{
-              perPage: 2
-            },
-            768:{
-              perPage: 1
-            }
-          }
-        } ).mount();
-        });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#testimonials', {
+    direction: 'ltr',
+    perPage: 3,
+    gap: 20,
+    type: 'loop',
+    drag: 'free',
+    arrows: false,
+    breakpoints: {
+      1024: {
+        perPage: 2
+      },
+      768: {
+        perPage: 1
+      }
+    }
+  }).mount();
+});
 
 
 
@@ -551,8 +551,4 @@ const myModal = new bootstrap.Modal('#exampleModal');
 window.addEventListener('DOMContentLoaded', () => {
   myModal.show();
 });
-
-
-
-
 
