@@ -429,14 +429,14 @@ button {
     height: 100%;
 }
 
-#video-bg {
+/* #video-bg {
     height: 100%;
     width: 100%;
     background-image: url("../../images/Videos/WebsiteDesktop.mp4");
     background-color: transparent;
     position: absolute;
     z-index: 1;
-}
+} */
 
 /* Home Video End */
 
