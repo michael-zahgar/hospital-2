@@ -431,7 +431,7 @@ button {
 
 #video-bg {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-image: url("../../images/Videos/WebsiteDesktop.mp4");
     background-color: transparent;
     position: absolute;
