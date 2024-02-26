@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function () {
       536: {
         perPage: 2,
         perMove: 1,
-        autoScroll: { speed: 3 },
+        autoScroll: { speed: 2 },
       },
     }, autoScroll: {
       speed: 2,
@@ -510,6 +510,50 @@ document.addEventListener('DOMContentLoaded', function () {
   }).mount();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#hurg-serv', {
+    direction: 'ltr',
+    perPage: 5,
+    gap: 25,
+    drag: 'free',
+    arrows: false,
+    breakpoints: {
+      1024: {
+        perPage: 3
+      },
+      768: {
+        perPage: 3
+      },
+      600: {
+        perPage: 2
+      },
+      400:{
+        perPage: 1
+      }
+    }
+  }).mount();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#hurg-visits', {
+    direction: 'ltr',
+    perPage: 4,
+    gap: 25,
+    drag: 'free',
+    arrows: false,
+    breakpoints: {
+      1024: {
+        perPage: 3
+      },
+      768: {
+        perPage: 2
+      },
+      600: {
+        perPage: 1
+      }
+    }
+  }).mount();
+});
 
 
 
