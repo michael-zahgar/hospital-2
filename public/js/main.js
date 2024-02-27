@@ -522,12 +522,9 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 3
       },
       768: {
-        perPage: 3
-      },
-      600: {
         perPage: 2
       },
-      400:{
+      600: {
         perPage: 1
       }
     }
