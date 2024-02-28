@@ -516,7 +516,7 @@ document.addEventListener('DOMContentLoaded', function () {
     perPage: 5,
     gap: 25,
     drag: 'free',
-    arrows: false,
+    arrows: true,
     breakpoints: {
       1024: {
         perPage: 3
@@ -537,7 +537,7 @@ document.addEventListener('DOMContentLoaded', function () {
     perPage: 4,
     gap: 25,
     drag: 'free',
-    arrows: false,
+    arrows: true,
     breakpoints: {
       1024: {
         perPage: 3
