@@ -552,6 +552,30 @@ document.addEventListener('DOMContentLoaded', function () {
   }).mount();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#hurg-gal', {
+    perPage: 5,
+    gap: 30,
+    perMove: 1,
+    autoplay:true,
+    arrows: false,
+    pagination: false,
+    breakpoints: {
+      1024: {
+        perPage: 3,
+      },
+      768: {
+        perPage: 2,
+      },
+       533: {
+        perPage: 1,
+      },
+    },
+    autoScroll: {
+      speed: 3,
+    }
+  }).mount();
+});
 
 
 const link = 'https://www.facebook.com/photo?fbid=2909304359092540&set=a.1733070683382586'//encodeURI(window.location.href);
