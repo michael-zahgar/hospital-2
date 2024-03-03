@@ -54,12 +54,12 @@
         <link rel="stylesheet" href="../css/responsiveAr.css">
 
         <style>
-            .hurg-header{
+            .hurg-header-section{
                 height: 550px;
                 clip-path: polygon(100% 0, 100% 72%, 50% 100%, 0 72%, 0 0); 
                 position: relative; 
             }
-            .hurg-header .overlay-img{
+            .hurg-header-section .overlay-img{
                 background: url("../images/hurg-bg.jpg") no-repeat;
                 height: 100%;
                 width: 100%;
@@ -69,34 +69,37 @@
                 background-blend-mode: overlay;
                 z-index: -1;
             }
-            .hurg-header .header-text{
+            .hurg-header-section .header-text{
                 position: absolute;
                 top: 45%;
             }
             .medical-tour .medical-header .reason-b-h span{
                 font-size: 30px;
             }
-            .hurg-header h1{
+            .hurg-header-section h1{
                 color: white;
                 font-weight: 600;
                 font-size: 3em;
             }
-            .hurg-header .container{
+            .hurg-header-section .container{
                 display: flex;
                 height: 100%;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
             }
-            .hurg-header .breadcrumb-item.active{
+            .hurg-header-section .breadcrumb-item.active{
                 color: wheat !important;
             }
-            .hurg-header .header-text span{
+            .hurg-header-section .header-text span{
                 width: 70%;
                 height: 4px;
                 background: white;
                 display: block;
                 margin: auto;
+            }
+            .hurg-header{
+                font-size: 40px;
             }
             .medical-tour{
                 padding: 5rem 0 2rem !important;
@@ -133,6 +136,13 @@
             }
             .hurg-services .splide__pagination__page.is-active , .hurg-visits .splide__pagination__page.is-active{
                 background: #213262;
+            }
+            .hurg-visits{
+                padding-bottom: 4rem !important;
+            }
+            .hurg-visits .splide__pagination__page{
+                width: 14px;
+                height: 14px;
             }
             .hurg-services .box-link:hover .box{
                 box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -375,8 +385,24 @@
                 }
             }
             @media screen and (max-width:533px) {
+                .hurg-header{
+                font-size: 35px;
+                }
+                .hurg-visits .splide__arrow{
+                    width: 3.5em;
+                    height: 3.5em;
+                }
+                 .hurg-visits .splide__arrow svg{
+                    font-size: 15px;
+                }
                 .hurg-services .splide__arrow--prev , .hurg-visits .splide__arrow--prev{
-                left: 19%;
+                left: 25%;
+            }
+            .hurg-visits .splide__arrow--prev{
+                right: 0;
+            }
+            .hurg-visits .splide__arrow--next , .hurg-visits .splide__arrow--prev{
+                top: 40%;
             }
             .medical-tour .left-medical img{
                 height: 350px;
@@ -650,7 +676,7 @@
                 </div>
             </nav>
 
-            <section class="hurg-header">
+            <section class="hurg-header-section">
                 <div class="overlay-img"></div>
                 <div class="container justify-content-center">
                     <div class="header-text text-center">
@@ -699,8 +725,8 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5"
-                                id="staticBackdropLabel">لماذا تختار مستشفيات الوطني للعيون</h1>
+                            <h3 class="modal-title fs-5"
+                                id="staticBackdropLabel">لماذا تختار مستشفيات الوطني للعيون</h3>
                             <button type="button" class="btn-close"
                                 data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -759,7 +785,7 @@
             <section class="our-goals pb-5">
                 <div class="container">
                     <div class="header-goals text-center py-5">
-                        <h2 class="bold">جميع الخدمات في مكان واحد</h2>
+                        <h2 class="bold hurg-header">لماذا تختار الوطني</h2>
                     </div>
 
                     <div class="button-goals text-center">
@@ -862,30 +888,12 @@
             <section class="hurg-services">
                 <div class="container">
                     <div class="hurg-serv-head mb-5">
-                        <h1 class="bold">استعراض<br>حسب الفئة</h1>
+                        <h2 class="bold hurg-header">استعراض<br>حسب الفئة</h2>
                     </div>
                     <div class="splide" id="hurg-servAr"
                         aria-label="Splide Basic HTML Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-
-                                <li class="splide__slide">
-
-                                    <a href="#" class="box-link">
-                                        <div class="box">
-                                            <div class="box-icon">
-                                                <img
-                                                    src="../images/icons/doctor-black.png"
-                                                    alt="our-doctors">
-                                            </div>
-                                            <div class="box-body">
-                                                <h2>الأطباء</h2>
-                                                <p>في مستشفيات الوطني للعيون، يتم تلبية جميع احتياجاتك الطبية في مجال العيون تحت سقف واحد</p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                </li>
 
                                 <li class="splide__slide">
                                     <a href="#" class="box-link">
@@ -999,6 +1007,12 @@
             </section>
 
             <section class="medicalTour-gal hurg-gal h-gallery py-5">
+                <div class="container">
+                    <div class="header-goals py-5 px-4">
+                        <h2 class="bold hurg-header">تعرف 
+                          <br> علي خدمتنا</h2>
+                    </div>
+                </div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
@@ -1119,10 +1133,10 @@
             <section class="hurg-visits pb-5 pt-4">
                 <div class="container">
                     <div class="visits-header mb-5">
-                        <h1 class="bold">آخر الزيارات <br> إلى الغردقة</h1>
+                        <h2 class="bold hurg-header">آخر الزيارات <br> إلى الغردقة</h2>
                     </div>
                     <div class="visits-header text-center mb-5">
-                        <h1 class="bold main-font">من ١ الي ٨ مارس</h1>
+                        <h3 class="bold main-font" style="font-size: 40px;">من ١ الي ٨ مارس</h3>
                     </div>
                     <div class="splide" id="hurg-visitsAr"
                         aria-label="Splide Basic HTML Example">
@@ -1134,11 +1148,11 @@
                                     <div class="box">
                                         <div class="box-icon">
                                             <img
-                                                src="../images/doctors/Ahmed Kamel.png"
+                                                src="../images/doctors/Bassim Fayez.png"
                                                 alt="our-doctors">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>دكتور احمد كامل</h2>
+                                            <h2>دكتور باسم فايز</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
@@ -1156,11 +1170,32 @@
                                     <div class="box">
                                         <div class="box-icon">
                                             <img
-                                                src="../images/doctors/Ahmed Assaf.png"
+                                                src="../images/doctors/Osama Issac.png"
                                                 alt="our-clinics">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>دكتور احمد عساف</h2>
+                                            <h2>دكتور اسامة اسحق</h2>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <h3
+                                                style="font-size: 20px; font-weight: bold;">23/5/2024</h3>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <div class="box">
+                                        <div class="box-icon">
+                                            <img
+                                                src="../images/doctors/Michael Samy.png"
+                                                alt="our-clinics">
+                                        </div>
+                                        <div class="box-body p-3">
+                                            <h2>دكتور مايكل سامي</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
@@ -1198,11 +1233,11 @@
                                     <div class="box">
                                         <div class="box-icon">
                                             <img
-                                                src="../images/doctors/Aldemerdash Omar.png"
+                                                src="../images/doctors/Sherif Embabi.png"
                                                 alt="our-clinics">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>دكتور الدمرداش عمر</h2>
+                                            <h2>دكتور شريف امبابي</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
@@ -1227,7 +1262,7 @@
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     allowfullscreen></iframe>
                 <div class="hurg-openingDays">
-                    <h3>أيام العمل</h1>
+                    <h3>أيام العمل</h3>
                         <ul style="text-align: right;">
                             <li><span>السبت: ١٠ صباحا الي ٩ مساءً</span></li>
                             <li><span>الأحد: ١٠ صباحا الي ٩ مساءً</span></li>

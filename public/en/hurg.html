@@ -161,6 +161,10 @@
             .hurg-visits .box .box-icon{
                 background-color: #b4b4b5;
                 border-radius: 10px;
+                overflow: hidden;
+            }
+            .hurg-visits .box .box-icon img{
+                height: auto;
             }
             .hurg-visits .box {
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -371,11 +375,33 @@
                 }
             }
             @media screen and (max-width:533px) {
-                .hurg-services .splide__arrow--prev , .hurg-visits .splide__arrow--prev{
+                 .hurg-visits .splide__arrow{
+                    width: 3em;
+                    height: 3em;
+                }
+                 .hurg-visits .splide__arrow svg{
+                    font-size: 15px;
+                }
+                .hurg-services .splide__arrow--prev{
                 right: 19%;
+            }
+            .hurg-visits .splide__arrow--prev{
+                left: 0;
+            }
+            .hurg-visits .splide__arrow--next , .hurg-visits .splide__arrow--prev{
+                top: 40%;
             }
             .medical-tour .left-medical img{
                 height: 350px;
+            }
+            .our-goals ul {
+            display: flex;
+            justify-content: normal;
+            align-items: normal;
+            margin: 0;
+            padding: 0;
+            flex-wrap:nowrap;
+            overflow-x: scroll;
             }
             }
 
@@ -709,9 +735,9 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5"
+                            <h3 class="modal-title fs-5"
                                 id="staticBackdropLabel">Why Choose
-                                Watany Eye Hospitals</h1>
+                                Watany Eye Hospitals</h3>
                             <button type="button" class="btn-close"
                                 data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -776,7 +802,7 @@
             <section class="our-goals pb-5">
                 <div class="container">
                     <div class="header-goals text-center py-5">
-                        <h2 class="bold">All Services in one Place</h2>
+                        <h2 class="bold">Why Choose Watany</h2>
                     </div>
 
                     <div class="button-goals text-center">
@@ -947,32 +973,12 @@
             <section class="hurg-services">
                 <div class="container">
                     <div class="hurg-serv-head mb-5">
-                        <h1 class="bold">Explore by <br> category</h1>
+                        <h1 class="bold">Check our <br> Services</h1>
                     </div>
                     <div class="splide" id="hurg-serv"
                         aria-label="Splide Basic HTML Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-
-                                <li class="splide__slide">
-
-                                    <a href="#" class="box-link">
-                                        <div class="box">
-                                            <div class="box-icon">
-                                                <img
-                                                    src="../images/icons/doctor-black.png"
-                                                    alt="our-doctors">
-                                            </div>
-                                            <div class="box-body">
-                                                <h2>Doctors</h2>
-                                                <p>Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Asperiores, hic!</p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                </li>
 
                                 <li class="splide__slide">
                                     <a href="#" class="box-link">
@@ -1098,6 +1104,12 @@
             </section>
 
             <section class="medicalTour-gal hurg-gal h-gallery py-5">
+                <div class="container">
+                    <div class="header-goals py-5 px-4">
+                        <h2 class="bold">Medical Tourism
+                          <br>  Gallery</h2>
+                    </div>
+                </div>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
@@ -1233,11 +1245,11 @@
                                     <div class="box">
                                         <div class="box-icon">
                                             <img
-                                                src="../images/doctors/Ahmed Kamel.png"
+                                                src="../images/doctors/Bassim Fayez.png"
                                                 alt="our-doctors">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>Dr Ahmed Kamel</h2>
+                                            <h2>Dr Bassim, Fayez</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
@@ -1255,11 +1267,32 @@
                                     <div class="box">
                                         <div class="box-icon">
                                             <img
-                                                src="../images/doctors/Ahmed Assaf.png"
+                                                src="../images/doctors/Osama Issac.png"
                                                 alt="our-clinics">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>Dr Ahmed Assaf</h2>
+                                            <h2>Dr Osama Issac</h2>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <p>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing</p>
+                                            <h3
+                                                style="font-size: 20px; font-weight: bold;">23/5/2024</h3>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="splide__slide">
+                                    <div class="box">
+                                        <div class="box-icon">
+                                            <img
+                                                src="../images/doctors/Michael Samy.png"
+                                                alt="our-clinics">
+                                        </div>
+                                        <div class="box-body p-3">
+                                            <h2>Dr Michael Samy</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
@@ -1297,11 +1330,11 @@
                                     <div class="box">
                                         <div class="box-icon">
                                             <img
-                                                src="../images/doctors/Aldemerdash Omar.png"
+                                                src="../images/doctors/Sherif Embabi.png"
                                                 alt="our-clinics">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>Dr Aldemerdash Omar</h2>
+                                            <h2>Dr Sherif Embabi</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
