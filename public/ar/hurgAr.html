@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
     <head>
         <!--
 ========================================================================================
@@ -12,8 +12,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hurghada
-            | Watany Eye Hospitals</title>
+        <title>الغردقة | مستشفيات الوطنى للعيون</title>
         <link rel="icon" href="../images/watany-logo.jpg" style="width: 200px;"
             type="image/png">
         <!-- BootStrap -->
@@ -46,8 +45,13 @@
         <!-- Custome CSS -->
         <link rel="stylesheet" href="../css/style.css">
 
+        <!-- Custome AR CSS -->
+        <link rel="stylesheet" href="../css/rtl.css">
         <!-- responsive CSS -->
         <link rel="stylesheet" href="../css/responsive.css">
+
+        <!-- responsive AR CSS -->
+        <link rel="stylesheet" href="../css/responsiveAr.css">
 
         <style>
             .hurg-header{
@@ -138,12 +142,12 @@
                 padding: 10px 10px 25px !important;
             }
             .hurg-services .splide__arrow--prev , .hurg-visits .splide__arrow--prev{
-                left: auto;
-                right: 9%;
+                right: auto;
+                left: 9%;
                 top: -27%;
             }
             .hurg-services .splide__arrow--next , .hurg-visits .splide__arrow--next{
-                right: 0;
+                left: 0;
                 top: -27%;
             }
             .hurg-services .splide__arrow , .hurg-visits .splide__arrow{
@@ -184,7 +188,7 @@
             .hurg-location .hurg-openingDays{
                 position: absolute;
                 top: 30%;
-                left:4%;
+                right:4%;
                 background-color: #111821;
                 border-radius: 20px 0 20px 0;
                 overflow: hidden;
@@ -362,17 +366,17 @@
                     margin-bottom: 15px;
                 }
                 .hurg-services .splide__arrow--prev , .hurg-visits .splide__arrow--prev{
-                right: 15%;
+                left: 15%;
             }
             }
             @media screen and (max-width:600px){
                 .hurg-visits .splide__arrow--prev , .hurg-visits .splide__arrow--next{
-                    top: -22%;
+                    top: -24%;
                 }
             }
             @media screen and (max-width:533px) {
                 .hurg-services .splide__arrow--prev , .hurg-visits .splide__arrow--prev{
-                right: 19%;
+                left: 19%;
             }
             .medical-tour .left-medical img{
                 height: 350px;
@@ -400,10 +404,6 @@
                     disabled><i
                         class="fa-regular fa-calendar-plus"></i></a>
             </span>
-        </section>
-
-        <section class="scroll-up">
-            <i class="fa-solid fa-arrow-up-long"></i>
         </section>
 
         <section class="top-header">
@@ -434,15 +434,14 @@
                                 class="callus">
                                 <i class="white fa-solid fa-phone-flip"
                                     style="padding-left: 5px;"></i>
-                                <a href="tel:16112">16112</a>
+                                <a href="tel:16112">١٦١١٢</a>
                             </div>
 
                         </div>
-
                         <div class>
                             <div class="top-header-right">
-                                <a href="../ar/hurgAr.html"
-                                    class="main-font">العربية</a>
+                                <a href="../en/hurg.html"
+                                    class="main-font">English</a>
                             </div>
                         </div>
                     </div>
@@ -451,9 +450,9 @@
             </section>
 
             <nav class="parent-1 main-nav navbar  navbar-expand-lg sticky-top">
-                <div class="container">
 
-                    <a href="../index.html">
+                <div class="container">
+                    <a href="./index.html">
                         <img src="../images/logo-trans2.png"
                             alt="watany-eye-hospitals"
                             style="width: 125px;">
@@ -471,8 +470,7 @@
                             <img src="../images/logo-trans2.png"
                                 alt="watany-eye-hospitals">
                             <i type="button" class="fa-solid fa-xmark white"
-                                data-bs-dismiss="offcanvas"
-                                aria-label="Close"></i>
+                                data-bs-dismiss="offcanvas" aria-label="Close"></i>
                         </div>
                         <div class="offcanvas-body">
                             <ul
@@ -480,52 +478,53 @@
                                 <li class="nav-item">
                                     <a class="nav-link links"
                                         aria-current="page"
-                                        href="../index.html">Home</a>
+                                        href="./index.html">الصفحة الرئيسية</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link links"
-                                        href="./aboutusV2.html">About Us</a>
+                                        href="./aboutUsAr.html">من نحن</a>
                                 </li>
 
                                 <li class="nav-item">
                                     <a class="nav-link links"
-                                        href="./doctors.html">Doctors</a>
+                                        href="./doctorsAr.html">أطبائنا</a>
                                 </li>
 
                                 <li class="nav-item dropdown hover-li-main-2">
                                     <a class="nav-link links dropdown-toggle"
-                                        data-bs-auto-close="outside" href="#"
-                                        role="button"
+                                        data-bs-auto-close="outside"
+                                        href="#" role="button"
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        Services
+                                        خدماتنا
                                     </a>
                                     <ul class="dropdown-menu">
 
                                         <li class="dropstart sub-drop">
-                                            <a class="nav-link"
-                                                href="./clinics.html">Clinics</a>
-                                            <!-- <a class="active" data-bs-toggle="dropdown" href="../clinics.html">Clinics</a> -->
+                                            <a class="dropdown-item"
+                                                href="./clinicsAr.html">عيادتنا</a>
+                                            <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
                                         </li>
 
                                         <li class="dropstart sub-drop">
                                             <a class="dropdown-item"
-                                                href="./investigations.html">Investigations</a>
+                                                href="./investigationsAr.html">الفحوصات</a>
                                         </li>
 
                                         <li><a class="dropdown-item"
-                                                href="./operations.html">Operations</a></li>
+                                                href="./operattionsAr.html">الجراحات</a></li>
                                         <li><a class="dropdown-item"
-                                                href="./contactLens.html">Lenses</a></li>
+                                                href="./contactLensAr.html">العدسات
+                                                اللاصقة</a></li>
                                         <li><a class="dropdown-item"
-                                                href="./laboratory.html">Laboratory</a></li>
+                                                href="./laboratoryAr.htmll">المعمل</a></li>
                                         <li><a class="dropdown-item"
-                                                href="./optics.html">Optics</a></li>
+                                                href="./opticsAr.html">النظارات</a></li>
                                         <li><a class="dropdown-item"
-                                                href="./pharmacy.html">Pharmacy</a></li>
+                                                href="./pharmacyAr.html">الصيدلية</a></a></li>
                                         <li><a class="dropdown-item"
-                                                href="./medicalTourism.html">Medical
-                                                Tourism</a></li>
+                                                href="./medicalTourismAr.html">السياحة
+                                                العلاجية</a></li>
 
                                     </ul>
 
@@ -534,39 +533,40 @@
                                 <!-- Drop-Down Pc Version -->
                                 <li class="nav-item nav-dropdown hover-li-main">
                                     <a class="nav-link links dropdown-toggle"
-                                        data-bs-auto-close="outside" href="#"
-                                        role="button"
+                                        data-bs-auto-close="outside"
+                                        href="#" role="button"
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        Services
+                                        خدماتنا
                                     </a>
                                     <ul class="hover-list">
 
                                         <li class="dropstart sub-drop">
                                             <a class="nav-link"
-                                                href="./clinics.html">Clinics</a>
+                                                href="./clinicsAr.html">عيادتنا</a>
                                         </li>
 
                                         <li class="dropstart sub-drop">
                                             <a class="nav-link"
-                                                href="./investigations.html">Investigations</a>
+                                                href="./investigationsAr.html">الفحوصات</a>
                                         </li>
 
                                         <li><a class="nav-link"
-                                                href="./operations.html">Operations</a></li>
+                                                href="./operattionsAr.html">الجراحات</a></li>
                                         <li><a class="nav-link"
-                                                href="./contactLens.html">lenses</a></li>
+                                                href="./contactLensAr.html">العدسات
+                                                اللاصقة</a></li>
                                         <li><a class="nav-link"
-                                                href="./laboratory.html">Laboratory</a></li>
+                                                href="./laboratoryAr.html">المعمل</a></li>
                                         <li><a class="nav-link"
-                                                href="./optics.html">Optics</a></li>
-                                        <li><a
-                                                class="nav-link"
-                                                href="./pharmacy.html">Pharmacy</a></li>
+                                                href="./opticsAr.html">النظارات</a></li>
+                                        <li><a class="nav-link"
+                                                href="./pharmacyAr.html">الصيدلية</a></a></li>
                                         <li style="border-bottom: none;"><a
                                                 class="nav-link"
-                                                href="./medicalTourism.html">Medical
-                                                Tourism</a></li>
+                                                href="./medicalTourismAr.html">السياحة
+                                                العلاجية</a></li>
+
                                     </ul>
 
                                 </li>
@@ -577,18 +577,19 @@
                                         role="button"
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        WRDC
+                                        مركز الوطني للأبحاث و التنمية
                                     </a>
                                     <ul class="hover-list wrdc-list">
 
                                         <li>
                                             <a class="nav-link"
-                                                href="./wrdc.html">About
-                                                WRDS</a>
+                                                href="./wrdc.html">عن المركز
+                                                الوطني للأبحاث و التنمية</a>
                                         </li>
                                         <li style="border-bottom: none;">
                                             <a class="nav-link"
-                                                href="https://alwatany-conferences.com/">WOS</a>
+                                                href="https://alwatany-conferences.com/">المؤتمر
+                                                الوطني السنوي للعيون</a>
                                         </li>
 
                                     </ul>
@@ -602,22 +603,21 @@
                                         role="button"
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        WRDC
+                                        مركز الوطني للأبحاث و التنمية
                                     </a>
                                     <ul class="dropdown-menu">
 
                                         <li class="dropstart sub-drop">
-                                            <a class="dropdown-item"
-                                                href="./wrdc.html">About
-                                                WRDC</a>
-                                            <!-- <a class="active" data-bs-toggle="dropdown" href="../clinics.html">Clinics</a> -->
+                                            <a class="nav-link"
+                                                href="./wrdc.html">عن المركز
+                                                الوطني للأبحاث و التنمية</a>
+                                            <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
                                         </li>
 
                                         <li class="dropstart sub-drop">
-                                            <a class="dropdown-item"
-                                                data-bs-toggle="dropdown"
-                                                href="https://alwatany-conferences.com/">WOS</a>
-
+                                            <a class="nav-link"
+                                                href="https://alwatany-conferences.com/">المؤتمر
+                                                الوطني السنوي للعيون</a>
                                         </li>
 
                                     </ul>
@@ -626,11 +626,13 @@
 
                                 <li class="nav-item">
                                     <a class="nav-link links"
-                                        href="./bookingform.html">Book Now</a>
+                                        href="./bookingform.html">أحجز
+                                        الان</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link links"
-                                        href="./contactus.html">Contact Us</a>
+                                        href="./contactusAr.html">تواصل
+                                        معنا</a>
                                 </li>
 
                             </ul>
@@ -643,7 +645,7 @@
                 <div class="overlay-img"></div>
                 <div class="container justify-content-center">
                     <div class="header-text text-center">
-                        <h1 class="text-uppercase">Hurghada <br> Branch</h1>
+                        <h1 class="text-uppercase">فرع <br> الغردقة</h1>
                         <span></span>
                     </div>
                 </div>
@@ -668,31 +670,10 @@
                             <div class="col-lg-6 col-md-12 right-medical">
                                 <div class="medical-header">
                                     <div class=" reason-b-h hidden show">
-                                        <span class="trans-title">Medical
-                                            Tourism <br> at Watany Eye
-                                            Hospitals</span>
+                                        <span class="trans-title">السياحة العلاجية بمستشفيات الوطني للعيون</span>
                                     </div>
                                     <p
-                                        style="color: gray; font-size: 16px;">Watany
-                                        Eye Hospitals
-                                        is a leading medical
-                                        institution specializing in eye care and
-                                        ophthalmic surgeries, located in a prime
-                                        location that offers a perfect blend of
-                                        medical expertise and hospitality. We
-                                        take pride in our state-of-the-art
-                                        facilities, highly skilled doctors, and
-                                        a commitment to providing exceptional
-                                        care to patients seeking various eye
-                                        treatments, including LASIK,
-                                        Femto-LASIK, and blepharoplasty. In
-                                        addition to our medical services, we
-                                        strive to ensure that patients and their
-                                        accompanying persons have a comfortable
-                                        and hassle-free experience during their
-                                        stay, with convenient accommodation
-                                        options, transportation facilities, and
-                                        on-site amenities.
+                                        style="color: gray; font-size: 16px;">تعتبر مستشفيات الوطنى للعيون مؤسسة طبية رائدة متخصصة في مجال طب وجراحة العيون،حيث تقع في موقع متميز وذلك من خلال تقديم افضل خدمة من الخبرة الطبية والضيافة. نفتخر بتقديم احدث التقنيات بالاضافة الى أطبائنا ذوي المهارات العالية والمحافظة على تقديم رعاية متميزة للمرضى الذين يحتاجون للحصول على جميع انواع علاجات امراض العيون، بما في ذلك.الليزك والفيمتو ليزك وجراحات العيون والجفون التجميلية بالإضافة إلى خدماتنا الطبية، نسعى جاهدين لضمان أن يتمتع المرضى والمرافقون لهم بتجربة مريحة أثناء إقامتهم، مع توفير العديد من خيارات الاقامة ووسائل نقل ووسائل الراحة حرصا على سلامة مرضانا.
                                     </p>
                                 </div>
                             </div>
@@ -710,8 +691,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h1 class="modal-title fs-5"
-                                id="staticBackdropLabel">Why Choose
-                                Watany Eye Hospitals</h1>
+                                id="staticBackdropLabel">لماذا تختار مستشفيات الوطني للعيون</h1>
                             <button type="button" class="btn-close"
                                 data-bs-dismiss="modal"
                                 aria-label="Close"></button>
@@ -731,33 +711,27 @@
             <section class="hurg-info py-3">
                 <div class="container">
                     <div class="medical-head">
-                        <h5 class="bold"><span
-                                class="main-font">“TripAdvisor”</span>
-                            Ranks
-                            Hurghada as the
-                            Second-Best
-                            Tourist Destination in the Middle East for 2023
+                        <h5 class="bold">موقع <span class="main-font">TripAdvisor</span>
+                            يصنف الغردقة كأفضل
+                            وجهة سياحية ثانية في الشرق الأوسط لعام 2023
                             <i
                                 class="fa-solid fa-umbrella-beach fa-beat-fade"></i>
                         </h5>
                         <div class="medical-head-text row">
                             <div class="col-md-8 col-sm-12">
-                                <p class="dark-gray">Top tourist website <a
+                                <p class="dark-gray">
+                                    نشر موقع <a
                                         target="_blank"
                                         href="https://www.tripadvisor.com/Tourism-g297549-Hurghada_Red_Sea_and_Sinai-Vacations.html">TripAdvisor</a>
-                                    published a report on the ten best tourist
-                                    destinations to visit in 2023 in the Middle
-                                    East,
-                                    with Hurghada coming in second place after
-                                    Dubai.
-                                    Egypt's capital Cairo came in third place,
-                                    while
-                                    the
-                                    city of Jerusalem came in last.
+                                    الرائد في مجال السياحة تقريرًا عن أفضل 10
+                                    وجهات سياحية لزيارتها في عام 2023 في الشرق
+                                    الأوسط، حيث جاءت الغردقة في المرتبة الثانية
+                                    بعد دبي. كما جاءت عاصمة مصر، القاهرة، في
+                                    المرتبة الثالثة، بينما جاءت مدينة القدس في
+                                    المرتبة الأخيرة.
                                     <br>
                                     <br>
-                                    Source link: <a
-                                        target="_blank"
+                                    مصدر الخبر: <a target="_blank"
                                         href="https://rb.gy/yeudb">(sis.gov.eg)</a>
                                 </p>
                             </div>
@@ -776,7 +750,7 @@
             <section class="our-goals pb-5">
                 <div class="container">
                     <div class="header-goals text-center py-5">
-                        <h2 class="bold">All Services in one Place</h2>
+                        <h2 class="bold">جميع الخدمات في مكان واحد</h2>
                     </div>
 
                     <div class="button-goals text-center">
@@ -786,122 +760,56 @@
                                     <h4 id="button1" class="goal-btn active">
                                         <span class="d-block"><i
                                                 class="fa-solid fa-layer-group"></i></span>
-                                        All Services <br> in one place
+                                                جميع الخدمات <br> في مكان واحد
                                     </h4>
                                 </li>
                                 <li>
                                     <h4 id="button2" class="goal-btn">
                                         <span class="d-block"><i
                                                 class="fa-solid fa-lightbulb"></i></span>
-                                        Latest <br> technology
+                                                أحدث التقنيات <br> والأجهزة
                                     </h4>
                                 </li>
                                 <li>
                                     <h4 id="button3" class="goal-btn">
                                         <span class="d-block"><i
                                                 class="fa-solid fa-gears"></i></span>
-                                        Infection <br> Control
+                                                مكافحة <br> العدوى
                                     </h4>
                                 </li>
                                 <li>
                                     <h4 id="button4" class="goal-btn">
                                         <span class="d-block"><i
                                                 class="fa-solid fa-user-nurse"></i></span>
-                                        Our <br> Doctors
+                                        افضل <br> الاطباء
                                     </h4>
                                 </li>
                                 <li>
                                     <h4 id="button5" class="goal-btn">
                                         <span class="d-block"><i
                                                 class="fa-solid fa-certificate"></i></span>
-                                        23 Years <br> of Experience
+                                          ٢٣ عام <br> من الخبرة
                                     </h4>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="goal-parent py-5 text-start">
+                        <div class="goal-parent py-5 text-end">
                             <div class="goal-text first-goal" id="goal-1">
-                                <p>At Watany Eye Hospitals, all your eye medical
-                                    needs are met under one roof to ensure that
-                                    you receive the highest quality care in a
-                                    seamless and efficient manner. From routine
-                                    check-ups to specialized treatments, our
-                                    investigations department utilizes
-                                    cutting-edge technology to provide accurate
-                                    diagnostics, while our specialized clinics
-                                    cater to a variety of medical needs, from
-                                    primary care to specialized treatments. With
-                                    our expert surgeons and advanced operating
-                                    rooms, we perform a wide range of operations
-                                    with precision and care. Additionally, our
-                                    contact lens center offers personalized
-                                    solutions for vision correction, while our
-                                    fully equipped laboratory provides timely
-                                    and accurate test results. Need glasses or
-                                    contact lenses? Visit our optics department
-                                    for a wide selection of frames and lenses to
-                                    suit your style and prescription. And to
-                                    ensure you have access to the medications
-                                    you need, our pharmacy is stocked with a
-                                    comprehensive selection of prescription and
-                                    over-the-counter drugs.</p>
+                                <p>في مستشفيات الوطني للعيون، يتم تلبية جميع احتياجاتك الطبية في مجال العيون تحت سقف واحد لضمان حصولك على رعاية عالية الجودة بطريقة سلسة وفعالة. من الفحوصات الروتينية إلى العلاجات المتخصصة، يستخدم قسم الفحوصات التكنولوجيا المتطورة لتشخيص دقيق، بينما تلبي العيادات المتخصصة مجموعة متنوعة من الاحتياجات الطبية، من الرعاية الأولية إلى العلاجات المتخصصة. بفضل جراحينا المتخصصين وغرف العمليات المتقدمة، نقوم بإجراء مجموعة واسعة من العمليات بدقة وعناية. بالإضافة إلى ذلك، يقدم مركز العدسات اللاصقة لدينا حلولًا مخصصة لتصحيح الرؤية، بينما يوفر المعمل المجهز بالكامل نتائج الاختبارات بدقة وفي الوقت المناسب. يمكنك ايضا زيارة قسم البصريات لدينا للحصول على مجموعة واسعة من الإطارات والعدسات التي تتناسب مع أسلوبك ووصفتك. ولضمان الحصول على الأدوية التي تحتاجها، يتم توفير مجموعة شاملة من الأدوية بوصفة طبية..</p>
                             </div>
                             <div class="goal-text" id="goal-2">
-                                <p>Our Hospital is equipped with the latest
-                                    medical equipment to ensure precise
-                                    diagnoses and effective treatments for a
-                                    wide range of eye conditions. From advanced
-                                    imaging systems for detailed assessments to
-                                    cutting-edge laser technology for refractive
-                                    surgeries, we offer our patients access to
-                                    the most innovative tools available. Our
-                                    experienced ophthalmologists leverage these
-                                    technologies to provide personalized care,
-                                    whether you're seeking routine eye exams,
-                                    cataract surgery, or complex retinal
-                                    procedures. We are certified with a badge
-                                    from the Center of Excellence for the most
-                                    advanced equipment we have.</p>
+                                <p>تُزود مستشفانا بأحدث المعدات الطبية لضمان التشخيص الدقيق والعلاج الفعّال لمجموعة واسعة من حالات العيون. من أنظمة التصوير المتقدمة لتقديم تقييمات مفصلة إلى تقنية الليزر المتطورة لجراحات تصحيح الإبصار، نقدم لمرضانا الوصول إلى أحدث الأدوات المبتكرة المتوفرة. يستفيد أطباؤنا المتخصصون من هذه التقنيات لتقديم رعاية شخصية، سواء كنت تبحث عن الفحوصات الروتينية للعين، أو جراحة المياه الزرقاء، أو الإجراءات الشبكية المعقدة. لدينا شهادة من مركز التميز لوجود أحدث المعدات المتطورة لدينا.</p>
                             </div>
                             <div class="goal-text" id="goal-3">
-                                <p>We understand the critical need to maintain a
-                                    safe and sterile environment to safeguard
-                                    the health and well-being of our patients.
-                                    From meticulously sanitized examination
-                                    rooms to the thorough sterilization of
-                                    surgical equipment, we leave no stone
-                                    unturned in ensuring a clean and hygienic
-                                    environment.</p>
+                                <p>نحن نفهم الحاجة الحرجة للحفاظ على بيئة نظيفة ومعقمة لحماية صحة ورفاهية مرضانا. من غرف الفحص التي يتم تعقيمها بدقة إلى التعقيم الشامل لمعدات الجراحة، نضمن لك بيئة نظيفة وصحية خالية من أي عدوي.</p>
                             </div>
                             <div class="goal-text" id="goal-4">
-                                <p>Our team of ophthalmologists exemplifies the
-                                    pinnacle of professionalism, expertise, and
-                                    empathy in the field of ophthalmology. From
-                                    routine eye examinations to complex surgical
-                                    procedures, our eye doctors approach each
-                                    case with meticulous attention to detail,
-                                    ensuring the highest standards of precision
-                                    and safety. Moreover, our commitment to
-                                    staying abreast of the latest advancements
-                                    in ophthalmic technology and techniques
-                                    underscores our dedication to delivering
-                                    cutting-edge treatments with compassion and
-                                    integrity. You are in the hands of true
-                                    professionals who prioritize your visual
-                                    health and well-being above all else.</p>
+                                <p>فريقنا من الدكاترة أخصائيي واستشاريي العيون يمثل قمة الاحترافية والخبرة في مجال طب العيون. من الفحوصات الروتينية للعين إلى الإجراءات الجراحية المعقدة، يعالج أطباؤنا كل حالة بعناية دقيقة للتفاصيل بمواكبة أحدث التطورات في التكنولوجيا والتقنيات، مما يضمن أعلى معايير الدقة والسلامة. أنت بين يدي محترفين 
+                                    حقيقيين يعطون أولوية لصحة ورفاهية رؤيتك فوق كل شيء.</p>
                             </div>
                             <div class="goal-text" id="goal-5">
-                                <p>Our journey of 23 years is a testament to our
-                                    enduring passion for preserving and
-                                    enhancing vision, as well as our steadfast
-                                    commitment to the well-being of our
-                                    patients. As we embark on the next chapter
-                                    of our mission, we remain dedicated to
-                                    providing comprehensive eye care services of
-                                    the highest quality, ensuring that every
-                                    patient receives the personalized attention
-                                    and exceptional treatment they deserve.</p>
+                                <p>رحلتنا التي استمرت 23 عامًا هي شهادة على شغفنا الدائم بالحفاظ على الرؤية وتعزيزها، بالإضافة إلى التفاني الثابت في رعاية مرضانا. ومع بدءنا في الفصل التالي من مهمتنا، نظل ملتزمين بتقديم خدمات رعاية العيون الشاملة ذات الجودة العالية، مع ضمان أن يتلقى كل مريض الاهتمام الشخصي والعلاج الاستثنائي الذي يستحق.</p>
                             </div>
                         </div>
 
@@ -916,8 +824,7 @@
                         <div class="row">
                             <div class="col-lg-7 col-md-12">
                                 <div class="text-left">
-                                    <h2>Are You Looking For Eye Care
-                                        Service?</h2>
+                                    <h2>هل تبحث عن خدمة العناية بالعين؟</h2>
                                 </div>
                             </div>
                             <div
@@ -925,16 +832,15 @@
                                 <div class="text-center">
                                     <ul>
                                         <li><a href="#"
-                                                class="booking bold">Book
-                                                Appointment</a></li>
+                                                class="booking bold">إحجز موعدك</a></li>
                                         <li>
                                             <h3 class="mb-0">
                                                 <a href="#"
-                                                    class="hotline bold">16112
+                                                    class="hotline bold">١٦١١٢
                                                 </a>
                                             </h3>
                                             <span
-                                                class="bold main-font">HotLine</span>
+                                                class="bold main-font">الخط الساخن</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -947,9 +853,9 @@
             <section class="hurg-services">
                 <div class="container">
                     <div class="hurg-serv-head mb-5">
-                        <h1 class="bold">Explore by <br> category</h1>
+                        <h1 class="bold">استعراض حسب <br> الفئة</h1>
                     </div>
-                    <div class="splide" id="hurg-serv"
+                    <div class="splide" id="hurg-servAr"
                         aria-label="Splide Basic HTML Example">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -964,10 +870,8 @@
                                                     alt="our-doctors">
                                             </div>
                                             <div class="box-body">
-                                                <h2>Doctors</h2>
-                                                <p>Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Asperiores, hic!</p>
+                                                <h2>الأطباء</h2>
+                                                <p>في مستشفيات الوطني للعيون، يتم تلبية جميع احتياجاتك الطبية في مجال العيون تحت سقف واحد</p>
                                             </div>
                                         </div>
                                     </a>
@@ -983,10 +887,8 @@
                                                     alt="our-clinics">
                                             </div>
                                             <div class="box-body">
-                                                <h2>Clinics</h2>
-                                                <p>Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Asperiores, hic!</p>
+                                                <h2>العيادات</h2>
+                                                <p>في مستشفيات الوطني للعيون، يتم تلبية جميع احتياجاتك الطبية في مجال العيون تحت سقف واحد</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1002,10 +904,8 @@
                                                     alt="our-laboratory">
                                             </div>
                                             <div class="box-body">
-                                                <h2>Laboratory</h2>
-                                                <p>Loem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Asperiores, hic!</p>
+                                                <h2>المعمل</h2>
+                                                <p>في مستشفيات الوطني للعيون، يتم تلبية جميع احتياجاتك الطبية في مجال العيون تحت سقف واحد</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1022,10 +922,8 @@
                                                     alt="optics">
                                             </div>
                                             <div class="box-body">
-                                                <h2>Optics</h2>
-                                                <p>Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Asperiores, hic!</p>
+                                                <h2>النظارات</h2>
+                                                <p>في مستشفيات الوطني للعيون، يتم تلبية جميع احتياجاتك الطبية في مجال العيون تحت سقف واحد</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1042,10 +940,8 @@
                                                     alt="investigations">
                                             </div>
                                             <div class="box-body">
-                                                <h2>Investigations</h2>
-                                                <p>Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Asperiores, hic!</p>
+                                                <h2>الفحوصات</h2>
+                                                <p>في مستشفيات الوطني للعيون، يتم تلبية جميع احتياجاتك الطبية في مجال العيون تحت سقف واحد</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1062,10 +958,8 @@
                                                     alt="operations">
                                             </div>
                                             <div class="box-body">
-                                                <h2>Operations</h2>
-                                                <p>Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Asperiores, hic!</p>
+                                                <h2>العمليات</h2>
+                                                <p>في مستشفيات الوطني للعيون، يتم تلبية جميع احتياجاتك الطبية في مجال العيون تحت سقف واحد</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1081,10 +975,8 @@
                                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzklEQVR4nO1ZTU8UQRB9ibhg1APgLxBMjAquxPUCGvgPhDte4DQ/QeWqIF40cFPvyIch3EVjOIgEEfAnoIARL8KaXVPJm6QymempnpkFD7xkEtjprn5vprqqugY4xSn+CzQDGAAwBmAWwCaAfQBHAA7591fekzH9nHPi6AEwDeAngLrnJXOmANw6CeJlAEsRQqsAxgEMAugG0ArgLK9W/ib3JgB8VvNqABZ5v+E4B2ASwF8ufgDgMYCrGWzJnCe0IbaqFNeCBuEKgDUudsSnLU82L9oAPKWAOt9OJwrGHQA/uIBs0Jvqniz2AcCwh70VAB9j3HKLa3wHUCmS/G8alihyPnK/j34s14jRZuj/UVwAMKfcs1KE24RP/iWAMwnjAk8RSQIETQBeqTfRgRwbdk09+STyWUS4BIQi5lV0y7SxJ5XPR90mr4g0AaE7bXOcBAwvlBkVqpENW5QIiwAwyYU8uuCBpazKjSKsArQnvIVHeSATfuWM8y4RPgLaGJFq9IxUTNO4ZMm8SBJhEdCrItA4x79IW7BZFWZhebCcoVCLu0TEqFFAwPGS8ATXOH4PQMklYECFLhQsQItwCQjUW7uvfl/nnHsuAWM5Nu+oWjhIIZYkIFBjwrcV3cwPXSTCND5YMPkowTgBgYO8YIhz3riIbHJQVwby9RTymmhUQJBCHsxHMmfDZXyXgyR0WTCS4hJJ0OMDA3nBJc6R2iwRhxxU8iCfR0BgJB9GSJnzpwgBmnyQQ0DNSN4sIHShdg/yyClg1DjH5EJpmziOvCbks4l9yJs38awjjCaR1wKsYdSXvA6jM8iQyFzk43w6KJi8TmQP4EC/6gyEGDYkqVCAzglFXMtqjS/87W7aTt+PFHMrBtfQm7hIEe9o8zr/32WjzImpSDndwdLWhWgUspYWVkxYy+nwGFfjIcKakePCaFEi2tnWqfkcbxdJSDpmFiTlgSJEPKPtBZ9J3eowbTnGuRJZHhE95CCtzBtZ/W6LLQ4X0jJxFhEXAXyjXWkge6NFtcHn2GxKgqWU8BHRRJcRm5/yfAzpZHuvznZfkghrLWQR0QTgNe3tALiMnKioHv58gjv5FHNaRG+M24RPXta8jYJQUW9iO+az0LJKOhZIdn8fadz2KJ/fKZK8dqdVLlBlbeIqu61oZ6isKp/P7TaujT2uFjvg/9K38YWUBxPq28MRo82xfL3sYq9S1zzrfCtDzB1tPNmV+JTLvDepCrM6bSxQ0LGjzPpkL0OhJoXZ8wzd74agxDL3EQ8cGyR4yGuXT32Gjak+S1V5ilOg8fgHDAAFsKPpxnUAAAAASUVORK5CYII=">
                                             </div>
                                             <div class="box-body">
-                                                <h2>Lens</h2>
-                                                <p>Lorem ipsum dolor sit amet
-                                                    consectetur adipisicing
-                                                    elit. Asperiores, hic!</p>
+                                                <h2>العدسات اللاصقة</h2>
+                                                <p>في مستشفيات الوطني للعيون، يتم تلبية جميع احتياجاتك الطبية في مجال العيون تحت سقف واحد</p>
                                             </div>
                                         </div>
                                     </a>
@@ -1101,7 +993,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12">
-                            <section class="splide" id="hurg-gal"
+                            <section class="splide" id="hurg-galAr"
                                 aria-label="Splide Basic HTML Example">
                                 <div class="splide__track">
                                     <ul class="splide__list">
@@ -1218,12 +1110,12 @@
             <section class="hurg-visits pb-5 pt-4">
                 <div class="container">
                     <div class="visits-header mb-5">
-                        <h1 class="bold">Latest visits <br> to Hurghada</h1>
+                        <h1 class="bold">آخر الزيارات <br> إلى الغردقة</h1>
                     </div>
                     <div class="visits-header text-center mb-5">
-                        <h1 class="bold main-font">From 1 to 7 March</h1>
+                        <h1 class="bold main-font">من ١ الي ٨ مارس</h1>
                     </div>
-                    <div class="splide" id="hurg-visits"
+                    <div class="splide" id="hurg-visitsAr"
                         aria-label="Splide Basic HTML Example">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -1237,7 +1129,7 @@
                                                 alt="our-doctors">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>Dr Ahmed Kamel</h2>
+                                            <h2>دكتور احمد كامل</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
@@ -1259,7 +1151,7 @@
                                                 alt="our-clinics">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>Dr Ahmed Assaf</h2>
+                                            <h2>دكتور احمد عساف</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
@@ -1280,7 +1172,7 @@
                                                 alt="our-clinics">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>Dr Fathy Fawzy</h2>
+                                            <h2>دكتور فتحي فوزي</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
@@ -1301,7 +1193,7 @@
                                                 alt="our-clinics">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>Dr Aldemerdash Omar</h2>
+                                            <h2>دكتور الدمرداش عمر</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
@@ -1326,16 +1218,16 @@
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     allowfullscreen></iframe>
                 <div class="hurg-openingDays">
-                    <h3>Opening Days</h3>
-                    <ul style="text-align: left;">
-                        <li><span>Sat: 09:00 AM - 10:00 PM</span></li>
-                        <li><span>Sun: 09:00 AM - 10:00 PM</span></li>
-                        <li><span>Mon: 09:00 AM - 10:00 PM</span></li>
-                        <li><span>Tue: 09:00 AM - 10:00 PM</span></li>
-                        <li><span>Wed: 09:00 AM - 10:00 PM</span></li>
-                        <li><span>Thu: 09:00 AM - 10:00 PM</span></li>
-                        <li><span>Fri: 09:00 AM - 10:00 PM</span></li>
-                    </ul>
+                    <h3>أيام العمل</h1>
+                        <ul style="text-align: right;">
+                            <li><span>السبت: ١٠ صباحا الي ٩ مساءً</span></li>
+                            <li><span>الأحد: ١٠ صباحا الي ٩ مساءً</span></li>
+                            <li><span>الإثنين: ١٠ صباحا الي ٩ مساءً</span></li>
+                            <li><span>الثلاثاء: ١٠ صباحا الي ٩ مساءً</span></li>
+                            <li><span>الأربعاء: ١٠ صباحا الي ٩ مساءً</span></li>
+                            <li><span>الخميس: ١٠ صباحا الي ٩ مساءً</span></li>
+                            <li><span>الجمعة: ١٠ صباحا الي ٩ مساءً</span></li>
+                        </ul>
                 </div>
             </section>
 
@@ -1347,23 +1239,25 @@
                         <div class="col-lg-6 col-md-12">
                             <div class="contact-icons pt-4 hidden">
                                 <a target="_blank"
-                                    href="https://www.facebook.com/watanyeyehospitals">
+                                    href="https://www.facebook.com/watanyeyehospitals?mibextid=nW3QTL">
                                     <i class="fa fa-brands fa-facebook-f"></i>
                                 </a>
-                                <a target="_blank"
-                                    href="https://twitter.com/Watany_Eye">
+                                <a
+                                    href="https://twitter.com/Watany_Eye?t=m3pjRLN5Zh5FaWIeiUvx0w&s=08"
+                                    target="_blank">
                                     <i class="fa fa-brands fa-twitter"></i>
                                 </a>
-                                <a target="_blank"
-                                    href="https://www.instagram.com/watanyeyehospitals/">
+                                <a arget=”_blank”
+                                    href="https://instagram.com/watanyeyehospitals?igshid=NjIwNzIyMDk2Mg==">
                                     <i class="fa fa-brands fa-instagram"></i>
                                 </a>
-                                <a target="_blank"
+                                <a target=”_blank”
                                     href="https://www.youtube.com/@watanyeyehospitals">
                                     <i class="fa fa-brands fa-youtube"></i>
                                 </a>
-                                <a target="_blank"
-                                    href="https://wa.link/jp221p">
+                                <a
+                                    href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you"
+                                    target="_blank">
                                     <i class="fa fa-brands fa-whatsapp"></i>
                                 </a>
                             </div>
@@ -1379,18 +1273,19 @@
                                     <div style="position: relative;">
 
                                         <form class="subscribe-form"
-                                            method="post" action="/subscribe">
+                                            method="post"
+                                            action="/subscribe">
                                             <div class="input-group mb-3">
                                                 <i class="fa-solid fa-envelope"
                                                     style="margin-right: 10px; font-size: 30px; margin-top: 5px;"></i>
                                                 <input type="email" id="email2"
                                                     name="email2" required
                                                     class="form-control"
-                                                    placeholder="Subscribe For More News"
+                                                    placeholder="اشترك لمزيد من الأخبار"
                                                     aria-label="Recipient's username"
                                                     aria-describedby="button-addon2">
                                                 <button class="btn sub-btn"
-                                                    type="submit">Subscribe</button>
+                                                    type="submit">اشترك</button>
                                             </div>
                                             <h2 class="subscribe-message"></h2>
                                         </form>
@@ -1404,7 +1299,6 @@
 
                 </div>
             </section>
-
             <!-- Start Footer Page -->
 
             <footer class="parent-11" id="footer">
@@ -1414,73 +1308,73 @@
 
                         <div class="col-md-4 col-sm-12 tag">
                             <div class="fot">
-                                <h4 class="text-uppercase pb-3">Working
-                                    Days</h4>
+                                <h4 class="text-uppercase pb-3">أيام العمل</h4>
 
-                                <span>From Saturday to Thursday:</span>
-                                <span>09:00 AM - 10:00 PM</span>
+                                <span>من السبت الي الخميس:</span>
+                                <span> من ١٠ صباحا الي ٩ مساءً</span>
 
                                 <span
-                                    style="display: block; margin-top: 5px;">Note:</span>
-                                <span>Thawra Branch on Fridays:</span>
-
-                                <span>from 09:00 AM - 5:00 PM</span>
+                                    style="display: block; margin: 10px 0 5px 0;">ملاحظة:</span>
+                                <span>فرع الثورة يوم الجمعة:</span>
                                 <span
-                                    style="display: block; margin-top: 5px;">Hegaz
-                                    Branch on
-                                    Fridays:
-                                </span>
-                                <span>from 09:00 AM - 10:00 PM</span>
+                                    style="display: block; margin-bottom: 5px;">من
+                                    ١٠ صباحا
+                                    الي ٥ مساءً</span>
+                                <span>فرع الحجاز يوم الجمعة:</span>
                                 <span
-                                    style="display: block; margin-top: 5px;">Hurghada
-                                    Branch
-                                    on Fridays:
-                                </span>
-                                <span>from 1:00 PM - 8:00 PM</span>
+                                    style="display: block; margin-bottom: 5px;">من
+                                    ١٠ صباحا
+                                    الي ٩ مساءً</span>
+                                <span>فرع الغردقة يوم الجمعة:</span>
+                                <span>من ١٠ صباحا الي ٩ مساءً</span>
                             </div>
                         </div>
 
                         <div class="col-md-4 col-sm-12 quick">
                             <div class="fot">
-                                <h4 class="text-uppercase pb-3">Quick Links</h4>
+                                <h4 class="text-uppercase pb-3">روابط سريعة</h4>
                                 <ul class="fot-links">
-                                    <li class="mb-2"><a href="./aboutusV2.html"
-                                            class="white">About
-                                            us</a></li>
-                                    <li class="mb-2"><a href="./doctors.html"
-                                            class="white">Find
-                                            a doctor</a></li>
-                                    <li class="mb-2"><a href="./clinics.html"
-                                            class="white">Clinics</a></li>
-                                    <li class="mb-2"><a href="./contactus.html"
-                                            class="white">Branches</a></li>
+                                    <li class="mb-2"><a href="./aboutUsAr.html"
+                                            class="white">من
+                                            نحن</a></li>
+                                    <li class="mb-2"><a href="./doctorsAr.html"
+                                            class="white">أطبائنا</a></li>
+                                    <li class="mb-2"><a
+                                            href="./clinicsAr.html"
+                                            class="white">العيادات</a></li>
+                                    <li class="mb-2"><a
+                                            href="./contactusAr.html"
+                                            class="white">الفروع</a></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="col-md-4 col-sm-12">
                             <div class="fot">
-                                <h4 class="text-uppercase pb-3">Contact Us</h4>
+                                <h4 class="text-uppercase pb-3">تواصل معنا</h4>
                                 <ul class="fot-links">
                                     <li class="mb-2"><a href="tel:16112"
+                                            target="_blank"
                                             class="white"><i
                                                 class="fa-sharp fa-solid fa-phone"
-                                                style="position: relative; margin-right: 4px;"></i>16112</a></li>
+                                                style="position: relative; margin-left: 10px;"></i>١٦١١٢</a></li>
                                     <li class="mb-2"><a target=”_blank”
                                             href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you"
                                             class="white"><i
                                                 class="fa fa-brands fa-whatsapp"
-                                                style="position: relative; margin-right: 4px;"></i>WhatsApp</a></li>
+                                                style="position: relative; margin-left: 10px;"></i>واتساب</a></li>
                                     <li class="mb-2"><a target="_blank"
                                             href=mailto:“contactus@watanyeyehospitals.com”
                                             class="white"><i
                                                 class="fa-sharp fa-solid fa-envelope"
-                                                style="position: relative; margin-right: 4px;"></i>contactus@watanyeyehospitals.com</a></li>
-                                    <li class="mb-2"><a target="_blank"
+                                                style="position: relative; margin-left: 10px;"></i>contactus@watanyeyehospitals.com</a>
+                                    </li>
+                                    <li class="mb-2"><a
                                             href="./bookingform.html"><i
                                                 class="fa-regular fa-calendar-plus"
-                                                style="position: relative; margin-right: 4px;"></i>
-                                            Schedule an appointment</a> </li>
+                                                style="position: relative; margin-left: 4px;"></i>
+                                            تحديد
+                                            موعد</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -1490,8 +1384,7 @@
                     class="container text-center w-100 social py-3">
                     <p class="mb-0">
                         <a href=mailto:“michaelzahgar@gmail.com”>
-                            © Copyright 2023 Watany Eye Hospitals. All Rights
-                            Reserved.V.1
+                            © Copyright 2023 بواسطة لمستشفيات الوطنى للعيون.V.1
                         </a>
                     </p>
 
@@ -1638,5 +1531,8 @@
 // }
 
                 </script>
+
+            <script src="../js/mainAR.js"></script>
+
         </body>
     </html>

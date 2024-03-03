@@ -537,7 +537,6 @@ document.addEventListener('DOMContentLoaded', function () {
     perPage: 4,
     gap: 25,
     drag: 'free',
-    type:'loop',
     arrows: true,
     breakpoints: {
       1024: {
@@ -559,6 +558,7 @@ document.addEventListener('DOMContentLoaded', function () {
     gap: 30,
     perMove: 1,
     autoplay:true,
+    type:'loop',
     arrows: false,
     pagination: false,
     breakpoints: {

@@ -171,3 +171,75 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }).mount();
       });
+
+
+
+      
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#hurg-servAr', {
+    direction:'rtl',
+    perPage: 5,
+    gap: 25,
+    drag: 'free',
+    arrows: true,
+    breakpoints: {
+      1024: {
+        perPage: 3
+      },
+      768: {
+        perPage: 2
+      },
+      600: {
+        perPage: 1
+      }
+    }
+  }).mount();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#hurg-visitsAr', {
+    direction:'rtl',
+    perPage: 4,
+    gap: 25,
+    drag: 'free',
+    arrows: true,
+    breakpoints: {
+      1024: {
+        perPage: 3
+      },
+      768: {
+        perPage: 2
+      },
+      600: {
+        perPage: 1
+      }
+    }
+  }).mount();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#hurg-galAr', {
+    direction:'rtl',
+    perPage: 5,
+    gap: 30,
+    perMove: 1,
+    autoplay:true,
+    type:'loop',
+    arrows: false,
+    pagination: false,
+    breakpoints: {
+      1024: {
+        perPage: 3,
+      },
+      768: {
+        perPage: 2,
+      },
+       533: {
+        perPage: 1,
+      },
+    },
+    autoScroll: {
+      speed: 3,
+    }
+  }).mount();
+});
