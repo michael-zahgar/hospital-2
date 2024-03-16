@@ -226,13 +226,15 @@
                 padding: 0;
             }
             .hurg-location .hurg-openingDays{
-                position: absolute;
-                top: 30%;
-                left:4%;
+                display: block;
                 background-color: #111821;
                 border-radius: 20px 0 20px 0;
                 overflow: hidden;
                 color: white;
+                width: fit-content;
+                margin: auto;
+                width: 50%;
+                text-align: center !important;
             }
             .hurg-location .hurg-openingDays h3{
                 background-color: #f17732;
@@ -443,8 +445,10 @@
             flex-wrap:nowrap;
             overflow-x: scroll;
             }
+            .hurg-location .hurg-openingDays{
+                width: auto;
             }
-
+        }
     </style>
 
     </head>
@@ -1204,16 +1208,7 @@
                                                 </a>
                                             </div>
                                         </li>
-                                        <li class="splide__slide">
-                                            <div class="medical-img">
-                                                <a class="view-img"
-                                                    href="../images/gallery/gal-17.png">
-                                                    <img
-                                                        src="../images/gallery/gal-17.png"
-                                                        alt="Hurghada Gallery">
-                                                </a>
-                                            </div>
-                                        </li>
+
                                         <li class="splide__slide">
                                             <div class="medical-img">
                                                 <a class="view-img"
@@ -1230,26 +1225,6 @@
                                                     href="../images/gallery/gal-7.JPG">
                                                     <img
                                                         src="../images/gallery/gal-7.JPG"
-                                                        alt="Hurghada Gallery">
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="splide__slide">
-                                            <div class="medical-img">
-                                                <a class="view-img"
-                                                    href="../images/gallery/gal-23.png">
-                                                    <img
-                                                        src="../images/gallery/gal-23.png"
-                                                        alt="Hurghada Gallery">
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="splide__slide">
-                                            <div class="medical-img">
-                                                <a class="view-img"
-                                                    href="../images/gallery/gal-16.JPG">
-                                                    <img
-                                                        src="../images/gallery/gal-16.JPG"
                                                         alt="Hurghada Gallery">
                                                 </a>
                                             </div>
@@ -1296,7 +1271,7 @@
                                                 alt="our-doctors">
                                         </div>
                                         <div class="box-body p-3">
-                                            <h2>Dr Bassim, Fayez</h2>
+                                            <h2>Dr Bassim Fayez</h2>
                                             <p>Lorem ipsum dolor sit amet
                                                 consectetur adipisicing</p>
                                             <p>Lorem ipsum dolor sit amet
@@ -1407,7 +1382,7 @@
                     allowfullscreen></iframe>
                 <div class="hurg-openingDays">
                     <h3>Opening Days</h3>
-                    <ul style="text-align: left;">
+                    <ul style="text-align: center;">
                         <li><span>Sat: 09:00 AM - 10:00 PM</span></li>
                         <li><span>Sun: 09:00 AM - 10:00 PM</span></li>
                         <li><span>Mon: 09:00 AM - 10:00 PM</span></li>
