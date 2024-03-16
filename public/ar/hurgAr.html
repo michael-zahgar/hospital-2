@@ -239,13 +239,15 @@
                 padding: 0;
             }
             .hurg-location .hurg-openingDays{
-                position: absolute;
-                top: 30%;
-                right:4%;
+                display: block;
                 background-color: #111821;
                 border-radius: 20px 0 20px 0;
                 overflow: hidden;
                 color: white;
+                width: fit-content;
+                margin: auto;
+                width: 50%;
+                text-align: center !important;
             }
             .hurg-location .hurg-openingDays h3{
                 background-color: #f17732;
@@ -458,6 +460,9 @@
             padding: 0;
             flex-wrap:nowrap;
             overflow-x: scroll;
+            }
+            .hurg-location .hurg-openingDays{
+                width: auto;
             }
             }
 
@@ -1118,16 +1123,7 @@
                                                 </a>
                                             </div>
                                         </li>
-                                        <li class="splide__slide">
-                                            <div class="medical-img">
-                                                <a class="view-img"
-                                                    href="../images/gallery/gal-17.png">
-                                                    <img
-                                                        src="../images/gallery/gal-17.png"
-                                                        alt="Hurghada Gallery">
-                                                </a>
-                                            </div>
-                                        </li>
+
                                         <li class="splide__slide">
                                             <div class="medical-img">
                                                 <a class="view-img"
@@ -1144,26 +1140,6 @@
                                                     href="../images/gallery/gal-7.JPG">
                                                     <img
                                                         src="../images/gallery/gal-7.JPG"
-                                                        alt="Hurghada Gallery">
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="splide__slide">
-                                            <div class="medical-img">
-                                                <a class="view-img"
-                                                    href="../images/gallery/gal-23.png">
-                                                    <img
-                                                        src="../images/gallery/gal-23.png"
-                                                        alt="Hurghada Gallery">
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li class="splide__slide">
-                                            <div class="medical-img">
-                                                <a class="view-img"
-                                                    href="../images/gallery/gal-16.JPG">
-                                                    <img
-                                                        src="../images/gallery/gal-16.JPG"
                                                         alt="Hurghada Gallery">
                                                 </a>
                                             </div>
@@ -1321,7 +1297,7 @@
                     allowfullscreen></iframe>
                 <div class="hurg-openingDays">
                     <h3>أيام العمل</h3>
-                        <ul style="text-align: right;">
+                        <ul style="text-align: center;">
                             <li><span>السبت: ١٠ صباحا الي ٩ مساءً</span></li>
                             <li><span>الأحد: ١٠ صباحا الي ٩ مساءً</span></li>
                             <li><span>الإثنين: ١٠ صباحا الي ٩ مساءً</span></li>
