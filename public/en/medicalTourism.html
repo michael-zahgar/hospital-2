@@ -114,7 +114,16 @@
             .medical-tour-servs .service-inner{
                 background-color: #fff;
             }
-
+            .medical-tour-servs .splide__arrow{
+                font-size: 20px;
+                background-color: #353742;
+                height: 2.5em;
+                width: 2.5em;
+                opacity: 1;
+            }
+            .medical-tour-servs .splide__arrow svg{
+                fill: white;
+            }
     </style>
 
     </head>
@@ -430,55 +439,7 @@
                         </div>
 
                     </div>
-                    <!-- <div class="medical-body">
-                        <div class="row">
-
-                            <div class="col-lg-6 col-md-12 left-medical"
-                                style="position: relative;">
-                                <img src="../images/watany branches/HUG 1.jpg"
-                                    alt="watany-hurgada">
-                                <a class="video-link yt-modal-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop"
-                                    style="cursor: pointer;">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                            <div class="col-lg-6 col-md-12 right-medical">
-                                <div class="medical-header">
-                                    <div class=" reason-b-h hidden show">
-                                        <span class="trans-title">Medical
-                                            Tourism <br> at Watany Eye
-                                            Hospitals</span>
-                                        <i
-                                            class="fa-solid fa-umbrella-beach fa-beat-fade"></i>
-                                    </div>
-                                    <p
-                                        style="color: gray; font-size: 16px;">Watany
-                                        Eye Hospitals
-                                        is a leading medical
-                                        institution specializing in eye care and
-                                        ophthalmic surgeries, located in a prime
-                                        location that offers a perfect blend of
-                                        medical expertise and hospitality. We
-                                        take pride in our state-of-the-art
-                                        facilities, highly skilled doctors, and
-                                        a commitment to providing exceptional
-                                        care to patients seeking various eye
-                                        treatments, including LASIK,
-                                        Femto-LASIK, and blepharoplasty. In
-                                        addition to our medical services, we
-                                        strive to ensure that patients and their
-                                        accompanying persons have a comfortable
-                                        and hassle-free experience during their
-                                        stay, with convenient accommodation
-                                        options, transportation facilities, and
-                                        on-site amenities.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                   
                 </div>
 
                 <div class="medical-tour-servs mt-4">
@@ -488,37 +449,40 @@
                             <span class="trans-title">Our Services</span>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-12">
+                            <section class="splide" id="medical-services"
+                            aria-label="Splide Basic HTML Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    
+                                    <li class="splide__slide">
+                                     
+                                        <div class="home-g">
 
-                                <div class="home-g">
+                                            <div class="img-inner">
+                                                <a href="./phacoservices.html">
+                                                    <img class="main-img-inner"
+                                                        src="../images/service/phaco surgery.webp"
+                                                        alt="clinics">
+                                                </a>
+                                            </div>
+        
+                                            <div class="service-inner">
+                                                <h3 class="main-font">Phaco
+                                                    Services</h3>
+                                                <p>Experience top-notch Phaco services during your medical tour at our renowned hospital.
+                                                </p>
+                                                <a href="./phacoservices.html">
+                                                    See More
+                                                    <i
+                                                        class="fa-solid fa-angles-right"></i>
+                                                </a>
+                                                <h1 class="s-inner-num">01</h1>
+                                            </div>
+                                        </div>
+                                    </li>
 
-                                    <div class="img-inner">
-                                        <a href="./phacoservices.html">
-                                            <img class="main-img-inner"
-                                                src="../images/service/phaco surgery.webp"
-                                                alt="clinics">
-                                        </a>
-                                    </div>
-
-                                    <div class="service-inner">
-                                        <h3 class="main-font">Phaco
-                                            Services</h3>
-                                        <p>Fully equipped outpatient clinics,
-                                            covering 19
-                                            different subspecialties
-                                        </p>
-                                        <a href="./phacoservices.html">
-                                            See More
-                                            <i
-                                                class="fa-solid fa-angles-right"></i>
-                                        </a>
-                                        <h1 class="s-inner-num">01</h1>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-
+                                    <li class="splide__slide">
+                                     
                                 <div class="home-g">
 
                                     <div class="img-inner">
@@ -532,9 +496,8 @@
                                     <div class="service-inner">
                                         <h3 class="main-font">LASIK
                                             Services</h3>
-                                        <p>Fully equipped outpatient clinics,
-                                            covering 19
-                                            different subspecialties</p>
+                                        <p> world-renowned eye care hospitals offering advanced laser vision 
+                                            correction procedures alongside the benefits of medical tourism</p>
                                         <a href="./en/clinics.html">
                                             See More
                                             <i
@@ -543,41 +506,99 @@
                                         <h1 class="s-inner-num">02</h1>
                                     </div>
                                 </div>
+        
+                                    </li>
 
+                                    <li class="splide__slide">
+                                        <div class="home-g">
+
+                                            <div class="img-inner">
+                                                <a href="#">
+                                                    <img class="main-img-inner"
+                                                        src="../images/service/Blepharoplasty.png"
+                                                        alt="clinics">
+                                                </a>
+                                            </div>
+        
+                                            <div class="service-inner">
+                                                <h3 class="main-font">Blepharoplasty
+                                                    Services</h3>
+                                                <p>At Watany Eye Hospitals, we understand the desire to revitalize your appearance and restore a 
+                                                    youthful look to your eyes.</p>
+                                                <a href="./en/clinics.html">
+                                                    See More
+                                                    <i
+                                                        class="fa-solid fa-angles-right"></i>
+                                                </a>
+                                                <h1 class="s-inner-num">03</h1>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="splide__slide">
+                                        <div class="home-g">
+
+                                            <div class="img-inner">
+                                                <a href="#">
+                                                    <img class="main-img-inner"
+                                                        src="../images/clinics/cornea.webp"
+                                                        alt="clinics">
+                                                </a>
+                                            </div>
+        
+                                            <div class="service-inner">
+                                                <h3 class="main-font">Retina
+                                                    Services</h3>
+                                                <p>At Watany Eye Hospitals, we understand the importance of sight. We are proud to be a leading 
+                                                    destination for medical tourism, providing patients with exceptional care at competitive costs.
+                                                    </p>
+                                                <a href="./en/clinics.html">
+                                                    See More
+                                                    <i
+                                                        class="fa-solid fa-angles-right"></i>
+                                                </a>
+                                                <h1 class="s-inner-num">04</h1>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="splide__slide">
+                                        <div class="home-g">
+
+                                            <div class="img-inner">
+                                                <a href="#">
+                                                    <img class="main-img-inner"
+                                                        src="../images/service/icl services.png"
+                                                        alt="clinics">
+                                                </a>
+                                            </div>
+        
+                                            <div class="service-inner">
+                                                <h3 class="main-font">ICL
+                                                    Services</h3>
+                                                <p>Welcome to Watany Eye Hospitals, where we specialize in cutting-edge eye care procedures, 
+                                                    including Implantable Collamer Lens (ICL) implantation surgery.</p>
+                                                <a href="./en/clinics.html">
+                                                    See More
+                                                    <i
+                                                        class="fa-solid fa-angles-right"></i>
+                                                </a>
+                                                <h1 class="s-inner-num">05</h1>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                 
+                                </ul>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
+                        </section>
 
-                                <div class="home-g">
 
-                                    <div class="img-inner">
-                                        <a href="#">
-                                            <img class="main-img-inner"
-                                                src="../images/service/Blepharoplasty.png"
-                                                alt="clinics">
-                                        </a>
-                                    </div>
-
-                                    <div class="service-inner">
-                                        <h3 class="main-font">Blepharoplasty
-                                            Services</h3>
-                                        <p>Fully equipped outpatient clinics,
-                                            covering 19
-                                            different subspecialties</p>
-                                        <a href="./en/clinics.html">
-                                            See More
-                                            <i
-                                                class="fa-solid fa-angles-right"></i>
-                                        </a>
-                                        <h1 class="s-inner-num">03</h1>
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="medicalTour-gal h-gallery">
+                <div class="medicalTour-gal h-gallery py-5">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-12">
@@ -605,6 +626,27 @@
                                                         href="../images/hug/hug-4.jpg">
                                                         <img
                                                             src="../images/hug/hug-4.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/baron.jpg">
+                                                        <img
+                                                            src="../images/hug/baron.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/egypt-2.jpg">
+                                                        <img
+                                                            src="../images/hug/egypt-2.jpg"
                                                             alt="medical Tourism">
                                                     </a>
                                                 </div>
@@ -685,6 +727,17 @@
                                                         href="../images/hug/hug-12.jpg">
                                                         <img
                                                             src="../images/hug/hug-12.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/egypt.jpg">
+                                                        <img
+                                                            src="../images/hug/egypt.jpg"
                                                             alt="medical Tourism">
                                                     </a>
                                                 </div>
@@ -831,11 +884,11 @@
                             <div class="row" style="color: gray;">
                                 <div class="medical-reason-body">
                                     <h3
-                                        class="bold main-font pb-2">1-Hassle free
+                                        class="bold main-font pb-2">1) Hassle free
                                         experience:</h3>
                                         <div class="more-info ps-3">
                                             <h4
-                                            class="bold primary-co-2">Accommodation</h4>
+                                            class="bold primary-co-2">. Accommodation</h4>
                                         <p>We understand the importance of
                                             comfortable accommodation for patients
                                             and their companions. Watany Eye
@@ -858,7 +911,7 @@
 
                                         <div class="medical-reason-body">
                                             <h4
-                                                class="bold primary-co-2">Transportation</h4>
+                                                class="bold primary-co-2">. Transportation</h4>
                                             <p>Watany Eye Hospitals aims to make travel
                                                 arrangements as convenient as possible
                                                 for medical tourists. We provide
@@ -872,10 +925,10 @@
                                                 related appointments. Our team
                                                 coordinates these arrangements,
                                                 prioritizing comfort, safety, and
-                                                punctuality..</p>
+                                                punctuality.</p>
                                         </div>
                                         <div class="medical-reason-body">
-                                            <h4 class="bold primary-co-2">All Services in
+                                            <h4 class="bold primary-co-2">. All Services in
                                                 One Place</h4>
                                             <p>Watany Eye Hospitals are designed to meet
                                                 all your medical needs efficiently and
@@ -895,27 +948,27 @@
 
                                 <div class="medical-reason-body">
                                     <h3
-                                    class="bold main-font pb-2">2-Doctors’ Professionalism:</h3>
+                                    class="bold main-font pb-2">2) Doctors’ Professionalism:</h3>
                                     <p>At our eye hospital, professionalism is the cornerstone of our doctors' practice. Our team of highly skilled ophthalmologists is dedicated to providing exceptional care with unwavering professionalism and compassion.</p>
                                 </div>
                                 <div class="medical-reason-body">
                                     <h3
-                                    class="bold main-font pb-2">3-Latest technology:</h3>
+                                    class="bold main-font pb-2">3) Latest technology:</h3>
                                     <p>We continuously invest in the latest equipment and technology to ensure that our patients have access to the most advanced medical treatments available. We are also certified form the Center of Excellence for having the Latest equipment.</p>
                                 </div>
                                 <div class="medical-reason-body">
                                     <h3
-                                    class="bold main-font pb-2">4-Suitable Prices</h3>
+                                    class="bold main-font pb-2">4) Suitable Prices:</h3>
                                     <p>We offer competitive and affordable prices without compromising on the standard of care.</p>
                                 </div>
                                 <div class="medical-reason-body">
                                     <h3
-                                    class="bold main-font pb-2">5-Flexible payment options:</h3>
+                                    class="bold main-font pb-2">5) Flexible payment options:</h3>
                                     <p>We offer convenient payment methods including credit cards, debit cards or cash.</p>
                                 </div>
                                 <div class="medical-reason-body">
                                     <h3
-                                    class="bold main-font pb-2">6-23 Years of Experience:</h3>
+                                    class="bold main-font pb-2">6) 23 Years of Experience:</h3>
                                     <p>With a legacy spanning 23 years, our eye hospital boasts a rich history of providing unparalleled care and transforming lives through vision. Throughout the decades, our commitment to excellence, innovation, and patient-centered care has remained unwavering. Over the years, we have earned the trust and gratitude of millions of patients who have entrusted us with their vision, and their continued satisfaction serves as a testament to our enduring legacy.</p>
                                 </div>
                             </div>
@@ -938,10 +991,10 @@
                                 <a
                                     href="tel:01240016112"
                                     target="_blank">
-                                    <img src="../images/icons/hotline.png"
+                                    <img src="../images/icons/whatsapp.png"
                                         alt="whatsapp">
                                     <h3>
-                                        Phone or WhatsApp
+                                        WhatsApp
                                     </h3>
                                 </a>
                             </div>

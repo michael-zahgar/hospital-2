@@ -94,8 +94,34 @@
         <!-- responsive AR CSS -->
         <link rel="stylesheet" href="../css/responsiveAr.css">
 
+  
         <style>
-
+            .medical-tour-servs .img-inner .main-img-inner{
+                height: 300px;
+            }
+            .medical-tour-servs{
+                text-align:center;
+            }
+            .medical-tour-servs .service-inner a{
+                margin: auto;
+            }
+            .medical-tour-servs .reason-b-h span{
+                font-size: 45px;
+                opacity: 1;
+            }
+            .medical-tour-servs .service-inner{
+                background-color: #fff;
+            }
+            .medical-tour-servs .splide__arrow{
+                font-size: 20px;
+                background-color: #353742;
+                height: 2.5em;
+                width: 2.5em;
+                opacity: 1;
+            }
+            .medical-tour-servs .splide__arrow svg{
+                fill: white;
+            }
     </style>
 
     </head>
@@ -359,7 +385,7 @@
             <section class="page-header clinic-header medicalTour-Header">
                 <div class="doctors-bg"></div>
                 <div class="container">
-                    <h1 class="text-uppercase">السياحة العلاجية</h1>
+                    <h1 class="text-uppercase">المرضى الدوليين</h1>
                     <nav
                         style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                         aria-label="breadcrumb">
@@ -367,7 +393,7 @@
                             <li class="breadcrumb-item"><a href="./index.html">الصفحة
                                     الرئيسية</a></li>
                             <li class="breadcrumb-item active"
-                                aria-current="page">> السياحة العلاجية</li>
+                                aria-current="page">> المرضي الدوليين</li>
                         </ol>
                     </nav>
                 </div>
@@ -378,27 +404,16 @@
                 <div class="tour-bg"></div>
                 <div class="container">
                     <div class="medical-head">
-                        <h5 class="bold">موقع <span class="main-font">TripAdvisor</span>
-                            يصنف الغردقة كأفضل
-                            وجهة سياحية ثانية في الشرق الأوسط لعام 2023
-                            <i
-                                class="fa-solid fa-umbrella-beach fa-beat-fade"></i>
-                        </h5>
                         <div class="medical-head-text row">
                             <div class="col-md-8 col-sm-12">
+                                <h5 class="bold">
+                                    اكتشف معالم مصر الخفية في رحلتك للعافية! استكشف شواطئ الغردقة الخلابة ومعالم القاهرة الساحرة بينما تتلقى خدمات الرعاية العيون عالية الجودة في مستشفيات وطني للعيون.
+                                    <i
+                                        class="fa-solid fa-umbrella-beach fa-beat-fade"></i>
+                                </h5>
                                 <p class="dark-gray">
-                                    نشر موقع <a
+                                   مصدر الخبر: <a
                                         target="_blank"
-                                        href="https://www.tripadvisor.com/Tourism-g297549-Hurghada_Red_Sea_and_Sinai-Vacations.html">TripAdvisor</a>
-                                    الرائد في مجال السياحة تقريرًا عن أفضل 10
-                                    وجهات سياحية لزيارتها في عام 2023 في الشرق
-                                    الأوسط، حيث جاءت الغردقة في المرتبة الثانية
-                                    بعد دبي. كما جاءت عاصمة مصر، القاهرة، في
-                                    المرتبة الثالثة، بينما جاءت مدينة القدس في
-                                    المرتبة الأخيرة.
-                                    <br>
-                                    <br>
-                                    مصدر الخبر: <a target="_blank"
                                         href="https://rb.gy/yeudb">(sis.gov.eg)</a>
                                 </p>
                             </div>
@@ -454,43 +469,297 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class="container mt-4 medicalTour-services text-center style="
-                    color: gray;">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 mb-4">
-                            <div class="mts">
-
-                                <h3 class="bold main-font">
-                                    خدمات الليزك والفيمتو ليزك
-                                </h3>
-                                <p>مستشفيات الوطنى للعيون تعتبر الاكثر شهرة فى
-                                    جراحات الليزك والفيمتو ليزك والتى يلجأ اليها
-                                    العديد من السياح من مختلف دول العالم وذلك
-                                    لتصحيح عيوب الابصار وذلك من خلال نخبة من
-                                    افضل الاطباء فى طب وجراحة العيون وذلك
-                                    باستخدام افضل الاجهزة والتقنيات , بالاضافة
-                                    الى تقديم كافة الاجراءات الوقائية والعلاجية
-                                    ما بعد اجراء العملية وذلك لضمان سلامة المريض
-                                    وتوفير الرعاية الطبية اللازمة.</p>
-                            </div>
+            
+                <div class="medical-tour-servs mt-4">
+                    <div class="container">
+                        <div
+                            class=" reason-b-h  text-uppercase mb-5 bold hidden show">
+                            <span class="trans-title">خدماتنا</span>
                         </div>
-                        <div class="col-md-6 col-sm-12 mb-4">
-                            <div class="mts">
+                        <div class="row">
+                            <section class="splide" id="medical-servicesAr"
+                            aria-label="Splide Basic HTML Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                     
+                                        <div class="home-g">
 
-                                <h3 class="bold main-font">
-                                    خدمات العيون والجفون التجميلية
-                                </h3>
-                                <p>ايضا تمتاز مستشفيات الوطنى للعيون فى تقديم
-                                    خدمات جراحات العيون والجفون التجميلية وذلك
-                                    من خلال تقديم كافة انواع العمليات المختصة
-                                    بهذا المجال من ارتخاء الجفون وازالة الزوائد
-                                    الجلدية وذلك باستخدام ادق التقنيات لتقديم
-                                    افضل خدمة ورعاية صحية للمريض.</p>
+                                            <div class="img-inner">
+                                                <a href="./phacoservices.html">
+                                                    <img class="main-img-inner"
+                                                        src="../images/service/phaco surgery.webp"
+                                                        alt="clinics">
+                                                </a>
+                                            </div>
+        
+                                            <div class="service-inner">
+                                                <h3 class="main-font">خدمات فاكو</h3>
+                                                <p>استمتع بخدمات فاكو عالية الجودة خلال جولتك الطبية في مستشفانا الرائدة.
+                                                </p>
+                                                <a href="./phacoservices.html">
+                                                    اعرف المزيد
+                                                    <i
+                                                        class="fa-solid fa-angles-left"></i>
+                                                </a>
+                                                <h1 class="s-inner-num">١</h1>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="splide__slide">
+                                     
+                                <div class="home-g">
+
+                                    <div class="img-inner">
+                                        <a href="#">
+                                            <img class="main-img-inner"
+                                                src="../images/service/lasik.png"
+                                                alt="clinics">
+                                        </a>
+                                    </div>
+
+                                    <div class="service-inner">
+                                        <h3 class="main-font">خدمات الليزك</h3>
+                                        <p>مركز عالمي مشهور للعناية بالعيون يقدم رؤية متقدمة بالليزر
+                                            إجراءات التصحيح إلى جانب فوائد السياحة العلاجية.
+                                        </p>
+                                        <a href="./en/clinics.html">
+                                           اعرف المزيد
+                                            <i
+                                                class="fa-solid fa-angles-left"></i>
+                                        </a>
+                                        <h1 class="s-inner-num">٢</h1>
+                                    </div>
+                                </div>
+        
+                                    </li>
+
+                                    <li class="splide__slide">
+                                        <div class="home-g">
+
+                                            <div class="img-inner">
+                                                <a href="#">
+                                                    <img class="main-img-inner"
+                                                        src="../images/service/Blepharoplasty.png"
+                                                        alt="clinics">
+                                                </a>
+                                            </div>
+        
+                                            <div class="service-inner">
+                                                <h3 class="main-font">خدمات جراحة تجميل الجفن</h3>
+                                                <p>في مستشفيات وطني للعيون، نحن نفهم رغبتك في إعادة إحياء مظهرك واستعادة الشباب لعينيك.
+                                                </p>
+                                                <a href="./en/clinics.html">
+                                                    اعرف المزيد
+                                                    <i
+                                                        class="fa-solid fa-angles-left"></i>
+                                                </a>
+                                                <h1 class="s-inner-num">٣</h1>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="splide__slide">
+                                        <div class="home-g">
+
+                                            <div class="img-inner">
+                                                <a href="#">
+                                                    <img class="main-img-inner"
+                                                        src="../images/clinics/cornea.webp"
+                                                        alt="clinics">
+                                                </a>
+                                            </div>
+        
+                                            <div class="service-inner">
+                                                <h3 class="main-font">خدمات الشبكية</h3>
+                                                <p>في مستشفيات وطني للعيون، نحن ندرك أهمية البصر. نحن فخورون بكوننا وجهة رائدة للسياحة الطبية، حيث نوفر للمرضى رعاية استثنائية بتكاليف تنافسية.
+                                                </p>
+                                                <a href="./en/clinics.html">
+                                                    اعرف المزيد
+                                                    <i
+                                                        class="fa-solid fa-angles-left"></i>
+                                                </a>
+                                                <h1 class="s-inner-num">٤</h1>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="splide__slide">
+                                        <div class="home-g">
+
+                                            <div class="img-inner">
+                                                <a href="#">
+                                                    <img class="main-img-inner"
+                                                        src="../images/service/icl services.png"
+                                                        alt="clinics">
+                                                </a>
+                                            </div>
+        
+                                            <div class="service-inner">
+                                                <h3 class="main-font">خدمات ICL</h3>
+                                                <p>مرحبًا بكم في مستشفيات وطني للعيون، حيث نتخصص في إجراءات رعاية العيون المتطورة، بما في ذلك جراحة زرع عدسات الكولامر القابلة للزرع (ICL).
+                                                </p>
+                                                <a href="./en/clinics.html">
+                                                    اعرف المزيد
+                                                    <i
+                                                        class="fa-solid fa-angles-left"></i>
+                                                </a>
+                                                <h1 class="s-inner-num">٥</h1>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
+                        </section>
+
+
                         </div>
                     </div>
                 </div>
+
+                <div class="medicalTour-gal h-gallery py-5">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-5 col-sm-12">
+                                <h1 class="bold">معرض<br>السياحة العلاجية</h5>
+                            </div>
+                            <div class="col-lg-8 col-md-7 col-sm-12">
+                                <section class="splide" id="medical-gal-ar"
+                                    aria-label="Splide Basic HTML Example">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/hug-3.jpg">
+                                                        <img
+                                                            src="../images/hug/hug-3.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/hug-4.jpg">
+                                                        <img
+                                                            src="../images/hug/hug-4.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/hug-5.jpg">
+                                                        <img
+                                                            src="../images/hug/hug-5.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/baron.jpg">
+                                                        <img
+                                                            src="../images/hug/baron.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/egypt-2.jpg">
+                                                        <img
+                                                            src="../images/hug/egypt-2.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/hug-6.jpg">
+                                                        <img
+                                                            src="../images/hug/hug-6.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/hug-7.jpg">
+                                                        <img
+                                                            src="../images/hug/hug-7.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/hug-8.jpg">
+                                                        <img
+                                                            src="../images/hug/hug-8.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/hug-9.jpg">
+                                                        <img
+                                                            src="../images/hug/hug-9.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/hug-10.jpg">
+                                                        <img
+                                                            src="../images/hug/hug-10.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/hug-11.jpg">
+                                                        <img
+                                                            src="../images/hug/hug-11.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+
+                                            <li class="splide__slide">
+                                                <div class="medical-img">
+                                                    <a class="view-img"
+                                                        href="../images/hug/egypt.jpg">
+                                                        <img
+                                                            src="../images/hug/egypt.jpg"
+                                                            alt="medical Tourism">
+                                                    </a>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
                 <div class="medical-services">
                     <div
                         class=" reason-b-h  text-uppercase mb-5 bold hidden show">
@@ -609,240 +878,66 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="medical-reason" style="text-align: right;">
+
+                              <div class="medical-reason" style="text-align: right;">
                             <div
                                 class=" reason-b-h  text-uppercase mb-3 bold hidden show"
                                 style="text-align: center;">
-                                <span class="trans-title">لماذا وطنى للسياحة
-                                    العلاجية؟
-                                </span>
+                                <span class="trans-title mt-4">لماذا تختار الوطنى؟</span>
                             </div>
 
                             <div class="row" style="color: gray;">
                                 <div class="medical-reason-body">
-                                    <h3 class="bold main-font">الاقامة</h3>
-                                    <p>تعتبر الإقامة المريحة من العوامل الضرورية
-                                        لخدمة مرضانا ومرافقيهم ولذلك تتعاون
-                                        مستشفيات وطنى للعيون مع الفنادق
-                                        والمنتجعات من خلال تقديم مجموعة متنوعة
-                                        من الخيارات لتناسب مختلف الاحتياجات و
-                                        تقع هذه الاماكن في موقع مناسب بالاضافة
-                                        الى توفير بيئة هادئة للاسترخاء والتعافي.
-                                        يقوم موظفينا المختصين بالمساعدة في إجراء
-                                        الحجوزات والتأكد من حصول المرضى على
-                                        أسعار ووسائل راحة مناسبة لهم أثناء
-                                        إقامتهم.</p>
-                                </div>
-                                <div class="medical-reason-body">
-                                    <h3 class="bold main-font">خدمات النقل</h3>
-                                    <p>تهدف مستشفيات وطنى للعيون إلى جعل ترتيبات
-                                        السفر مريحة قدر الإمكان للسياح. وذلك من
-                                        خلال المساعدة في ترتيب الانتقالات من
-                                        والى المطار،. بالإضافة إلى ذلك، نقدم
-                                        خدمات النقل للمرضى الذين يحتاجون إلى
-                                        زيارات متابعة بعد العملية الجراحية أو
-                                        المواعيد الأخرى وذلك بالتنسيق من خلال
-                                        الفريق المختص بالترتيبات اللازمة، مع
-                                        إعطاء الأولوية للراحة والأمان والالتزام
-                                        بالمواعيد.</p>
-                                </div>
-                                <div class="medical-reason-body">
-                                    <h3 class="bold main-font">التسهيلات
-                                        والمساعدة</h3>
-                                    <p>في مستشفيات الوطنى للعيون، نسعى جاهدين
-                                        لخلق بيئة تساعد على الشفاء والهدوء. وذلك
-                                        لتلبية احتياجات المرضى وتوفير الراحة
-                                        طوال رحلتهم. تشمل الميزات الرئيسية :</p>
+                                    <h3
+                                        class="bold main-font pb-2">١) تجربة خالية من المتاعب:</h3>
+                                        <div class="more-info ps-3">
+                                            <h4
+                                            class="bold primary-co-2">. الإقامة</h4>
+                                        <p>نحن ندرك أهمية الإقامة المريحة للمرضى ومرافقيهم. تتعاون مستشفيات وطني للعيون مع فنادق ومنتجعات مرموقة في المنطقة المجاورة، وتقدم مجموعة من الخيارات لتناسب مختلف التفضيلات والميزانيات. تتمتع هذه المنشآت بموقع مريح وتوفر بيئة هادئة تساعد على الاسترخاء والتعافي. الفنادق هي <strong>JW Marriot</strong> و <strong>Renaissance</strong> في القاهرة وMarriot في الغردقة. يمكن لفريقنا المتفاني مساعدتك في عمل حجوزات وضمان تلقي المرضى أسعار خاصة وامتيازات خلال إقامتهم.
+                                        </p>
 
-                                    <div class="reasons-details-body row">
-                                        <div
-                                            class="reasons-details col-md-4 col-sm-6 col-xs-12">
-                                            <div class="reasons-details-text">
-                                                <h1 class="bold main-font">١</h1>
-                                                <span style="color: black;">المعدات
-                                                    التشخيصية الجراحية المتقدمة</span>
-                                                <p>نستثمر في أحدث التقنيات
-                                                    والمعدات لضمان تشخيصات دقيقة
-                                                    وإجراء عمليات جراحية دقيقة</p>
-                                            </div>
+                                        <div class="medical-reason-body">
+                                            <h4
+                                                class="bold primary-co-2">. المواصلات</h4>
+                                            <p>تهدف مستشفيات وطني للعيون إلى جعل الترتيبات السفر مريحة قدر الإمكان للمرضى القادمين للعلاج. نقدم المساعدة في ترتيبات نقل المطار، مما يضمن الانتقال السلس من المطار إلى المستشفيات أو الإقامة المختارة. بالإضافة إلى ذلك، نقدم خدمات النقل للمرضى الذين يحتاجون إلى زيارات متابعة بعد العمليات الجراحية أو مواعيد أخرى ذات صلة. يقوم فريقنا بتنسيق هذه الترتيبات، مع الأخذ في الاعتبار الراحة والسلامة والانتظام.</p>
                                         </div>
-                                        <div
-                                            class="reasons-details col-md-4 col-sm-6 col-xs-12">
-                                            <div class="reasons-details-text">
-                                                <h1 class="bold main-font">٢</h1>
-                                                <span style="color: black;">غرف
-                                                    انتظار مريحة</span>
-                                                <p>غرف انتظارنا مصممة لتوفير
-                                                    أجواء هادئة، مع مقاعد مريحة
-                                                    وديكور هادئ وضوء طبيعي وافر.
-                                                </p>
-                                            </div>
+                                        <div class="medical-reason-body">
+                                            <h4 class="bold primary-co-2">. جميع الخدمات في مكان واحد</h4>
+                                            <p>تم تصميم مستشفيات وطني للعيون لتلبية جميع احتياجاتك الطبية بكفاءة وسلاسة. من خلال نهجنا المتكامل، يمكنك الوصول إلى فحوصات العين الشاملة، والتحقيقات التشخيصية، والإجراءات الجراحية، وخدمات الصيدلة، واختبارات المختبر، واستشارات البصريات، وحتى الحصول على عدسات الاتصال، كل ذلك في نفس المكان.</p>
                                         </div>
 
-                                        <div
-                                            class="reasons-details col-md-4 col-sm-6 col-xs-12">
-                                            <div class="reasons-details-text">
-                                                <h1 class="bold main-font">٣</h1>
-                                                <span style="color: black;">موظفون
-                                                    متعددو اللغات</span>
-                                                <p>لاستيعاب المرضى الدوليين،
-                                                    يتقن أعضاء فريق عملنا اللغات
-                                                    المتعددة، مما يضمن التواصل
-                                                    الفعال والرعاية الشخصية.</p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="reasons-details col-md-4 col-sm-6 col-xs-12">
-                                            <div class="reasons-details-text">
-                                                <h1 class="bold main-font">٤</h1>
-                                                <span style="color: black;">غرف
-                                                    تعافي مخصصة</span>
-                                                <p>نوفر مناطق تعافي متخصصة حيث
-                                                    يمكن للمرضى الاسترخاء
-                                                    والتعافي بعد إجراءاتهم، مما
-                                                    يضمن الخصوصية والراحة.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="reasons-details col-md-4 col-sm-6 col-xs-12">
-                                            <div class="reasons-details-text">
-                                                <h1 class="bold main-font">٥</h1>
-                                                <span style="color: black;">خدمات
-                                                    دعم المرضى</span>
-                                                <p>يقدم فريق منسقي المرضى
-                                                    المتفاني لدينا المساعدة في
-                                                    جدولة المواعيد وتنسيق
-                                                    السجلات الطبية وغيرها من
-                                                    الاحتياجات اللوجستية، مما
-                                                    يضمن تجربة سلسة للمرضى.</p>
-                                            </div>
-                                        </div>
                                     </div>
+
+                                        </div>
+    
+
+                                <div class="medical-reason-body">
+                                    <h3
+                                    class="bold main-font pb-2">٢) احتراف الأطباء:</h3>
+                                    <p>في مستشفياتنا العيون، يعد الاحتراف ركيزة ممارسة أطباءنا. يتكون فريقنا من أطباء عيون ذوي مهارات عالية ملتزمون بتقدية رعاية استثنائية بمهنية لا تتزعزع وتعاطف.</p>
+                                </div>
+                                <div class="medical-reason-body">
+                                    <h3
+                                    class="bold main-font pb-2">٣) تكنولوجيا حديثة:</h3>
+                                    <p>نستثمر باستمرار في أحدث المعدات والتكنولوجيا لضمان أن يتاح لمرضانا الوصول إلى أحدث العلاجات الطبية المتاحة. كما نحصل على شهادة من مركز التميز لامتلاكنا أحدث المعدات.</p>
+                                </div>
+                                <div class="medical-reason-body">
+                                    <h3
+                                    class="bold main-font pb-2">٤) أسعار مناسبة:</h3>
+                                    <p>نقدم أسعارًا تنافسية ومعقولة دون التنازل عن مستوى الرعاية.</p>
+                                </div>
+                                <div class="medical-reason-body">
+                                    <h3
+                                    class="bold main-font pb-2">٥) خيارات دفع مرنة:</h3>
+                                    <p>نقدم طرق دفع مريحة بما في ذلك بطاقات الائتمان وبطاقات الخصم أو الدفع النقدي.</p>
+                                </div>
+                                <div class="medical-reason-body">
+                                    <h3
+                                    class="bold main-font pb-2">٦) ٢٣ عامًا من الخبرة:</h3>
+                                    <p>بتاريخ يمتد لمدة 23 عامًا، تعتبر مستشفياتنا العيون ذات تاريخ غني من تقديم رعاية لا مثيل لها وتحويل الحياة من خلال الرؤية. على مدى العقود، بقيت التزامنا بالتفوق والابتكار والرعاية المركزة على المريض ثابتة. على مر السنين، كسبنا ثقة وامتنان الملايين من المرضى الذين وثقوا بنا برؤيتهم، ورضاهم المستمر يشهد على إرثنا المستمر.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="medicalTour-gal h-gallery">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-5 col-sm-12">
-                                <h1 class="bold">معرض<br>السياحة العلاجية</h5>
-                            </div>
-                            <div class="col-lg-8 col-md-7 col-sm-12">
-                                <section class="splide" id="medical-gal-ar"
-                                    aria-label="Splide Basic HTML Example">
-                                    <div class="splide__track">
-                                        <ul class="splide__list">
-                                            <li class="splide__slide">
-                                                <div class="medical-img">
-                                                    <a class="view-img"
-                                                        href="../images/hug/hug-3.jpg">
-                                                        <img
-                                                            src="../images/hug/hug-3.jpg"
-                                                            alt="medical Tourism">
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class="medical-img">
-                                                    <a class="view-img"
-                                                        href="../images/hug/hug-4.jpg">
-                                                        <img
-                                                            src="../images/hug/hug-4.jpg"
-                                                            alt="medical Tourism">
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class="medical-img">
-                                                    <a class="view-img"
-                                                        href="../images/hug/hug-5.jpg">
-                                                        <img
-                                                            src="../images/hug/hug-5.jpg"
-                                                            alt="medical Tourism">
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class="medical-img">
-                                                    <a class="view-img"
-                                                        href="../images/hug/hug-6.jpg">
-                                                        <img
-                                                            src="../images/hug/hug-6.jpg"
-                                                            alt="medical Tourism">
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class="medical-img">
-                                                    <a class="view-img"
-                                                        href="../images/hug/hug-7.jpg">
-                                                        <img
-                                                            src="../images/hug/hug-7.jpg"
-                                                            alt="medical Tourism">
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class="medical-img">
-                                                    <a class="view-img"
-                                                        href="../images/hug/hug-8.jpg">
-                                                        <img
-                                                            src="../images/hug/hug-8.jpg"
-                                                            alt="medical Tourism">
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class="medical-img">
-                                                    <a class="view-img"
-                                                        href="../images/hug/hug-9.jpg">
-                                                        <img
-                                                            src="../images/hug/hug-9.jpg"
-                                                            alt="medical Tourism">
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class="medical-img">
-                                                    <a class="view-img"
-                                                        href="../images/hug/hug-10.jpg">
-                                                        <img
-                                                            src="../images/hug/hug-10.jpg"
-                                                            alt="medical Tourism">
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class="medical-img">
-                                                    <a class="view-img"
-                                                        href="../images/hug/hug-11.jpg">
-                                                        <img
-                                                            src="../images/hug/hug-11.jpg"
-                                                            alt="medical Tourism">
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="splide__slide">
-                                                <div class="medical-img">
-                                                    <a class="view-img"
-                                                        href="../images/hug/hug-12.jpg">
-                                                        <img
-                                                            src="../images/hug/hug-12.jpg"
-                                                            alt="medical Tourism">
-                                                    </a>
-                                                </div>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
@@ -859,10 +954,10 @@
                             <div class="col-md-6 col-sm-12 mb-5">
                                 <a
                                     href="tel:01240016112">
-                                    <img src="../images/icons/hotline.png"
+                                    <img src="../images/icons/whatsapp.png"
                                         alt="whatsapp">
                                     <h3>
-                                        تليفون او واتساب
+                                       واتساب
                                     </h3>
                                 </a>
                             </div>

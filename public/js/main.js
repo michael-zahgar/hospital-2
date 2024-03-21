@@ -356,6 +356,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }).mount();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#medical-services', {
+    perPage: 3,
+    gap: 30,
+    perMove: 1,
+    arrows: true,
+    pagination: false,
+    breakpoints: {
+      1200: {
+        perPage: 2,
+      },
+      768: {
+        perPage: 1,
+      }
+    },
+
+  }).mount();
+});
 // document.addEventListener('DOMContentLoaded', function () {
 //   new Splide('#splide-p5', {
 //     direction: 'ttb',
