@@ -122,6 +122,90 @@
             .medical-tour-servs .splide__arrow svg{
                 fill: white;
             }
+
+            .chapter .chapter-header h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.chapter .box {
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.chapter .rounded {
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.chapter .box h3 {
+    font-weight: 800;
+    font-size: 30px;
+    padding: 15px 5px;
+}
+
+.chapter .chapter-nav {
+    position: sticky;
+    top: 100px;
+}
+
+.chapter .chapter-nav a {
+    transition: 0.3s;
+    position: relative;
+    color: #213262;
+}
+
+.chapter .chapter-nav a:hover {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.chapter .chapter-nav a.active {
+    margin-right: 20px;
+}
+
+.chapter .chapter-nav a.active::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    right: -34px;
+    border-bottom: 4px solid #13c5dd;
+}
+
+.chapter .chapter-nav a.active {
+    color: #13c5dd;
+}
+
+.bg-color {
+    background-color: #f5f4fb;
+}
+.border-radius-1 {
+border-radius: 0 25px 0 25px;
+}
+.border-radius-2{
+    border-radius: 25px 0 25px 0;
+}
+.medicalTour-gal h3{
+    font-size: 45px;
+    line-height: 50px;
+    padding-bottom:15px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    .med-reason .chapter-nav{
+        padding-bottom: 20px;
+    }
+    .chapter .box h3 {
+        font-size: 25px;
+    }
+}
+
+    </style>
     </style>
 
     </head>
@@ -477,38 +561,31 @@
                             <span class="trans-title">خدماتنا</span>
                         </div>
                         <div class="row">
-                            <section class="splide" id="medical-servicesAr"
-                            aria-label="Splide Basic HTML Example">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                     
-                                        <div class="home-g">
+                            <div class="col-lg-4">
+                                <div class="home-g">
 
-                                            <div class="img-inner">
-                                                <a href="./phacoservices.html">
-                                                    <img class="main-img-inner"
-                                                        src="../images/service/phaco surgery.webp"
-                                                        alt="clinics">
-                                                </a>
-                                            </div>
-        
-                                            <div class="service-inner">
-                                                <h3 class="main-font">خدمات فاكو</h3>
-                                                <p>استمتع بخدمات فاكو عالية الجودة خلال جولتك الطبية في مستشفانا الرائدة.
-                                                </p>
-                                                <a href="./phacoservices.html">
-                                                    اعرف المزيد
-                                                    <i
-                                                        class="fa-solid fa-angles-left"></i>
-                                                </a>
-                                                <h1 class="s-inner-num">١</h1>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    <div class="img-inner">
+                                        <a href="./phacoservices.html">
+                                            <img class="main-img-inner"
+                                                src="../images/service/phaco surgery.webp"
+                                                alt="clinics">
+                                        </a>
+                                    </div>
 
-                                    <li class="splide__slide">
-                                     
+                                    <div class="service-inner">
+                                        <h3 class="main-font">خدمات فاكو</h3>
+                                        <p>استمتع بخدمات فاكو عالية الجودة خلال جولتك الطبية في مستشفانا الرائدة.
+                                        </p>
+                                        <a href="./phacoservices.html">
+                                            اعرف المزيد
+                                            <i
+                                                class="fa-solid fa-angles-left"></i>
+                                        </a>
+                                        <h1 class="s-inner-num">١</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
                                 <div class="home-g">
 
                                     <div class="img-inner">
@@ -533,86 +610,80 @@
                                     </div>
                                 </div>
         
-                                    </li>
-
-                                    <li class="splide__slide">
-                                        <div class="home-g">
-
-                                            <div class="img-inner">
-                                                <a href="#">
-                                                    <img class="main-img-inner"
-                                                        src="../images/service/Blepharoplasty.png"
-                                                        alt="clinics">
-                                                </a>
-                                            </div>
-        
-                                            <div class="service-inner">
-                                                <h3 class="main-font">خدمات جراحة تجميل الجفن</h3>
-                                                <p>في مستشفيات وطني للعيون، نحن نفهم رغبتك في إعادة إحياء مظهرك واستعادة الشباب لعينيك.
-                                                </p>
-                                                <a href="./en/clinics.html">
-                                                    اعرف المزيد
-                                                    <i
-                                                        class="fa-solid fa-angles-left"></i>
-                                                </a>
-                                                <h1 class="s-inner-num">٣</h1>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="splide__slide">
-                                        <div class="home-g">
-
-                                            <div class="img-inner">
-                                                <a href="#">
-                                                    <img class="main-img-inner"
-                                                        src="../images/clinics/cornea.webp"
-                                                        alt="clinics">
-                                                </a>
-                                            </div>
-        
-                                            <div class="service-inner">
-                                                <h3 class="main-font">خدمات الشبكية</h3>
-                                                <p>في مستشفيات وطني للعيون، نحن ندرك أهمية البصر. نحن فخورون بكوننا وجهة رائدة للسياحة الطبية، حيث نوفر للمرضى رعاية استثنائية بتكاليف تنافسية.
-                                                </p>
-                                                <a href="./en/clinics.html">
-                                                    اعرف المزيد
-                                                    <i
-                                                        class="fa-solid fa-angles-left"></i>
-                                                </a>
-                                                <h1 class="s-inner-num">٤</h1>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="splide__slide">
-                                        <div class="home-g">
-
-                                            <div class="img-inner">
-                                                <a href="#">
-                                                    <img class="main-img-inner"
-                                                        src="../images/service/icl services.png"
-                                                        alt="clinics">
-                                                </a>
-                                            </div>
-        
-                                            <div class="service-inner">
-                                                <h3 class="main-font">خدمات ICL</h3>
-                                                <p>مرحبًا بكم في مستشفيات وطني للعيون، حيث نتخصص في إجراءات رعاية العيون المتطورة، بما في ذلك جراحة زرع عدسات الكولامر القابلة للزرع (ICL).
-                                                </p>
-                                                <a href="./en/clinics.html">
-                                                    اعرف المزيد
-                                                    <i
-                                                        class="fa-solid fa-angles-left"></i>
-                                                </a>
-                                                <h1 class="s-inner-num">٥</h1>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
                             </div>
-                        </section>
+                            <div class="col-lg-4">
+                                <div class="home-g">
 
+                                    <div class="img-inner">
+                                        <a href="#">
+                                            <img class="main-img-inner"
+                                                src="../images/service/Blepharoplasty.png"
+                                                alt="clinics">
+                                        </a>
+                                    </div>
+
+                                    <div class="service-inner">
+                                        <h3 class="main-font">خدمات جراحة تجميل الجفن</h3>
+                                        <p>في مستشفيات وطني للعيون، نحن نفهم رغبتك في إعادة إحياء مظهرك واستعادة الشباب لعينيك.
+                                        </p>
+                                        <a href="./en/clinics.html">
+                                            اعرف المزيد
+                                            <i
+                                                class="fa-solid fa-angles-left"></i>
+                                        </a>
+                                        <h1 class="s-inner-num">٣</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="home-g">
+
+                                    <div class="img-inner">
+                                        <a href="#">
+                                            <img class="main-img-inner"
+                                                src="../images/clinics/cornea.webp"
+                                                alt="clinics">
+                                        </a>
+                                    </div>
+
+                                    <div class="service-inner">
+                                        <h3 class="main-font">خدمات الشبكية</h3>
+                                        <p>في مستشفيات وطني للعيون، نحن ندرك أهمية البصر. نحن فخورون بكوننا وجهة رائدة للسياحة الطبية، حيث نوفر للمرضى رعاية استثنائية بتكاليف تنافسية.
+                                        </p>
+                                        <a href="./en/clinics.html">
+                                            اعرف المزيد
+                                            <i
+                                                class="fa-solid fa-angles-left"></i>
+                                        </a>
+                                        <h1 class="s-inner-num">٤</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="home-g">
+
+                                    <div class="img-inner">
+                                        <a href="#">
+                                            <img class="main-img-inner"
+                                                src="../images/service/icl services.png"
+                                                alt="clinics">
+                                        </a>
+                                    </div>
+
+                                    <div class="service-inner">
+                                        <h3 class="main-font">خدمات ICL</h3>
+                                        <p>مرحبًا بكم في مستشفيات وطني للعيون، حيث نتخصص في إجراءات رعاية العيون المتطورة، بما في ذلك جراحة زرع عدسات الكولامر القابلة للزرع (ICL).
+                                        </p>
+                                        <a href="./en/clinics.html">
+                                            اعرف المزيد
+                                            <i
+                                                class="fa-solid fa-angles-left"></i>
+                                        </a>
+                                        <h1 class="s-inner-num">٥</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4"></div>
 
                         </div>
                     </div>
@@ -621,8 +692,9 @@
                 <div class="medicalTour-gal h-gallery py-5">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-4 col-md-5 col-sm-12">
-                                <h1 class="bold">معرض<br>السياحة العلاجية</h5>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <h3 class="trans-title bold" style="opacity: 1;">معالم الجذب <br>
+                                    في مصر</h3>
                             </div>
                             <div class="col-lg-8 col-md-7 col-sm-12">
                                 <section class="splide" id="medical-gal-ar"
@@ -878,66 +950,80 @@
                                 </div>
                             </div>
                         </div>
-
-                              <div class="medical-reason" style="text-align: right;">
-                            <div
-                                class=" reason-b-h  text-uppercase mb-3 bold hidden show"
-                                style="text-align: center;">
-                                <span class="trans-title mt-4">لماذا تختار الوطنى؟</span>
-                            </div>
-
-                            <div class="row" style="color: gray;">
-                                <div class="medical-reason-body">
-                                    <h3
-                                        class="bold main-font pb-2">١) تجربة خالية من المتاعب:</h3>
-                                        <div class="more-info ps-3">
-                                            <h4
-                                            class="bold primary-co-2">. الإقامة</h4>
-                                        <p>نحن ندرك أهمية الإقامة المريحة للمرضى ومرافقيهم. تتعاون مستشفيات وطني للعيون مع فنادق ومنتجعات مرموقة في المنطقة المجاورة، وتقدم مجموعة من الخيارات لتناسب مختلف التفضيلات والميزانيات. تتمتع هذه المنشآت بموقع مريح وتوفر بيئة هادئة تساعد على الاسترخاء والتعافي. الفنادق هي <strong>JW Marriot</strong> و <strong>Renaissance</strong> في القاهرة وMarriot في الغردقة. يمكن لفريقنا المتفاني مساعدتك في عمل حجوزات وضمان تلقي المرضى أسعار خاصة وامتيازات خلال إقامتهم.
-                                        </p>
-
-                                        <div class="medical-reason-body">
-                                            <h4
-                                                class="bold primary-co-2">. المواصلات</h4>
-                                            <p>تهدف مستشفيات وطني للعيون إلى جعل الترتيبات السفر مريحة قدر الإمكان للمرضى القادمين للعلاج. نقدم المساعدة في ترتيبات نقل المطار، مما يضمن الانتقال السلس من المطار إلى المستشفيات أو الإقامة المختارة. بالإضافة إلى ذلك، نقدم خدمات النقل للمرضى الذين يحتاجون إلى زيارات متابعة بعد العمليات الجراحية أو مواعيد أخرى ذات صلة. يقوم فريقنا بتنسيق هذه الترتيبات، مع الأخذ في الاعتبار الراحة والسلامة والانتظام.</p>
+              
+                        <div class="py-5 med-reason chapter">
+                            <div class="container">
+                                <div class="chapter-header text-center mb-5">
+                                    <h2 class="trans-title" style="opacity: 1;">لماذا تختار الوطنى؟</h2>
+                                </div>
+                
+                                <div class="row text-end">
+                                    <div class="col-md-4">
+                                        <div id="list-example"
+                                            class="chapter-nav d-flex flex-column gap-2
+                                            simple-list-example-scrollspy
+                                            ">
+                                            <a class="rounded" href="#hassle">تجربة خالية من المتاعب</a>
+                                            <a class="rounded" href="#doctors">احتراف الأطباء</a>
+                                            <a class="rounded" href="#latestTechnology">تكنولوجيا حديث</a>
+                                            <a class="rounded" href="#suitablePrices">أسعار مناسبة</a>
+                                            <a class="rounded" href="#payment">خيارات دفع مرنة</a>
+                                            <a class="rounded" href="#experience">سنوات خبرة</a>
                                         </div>
-                                        <div class="medical-reason-body">
-                                            <h4 class="bold primary-co-2">. جميع الخدمات في مكان واحد</h4>
-                                            <p>تم تصميم مستشفيات وطني للعيون لتلبية جميع احتياجاتك الطبية بكفاءة وسلاسة. من خلال نهجنا المتكامل، يمكنك الوصول إلى فحوصات العين الشاملة، والتحقيقات التشخيصية، والإجراءات الجراحية، وخدمات الصيدلة، واختبارات المختبر، واستشارات البصريات، وحتى الحصول على عدسات الاتصال، كل ذلك في نفس المكان.</p>
-                                        </div>
-
                                     </div>
+                                    <div class="col-md-8">
+                                        <div data-bs-spy="scroll"
+                                        data-bs-target="#simple-list-example"
+                                        data-bs-offset="0"
+                                        data-offset="110"
+                                        tabindex="0"
+                                        >
+                
+                                            <div class="box bg-color border-radius-1" id="hassle">
+                                                <h3 class="text-head main-font">تجربة خالية من المتاعب</h3>
+                                                <div class="hassle-info">
+                                                    <h4
+                                                    class="bold primary-co-2">. الإقامة</h4>
+                                                <p>الإقامة: نحن ندرك أهمية الإقامة المريحة للمرضى ومرافقيهم. تتعاون مستشفيات وطني للعيون مع فنادق ومنتجعات مرموقة في المنطقة المجاورة، وتقدم مجموعة من الخيارات لتناسب مختلف التفضيلات والميزانيات. تتمتع هذه المنشآت بموقع مريح وتوفر بيئة هادئة تساعد على الاسترخاء والتعافي. الفنادق هي <strong>JW Marriot</strong> و <strong>Renaissance</strong> في القاهرة وMarriot في الغردقة. يمكن لفريقنا المتفاني مساعدتك في عمل حجوزات وضمان تلقي المرضى أسعار خاصة وامتيازات خلال إقامتهم.
+                                                </p>
+                                                    <h4
+                                                    class="bold primary-co-2">. المواصلات</h4>
+                                                    <p>تهدف مستشفيات وطني للعيون إلى جعل الترتيبات السفر مريحة قدر الإمكان للمرضى القادمين للعلاج. نقدم المساعدة في ترتيبات نقل المطار، مما يضمن الانتقال السلس من المطار إلى المستشفيات أو الإقامة المختارة. بالإضافة إلى ذلك، نقدم خدمات النقل للمرضى الذين يحتاجون إلى زيارات متابعة بعد العمليات الجراحية أو مواعيد أخرى ذات صلة. يقوم فريقنا بتنسيق هذه الترتيبات، مع الأخذ في الاعتبار الراحة والسلامة والانتظام.</p>
+    
+                                                    <h4 class="bold primary-co-2">. جميع الخدمات في مكان واحد</h4>
+                                                    <p>تم تصميم مستشفيات وطني للعيون لتلبية جميع احتياجاتك الطبية بكفاءة وسلاسة. من خلال نهجنا المتكامل، يمكنك الوصول إلى فحوصات العين الشاملة، والتحقيقات التشخيصية، والإجراءات الجراحية، وخدمات الصيدلة، واختبارات المختبر، واستشارات البصريات، وحتى الحصول على عدسات الاتصال، كل ذلك في نفس المكان.</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="box bg-color border-radius-2" id="doctors">
+                                                <h3 class="text-head main-font">احتراف الأطباء</h3>
+                                                <p class="text-color">في مستشفياتنا العيون، يعد الاحتراف ركيزة ممارسة أطباءنا. يتكون فريقنا من أطباء عيون ذوي مهارات عالية ملتزمون بتقدية رعاية استثنائية بمهنية لا تتزعزع وتعاطف.</p>
+                                            </div>
+                                            <div class="box bg-color border-radius-1" id="latestTechnology">
+                                                <h3 class="text-head main-font">تكنولوجيا حديثة</h3>
+                                                <p class="text-color">نستثمر باستمرار في أحدث المعدات والتكنولوجيا لضمان أن يتاح لمرضانا الوصول إلى أحدث العلاجات الطبية المتاحة. كما نحصل على شهادة من مركز التميز لامتلاكنا أحدث المعدات.</p>
+                                            </div>
+                                            <div class="box bg-color border-radius-2" id="suitablePrices">
+                                                <h3 class="text-head main-font">أسعار مناسبة</h3>
+                                                <p class="text-color">نقدم أسعارًا تنافسية ومعقولة دون التنازل عن مستوى الرعاية.</p>
+                                            </div>
+
+                                            <div class="box bg-color border-radius-1" id="payment">
+                                                <h3 class="text-head main-font">خيارات دفع مرنة</h3>
+                                                <p class="text-color">نقدم طرق دفع مريحة بما في ذلك بطاقات الائتمان وبطاقات الخصم أو الدفع النقدي.</p>
+                                            </div>
+
+                                            <div class="box bg-color border-radius-2" id="experience">
+                                                <h3 class="text-head main-font">سنوات خبرة</h3>
+                                                <p class="text-color">بتاريخ يمتد لاكثر من 20 عامًا، تعتبر مستشفياتنا العيون ذات تاريخ غني من تقديم رعاية لا مثيل لها وتحويل الحياة من خلال الرؤية. على مدى العقود، بقيت التزامنا بالتفوق والابتكار والرعاية المركزة على المريض ثابتة. على مر السنين، كسبنا ثقة وامتنان الملايين من المرضى الذين وثقوا بنا برؤيتهم، ورضاهم المستمر يشهد على إرثنا المستمر.</p>
+                                            </div>
 
                                         </div>
-    
-
-                                <div class="medical-reason-body">
-                                    <h3
-                                    class="bold main-font pb-2">٢) احتراف الأطباء:</h3>
-                                    <p>في مستشفياتنا العيون، يعد الاحتراف ركيزة ممارسة أطباءنا. يتكون فريقنا من أطباء عيون ذوي مهارات عالية ملتزمون بتقدية رعاية استثنائية بمهنية لا تتزعزع وتعاطف.</p>
-                                </div>
-                                <div class="medical-reason-body">
-                                    <h3
-                                    class="bold main-font pb-2">٣) تكنولوجيا حديثة:</h3>
-                                    <p>نستثمر باستمرار في أحدث المعدات والتكنولوجيا لضمان أن يتاح لمرضانا الوصول إلى أحدث العلاجات الطبية المتاحة. كما نحصل على شهادة من مركز التميز لامتلاكنا أحدث المعدات.</p>
-                                </div>
-                                <div class="medical-reason-body">
-                                    <h3
-                                    class="bold main-font pb-2">٤) أسعار مناسبة:</h3>
-                                    <p>نقدم أسعارًا تنافسية ومعقولة دون التنازل عن مستوى الرعاية.</p>
-                                </div>
-                                <div class="medical-reason-body">
-                                    <h3
-                                    class="bold main-font pb-2">٥) خيارات دفع مرنة:</h3>
-                                    <p>نقدم طرق دفع مريحة بما في ذلك بطاقات الائتمان وبطاقات الخصم أو الدفع النقدي.</p>
-                                </div>
-                                <div class="medical-reason-body">
-                                    <h3
-                                    class="bold main-font pb-2">٦) ٢٣ عامًا من الخبرة:</h3>
-                                    <p>بتاريخ يمتد لمدة 23 عامًا، تعتبر مستشفياتنا العيون ذات تاريخ غني من تقديم رعاية لا مثيل لها وتحويل الحياة من خلال الرؤية. على مدى العقود، بقيت التزامنا بالتفوق والابتكار والرعاية المركزة على المريض ثابتة. على مر السنين، كسبنا ثقة وامتنان الملايين من المرضى الذين وثقوا بنا برؤيتهم، ورضاهم المستمر يشهد على إرثنا المستمر.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
