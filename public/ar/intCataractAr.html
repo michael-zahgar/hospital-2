@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!--
+========================================================================================
+================================ Crafted  by ===========================================
+========================================================================================
+========================================================================================
+============ https://www.linkedin.com/in/michael-magdy-zahgar-b9302521a/ ===============
+========================================================================================
+========================================================================================
+========================================================================================
+========================================================================================
+-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> عملية المياة البيضاء للمرضي الدوليين، | مستشفيات الوطني للعيون</title>
+    <link rel="icon" href="../images/watany-logo.jpg" style="width: 200px;" type="image/png">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Splide Extension -->
+
+    <link rel="stylesheet" href="../css/splide/splide.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+
+    <!-- Magnific Popup css file -->
+    <!-- <link rel="stylesheet" href="../vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js"> -->
+    <link rel="stylesheet" href="../vendor/Magnific-Popup-master/dist/magnific-popup.css">
+
+    <!-- carosuel css file -->
+    <link rel="stylesheet" href="../vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../vendor/owl-carousel/css/owl.theme.default.min.css">
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Custome AR CSS -->
+    <link rel="stylesheet" href="../css/rtl.css">
+    <!-- responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- responsive AR CSS -->
+    <link rel="stylesheet" href="../css/responsiveAr.css">
+
+    <style>
+        .your-options .reason-video {
+            left: auto;
+            background: none;
+            position: relative;
+            width: auto;
+            height: auto;
+            clip-path: none;
+            height: 100%;
+
+        }
+
+        .your-options .reason-video img {
+            object-fit: cover;
+            height: 100%;
+
+        }
+
+        .your-options {
+            padding: 0;
+        }
+
+        .your-options .reason-video::before {
+            background-color: transparent;
+        }
+
+        .your-options h3 {
+            color: #213262 !important;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .your-options p {
+            margin-bottom: 15px;
+        }
+
+        .your-options .option-text {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        .more-info {
+            padding: 10px;
+            border-right: 5px solid #213262;
+            border-radius: 20px;
+        }
+
+        .container .home-service-head h2,
+        .container .home-service-head p {
+            color: black;
+        }
+
+        .container .home-service-head h2 span {
+            position: relative;
+            color: var(--main-color);
+            letter-spacing: 0px;
+            font-size: 50px;
+        }
+
+        .container .home-service-head .h-s-p {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .home-service-head p {
+            font-size: 25px;
+            color: gray;
+        }
+
+        .medicalTour-prices .trans-title {
+            font-size: 30px !important;
+            opacity: 1 !important;
+            line-height: normal;
+        }
+
+        .goal-parent {
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .goal-text {
+            display: none;
+            transition: all .5s;
+        }
+
+        .goal-text img {
+            width: auto;
+        }
+
+        .first-goal {
+            display: block;
+        }
+
+        .our-goals {
+            background-color: #f2f4f5;
+        }
+
+        .our-goals .goal-btn {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 600;
+        }
+
+        .our-goals ul li span {
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .our-goals ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .our-goals ul li h4 {
+            margin-bottom: 25px !important;
+            position: relative;
+            display: inline-block;
+            width: 175px;
+            height: 170px;
+            background: #ebeced;
+            border-radius: 30px;
+            padding: 20px;
+            cursor: pointer;
+            margin: 0px 3.5px;
+            z-index: 1;
+        }
+
+        .our-goals ul li h4::before,
+        .our-goals ul li.active::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 0%;
+            left: 0px;
+            top: 0px;
+            border-radius: 30px;
+            z-index: -1;
+            background-color: #213262;
+            transition: all 400ms ease;
+        }
+
+        .our-goals ul li h4.active::before {
+            height: 100% !important;
+        }
+
+        .our-goals ul li h4::after,
+        .our-goals ul li h4.active::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            transform: rotate(45deg);
+            background-color: #213262;
+            bottom: -4px;
+            left: 44%;
+            z-index: -1;
+            opacity: 0;
+            transition: all 400ms ease;
+            transition-delay: 300ms;
+        }
+
+        .our-goals ul li h4:hover::before {
+            height: 100%;
+        }
+
+        .our-goals ul li h4:hover::after,
+        .our-goals ul li h4.active::after {
+            opacity: 1;
+            bottom: -8px;
+        }
+
+        .our-goals ul li h4:hover,
+        .our-goals ul li h4.active {
+            color: white;
+        }
+
+        .medtour-head {
+            font-size: 40px;
+        }
+
+        .surg-benefits h2 {
+            display: block;
+            font-size: 40px;
+            line-height: 44px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .surg-benefits {
+            padding: 50px 0;
+        }
+
+        .surg-benefits .reason-video {
+            background: url(../images/int-patient/blepharoplasty/Blepharoplasty.png) no-repeat;
+            background-size: cover;
+        }
+
+        main {
+            display: grid;
+            place-items: center;
+
+        }
+
+        .center-item {
+            position: absolute;
+            inset: 0;
+        }
+
+        .containers {
+            display: grid;
+            place-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            --position: 50%;
+        }
+
+        .img-container {
+            max-width: 800px;
+            max-height: 90vh;
+            /* aspect-ratio: 16/9; */
+        }
+
+        .img-container .slider-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: right;
+        }
+
+        .img-container .img-before {
+            position: absolute;
+            inset: 0;
+            width: var(--position);
+        }
+
+        .slider {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+
+        .slider-line {
+            width: .2rem;
+            height: 100%;
+            background-color: #fff;
+            z-index: 10;
+            inset: 0;
+            z-index: 10;
+            right: var(--position);
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
+
+        .slider-button {
+            position: absolute;
+            background-color: #fff;
+            width: 45px;
+            height: 45px;
+            border-radius: 100vw;
+            color: black;
+            display: grid;
+            place-items: center;
+            top: 50%;
+            right: var(--position);
+            transform: translate(50%, -50%);
+            pointer-events: none;
+            z-index: 100;
+            box-shadow: 10px 10px 1px hsl(0, 50%, 2%, .5);
+        }
+
+        .line-text {
+            display: block;
+            width: 30%;
+            height: 3px;
+            background-color: #213262;
+            border-radius: 0 20px 20px 0;
+            margin-top: 5px;
+            margin: auto;
+        }
+
+        .prices .prices-serv {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .prices .cost-info {
+            display: block;
+            padding-top: 10px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .lasik-prices .prices-serv {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        @media screen and (max-width: 991px) {
+            .surg-benefits .reason-video {
+                height: 350px;
+                margin-bottom: 20px;
+            }
+
+            .surg-benefits {
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .home-service-head h2 {
+                font-size: 25px !important;
+            }
+
+            .home-service-head h2 span {
+                font-size: 30px !important;
+            }
+
+            .phacoservices-details .row-phaco-1 {
+                flex-direction: column-reverse;
+            }
+
+            .phacoservices-details .row-process .process-shape {
+                background: none;
+            }
+
+            .medtour-head {
+                font-size: 35px;
+            }
+        }
+
+        @media screen and (max-width:533px) {
+            .home-service-head h2 span {
+                font-size: 23px !important;
+                letter-spacing: 0 !important;
+            }
+
+            .home-service-head h2 {
+                font-size: 20px !important;
+            }
+
+            .medtour-head {
+                font-size: 30px;
+            }
+
+            .surg-benefits h2 {
+                font-size: 30px;
+                line-height: 33px;
+            }
+        }
+
+        @media screen and (max-width:412px) {
+            .our-goals ul {
+                display: flex;
+                justify-content: normal;
+                align-items: normal;
+                margin: 0;
+                padding: 0;
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+            }
+
+            .our-goals ul li h4 {
+                width: 150px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="fixed-social">
+        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="Whats App">
+            <a class="btn" href="https://wa.link/sdkf7t" target="_blank" class="fa fa-brands fa-whatsapp" type="button"
+                disabled><i class="fa fa-brands fa-whatsapp"></i></a>
+        </span>
+        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+            data-bs-content="Book Now">
+            <a class="btn" href="#medicalForm" type="button" disabled><i class="fa-regular fa-calendar-plus"> </i></a>
+        </span>
+    </section>
+    <section class="scroll-up">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </section>
+
+    <section class="top-header">
+        <div class="container-fluid border-bottom">
+            <div class="row">
+                <div class="col-12" style="display: flex; justify-content: space-between;">
+
+                    <div class="t-head-left">
+                        <a target="_blank" href="https://www.facebook.com/watanyeyehospitals?mibextid=nW3QTL"
+                            class="fa fa-brands fa-facebook"></a>
+                        <a target="_blank" href="https://twitter.com/Watany_Eye" class="fa fa-brands fa-twitter"></a>
+                        <a target=”_blank” href="https://instagram.com/watanyeyehospitals?igshid=NjIwNzIyMDk2Mg=="></a>
+                        <a target=”_blank” href="https://www.youtube.com/@watanyeyehospitals"
+                            class="fa fa-brands fa-youtube"></a>
+                        <a target="_blank" href="http://www.threads.net/@watanyeyehospitals"
+                            class="fa fa-brands fa-threads"></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/al-watany-eye-hospital/"
+                            class="fa fa-brands fa-linkedin"></a>
+                        <div style="border-left: 1px solid #b4b4b5" class="callus">
+                            <i class="white fa-solid fa-phone-flip" style="padding-left: 5px;"></i>
+                            <a href="tel:16112">١٦١١٢</a>
+                        </div>
+
+                    </div>
+
+                    <div class>
+                        <div class="top-header-right">
+                            <a href="../en/intCataract.html" class="main-font">English</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <nav class="parent-1 main-nav navbar  navbar-expand-lg sticky-top">
+
+        <div class="container">
+            <a href="./index.html">
+                <img src="../images/logo-trans2.png" alt="watany-eye-hospitals" style="width: 125px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <i class="fa-sharp fa-solid fa-bars main-font"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img src="../images/logo-trans2.png" alt="watany-eye-hospitals">
+                    <i type="button" class="fa-solid fa-xmark white" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link links" aria-current="page" href="./index.html">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" href="./aboutUsAr.html">من نحن</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link links" href="./doctorsAr.html">أطبائنا</a>
+                        </li>
+
+                        <li class="nav-item dropdown hover-li-main-2">
+                            <a class="nav-link links dropdown-toggle" data-bs-auto-close="outside" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                خدماتنا
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li class="dropstart sub-drop">
+                                    <a class="dropdown-item" href="./clinicsAr.html">عيادتنا</a>
+                                    <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
+                                </li>
+
+                                <li class="dropstart sub-drop">
+                                    <a class="dropdown-item" href="./investigationsAr.html">الفحوصات</a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="./operattionsAr.html">الجراحات</a></li>
+                                <li><a class="dropdown-item" href="./contactLensAr.html">العدسات
+                                        اللاصقة</a></li>
+                                <li><a class="dropdown-item" href="./laboratoryAr.htmll">المعمل</a></li>
+                                <li><a class="dropdown-item" href="./opticsAr.html">النظارات</a></li>
+                                <li><a class="dropdown-item" href="./pharmacyAr.html">الصيدلية</a></a></li>
+                                <li><a class="dropdown-item" href="./medicalTourismAr.html">السياحة
+                                        العلاجية</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <!-- Drop-Down Pc Version -->
+                        <li class="nav-item nav-dropdown hover-li-main">
+                            <a class="nav-link links dropdown-toggle" data-bs-auto-close="outside" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                خدماتنا
+                            </a>
+                            <ul class="hover-list">
+
+                                <li class="dropstart sub-drop">
+                                    <a class="nav-link" href="./clinicsAr.html">عيادتنا</a>
+                                </li>
+
+                                <li class="dropstart sub-drop">
+                                    <a class="nav-link" href="./investigationsAr.html">الفحوصات</a>
+                                </li>
+
+                                <li><a class="nav-link" href="./operattionsAr.html">الجراحات</a></li>
+                                <li><a class="nav-link" href="./contactLensAr.html">العدسات
+                                        اللاصقة</a></li>
+                                <li><a class="nav-link" href="./laboratoryAr.html">المعمل</a></li>
+                                <li><a class="nav-link" href="./opticsAr.html">النظارات</a></li>
+                                <li><a class="nav-link" href="./pharmacyAr.html">الصيدلية</a></a></li>
+                                <li style="border-bottom: none;"><a class="nav-link"
+                                        href="./medicalTourismAr.html">السياحة
+                                        العلاجية</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item nav-dropdown hover-li-main">
+                            <a class="nav-link links dropdown-toggle" data-bs-auto-close="outside" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                مركز الوطني للأبحاث و التنمية
+                            </a>
+                            <ul class="hover-list wrdc-list">
+
+                                <li>
+                                    <a class="nav-link" href="./wrdc.html">عن المركز
+                                        الوطني للأبحاث و التنمية</a>
+                                </li>
+                                <li style="border-bottom: none;">
+                                    <a class="nav-link" href="https://alwatany-conferences.com/">المؤتمر
+                                        الوطني السنوي للعيون</a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <!-- Drop-Down Mobile Version -->
+                        <li class="nav-item dropdown hover-li-main-2">
+                            <a class="nav-link links dropdown-toggle" data-bs-auto-close="outside" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                مركز الوطني للأبحاث و التنمية
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li class="dropstart sub-drop">
+                                    <a class="nav-link" href="./wrdc.html">عن المركز
+                                        الوطني للأبحاث و التنمية</a>
+                                    <!-- <a class="active" data-bs-toggle="dropdown" href="./clinics.html">Clinics</a> -->
+                                </li>
+
+                                <li class="dropstart sub-drop">
+                                    <a class="nav-link" href="https://alwatany-conferences.com/">المؤتمر
+                                        الوطني السنوي للعيون</a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link links" href="./bookingform.html">أحجز
+                                الان</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" href="./contactusAr.html">تواصل
+                                معنا</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header clinic-header">
+        <div class="doctors-bg"></div>
+        <div class="container">
+            <h1 class="text-uppercase">جراحة المياة البيضاء</h1>
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">الصفحة
+                            الرئيسية ></a></li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <a href="./medicalTourismAr.html">المرضى الدوليين</a></li>
+                    </li> 
+                    <li class="breadcrumb-item active" aria-current="page">> المياة البيضاء</li> 
+                </ol>
+            </nav>
+        </div>
+
+    </section>
+
+    <section class="phacoservices-details py-5">
+        <div class="container">
+            <div class="home-service-head pt-5">
+                <div class="col-sm-12 m-auto text-center">
+                    <h2 class="bold text-uppercase pb-3 " style="font-size: 38px;"><span style="font-size: 50px;">جراحة
+                            الكاتاراكت</span> <br> مع العدسات الاصطناعية المتميزة</h2>
+                </div>
+            </div>
+            <div class="row row-phaco-1 text-center">
+                <div class="col-sm-12">
+                    <p>جراحة الكاتاراكت هي إجراء روتيني لإزالة العدسة الطبيعية المعتمة للعين (الكاتاراكت) واستبدالها
+                        بعدسة اصطناعية (عدسة داخل العين، IOL). العدسات الاصطناعية العادية تصحح عادة الرؤية عن بُعد فقط،
+                        مما يتطلب من المرضى الاعتماد على النظارات أو العدسات اللاصقة للقراءة والرؤية القريبة. ومع ذلك،
+                        توفر العدسات الاصطناعية المتميزة إمكانية الاستقلالية عن النظارات من خلال تصحيح الرؤية في مسافات
+                        متعددة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="your-options reasons py-3 mt-0" style="position: relative;">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="reason-text">
+
+                        <div class="reason-b-h text-center">
+                            <h2 class="text-black medtour-head bold my-5">أنواع <span class="main-font">العدسات
+                                    الاصطناعية</span> المتميزة</h2>
+                            <p class="bold pb-4">العدسات الاصطناعية المتميزة توفر مجموعة من الخيارات التي تتجاوز العدسات
+                                المونوفوكال القياسية، مما يوفر للمرضى فوائد إضافية مثل الاعتماد المخفف على النظارات
+                                لمسافات مختلفة. فيما يلي أنواع العدسات الاصطناعية المتميزة التي تستخدم عادة في جراحة
+                                الكاتاراكت:</p>
+                        </div>
+
+                        <div class="reason-body">
+                            <div class="row option-row">
+
+                                <div class="col-lg-6 col-md-12 hidden show">
+                                    <div class="option-text">
+                                        <h3 class="bold main-font">العدسات التورية</h3>
+                                        <p><span class="primary-co-2">التصميم:</span>
+                                            العدسات التورية مصممة لتصحيح الأستيجماتية، وهي خطأ انكسار شائع يسببه شكل غير
+                                            منتظم للقرنية أو العدسة. تحتوي هذه العدسات على أقوى مختلفة في خطوط مختلفة من
+                                            العدسة لمواجهة الأستيجماتية وتوفير رؤية أوضح.
+                                        </p>
+                                        <p><span class="primary-co-2">الأنواع:</span>
+                                            يمكن أن تكون العدسات التورية مونوفوكال، مما يعني أنها تصحح الرؤية في مسافة
+                                            واحدة (عادة الرؤية عن بُعد)، أو يمكن أن تجمع بين تقنيات أخرى مثل التعددية أو
+                                            عمق البؤرة الموسعة لتوفير مجموعة أوسع من تصحيح الرؤية.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 hidden show">
+                                    <div class="option-text">
+                                        <h3 class="bold main-font">العدسات المتعددة البؤرة</h3>
+                                        <p><span class="primary-co-2">التصميم:</span>
+                                            العدسات المتعددة البؤرة مصممة بنقاط بؤرية متعددة، مما يتيح للمرضى رؤية واضحة
+                                            في مسافات مختلفة في نفس الوقت.
+                                        </p>
+                                        <p><span class="primary-co-2">المزايا:</span>
+                                            يمكنها توفير رؤية واضحة للأشياء القريبة والبعيدة، مما يقلل من الحاجة إلى
+                                            النظارات القراءة أو النظاراتالثنائية.
+                                        </p>
+                                        <p><span class="primary-co-2">الاعتبارات:</span>
+                                            قد يعاني بعض المرضى من ظهور هالات حول الأشياء أو وهج أو تقليل حساسية
+                                            التباين، خاصة في ظروف الإضاءة المنخفضة.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 hidden show">
+                                    <div class="option-text">
+                                        <h3 class="bold main-font">العدسات الثلاثية البؤرة</h3>
+                                        <p><span class="primary-co-2">التصميم:</span>
+                                            العدسات الثلاثية البؤرة تحتوي على ثلاثة نقاط بؤرية، مما يوفر تصحيح الرؤية
+                                            للأشياء القريبة والوسطى والبعيدة.
+                                        </p>
+                                        <p><span class="primary-co-2">المزايا:</span>
+                                            توفر مجموعة أوسع من التصحيح للرؤية مقارنةً بالعدسات المتعددة البؤرة، مما
+                                            يقلل من الاعتماد على النظارات لأنشطة مختلفة.
+                                        </p>
+                                        <p><span class="primary-co-2">الاعتبارات:</span>
+                                            على غرار العدسات المتعددة البؤرة، قد يعاني المرضى من اضطرابات بصرية مثل
+                                            الهالات أو الوهج، خاصة في ظروف الإضاءة المنخفضة.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 hidden show">
+                                    <div class="option-text">
+                                        <h3 class="bold main-font">العدسات ذات العمق الموسع للبؤرة (EDOF)</h3>
+                                        <p><span class="primary-co-2">التصميم:</span>
+                                            العدسات EDOF مصممة لتوسيع نطاق الرؤية الواضحة دون إنشاء نقاط بؤرية متميزة.
+                                            يتحقق ذلك من خلال تمديد تركيز الضوء، مما يوفر رؤية واضحة في نطاق أوسع من
+                                            المسافات.
+                                            المزايا: تهدف العدسات EDOF إلى توفير انتقال سلس بين الرؤية القريبة والوسطى
+                                            والبعيدة، مما يقلل بشكل محتمل من اضطرابات الرؤية مثل الهالات والوهج.
+                                        </p>
+                                        <p><span class="primary-co-2">المزايا:</span>
+                                            تهدف العدسات EDOF إلى توفير انتقال سلس بين الرؤية القريبة والوسطى والبعيدة،
+                                            مما يقلل بشكل محتمل من اضطرابات الرؤية مثل الهالات والوهج.
+                                        </p>
+                                        <p><span class="primary-co-2">الاعتبارات:</span>
+                                            على الرغم من أن العدسات EDOF قد توفر جودة تحسنت من الرؤية، قد يحتاج بعض
+                                            المرضى لاستخدام النظارات لبعض المهام، خاصة للعمل القريب جدًا.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 m-auto hidden show">
+                                    <div class="option-text text-center">
+                                        <h3 class="bold">ملحوظة</h3>
+                                        <p>
+                                            كل نوع من العدسات الاصطناعية المتميزة له مجموعة معينة من المزايا
+                                            والاعتبارات، والاختيار يعتمد على عوامل مثل نمط حياة المريض وتفضيلاته البصرية
+                                            وتوصية الجراح. خلال التقييم القبلي للعملية، سيناقش الجراح هذه الخيارات مع
+                                            المريض ويساعده على تحديد النوع الأنسب من العدسة الاصطناعية المتميزة وفقًا
+                                            لاحتياجاته الفردية.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="lasik-precautions our-goals pb-5">
+        <div class="container">
+            <div class="header-goals text-center py-5">
+                <h2 class="bold main-font medtour-head">الخطوات والاحتياطات</h2>
+                <p class="bold w-75 m-auto w-sm-100">تشمل جراحة المياه البيضاء مع العدسات الداخلية المتميزة عدة خطوات
+                    واحتياطات قبل وأثناء وبعد العملية لضمان النتائج المثلى. إليك نظرة عامة</p>
+            </div>
+
+            <div class="button-goals text-center">
+                <div class="contain-services" id="contain-header">
+                    <ul>
+                        <li>
+                            <h4 id="button1" class="goal-btn active">
+                                <span class="d-block"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                قبل <br> العملية
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 id="button2" class="goal-btn">
+                                <span class="d-block"><i class="fa-solid fa-bed-pulse"></i></span>
+                                اثناء<br> العملية
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 id="button3" class="goal-btn">
+                                <span class="d-block"><i class="fa-solid fa-arrows-to-eye"></i></span>
+                                بعد <br> العملية
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 id="button4" class="goal-btn d-flex justify-content-center align-items-center"
+                                style="flex-direction: column;">
+                                <span class="d-block"><i class="fa-solid fa-person-circle-question"></i></span>
+                                الاحتياطات
+                            </h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="goal-parent py-5 text-end">
+                    <div class="goal-text first-goal" id="goal-1">
+                        <div class="row align-items-center">
+                            <div class="col-md-10">
+                                <p class="bold"><span class="primary-co-2">١) التقييم الجراحي المسبق:</span>
+                                    قبل إجراء جراحة المياه البيضاء، يتم إجراء عدة تحاليل وتقييمات مسبقة لتقييم ملاءمتك
+                                    لـ IOLs المتميزة وتحديد نوع العدسة الأنسب لاحتياجاتك، بما في ذلك:
+                                </p>
+                                <p class="bold mb-0">
+                                    &#x2022;الفحص الشامل للعين
+                                </p>
+                                <p class="bold mb-0">
+                                    &#x2022;اختبار حدة الرؤية
+                                </p>
+                                <p class="bold mb-0">
+                                    &#x2022;الانكسار
+                                </p>
+                                <p class="bold mb-0">
+                                    &#x2022;قياس البيومتري: هام لحساب قوة العدسة المطلوبة لتصحيح الرؤية بشكل مثالي
+                                </p>
+                                <p class="bold mb-0">
+                                    &#x2022;قياس توبوغرافيا القرنية: توبوغرافيا القرنية ترسم منحنى سطح القرنية وتساعد في
+                                    الكشف عن عدم انتظامات مثل الأستيجماتية. هذه المعلومات مهمة لاختيار نوع العدسة
+                                    المناسبة وتقييم خطر الأخطاء الانكسارية بعد الجراحة.
+                                </p>
+                                <p class="bold mb-0">
+                                    &#x2022; قياس ضغط العين الداخلي: يساعد قياس ضغط العين الداخلي في فحص حالات مثل
+                                    الجلوكوما، التي قد تتطلب إجراءات إدارة إضافية أو تؤثر في اختيار تقنية العملية
+                                    الجراحية.
+                                </p>
+                                <p class="bold mb-0">
+                                    &#x2022;فحص عنق العين الموسع
+                                </p>
+                                <p class="bold mb-0">
+                                    &#x2022;التصوير الشبكي: في بعض الحالات، يلزم التصوير الشبكي مثل التصوير بالتراكب
+                                    الضوئي للغشاء المخاطي (OCT) لكشف أي حالات شبكية موجودة مسبقًا قد تتطلب علاجًا قبل
+                                    جراحة المياه البيضاء.
+                                </p>
+                                <p class="bold mb-2">
+                                    &#x2022;عد الخلايا البطانية: في حالة المرضى الذين يعانون من حالات موجودة مسبقًا مثل
+                                    تليف الخلايا البطانية لـ Fuchs، من المهم إجراء عد الخلايا البطانية قبل جراحة المياه
+                                    البيضاء لتقييم صحة البطانة القرنية وتقييم خطر تدهور القرنية بعد الجراحة.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٢) مناقشة الخيارات:</span>
+                                    ستتناقش مع الجراح حول أنواع مختلفة من IOLs المتميزة المتاحة، مثل العدسات المتعددة
+                                    البؤر، والعدسات القوسية، أو العدسات المتكيفة. سيساعدك الجراح على اختيار أفضل خيار
+                                    بناءً على نمط حياتك واحتياجاتك البصرية.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٣) الأدوية قبل العملية:</span>
+                                    ستتلقى تعليمات محددة بشأن الأدوية، مثل قطرات العين المستخدمة قبل الجرالة.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٤) تقييم الصحة:</span>
+                                    سيستعرض الجراح تاريخك الطبي للتأكد من أنك جاهز للجراحة ولتحديد أي مخاطر أو مضاعفات
+                                    محتملة.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٥) مراجعة الأدوية:</span>
+                                    سيستعرض الجراح الأدوية التي تتناولها حاليًا لتحديد أي أدوية قد تحتاج إلى تعديلها أو
+                                    إيقافها قبل الجراحة لتقليل خطر النزيف أو مضاعفات أخرى.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٦) ترتيب وسائل النقل:</span>
+                                    نظرًا لأنه من المرجح أن يكون لديك توسع في الحدقة وقد تعاني من رؤية غير واضحة فورًا
+                                    بعد الجراحة، من المهم ترتيب شخص ما لقيادتك إلى المنزل بعد العملية.
+                                </p>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <img src="../images/int-patient/process-1.png" alt="process">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="goal-text" id="goal-2">
+                        <div class="row align-items-center">
+                            <div class="col-md-10">
+                                <p class="bold"><span class="primary-co-2">١) التخدير:</span>
+                                    عادةً ما يتم إجراء جراحة المياه البيضاء تحت التخدير الموضعي مع تخدير خفيف. ستكون
+                                    مستيقظًا ومرتاحًا خلال العملية. في بعض الحالات، يمكن استخدام التخدير العام.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٢) إزالة المياه البيضاء:</span>
+                                    سيقوم الجراح بعمل شق صغير في القرنية واستخدام الطاقة بالموجات فوق الصوتية لتفتيت
+                                    وإزالة العدسة المعتمة (المياه البيضاء) من العين.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٣) زراعة العدسة الداخلية:</span>
+                                    بعد إزالة المياه البيضاء، سيقوم الجراح بزراعة العدسة الداخلية المتميزة من خلال الشق
+                                    نفسه. يتم الاهتمام الخاص بضمان وضع العدسة بشكل صحيح لتحقيق نتائج بصرية مثلى.
+                                </p>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <img src="../images/int-patient/process-2.png" alt="process">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="goal-text" id="goal-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-10">
+                                <p class="bold"><span class="primary-co-2">١) غرفة الاستراحة:</span>
+                                    بعد العملية، ستقضي بعض الوقت في غرفة الاستراحة حيث سيتم مراقبتك لفترة قصيرة قبل أن
+                                    يتم إخراجك للمنزل، وسيتم إدارة أي توتر بعد العملية على العين.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٢) درع العين:</span>
+                                    قد يتم تزويدك بدرع للعين لارتدائه للحماية ولمنعك من فرك العين أثناء التئامها
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٣) قطرات العين والأدوية:</span>
+                                    سيتم وصف جدول زمني لاستخدام قطرات العين للوقاية من العدوى وتقليل الالتهاب وتعزيز
+                                    عملية التئام. من الضروري اتباع تعليمات الجراح بشأن استخدام الأدوية.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٤) مواعيد المتابعة:</span>
+                                    ستجدد مواعيد للمتابعة مع الجراح لمراقبة تقدم التئام العين ومعالجة أي مخاوف أو
+                                    مضاعفات قد تنشأ.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٥) قيود النشاط:</span>
+                                    قد ينصحك الجراح بتجنب الأنشطة المجهدة والسباحة وفرك العين خلال فترة التئام الأولية
+                                    لتجنب المضاعفات.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٦) إعادة التأهيل البصري:</span>
+                                    قد يستغرق بعض الوقت لاستقرار رؤيتك ولتكييف دماغك مع العدسة الجديدة.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٧) الرعاية الروتينية للعين:</span>
+                                    بعد التعافي، من المهم الاستمرار في إجراء الفحوصات العينية الدورية لمراقبة صحة عينك
+                                    وأداء العدسة الداخلية المتميزة الخاصة بك.
+                                </p>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <img src="../images/int-patient/process-3.png" alt="process">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="goal-text" id="goal-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-10">
+                                <p class="bold"><span class="primary-co-2">١) تجنب فرك العين:</span>
+                                    يمكن أن يزيد فرك العين من خطر الإصابة بالعدوى أو فصل العدسة المزروعة
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٢) حماية عينيك:</span>
+                                    ارتدي نظارات شمسية بحماية من الأشعة فوق البنفسجية لحماية عينيك من أشعة الشمس الضارة
+                                    وجسيمات الغبار أثناء عملية التئام الجرح.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٣) حضور المواعيد المتابعة:</span>
+                                    تعد المواعيد المتابعة الدورية أمرًا بالغ الأهمية لمراقبة تقدم شفاء عينيك والكشف عن
+                                    أي مضاعفات في وقت مبكر.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٤) الإبلاغ عن أي مشاكل:</span>
+                                    إذا شعرت بأي تغيرات مفاجئة في الرؤية، أو ألم، أو احمرار، أو افرازات من العين، اتصل
+                                    بالجراح على الفور.
+                                </p>
+                                <p class="bold"><span class="primary-co-2">٥) الالتزام بجدول الدواء:</span>
+                                    اتبع تعليمات الجراح بشأن استخدام قطرات العين الموصوفة والأدوية للوقاية من العدوى
+                                    وتعزيز الشفاء.
+                                </p>
+                                <p class="bold primary-co-2 pt-4">من خلال اتباع هذه الخطوات والاحتياطات،
+                                    يمكنك ضمان نجاح عملية المياه البيضاء الخاصة بك مع العدسات الداخلية المتميزة. ومع
+                                    ذلك، يجب دائمًا استشارة طبيب العيون الخاص بك للحصول على نصائح وتوصيات مخصصة استنادًا
+                                    إلى احتياجاتك الخاصة وتاريخك الطبي.
+                                </p>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img src="../images/int-patient/precautions.jpg" alt="precautions">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="surg-words py-5 our-goals">
+        <div class="container">
+            <div class="surg-header text-center">
+                <h2 class="main-font bold medtour-head">
+                    <span class="primary-co-2">الفاكو</span>
+                    قبل و بعد العملية <br> عرض توضيحي
+                </h2>
+            </div>
+            <div class="row my-4 text-center">
+                <div class="col-6">
+                    <span class="primary-co-2 bold">بعد</span>
+                </div>
+
+                <div class="col-6">
+                    <span class="primary-co-2 bold">قبل</span>
+                </div>
+
+            </div>
+            <main>
+                <div class="containers" style="position:relative; border-radius: 10px;">
+                    <div class="img-container">
+                        <img class="img-before slider-img center-item" src="../images/int-patient/lasik/lasik-after.jpg"
+                            alt="lasik before surgery">
+                        <img class="img-after slider-img" src="../images/int-patient/lasik/lasik-before.jpg"
+                            alt="lasik after surgery">
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="slider center-item"
+                        aria-label="Percentage of before photo shown">
+                    <div class="slider-line center-item"></div>
+                    <div class="slider-button" aria-hidden="true">
+                        <i class="fa-solid fa-arrows-left-right main-font" style="font-size: 20px;"></i>
+                    </div>
+                </div>
+            </main>
+
+
+
+
+        </div>
+
+    </section>
+
+    <section class="prices lasik-prices">
+        <div class="container">
+            <div class="medicalTour-prices py-5 text-center">
+                <h3 class="main-font bold medtour-head">اسعار الفاكو</h3>
+            </div>
+
+            <div class="row pb-5">
+
+                <div class="col-md-3 col-sm-5 m-auto">
+                    <div class="prices-serv text-center">
+                        <div class="prices-serv-header">
+                            <h3 class="bold  primary-co-2" style="font-size: 24px;">فاكو (فاكو عدسة عادية)
+                            </h3>
+                            <span class="line-text"></span>
+                        </div>
+                        <div class="serv-cost">
+                            <span class="cost-info cost bold">تكلفة: 800 $</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-5 m-auto">
+                    <div class="prices-serv text-center">
+                        <div class="prices-serv-header">
+                            <h3 class="bold primary-co-2" style="font-size: 24px;">
+                               فاكو ( عدسة multi )
+                            </h3>
+                            <span class="line-text"></span>
+                        </div>
+                        <div class="serv-cost">
+                            <span class="cost-info cost bold"><span>تكلفة:</span> 1850 $</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-5 m-auto">
+                    <div class="prices-serv text-center">
+                        <div class="prices-serv-header">
+                            <h3 class="bold primary-co-2" style="font-size: 24px;">
+                                فاكو ( عدسة torik )
+                            </h3>
+                            <span class="line-text"></span>
+                        </div>
+                        <div class="serv-cost">
+                            <span class="cost-info cost bold"><span>تكلفة:</span> 950 $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="med-form py-5">
+        <div class="form-header py-4 text-center">
+            <h2 class="main-font bold medtour-head">تواصل معنا</h2>
+        </div>
+
+        <form class="contactForm" method="post" action="/contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <input type="text" class="fullname-con" id="fullname-con" name="contactName"
+                            placeholder="الاسم كامل">
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <input type="text" class="email-con" id="email-con" name="contactEmail"
+                            placeholder="البريد الإلكتروني">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <input type="text" class="phone-con" id="phone-con" name="contactPhone" placeholder="الهاتف">
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <input type="text" class="subject-con" id="subject-con" name="contactSubject"
+                            placeholder="الموضوع">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <textarea id="message" name="contactMessage" placeholder="محتوي الطلب \ الملاحظات" cols="30"
+                            rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="contact-btn">ارسل رسالة</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="parent-10 subscribe-area p-0 text-center"
+        style="background: #2b2d36 !important; position: relative;">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="contact-icons pt-4 hidden">
+                        <a target="_blank" href="https://www.facebook.com/watanyeyehospitals?mibextid=nW3QTL">
+                            <i class="fa fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/Watany_Eye?t=m3pjRLN5Zh5FaWIeiUvx0w&s=08" target="_blank">
+                            <i class="fa fa-brands fa-twitter"></i>
+                        </a>
+                        <a arget=”_blank” href="https://instagram.com/watanyeyehospitals?igshid=NjIwNzIyMDk2Mg==">
+                            <i class="fa fa-brands fa-instagram"></i>
+                        </a>
+                        <a target=”_blank” href="https://www.youtube.com/@watanyeyehospitals">
+                            <i class="fa fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you"
+                            target="_blank">
+                            <i class="fa fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="right-contact" style="background: #2b2d36 !important;">
+
+                        <div class="form-contact">
+
+                            <div style="position: relative;">
+
+                                <form class="subscribe-form" method="post" action="/subscribe">
+                                    <div class="input-group mb-3">
+                                        <i class="fa-solid fa-envelope"
+                                            style="margin-right: 10px; font-size: 30px; margin-top: 5px;"></i>
+                                        <input type="email" id="email2" name="email2" required class="form-control"
+                                            placeholder="اشترك لمزيد من الأخبار" aria-label="Recipient's username"
+                                            aria-describedby="button-addon2">
+                                        <button class="btn sub-btn" type="submit">اشترك</button>
+                                    </div>
+                                    <h2 class="subscribe-message"></h2>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Start Footer Page -->
+
+    <footer class="parent-11" id="footer">
+
+        <div class="container footer-body">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-12 tag">
+                    <div class="fot">
+                        <h4 class="text-uppercase pb-3">أيام العمل</h4>
+
+                        <span>من السبت الي الخميس:</span>
+                        <span> من ١٠ صباحا الي ٩ مساءً</span>
+
+                        <span style="display: block; margin: 10px 0 5px 0;">ملاحظة:</span>
+                        <span>فرع الثورة يوم الجمعة:</span>
+                        <span style="display: block; margin-bottom: 5px;">من
+                            ١٠ صباحا
+                            الي ٥ مساءً</span>
+                        <span>فرع الحجاز يوم الجمعة:</span>
+                        <span style="display: block; margin-bottom: 5px;">من
+                            ١٠ صباحا
+                            الي ٩ مساءً</span>
+                        <span>فرع الغردقة يوم الجمعة:</span>
+                        <span>من ١٠ صباحا الي ٩ مساءً</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 quick">
+                    <div class="fot">
+                        <h4 class="text-uppercase pb-3">روابط سريعة</h4>
+                        <ul class="fot-links">
+                            <li class="mb-2"><a href="./aboutUsAr.html" class="white">من
+                                    نحن</a></li>
+                            <li class="mb-2"><a href="./doctorsAr.html" class="white">أطبائنا</a></li>
+                            <li class="mb-2"><a href="./clinicsAr.html" class="white">العيادات</a></li>
+                            <li class="mb-2"><a href="./contactusAr.html" class="white">الفروع</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="fot">
+                        <h4 class="text-uppercase pb-3">تواصل معنا</h4>
+                        <ul class="fot-links">
+                            <li class="mb-2"><a href="tel:16112" target="_blank" class="white"><i
+                                        class="fa-sharp fa-solid fa-phone"
+                                        style="position: relative; margin-left: 10px;"></i>١٦١١٢</a></li>
+                            <li class="mb-2"><a target=”_blank”
+                                    href="https://wa.me/201211110722?text=I%27m%20interested%20to%20Contact%20you"
+                                    class="white"><i class="fa fa-brands fa-whatsapp"
+                                        style="position: relative; margin-left: 10px;"></i>واتساب</a></li>
+                            <li class="mb-2"><a target="_blank" href=mailto:“contactus@watanyeyehospitals.com”
+                                    class="white"><i class="fa-sharp fa-solid fa-envelope"
+                                        style="position: relative; margin-left: 10px;"></i>contactus@watanyeyehospitals.com</a>
+                            </li>
+                            <li class="mb-2"><a href="./bookingform.html"><i class="fa-regular fa-calendar-plus"
+                                        style="position: relative; margin-left: 4px;"></i>
+                                    تحديد
+                                    موعد</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center w-100 social py-3">
+            <p class="mb-0">
+                <a href=mailto:“michaelzahgar@gmail.com”>
+                    © Copyright 2023 بواسطة لمستشفيات الوطنى للعيون.V.1
+                </a>
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- End Footer Page -->
+
+    <script src="../js/jquery.3.6.2.js"></script>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <!-- Splide Extension -->
+
+    <script src="../js/splide.min.js"></script>
+
+    <!-- Splide autoScroll Extension -->
+
+    <script src="../js/splide-extension-auto-scroll.min.js"></script>
+
+    <!-- Isotope js libary  ( for cards selection ) -->
+
+    <script src="../vendor/isotope/isotope.min.js"></script>
+
+    <!-- Magnific popup script file (for pictures) -->
+
+    <script src="../vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+
+    <!-- owl-carosuel js file -->
+
+    <script src="../vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!-- JS main Script -->
+    <script src="../js/main.js"></script>
+
+    <script>
+
+        function setBeforeAfter() {
+            const container = document.querySelector('.containers');
+            document.querySelector('.slider').addEventListener('input', (e) => {
+                container.style.setProperty('--position', `${e.target.value}%`)
+            })
+        }
+
+
+        function setupGoals() {
+            let goal1 = document.getElementById('goal-1');
+            let goal2 = document.getElementById('goal-2');
+            let goal3 = document.getElementById('goal-3');
+            let goal4 = document.getElementById('goal-4');
+            let goal5 = document.getElementById('goal-5');
+            let header = document.getElementById('contain-header');
+            let btns = header.getElementsByClassName('goal-btn');
+
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = header.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace("active", "");
+                    this.className += " active";
+                });
+            }
+
+            // Function for Button 1
+            function handleButton1() {
+                console.log("Button 1 clicked");
+                goal1.style.display = "block";
+                goal2.style.display = "none";
+                goal3.style.display = "none";
+                goal4.style.display = "none";
+                goal5.style.display = "none";
+            }
+
+            // Function for Button 2
+            function handleButton2() {
+                console.log("Button 2 clicked");
+                goal2.style.display = "block";
+                goal1.style.display = "none";
+                goal3.style.display = "none";
+                goal4.style.display = "none";
+                goal5.style.display = "none";
+            }
+
+            // Function for Button 3
+            function handleButton3() {
+                console.log("Button 3 clicked");
+                goal3.style.display = "block";
+                goal1.style.display = "none";
+                goal2.style.display = "none";
+                goal4.style.display = "none";
+                goal5.style.display = "none";
+            }
+
+            function handleButton4() {
+                console.log("Button 4 clicked");
+                goal4.style.display = "block";
+                goal3.style.display = "none";
+                goal1.style.display = "none";
+                goal2.style.display = "none";
+                goal5.style.display = "none";
+            }
+
+            function handleButton5() {
+                console.log("Button 5 clicked");
+                goal5.style.display = "block";
+                goal3.style.display = "none";
+                goal1.style.display = "none";
+                goal2.style.display = "none";
+                goal4.style.display = "none";
+            }
+
+            // Event listeners for each button
+            document.getElementById("button1").addEventListener("click", handleButton1);
+            document.getElementById("button2").addEventListener("click", handleButton2);
+            document.getElementById("button3").addEventListener("click", handleButton3);
+            document.getElementById("button4").addEventListener("click", handleButton4);
+            document.getElementById("button5").addEventListener("click", handleButton5);
+        }
+
+        setBeforeAfter();
+        setupGoals();
+
+
+    </script>
+
+</body>
+
+</html>

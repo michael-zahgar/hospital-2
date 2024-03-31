@@ -3405,7 +3405,7 @@ button {
     text-align: center;
 }
 
-.medical-tour .contactForm input, .medical-tour .contactForm textarea {
+.med-form .contactForm input, .med-form .contactForm textarea {
     width: 100%;
     background-color: transparent;
     border: 1px solid rgba(128, 128, 128, 0.37);
@@ -3413,7 +3413,7 @@ button {
     margin-bottom: 15px;
 }
 
-.medical-tour .contactForm button {
+.med-form .contactForm button {
     padding: 20px;
     border-radius: 10px;
 }
