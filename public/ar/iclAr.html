@@ -854,47 +854,6 @@
         </div>
     </section>
 
-    <section class="surg-words py-5 our-goals">
-        <div class="container">
-            <div class="surg-header text-center">
-                <h2 class="main-font bold medtour-head">
-                    <span class="primary-co-2">لماذا تختار</span>
-                    مستشفيات وطني للعيون <br> لزراعة العدسات المرنة القابلة للزرع؟
-                </h2>
-            </div>
-            <div class="row my-4 text-center">
-                <div class="col-6">
-                    <span class="primary-co-2 bold">بعد</span>
-                </div>
-
-                <div class="col-6">
-                    <span class="primary-co-2 bold">قبل</span>
-                </div>
-
-            </div>
-            <main>
-                <div class="containers" style="position:relative; border-radius: 10px;">
-                    <div class="img-container">
-                        <img class="img-before slider-img center-item" src="../images/int-patient/lasik/lasik-after.jpg"
-                            alt="lasik before surgery">
-                        <img class="img-after slider-img" src="../images/int-patient/lasik/lasik-before.jpg"
-                            alt="lasik after surgery">
-                    </div>
-                    <input type="range" min="0" max="100" value="50" class="slider center-item"
-                        aria-label="Percentage of before photo shown">
-                    <div class="slider-line center-item"></div>
-                    <div class="slider-button" aria-hidden="true">
-                        <i class="fa-solid fa-arrows-left-right main-font" style="font-size: 20px;"></i>
-                    </div>
-                </div>
-            </main>
-
-
-
-
-        </div>
-
-    </section>
 
     <section class="prices lasik-prices">
         <div class="container">
@@ -1129,12 +1088,7 @@
 
     <script>
 
-        function setBeforeAfter() {
-            const container = document.querySelector('.containers');
-            document.querySelector('.slider').addEventListener('input', (e) => {
-                container.style.setProperty('--position', `${e.target.value}%`)
-            })
-        }
+
 
         function setupGoals() {
 
@@ -1186,7 +1140,6 @@
 
         }
 
-        setBeforeAfter();
         setupGoals();
 
     </script>
