@@ -1157,12 +1157,6 @@
     <script src="../js/main.js"></script>
 
     <script>
-        function setBeforeAfter() {
-            const container = document.querySelector('.containers');
-            document.querySelector('.slider').addEventListener('input', (e) => {
-                container.style.setProperty('--position', `${e.target.value}%`)
-            })
-        }
 
 
         function setupGoals() {
@@ -1238,7 +1232,6 @@
             document.getElementById("button5").addEventListener("click", handleButton5);
         }
 
-        setBeforeAfter();
         setupGoals();
 
 
