@@ -730,7 +730,9 @@ button {
 .reason-b-h h2, .reasons h4 {
     color: black !important;
 }
-
+.reasons h4{
+    margin-top: 15px;
+}
 .reasons .reason-video {
     background: url(../../images/reasons.png) no-repeat;
     position: absolute;
