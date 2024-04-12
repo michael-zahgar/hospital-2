@@ -3708,3 +3708,9 @@ button {
     background-blend-mode: overlay;
     background-position: center;
 }
+
+/* international patient */
+.surg-parent .med-form{
+    position:sticky;
+    top: 35px;
+}
