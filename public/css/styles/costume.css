@@ -3714,3 +3714,12 @@ button {
     position:sticky;
     top: 35px;
 }
+
+.surg-parent .reason-video{
+    height: 450px;
+    width: 100% !important;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    clip-path: none;
+}
