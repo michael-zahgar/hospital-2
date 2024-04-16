@@ -29,6 +29,9 @@ button {
     border: none;
 }
 
+.container{
+    max-width: 90%;
+}
 
 /* Model */
 
@@ -1205,7 +1208,7 @@ button {
 .service-inner a, .faqs a {
     position: relative;
     display: block;
-    width: 105px;
+    width: 117px;
     background: #f4f5f7;
     color: #353742;
     font-size: 14px;
@@ -1819,7 +1822,7 @@ button {
     font-size: 15px;
     padding: 10px;
     background-color: var(--main-color);
-    width: 113px;
+    width: 130px;
     color: white;
     transition: var(--transition);
     font-weight: 400;
