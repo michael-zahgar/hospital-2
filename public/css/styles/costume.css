@@ -2554,7 +2554,10 @@ button {
     width: 100%;
     position: relative;
 }
-
+.page-header .breadcrumb-item , .page-header .breadcrumb-item.active{
+    display: flex;
+    align-items: center;
+}
 .page-header .doctors-bg {
     background-position: center !important;
     height: 350px;
