@@ -3188,7 +3188,9 @@ button {
     background: none;
     position: relative;
 }
-
+.chapter .chapter-nav a span{
+    display: inline-block;
+}
 .medicalTour-Header .doctors-bg {
     background: url(../../images/medical-tourism.jpg) no-repeat !important;
     transform: scaleX(-1);

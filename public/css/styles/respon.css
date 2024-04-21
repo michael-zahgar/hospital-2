@@ -721,6 +721,11 @@
     .medical-services .med-serbody {
         margin-bottom: 40px;
     }
+    .chapter .chapter-nav a span{
+        transform: rotate(90deg);
+        font-size: 20px;
+    }
+
 
     /* Contact us page */
 
@@ -937,6 +942,15 @@
     /* Medical Tour */
     .medicalTour-gal .splide__arrow--next {
         right: 70%;
+    }
+    .medical-services .med-serbody span{
+        font-size: 15px;
+    }
+    .medical-services .col-lg-3 img{
+        width: 65px;
+    }
+    .medical-services .trans-title{
+        font-size: 28px !important;
     }
 }
 

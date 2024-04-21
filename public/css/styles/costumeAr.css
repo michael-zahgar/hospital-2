@@ -213,7 +213,9 @@
     right: auto;
 }
 
-
+.chapter .chapter-nav a span{
+    transform: rotate(180deg);
+}
 
 /* Doctors page */
 
