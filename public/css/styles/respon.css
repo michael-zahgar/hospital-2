@@ -1036,3 +1036,26 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width:412px){
+    .our-goals ul {
+    display: flex;
+    justify-content: normal;
+    align-items: normal;
+    margin: 0;
+    padding: 0;
+    flex-wrap:nowrap;
+    overflow-x: scroll;
+    }
+    .lasik-precautions ul li h4{
+        width: 130px !important;
+        height: 130px !important;
+    }
+    .our-goals .goal-btn{
+        font-size: 15px !important;
+    }
+    .our-goals ul li span{
+        font-size: 22px !important;
+        padding: 12px 0 !important;
+    }
+}
