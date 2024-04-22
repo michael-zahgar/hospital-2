@@ -1047,6 +1047,11 @@
     flex-wrap:nowrap;
     overflow-x: scroll;
     }
+    .our-goals ul li h4{
+        width: 130px !important;
+        height: 130px !important;
+        padding: 15px !important;
+    }
     .lasik-precautions ul li h4{
         width: 130px !important;
         height: 130px !important;

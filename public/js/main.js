@@ -578,7 +578,7 @@ document.addEventListener('DOMContentLoaded', function () {
     perMove: 1,
     autoplay:true,
     type:'loop',
-    arrows: false,
+    arrows: true,
     pagination: false,
     breakpoints: {
       1024: {
