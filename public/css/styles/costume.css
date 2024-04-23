@@ -3728,3 +3728,13 @@ button {
     margin-bottom: 20px;
     clip-path: none;
 }
+
+/* insurance */
+
+.insurance-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
+}
